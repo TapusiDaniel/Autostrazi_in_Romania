@@ -1,0 +1,32 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448758 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541217" visible="true" version="3" changeset="151392694" timestamp="2024-05-16T07:05:46Z" user="PulisakZ" uid="9026132">
+<member type="way" ref="684162866" role=""/>
+<member type="way" ref="684162862" role=""/>
+<member type="way" ref="1145692229" role=""/>
+<member type="way" ref="1145692230" role=""/>
+<member type="way" ref="240126817" role=""/>
+<member type="way" ref="372493934" role=""/>
+<member type="way" ref="240126818" role=""/>
+<member type="way" ref="1283535749" role=""/>
+<member type="way" ref="684162860" role=""/>
+<member type="way" ref="684162859" role=""/>
+<member type="way" ref="1145692227" role=""/>
+<member type="way" ref="1145692228" role=""/>
+<member type="way" ref="252696497" role=""/>
+<member type="way" ref="237845281" role=""/>
+<member type="way" ref="372493940" role=""/>
+<member type="way" ref="1283535748" role=""/>
+<member type="way" ref="237845286" role=""/>
+<member type="way" ref="252696495" role=""/>
+<member type="way" ref="679877353" role=""/>
+<member type="way" ref="679877351" role=""/>
+<member type="way" ref="237845283" role=""/>
+<member type="way" ref="237845284" role=""/>
+<member type="way" ref="1283535747" role=""/>
+<member type="way" ref="237845282" role=""/>
+<member type="way" ref="255314145" role=""/>
+<tag k="name" v="A1 Orastie-Sibiu lot 4"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

@@ -1,0 +1,38 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448780 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541167" visible="true" version="7" changeset="158622581" timestamp="2024-11-01T14:43:39Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="760788728" role=""/>
+<member type="way" ref="760788729" role=""/>
+<member type="way" ref="260566937" role=""/>
+<member type="way" ref="260566936" role=""/>
+<member type="way" ref="260566935" role=""/>
+<member type="way" ref="123722898" role=""/>
+<member type="way" ref="123722899" role=""/>
+<member type="way" ref="264472333" role=""/>
+<member type="way" ref="264472259" role=""/>
+<member type="way" ref="264472328" role=""/>
+<member type="way" ref="264472265" role=""/>
+<member type="way" ref="123722894" role=""/>
+<member type="way" ref="123722893" role=""/>
+<member type="way" ref="123722896" role=""/>
+<member type="way" ref="123722902" role=""/>
+<member type="way" ref="123722901" role=""/>
+<member type="way" ref="95946362" role=""/>
+<member type="way" ref="95946363" role=""/>
+<member type="way" ref="95946361" role=""/>
+<member type="way" ref="1282817696" role=""/>
+<member type="way" ref="1282817695" role=""/>
+<member type="way" ref="1282817694" role=""/>
+<member type="way" ref="95948543" role=""/>
+<member type="way" ref="1282817693" role=""/>
+<member type="way" ref="95948544" role=""/>
+<member type="way" ref="973092815" role=""/>
+<member type="way" ref="217754509" role=""/>
+<member type="way" ref="108770325" role=""/>
+<member type="way" ref="95947504" role=""/>
+<member type="way" ref="973092818" role=""/>
+<member type="way" ref="217754508" role=""/>
+<tag k="name" v="A1 - centura Pitesti"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

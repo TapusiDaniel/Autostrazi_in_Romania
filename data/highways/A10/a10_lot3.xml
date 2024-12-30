@@ -1,0 +1,63 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448774 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10524726" visible="true" version="8" changeset="151136285" timestamp="2024-05-10T09:45:55Z" user="PulisakZ" uid="9026132">
+<member type="way" ref="611977701" role=""/>
+<member type="way" ref="253681970" role=""/>
+<member type="way" ref="663326170" role=""/>
+<member type="way" ref="1281397101" role=""/>
+<member type="way" ref="364393889" role=""/>
+<member type="way" ref="390997458" role=""/>
+<member type="way" ref="253681969" role=""/>
+<member type="way" ref="525877179" role=""/>
+<member type="way" ref="525877180" role=""/>
+<member type="way" ref="525877181" role=""/>
+<member type="way" ref="530973726" role=""/>
+<member type="way" ref="682205548" role=""/>
+<member type="way" ref="364393890" role=""/>
+<member type="way" ref="530973725" role=""/>
+<member type="way" ref="530973728" role=""/>
+<member type="way" ref="701097329" role=""/>
+<member type="way" ref="525872974" role=""/>
+<member type="way" ref="525872977" role=""/>
+<member type="way" ref="256116897" role=""/>
+<member type="way" ref="256116903" role=""/>
+<member type="way" ref="256116900" role=""/>
+<member type="way" ref="256116899" role=""/>
+<member type="way" ref="256116896" role=""/>
+<member type="way" ref="256116901" role=""/>
+<member type="way" ref="481160994" role=""/>
+<member type="way" ref="760070210" role=""/>
+<member type="way" ref="481160995" role=""/>
+<member type="way" ref="702452116" role=""/>
+<member type="way" ref="702452117" role=""/>
+<member type="way" ref="525872970" role=""/>
+<member type="way" ref="525872972" role=""/>
+<member type="way" ref="679877342" role=""/>
+<member type="way" ref="679877344" role=""/>
+<member type="way" ref="525874076" role=""/>
+<member type="way" ref="525874077" role=""/>
+<member type="way" ref="525874059" role=""/>
+<member type="way" ref="525874070" role=""/>
+<member type="way" ref="525874054" role=""/>
+<member type="way" ref="525874064" role=""/>
+<member type="way" ref="255039314" role=""/>
+<member type="way" ref="1281397100" role=""/>
+<member type="way" ref="390997457" role=""/>
+<member type="way" ref="525238473" role=""/>
+<member type="way" ref="525238475" role=""/>
+<member type="way" ref="525875725" role=""/>
+<member type="way" ref="525875724" role=""/>
+<member type="way" ref="525875728" role=""/>
+<member type="way" ref="255041023" role=""/>
+<member type="way" ref="255041024" role=""/>
+<member type="way" ref="255041022" role=""/>
+<member type="way" ref="663326171" role=""/>
+<member type="way" ref="253681972" role=""/>
+<member type="way" ref="525875729" role=""/>
+<member type="way" ref="1101823217" role=""/>
+<member type="way" ref="530974213" role=""/>
+<member type="way" ref="701097328" role=""/>
+<tag k="name" v="A10 - Lot 3 (Aiud-Decea)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

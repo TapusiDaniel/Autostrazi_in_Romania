@@ -1,0 +1,59 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448780 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="13005429" visible="true" version="3" changeset="138700577" timestamp="2023-07-19T07:19:06Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1022574311" role=""/>
+<member type="way" ref="1022574310" role=""/>
+<member type="way" ref="1022574309" role=""/>
+<member type="way" ref="1022574314" role=""/>
+<member type="way" ref="1022574313" role=""/>
+<member type="way" ref="1022574312" role=""/>
+<member type="way" ref="184466764" role=""/>
+<member type="way" ref="1022574316" role=""/>
+<member type="way" ref="1022574315" role=""/>
+<member type="way" ref="1022574323" role=""/>
+<member type="way" ref="1022574322" role=""/>
+<member type="way" ref="1022574324" role=""/>
+<member type="way" ref="1022574325" role=""/>
+<member type="way" ref="1022574326" role=""/>
+<member type="way" ref="1022574327" role=""/>
+<member type="way" ref="1022574328" role=""/>
+<member type="way" ref="1022574329" role=""/>
+<member type="way" ref="1022574331" role=""/>
+<member type="way" ref="1022574330" role=""/>
+<member type="way" ref="1022574333" role=""/>
+<member type="way" ref="1022574337" role=""/>
+<member type="way" ref="1022574334" role=""/>
+<member type="way" ref="1022574335" role=""/>
+<member type="way" ref="1022574336" role=""/>
+<member type="way" ref="1022574332" role=""/>
+<member type="way" ref="966272333" role=""/>
+<member type="way" ref="966272334" role=""/>
+<member type="way" ref="966272336" role=""/>
+<member type="way" ref="966272337" role=""/>
+<member type="way" ref="966272344" role=""/>
+<member type="way" ref="966272335" role=""/>
+<member type="way" ref="966272339" role=""/>
+<member type="way" ref="966272338" role=""/>
+<member type="way" ref="966272340" role=""/>
+<member type="way" ref="966272342" role=""/>
+<member type="way" ref="966272343" role=""/>
+<member type="way" ref="966272341" role=""/>
+<member type="way" ref="966272345" role=""/>
+<member type="way" ref="1022574318" role=""/>
+<member type="way" ref="1022574319" role=""/>
+<member type="way" ref="1022574342" role=""/>
+<member type="way" ref="1022574341" role=""/>
+<member type="way" ref="1022574344" role=""/>
+<member type="way" ref="732698552" role=""/>
+<member type="way" ref="966272346" role=""/>
+<member type="way" ref="1022574343" role=""/>
+<member type="way" ref="966272347" role=""/>
+<member type="way" ref="966272348" role=""/>
+<member type="way" ref="966272349" role=""/>
+<member type="way" ref="1022574340" role=""/>
+<member type="way" ref="1022574321" role=""/>
+<member type="way" ref="1022574320" role=""/>
+<tag k="name" v="Oar - VO Satu Mare"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

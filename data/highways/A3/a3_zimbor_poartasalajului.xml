@@ -1,0 +1,52 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448776 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9427873" visible="true" version="4" changeset="145624630" timestamp="2023-12-28T15:13:30Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1063670336" role=""/>
+<member type="way" ref="678909850" role=""/>
+<member type="way" ref="678909848" role=""/>
+<member type="way" ref="678909846" role=""/>
+<member type="way" ref="678909845" role=""/>
+<member type="way" ref="678909842" role=""/>
+<member type="way" ref="678909840" role=""/>
+<member type="way" ref="678909838" role=""/>
+<member type="way" ref="678909836" role=""/>
+<member type="way" ref="678909834" role=""/>
+<member type="way" ref="678909832" role=""/>
+<member type="way" ref="678909830" role=""/>
+<member type="way" ref="678907420" role=""/>
+<member type="way" ref="678896358" role=""/>
+<member type="way" ref="678909831" role=""/>
+<member type="way" ref="678909833" role=""/>
+<member type="way" ref="678909835" role=""/>
+<member type="way" ref="678909837" role=""/>
+<member type="way" ref="678909839" role=""/>
+<member type="way" ref="678909841" role=""/>
+<member type="way" ref="678909843" role=""/>
+<member type="way" ref="678909844" role=""/>
+<member type="way" ref="678909847" role=""/>
+<member type="way" ref="678909849" role=""/>
+<member type="way" ref="678909851" role=""/>
+<member type="way" ref="678909853" role=""/>
+<member type="way" ref="1063670334" role=""/>
+<member type="way" ref="840975490" role=""/>
+<member type="way" ref="840975489" role=""/>
+<member type="way" ref="840975491" role=""/>
+<member type="way" ref="678909854" role=""/>
+<member type="way" ref="679039993" role=""/>
+<member type="way" ref="679039996" role=""/>
+<member type="way" ref="679042407" role=""/>
+<member type="way" ref="679042406" role=""/>
+<member type="way" ref="679039994" role=""/>
+<member type="way" ref="679534515" role=""/>
+<member type="way" ref="679042405" role=""/>
+<member type="way" ref="679042404" role=""/>
+<member type="way" ref="679042403" role=""/>
+<member type="way" ref="679042402" role=""/>
+<member type="way" ref="679040000" role=""/>
+<member type="way" ref="679039999" role=""/>
+<member type="way" ref="679040001" role=""/>
+<member type="way" ref="679040807" role=""/>
+<tag k="name" v="A3 3B2(Zimbor-Poarta Salajului)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="construction"/>
+</relation>
+</osm>

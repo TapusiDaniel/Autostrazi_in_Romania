@@ -1,0 +1,34 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448760 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14316430" visible="true" version="2" changeset="123131160" timestamp="2022-07-02T19:32:32Z" user="ted3sco" uid="2112541">
+<member type="way" ref="1075393989" role=""/>
+<member type="way" ref="1075393981" role=""/>
+<member type="way" ref="1075393987" role=""/>
+<member type="way" ref="1075393982" role=""/>
+<member type="way" ref="1075393976" role=""/>
+<member type="way" ref="1075393991" role=""/>
+<member type="way" ref="1075393985" role=""/>
+<member type="way" ref="1075393980" role=""/>
+<member type="way" ref="1075393977" role=""/>
+<member type="way" ref="1075393984" role=""/>
+<member type="way" ref="1075393978" role=""/>
+<member type="way" ref="1075393979" role=""/>
+<member type="way" ref="1075393983" role=""/>
+<member type="way" ref="1075393972" role=""/>
+<member type="way" ref="1075393973" role=""/>
+<member type="way" ref="1075393974" role=""/>
+<member type="way" ref="1075393975" role=""/>
+<member type="way" ref="1075393988" role=""/>
+<member type="way" ref="1075393969" role=""/>
+<member type="way" ref="1075393986" role=""/>
+<member type="way" ref="1075393971" role=""/>
+<member type="way" ref="1075393970" role=""/>
+<member type="way" ref="1075393990" role=""/>
+<member type="way" ref="1075393968" role=""/>
+<member type="way" ref="1075393967" role=""/>
+<member type="way" ref="1075393966" role=""/>
+<member type="way" ref="1075393965" role=""/>
+<tag k="name" v="Drum expres Baia Mare - Suceava Lot 2 Bistrita - Vatra Dornei"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

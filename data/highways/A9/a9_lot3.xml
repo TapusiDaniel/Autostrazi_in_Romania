@@ -1,0 +1,17 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448774 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12465891" visible="true" version="25" changeset="160652401" timestamp="2024-12-26T20:28:10Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1337790258" role=""/>
+<member type="way" ref="1343580427" role=""/>
+<member type="way" ref="1343580426" role=""/>
+<member type="way" ref="1343580428" role=""/>
+<member type="way" ref="1169394717" role=""/>
+<member type="way" ref="1343580421" role=""/>
+<member type="way" ref="1169394716" role=""/>
+<member type="way" ref="1169394715" role=""/>
+<member type="way" ref="1169394714" role=""/>
+<tag k="name" v="A9 Timișoara - Moravița - lot 3"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+<tag k="wikidata" v="Q25056832"/>
+</relation>
+</osm>

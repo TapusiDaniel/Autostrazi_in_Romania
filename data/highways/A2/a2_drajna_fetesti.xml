@@ -1,0 +1,25 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448759 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10546990" visible="true" version="1" changeset="79216285" timestamp="2020-01-05T16:04:49Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="225252579" role=""/>
+<member type="way" ref="312390338" role=""/>
+<member type="way" ref="225252581" role=""/>
+<member type="way" ref="225252582" role=""/>
+<member type="way" ref="225252580" role=""/>
+<member type="way" ref="409312960" role=""/>
+<member type="way" ref="673587190" role=""/>
+<member type="way" ref="673587189" role=""/>
+<member type="way" ref="673588329" role=""/>
+<member type="way" ref="673588326" role=""/>
+<member type="way" ref="673589330" role=""/>
+<member type="way" ref="673589329" role=""/>
+<member type="way" ref="409312967" role=""/>
+<member type="way" ref="409312965" role=""/>
+<member type="way" ref="409312966" role=""/>
+<member type="way" ref="229240842" role=""/>
+<member type="way" ref="673589626" role=""/>
+<member type="way" ref="673589627" role=""/>
+<tag k="name" v="A2- lot Drajna-Fetesti"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

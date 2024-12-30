@@ -1,0 +1,9 @@
+
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448771 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14316731" visible="true" version="1" changeset="123133591" timestamp="2022-07-02T21:17:21Z" user="ted3sco" uid="2112541">
+<member type="way" ref="1075415051" role=""/>
+<tag k="name" v="Drum expres Baia Mare - Suceava Lot 3 Vatra Dornei - Suceava"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

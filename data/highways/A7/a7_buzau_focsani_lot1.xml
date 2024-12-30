@@ -1,0 +1,19 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448776 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="13764168" visible="true" version="8" changeset="160669640" timestamp="2024-12-27T10:33:37Z" user="Liviu Roman" uid="408317">
+<member type="way" ref="1028507774" role=""/>
+<member type="way" ref="1028507773" role=""/>
+<member type="way" ref="1028507776" role=""/>
+<member type="way" ref="1028507775" role=""/>
+<member type="way" ref="1028507779" role=""/>
+<member type="way" ref="1028507777" role=""/>
+<member type="way" ref="1028507971" role=""/>
+<member type="way" ref="1028507970" role=""/>
+<member type="way" ref="1028507780" role=""/>
+<member type="way" ref="1028507778" role=""/>
+<member type="way" ref="1028507969" role=""/>
+<member type="way" ref="1028507968" role=""/>
+<tag k="name" v="A7 - Lotul 1 (Buzau-Vadu Pasii)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

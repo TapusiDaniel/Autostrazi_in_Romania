@@ -1,0 +1,35 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448767 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541299" visible="true" version="1" changeset="79195755" timestamp="2020-01-04T17:54:33Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="237843589" role=""/>
+<member type="way" ref="252413565" role=""/>
+<member type="way" ref="237845090" role=""/>
+<member type="way" ref="237845061" role=""/>
+<member type="way" ref="237845044" role=""/>
+<member type="way" ref="237845056" role=""/>
+<member type="way" ref="237845072" role=""/>
+<member type="way" ref="237845094" role=""/>
+<member type="way" ref="237845073" role=""/>
+<member type="way" ref="369454329" role=""/>
+<member type="way" ref="369454330" role=""/>
+<member type="way" ref="237843588" role=""/>
+<member type="way" ref="443850824" role=""/>
+<member type="way" ref="238883342" role=""/>
+<member type="way" ref="443850826" role=""/>
+<member type="way" ref="443850823" role=""/>
+<member type="way" ref="443850825" role=""/>
+<member type="way" ref="443850830" role=""/>
+<member type="way" ref="443850829" role=""/>
+<member type="way" ref="443850827" role=""/>
+<member type="way" ref="443850831" role=""/>
+<member type="way" ref="443850821" role=""/>
+<member type="way" ref="443850820" role=""/>
+<member type="way" ref="443850828" role=""/>
+<member type="way" ref="443850822" role=""/>
+<member type="way" ref="238883343" role=""/>
+<member type="way" ref="369461818" role=""/>
+<member type="way" ref="237845089" role=""/>
+<tag k="name" v="A1 Orastie-Sibiu lot 3"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

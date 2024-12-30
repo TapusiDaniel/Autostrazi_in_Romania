@@ -1,0 +1,62 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448773 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541490" visible="true" version="6" changeset="127516348" timestamp="2022-10-14T10:22:32Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="701689287" role=""/>
+<member type="way" ref="698737019" role=""/>
+<member type="way" ref="698737018" role=""/>
+<member type="way" ref="698737017" role=""/>
+<member type="way" ref="698737022" role=""/>
+<member type="way" ref="698737021" role=""/>
+<member type="way" ref="698737020" role=""/>
+<member type="way" ref="698737025" role=""/>
+<member type="way" ref="698737024" role=""/>
+<member type="way" ref="698737023" role=""/>
+<member type="way" ref="803396914" role=""/>
+<member type="way" ref="698737034" role=""/>
+<member type="way" ref="698737032" role=""/>
+<member type="way" ref="698737029" role=""/>
+<member type="way" ref="698737028" role=""/>
+<member type="way" ref="1335034524" role=""/>
+<member type="way" ref="448328032" role=""/>
+<member type="way" ref="1335034526" role=""/>
+<member type="way" ref="698737026" role=""/>
+<member type="way" ref="698737027" role=""/>
+<member type="way" ref="253117647" role=""/>
+<member type="way" ref="1335034525" role=""/>
+<member type="way" ref="1312402609" role=""/>
+<member type="way" ref="698737033" role=""/>
+<member type="way" ref="698737031" role=""/>
+<member type="way" ref="698737030" role=""/>
+<member type="way" ref="698737035" role=""/>
+<member type="way" ref="701522527" role=""/>
+<member type="way" ref="1085347920" role=""/>
+<member type="way" ref="1085347921" role=""/>
+<member type="way" ref="701522526" role=""/>
+<member type="way" ref="698737038" role=""/>
+<member type="way" ref="698737037" role=""/>
+<member type="way" ref="698737048" role=""/>
+<member type="way" ref="701522524" role=""/>
+<member type="way" ref="803396913" role=""/>
+<member type="way" ref="698737063" role=""/>
+<member type="way" ref="701522525" role=""/>
+<member type="way" ref="701525029" role=""/>
+<member type="way" ref="698737050" role=""/>
+<member type="way" ref="701525030" role=""/>
+<member type="way" ref="701525031" role=""/>
+<member type="way" ref="701525032" role=""/>
+<member type="way" ref="698729959" role=""/>
+<member type="way" ref="974111021" role=""/>
+<member type="way" ref="698737070" role=""/>
+<member type="way" ref="1085347919" role=""/>
+<member type="way" ref="1311101030" role=""/>
+<member type="way" ref="698729961" role=""/>
+<member type="way" ref="698729960" role=""/>
+<member type="way" ref="448328033" role=""/>
+<member type="way" ref="684376079" role=""/>
+<member type="way" ref="974655735" role=""/>
+<member type="way" ref="438334430" role=""/>
+<member type="way" ref="684376080" role=""/>
+<tag k="name" v="A1 LD Lot D + 2E1 + 2E2"/>
+<tag k="route" v="construction"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

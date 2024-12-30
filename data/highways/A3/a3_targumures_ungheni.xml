@@ -1,0 +1,61 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448759 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="7397588" visible="true" version="17" changeset="132941423" timestamp="2023-02-23T19:58:05Z" user="Buraddo" uid="2287200">
+<member type="way" ref="825155412" role=""/>
+<member type="way" ref="819849822" role=""/>
+<member type="way" ref="819849823" role=""/>
+<member type="way" ref="819849826" role=""/>
+<member type="way" ref="819849827" role=""/>
+<member type="way" ref="819849828" role=""/>
+<member type="way" ref="819849829" role=""/>
+<member type="way" ref="991186833" role=""/>
+<member type="way" ref="283707921" role=""/>
+<member type="way" ref="1148942440" role=""/>
+<member type="way" ref="255566036" role=""/>
+<member type="way" ref="991181883" role=""/>
+<member type="way" ref="969801514" role=""/>
+<member type="way" ref="969801515" role=""/>
+<member type="way" ref="819849816" role=""/>
+<member type="way" ref="819849818" role=""/>
+<member type="way" ref="255566038" role=""/>
+<member type="way" ref="283707920" role=""/>
+<member type="way" ref="1148942444" role=""/>
+<member type="way" ref="1148942442" role=""/>
+<member type="way" ref="819849824" role=""/>
+<member type="way" ref="819849825" role=""/>
+<member type="way" ref="283707510" role=""/>
+<member type="way" ref="283707509" role=""/>
+<member type="way" ref="283707511" role=""/>
+<member type="way" ref="283707514" role=""/>
+<member type="way" ref="283707512" role=""/>
+<member type="way" ref="283707513" role=""/>
+<member type="way" ref="287772476" role=""/>
+<member type="way" ref="287772475" role=""/>
+<member type="way" ref="287772477" role=""/>
+<member type="way" ref="819849812" role=""/>
+<member type="way" ref="1128076421" role=""/>
+<member type="way" ref="843222304" role=""/>
+<member type="way" ref="819849811" role=""/>
+<member type="way" ref="819849810" role=""/>
+<member type="way" ref="819849820" role=""/>
+<member type="way" ref="819849819" role=""/>
+<member type="way" ref="969801511" role=""/>
+<member type="way" ref="991181885" role=""/>
+<member type="way" ref="969801513" role=""/>
+<member type="way" ref="819849817" role=""/>
+<member type="way" ref="969801516" role=""/>
+<member type="way" ref="819849815" role=""/>
+<member type="way" ref="339942045" role=""/>
+<member type="way" ref="843222308" role=""/>
+<member type="way" ref="1148942445" role=""/>
+<member type="way" ref="1148942443" role=""/>
+<member type="way" ref="843222306" role=""/>
+<member type="way" ref="1148942441" role=""/>
+<member type="way" ref="843222307" role=""/>
+<member type="way" ref="843222305" role=""/>
+<member type="way" ref="843222302" role=""/>
+<member type="way" ref="843222295" role=""/>
+<tag k="name" v="Sectiunea 1C (Targu Mures-Ungheni) si drum de legatura"/>
+<tag k="route" v="construction"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

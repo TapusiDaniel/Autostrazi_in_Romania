@@ -1,0 +1,45 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448764 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12799760" visible="true" version="11" changeset="160448270" timestamp="2024-12-20T20:11:51Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="949814064" role=""/>
+<member type="way" ref="949814069" role=""/> 
+<member type="way" ref="949814060" role=""/>
+<member type="way" ref="796586614" role=""/>
+<member type="way" ref="796586613" role=""/>
+<member type="way" ref="796586626" role=""/>
+<member type="way" ref="796586621" role=""/>
+<member type="way" ref="796586615" role=""/>
+<member type="way" ref="796586622" role=""/>
+<member type="way" ref="796586607" role=""/>
+<member type="way" ref="796586616" role=""/>
+<member type="way" ref="796586623" role=""/>
+<member type="way" ref="796586624" role=""/>
+<member type="way" ref="949770342" role=""/>
+<member type="way" ref="796586625" role=""/>
+<member type="way" ref="796586620" role=""/>
+<member type="way" ref="949814958" role=""/>
+<member type="way" ref="949814957" role=""/>
+<member type="way" ref="796586612" role=""/>
+<member type="way" ref="796586619" role=""/>
+<member type="way" ref="796586611" role=""/>
+<member type="way" ref="796586618" role=""/>
+<member type="way" ref="796586617" role=""/>
+<member type="way" ref="796586608" role=""/>
+<member type="way" ref="796586610" role=""/>
+<member type="way" ref="949814053" role=""/>
+<member type="way" ref="949814051" role=""/>
+<member type="way" ref="1343078187" role=""/>
+<member type="way" ref="949814036" role=""/>
+<member type="way" ref="949814035" role=""/>
+<member type="way" ref="949814034" role=""/>
+<member type="way" ref="949814070" role=""/>
+<member type="way" ref="949814071" role=""/>
+<member type="way" ref="949814063" role=""/>
+<member type="way" ref="949814066" role=""/>
+<member type="way" ref="949814061" role=""/>
+<member type="way" ref="949814062" role=""/>
+<tag k="name" v="A7 - Lotul 1 (Dumbrava - Mizil) - under construction"/>
+<tag k="route" v="road"/>
+<tag k="status" v="AC,PTE,AM,builder:Pizzarotti,progress:50.02%/29.02.2024 43%/31.12.2023 4.23%/31.12.2022,financing:PNRR"/>
+<tag k="type" v="construction"/>
+</relation>
+</osm>

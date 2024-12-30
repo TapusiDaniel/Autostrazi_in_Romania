@@ -1,0 +1,57 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448760 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="7397159" visible="true" version="10" changeset="151918498" timestamp="2024-05-27T21:09:50Z" user="melo_1" uid="1281559">
+<member type="way" ref="466927409" role=""/>
+<member type="way" ref="283346348" role=""/>
+<member type="way" ref="283346350" role=""/>
+<member type="way" ref="283346355" role=""/>
+<member type="way" ref="283346354" role=""/>
+<member type="way" ref="1286901577" role=""/>
+<member type="way" ref="1286901578" role=""/>
+<member type="way" ref="283346345" role=""/>
+<member type="way" ref="495193763" role=""/>
+<member type="way" ref="495193762" role=""/>
+<member type="way" ref="283346357" role=""/>
+<member type="way" ref="628930709" role=""/>
+<member type="way" ref="687482884" role=""/>
+<member type="way" ref="636612863" role=""/>
+<member type="way" ref="617294354" role=""/>
+<member type="way" ref="1286901579" role=""/>
+<member type="way" ref="617294353" role=""/>
+<member type="way" ref="1287211490" role=""/>
+<member type="way" ref="617294357" role=""/>
+<member type="way" ref="823333565" role=""/>
+<member type="way" ref="617294363" role=""/>
+<member type="way" ref="617294364" role=""/>
+<member type="way" ref="636612855" role=""/>
+<member type="way" ref="636612848" role=""/>
+<member type="way" ref="1287211488" role=""/>
+<member type="way" ref="617294367" role=""/>
+<member type="way" ref="30971123" role=""/>
+<member type="way" ref="617294366" role=""/>
+<member type="way" ref="1287211489" role=""/>
+<member type="way" ref="617294365" role=""/>
+<member type="way" ref="636612841" role=""/>
+<member type="way" ref="636612835" role=""/>
+<member type="way" ref="617294361" role=""/>
+<member type="way" ref="823333567" role=""/>
+<member type="way" ref="617294360" role=""/>
+<member type="way" ref="1287211491" role=""/>
+<member type="way" ref="617294359" role=""/>
+<member type="way" ref="1286901580" role=""/>
+<member type="way" ref="617294356" role=""/>
+<member type="way" ref="617294355" role=""/>
+<member type="way" ref="687482887" role=""/>
+<member type="way" ref="687482886" role=""/>
+<member type="way" ref="1286901573" role=""/>
+<member type="way" ref="1286901574" role=""/>
+<member type="way" ref="283346358" role=""/>
+<member type="way" ref="1286901575" role=""/>
+<member type="way" ref="1286901576" role=""/>
+<member type="way" ref="283346346" role=""/>
+<member type="way" ref="1286901572" role=""/>
+<member type="way" ref="628930703" role=""/>
+<tag k="name" v="A3- lot Gilau-Nadasel"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

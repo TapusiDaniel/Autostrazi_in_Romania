@@ -1,0 +1,48 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448768 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10126224" visible="true" version="10" changeset="144379344" timestamp="2023-11-23T18:02:39Z" user="DnaX" uid="69259">
+<member type="way" ref="1015665812" role=""/>
+<member type="way" ref="1018512220" role=""/>
+<member type="way" ref="1058344211" role=""/>
+<member type="way" ref="1058344212" role=""/>
+<member type="way" ref="1058344214" role=""/>
+<member type="way" ref="1058344219" role=""/>
+<member type="way" ref="1058344213" role=""/>
+<member type="way" ref="1058344218" role=""/>
+<member type="way" ref="1058344217" role=""/>
+<member type="way" ref="1058344216" role=""/>
+<member type="way" ref="1058344220" role=""/>
+<member type="way" ref="1058344215" role=""/>
+<member type="way" ref="1018512221" role=""/>
+<member type="way" ref="1018512219" role=""/>
+<member type="way" ref="732477564" role=""/>
+<member type="way" ref="732477565" role=""/>
+<member type="way" ref="732477579" role=""/>
+<member type="way" ref="1015665811" role=""/>
+<member type="way" ref="732477567" role=""/>
+<member type="way" ref="732477566" role=""/>
+<member type="way" ref="732477571" role=""/>
+<member type="way" ref="732477570" role=""/>
+<member type="way" ref="732477575" role=""/>
+<member type="way" ref="732477577" role=""/>
+<member type="way" ref="732477578" role=""/>
+<member type="way" ref="732477576" role=""/>
+<member type="way" ref="732477582" role=""/>
+<member type="way" ref="732477574" role=""/>
+<member type="way" ref="732477573" role=""/>
+<member type="way" ref="732477572" role=""/>
+<member type="way" ref="732477569" role=""/>
+<member type="way" ref="732477568" role=""/>
+<member type="way" ref="1018512224" role=""/>
+<member type="way" ref="732477584" role=""/>
+<member type="way" ref="732477580" role=""/>
+<member type="way" ref="255133188" role=""/>
+<member type="way" ref="732477581" role=""/>
+<member type="way" ref="732477583" role=""/>
+<tag k="name" v="DEx Brăila-Galați"/>
+<tag k="ref" v="DEx6"/>
+<tag k="route" v="construction"/>
+<tag k="type" v="route"/>
+<tag k="wikidata" v="Q108875374"/>
+<tag k="wikipedia" v="en:Galați–Brăila Expressway"/>
+</relation>
+</osm>

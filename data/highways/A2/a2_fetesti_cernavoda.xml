@@ -1,0 +1,65 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448777 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10546989" visible="true" version="7" changeset="127354151" timestamp="2022-10-11T11:21:19Z" user="123cargo_user" uid="10938823">
+<member type="way" ref="30814482" role=""/>
+<member type="way" ref="30814484" role=""/>
+<member type="way" ref="30814483" role=""/>
+<member type="way" ref="30814396" role=""/>
+<member type="way" ref="30814437" role=""/>
+<member type="way" ref="229240841" role=""/>
+<member type="way" ref="30813678" role=""/>
+<member type="way" ref="761015188" role=""/>
+<member type="way" ref="229240686" role=""/>
+<member type="way" ref="670446925" role=""/>
+<member type="way" ref="30814459" role=""/>
+<member type="way" ref="685527819" role=""/>
+<member type="way" ref="685527818" role=""/>
+<member type="way" ref="670446924" role=""/>
+<member type="way" ref="254546452" role=""/>
+<member type="way" ref="375587044" role=""/>
+<member type="way" ref="375587041" role=""/>
+<member type="way" ref="298364142" role=""/>
+<member type="way" ref="30860079" role=""/>
+<member type="way" ref="30860077" role=""/>
+<member type="way" ref="298364143" role=""/>
+<member type="way" ref="298364140" role=""/>
+<member type="way" ref="973097423" role=""/>
+<member type="way" ref="973097424" role=""/>
+<member type="way" ref="254546463" role=""/>
+<member type="way" ref="254546467" role=""/>
+<member type="way" ref="30859583" role=""/>
+<member type="way" ref="30859579" role=""/>
+<member type="way" ref="30859641" role=""/>
+<member type="way" ref="30859635" role=""/>
+<member type="way" ref="686333123" role=""/>
+<member type="way" ref="30859541" role=""/>
+<member type="way" ref="30859662" role=""/>
+<member type="way" ref="924417849" role=""/>
+<member type="way" ref="223845533" role=""/>
+<member type="way" ref="223845532" role=""/>
+<member type="way" ref="223845538" role=""/>
+<member type="way" ref="33231963" role=""/>
+<member type="way" ref="132319717" role=""/>
+<member type="way" ref="924417846" role=""/>
+<member type="way" ref="223845535" role=""/>
+<member type="way" ref="229241078" role=""/>
+<member type="way" ref="375587042" role=""/>
+<member type="way" ref="375587043" role=""/>
+<member type="way" ref="30859660" role=""/>
+<member type="way" ref="254546448" role=""/>
+<member type="way" ref="254546457" role=""/>
+<member type="way" ref="973097425" role=""/>
+<member type="way" ref="973097422" role=""/>
+<member type="way" ref="254546444" role=""/>
+<member type="way" ref="30860091" role=""/>
+<member type="way" ref="30860095" role=""/>
+<member type="way" ref="761015189" role=""/>
+<member type="way" ref="924417847" role=""/>
+<member type="way" ref="223845534" role=""/>
+<member type="way" ref="223845537" role=""/>
+<member type="way" ref="223845536" role=""/>
+<member type="way" ref="924853272" role=""/>
+<tag k="name" v="A2- lot Fetesti-Cernavoda"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

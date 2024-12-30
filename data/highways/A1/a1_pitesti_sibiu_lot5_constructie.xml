@@ -1,0 +1,129 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448773 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="7397613" visible="true" version="32" changeset="160326550" timestamp="2024-12-17T23:13:33Z" user="anonymous123123" uid="22067548">
+<!-- <member type="way" ref="1336072894" role=""/> -->
+<!-- <member type="way" ref="1336072895" role=""/> -->
+<!-- <member type="way" ref="1336072893" role=""/> -->
+<!-- <member type="way" ref="1336072892" role=""/> -->
+<!-- <member type="way" ref="1336072896" role=""/> -->
+<!-- <member type="way" ref="1336072891" role=""/> -->
+<member type="way" ref="1336072907" role=""/>
+<member type="way" ref="1336072906" role=""/>
+<member type="way" ref="287141522" role=""/>
+<member type="way" ref="591893886" role=""/>
+<member type="way" ref="591893885" role=""/>
+<member type="way" ref="591893883" role=""/>
+<member type="way" ref="591893881" role=""/>
+<member type="way" ref="591893879" role=""/>
+<member type="way" ref="591893878" role=""/>
+<member type="way" ref="591893876" role=""/>
+<member type="way" ref="591893874" role=""/>
+<member type="way" ref="591893872" role=""/>
+<member type="way" ref="591893870" role=""/>
+<member type="way" ref="591893868" role=""/>
+<member type="way" ref="591893884" role=""/>
+<member type="way" ref="882696068" role=""/>
+<member type="way" ref="882696067" role=""/>
+<member type="way" ref="591893866" role=""/>
+<member type="way" ref="591893864" role=""/>
+<member type="way" ref="591893862" role=""/>
+<member type="way" ref="591893860" role=""/>
+<member type="way" ref="591893857" role=""/>
+<member type="way" ref="591893855" role=""/>
+
+<member type="way" ref="882696050" role=""/>
+<member type="way" ref="882696056" role=""/>
+<member type="way" ref="882696054" role=""/>
+<member type="way" ref="882696057" role=""/>
+<member type="way" ref="882696053" role=""/>
+<member type="way" ref="882696051" role=""/>
+<member type="way" ref="882696058" role=""/>
+<member type="way" ref="882696059" role=""/>
+<member type="way" ref="882696052" role=""/>
+<member type="way" ref="882696066" role=""/>
+<member type="way" ref="882696071" role=""/>
+<member type="way" ref="882696074" role=""/>
+<member type="way" ref="882696073" role=""/>
+<member type="way" ref="882696072" role=""/>
+<!-- <member type="way" ref="882696077" role=""/> -->
+<!-- <member type="way" ref="882696076" role=""/> -->
+<!-- <member type="way" ref="882696075" role=""/> -->
+<!-- <member type="way" ref="882696078" role=""/> -->
+<!-- <member type="way" ref="882696080" role=""/> -->
+<!-- <member type="way" ref="882696079" role=""/> -->
+<!-- <member type="way" ref="882696081" role=""/> -->
+<!-- <member type="way" ref="882696088" role=""/> -->
+<!-- <member type="way" ref="882696089" role=""/> -->
+<!-- <member type="way" ref="882696090" role=""/> -->
+<!-- <member type="way" ref="882681512" role=""/> -->
+<!-- <member type="way" ref="882681514" role=""/> -->
+<!-- <member type="way" ref="882681515" role=""/> -->
+<!-- <member type="way" ref="882681516" role=""/> -->
+<!-- <member type="way" ref="882681517" role=""/> -->
+<!-- <member type="way" ref="882681519" role=""/> -->
+<!-- <member type="way" ref="882681518" role=""/> -->
+<member type="way" ref="680390467" role=""/>
+<member type="way" ref="680390468" role=""/>
+<member type="way" ref="680390469" role=""/>
+<!-- <member type="way" ref="702991132" role=""/> -->
+<!-- <member type="way" ref="680390478" role=""/> -->
+<!-- <member type="way" ref="680390476" role=""/> -->
+<member type="way" ref="255030003" role=""/>
+<!-- <member type="way" ref="255030001" role=""/> -->
+<!-- <member type="way" ref="255030000" role=""/> -->
+<member type="way" ref="255030002" role=""/>
+<!-- <member type="way" ref="255030004" role=""/> -->
+<!-- <member type="way" ref="255029998" role=""/> -->
+<!-- <member type="way" ref="591893853" role=""/> -->
+<!-- <member type="way" ref="591893854" role=""/> -->
+<!-- <member type="way" ref="591893900" role=""/> -->
+<!-- <member type="way" ref="1208904580" role=""/> -->
+<!-- <member type="way" ref="591893901" role=""/> -->
+<!-- <member type="way" ref="1329916974" role=""/> -->
+<!-- <member type="way" ref="591893899" role=""/> -->
+<!-- <member type="way" ref="1343193269" role=""/> -->
+<!-- <member type="way" ref="1343193270" role=""/> -->
+<!-- <member type="way" ref="1343193268" role=""/> -->
+<!-- <member type="way" ref="591893897" role=""/> -->
+<!-- <member type="way" ref="591893898" role=""/> -->
+<!-- <member type="way" ref="882681511" role=""/> -->
+<!-- <member type="way" ref="670718572" role=""/> -->
+<!-- <member type="way" ref="670718570" role=""/> -->
+<!-- <member type="way" ref="670718574" role=""/> -->
+<!-- <member type="way" ref="670718578" role=""/> -->
+<member type="way" ref="591893892" role=""/>
+<member type="way" ref="882696049" role=""/>
+<member type="way" ref="882696048" role=""/>
+<member type="way" ref="591893894" role=""/>
+<member type="way" ref="882696065" role=""/>
+<member type="way" ref="882696063" role=""/>
+<member type="way" ref="882696064" role=""/>
+<member type="way" ref="882696061" role=""/>
+<member type="way" ref="882696060" role=""/>
+<member type="way" ref="882696062" role=""/>
+<member type="way" ref="882696055" role=""/>
+<member type="way" ref="591893893" role=""/>
+<member type="way" ref="591893889" role=""/>
+<member type="way" ref="591893890" role=""/>
+<member type="way" ref="591893882" role=""/>
+<member type="way" ref="591893891" role=""/>
+<member type="way" ref="591893880" role=""/>
+<member type="way" ref="591893877" role=""/>
+<member type="way" ref="591893875" role=""/>
+<member type="way" ref="591893873" role=""/>
+<member type="way" ref="591893871" role=""/>
+<member type="way" ref="591893869" role=""/>
+<member type="way" ref="591893867" role=""/>
+<member type="way" ref="882696069" role=""/>
+<member type="way" ref="882696070" role=""/>
+<member type="way" ref="591893865" role=""/>
+<member type="way" ref="591893863" role=""/>
+<member type="way" ref="591893861" role=""/>
+<member type="way" ref="591893859" role=""/>
+<member type="way" ref="591893858" role=""/>
+<member type="way" ref="591893856" role=""/>
+<member type="way" ref="505929598" role=""/>
+<tag k="name" v="PiSi - Lotul 5"/>
+<tag k="route" v="road"/>
+<tag k="type" v="construction"/>
+</relation>
+</osm>

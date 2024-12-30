@@ -1,0 +1,39 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448774 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541626" visible="true" version="2" changeset="137883335" timestamp="2023-06-28T14:56:53Z" user="Vas111" uid="16951803">
+<member type="way" ref="685108832" role=""/>
+<member type="way" ref="252697183" role=""/>
+<member type="way" ref="388167828" role=""/>
+<member type="way" ref="397667999" role=""/>
+<member type="way" ref="388167826" role=""/>
+<member type="way" ref="388167827" role=""/>
+<member type="way" ref="373602783" role=""/>
+<member type="way" ref="388167825" role=""/>
+<member type="way" ref="373602803" role=""/>
+<member type="way" ref="373602782" role=""/>
+<member type="way" ref="373602787" role=""/>
+<member type="way" ref="373602789" role=""/>
+<member type="way" ref="373602791" role=""/>
+<member type="way" ref="315476233" role=""/>
+<member type="way" ref="438697366" role=""/>
+<member type="way" ref="1185533563" role=""/>
+<member type="way" ref="1185533562" role=""/>
+<member type="way" ref="256145003" role=""/>
+<member type="way" ref="373602785" role=""/>
+<member type="way" ref="1185533565" role=""/>
+<member type="way" ref="1185533564" role=""/>
+<member type="way" ref="315476232" role=""/>
+<member type="way" ref="373602794" role=""/>
+<member type="way" ref="262524229" role=""/>
+<member type="way" ref="540376846" role=""/>
+<member type="way" ref="256144994" role=""/>
+<member type="way" ref="540376845" role=""/>
+<member type="way" ref="256145000" role=""/>
+<member type="way" ref="256144992" role=""/>
+<member type="way" ref="252697315" role=""/>
+<member type="way" ref="540376847" role=""/>
+<member type="way" ref="256144999" role=""/>
+<tag k="name" v="A1 Lugoj-Deva lot 1"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

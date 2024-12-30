@@ -1,0 +1,65 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448782 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9433129" visible="true" version="10" changeset="157595710" timestamp="2024-10-07T19:04:34Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="845190294" role=""/>
+<member type="way" ref="845190293" role=""/>
+<member type="way" ref="845190295" role=""/>
+<member type="way" ref="845196145" role=""/>
+<member type="way" ref="845196142" role=""/>
+<member type="way" ref="845196141" role=""/>
+<member type="way" ref="845196138" role=""/>
+<member type="way" ref="679314909" role=""/>
+<member type="way" ref="845190292" role=""/>
+<member type="way" ref="845190291" role=""/>
+<member type="way" ref="845190290" role=""/>
+<member type="way" ref="845190289" role=""/>
+<member type="way" ref="679314908" role=""/>
+<member type="way" ref="845196139" role=""/>
+<member type="way" ref="845196140" role=""/>
+<member type="way" ref="845196143" role=""/>
+<member type="way" ref="845196144" role=""/>
+<member type="way" ref="254975005" role=""/>
+<member type="way" ref="254975006" role=""/>
+<member type="way" ref="1321934347" role=""/>
+<member type="way" ref="845190288" role=""/>
+<member type="way" ref="254975009" role=""/>
+<member type="way" ref="254975004" role=""/>
+<member type="way" ref="254975008" role=""/>
+<member type="way" ref="254975007" role=""/>
+<member type="way" ref="254975003" role=""/>
+<member type="way" ref="287141519" role=""/>
+<member type="way" ref="287141520" role=""/>
+<member type="way" ref="845195947" role=""/>
+<member type="way" ref="845195946" role=""/>
+<member type="way" ref="845195943" role=""/>
+<member type="way" ref="845195942" role=""/>
+<member type="way" ref="845195937" role=""/>
+<member type="way" ref="845195936" role=""/>
+<member type="way" ref="845195935" role=""/>
+<member type="way" ref="845195934" role=""/>
+<member type="way" ref="845195929" role=""/>
+<member type="way" ref="845195928" role=""/>
+<member type="way" ref="845196151" role=""/>
+<member type="way" ref="845196150" role=""/>
+<member type="way" ref="591893888" role=""/>
+<member type="way" ref="845196147" role=""/>
+<member type="way" ref="845196148" role=""/>
+<member type="way" ref="845196149" role=""/>
+<member type="way" ref="845196146" role=""/>
+<member type="way" ref="591893887" role=""/>
+<member type="way" ref="845196153" role=""/>
+<member type="way" ref="845196152" role=""/>
+<member type="way" ref="845195931" role=""/>
+<member type="way" ref="845195930" role=""/>
+<member type="way" ref="845195933" role=""/>
+<member type="way" ref="845195932" role=""/>
+<member type="way" ref="845195939" role=""/>
+<member type="way" ref="845195938" role=""/>
+<member type="way" ref="845195941" role=""/>
+<member type="way" ref="845195940" role=""/>
+<member type="way" ref="845195944" role=""/>
+<member type="way" ref="845195945" role=""/>
+<tag k="name" v="PiSi - Lotul 4"/>
+<tag k="route" v="road"/>
+<tag k="type" v="construction"/>
+</relation>
+</osm>

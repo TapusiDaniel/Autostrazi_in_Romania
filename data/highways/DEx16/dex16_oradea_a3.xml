@@ -1,0 +1,113 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448783 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9187926" visible="true" version="45" changeset="157273828" timestamp="2024-09-29T23:20:21Z" user="DnaX" uid="69259">
+<member type="way" ref="1264801618" role=""/>
+<member type="way" ref="1264801617" role=""/>
+<member type="way" ref="1220251630" role=""/>
+<member type="way" ref="1220251631" role=""/>
+<member type="way" ref="1220251625" role=""/>
+<member type="way" ref="1220251629" role=""/>
+<member type="way" ref="1220251624" role=""/>
+<member type="way" ref="1220251628" role=""/>
+<member type="way" ref="828978729" role=""/>
+<member type="way" ref="828978728" role=""/>
+<member type="way" ref="828974802" role=""/>
+<member type="way" ref="828978730" role=""/>
+<member type="way" ref="828974807" role=""/>
+<member type="way" ref="828974805" role=""/>
+<member type="way" ref="1264486769" role=""/>
+<member type="way" ref="828970185" role=""/>
+<member type="way" ref="828970189" role=""/>
+<member type="way" ref="828970187" role=""/>
+<member type="way" ref="966663807" role=""/>
+<member type="way" ref="1263700932" role=""/>
+<member type="way" ref="1182396286" role=""/>
+<member type="way" ref="1182396287" role=""/>
+<member type="way" ref="1026529284" role=""/>
+<member type="way" ref="1026529283" role=""/>
+<member type="way" ref="828917411" role=""/>
+<member type="way" ref="828917410" role=""/>
+<member type="way" ref="828878070" role=""/>
+<member type="way" ref="828869853" role=""/>
+<member type="way" ref="828869855" role=""/>
+<member type="way" ref="828869854" role=""/>
+<member type="way" ref="660676003" role=""/>
+<member type="way" ref="660676004" role=""/>
+<member type="way" ref="1067244653" role=""/>
+<member type="way" ref="828932086" role=""/>
+<member type="way" ref="1265074559" role=""/>
+<member type="way" ref="828970192" role=""/>
+<member type="way" ref="828970196" role=""/>
+<member type="way" ref="828970195" role=""/>
+<member type="way" ref="828970194" role=""/>
+<member type="way" ref="828959317" role=""/>
+<member type="way" ref="828959316" role=""/>
+<member type="way" ref="660710985" role=""/>
+<member type="way" ref="828959324" role=""/>
+<member type="way" ref="828959325" role=""/>
+<member type="way" ref="828959318" role=""/>
+<member type="way" ref="828932076" role=""/>
+<member type="way" ref="828932072" role=""/>
+<member type="way" ref="828932078" role=""/>
+<member type="way" ref="828932077" role=""/>
+<member type="way" ref="828932073" role=""/>
+<member type="way" ref="1067244654" role=""/>
+<member type="way" ref="828932079" role=""/>
+<member type="way" ref="828932081" role=""/>
+<member type="way" ref="828932080" role=""/>
+<member type="way" ref="828932074" role=""/>
+<member type="way" ref="828932083" role=""/>
+<member type="way" ref="828932082" role=""/>
+<member type="way" ref="828932087" role=""/>
+<member type="way" ref="828932088" role=""/>
+<member type="way" ref="828932084" role=""/>
+<member type="way" ref="828932085" role=""/>
+<member type="way" ref="828898955" role=""/>
+<member type="way" ref="828898954" role=""/>
+<member type="way" ref="828898953" role=""/>
+<member type="way" ref="1263701868" role=""/>
+<member type="way" ref="660676006" role=""/>
+<member type="way" ref="660676005" role=""/>
+<member type="way" ref="828869851" role=""/>
+<member type="way" ref="828917413" role=""/>
+<member type="way" ref="828917412" role=""/>
+<member type="way" ref="1026529282" role=""/>
+<member type="way" ref="1026529285" role=""/>
+<member type="way" ref="1182396290" role=""/>
+<member type="way" ref="1182396288" role=""/>
+<member type="way" ref="1263700933" role=""/>
+<member type="way" ref="966663808" role=""/>
+<member type="way" ref="828970188" role=""/>
+<member type="way" ref="828970190" role=""/>
+<member type="way" ref="828970186" role=""/>
+<member type="way" ref="1264486768" role=""/>
+<member type="way" ref="828974806" role=""/>
+<member type="way" ref="1265464929" role=""/>
+<member type="way" ref="828974808" role=""/>
+<member type="way" ref="828978731" role=""/>
+<member type="way" ref="828974803" role=""/>
+<member type="way" ref="828978727" role=""/>
+<member type="way" ref="828978726" role=""/>
+<member type="way" ref="660676007" role=""/>
+<member type="way" ref="660708490" role=""/>
+<member type="way" ref="660708486" role=""/>
+<member type="way" ref="660708485" role=""/>
+<member type="way" ref="660708489" role=""/>
+<member type="way" ref="660708491" role=""/>
+<member type="way" ref="660710983" role=""/>
+<member type="way" ref="660710984" role=""/>
+<member type="way" ref="828959313" role=""/>
+<member type="way" ref="660710988" role=""/>
+<member type="way" ref="828959319" role=""/>
+<member type="way" ref="660710986" role=""/>
+<member type="way" ref="1182396289" role=""/>
+<member type="way" ref="828869852" role=""/>
+<tag k="from" v="A3"/>
+<tag k="name" v="Drum express Oradea-A3"/>
+<tag k="network" v="RO"/>
+<tag k="ref" v="DEx16"/>
+<tag k="route" v="road"/>
+<tag k="to" v="Oradea"/>
+<tag k="type" v="route"/>
+<tag k="wikidata" v="Q126179435"/>
+</relation>
+</osm>

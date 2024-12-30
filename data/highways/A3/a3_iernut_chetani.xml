@@ -1,0 +1,47 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448778 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9419553" visible="true" version="42" changeset="145370116" timestamp="2023-12-21T13:02:40Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="843190628" role=""/>
+<member type="way" ref="843190627" role=""/>
+<member type="way" ref="654417539" role=""/>
+<member type="way" ref="837075979" role=""/>
+<member type="way" ref="864986933" role=""/>
+<member type="way" ref="864986934" role=""/>
+<member type="way" ref="1221795412" role=""/>
+<member type="way" ref="1221795413" role=""/>
+<member type="way" ref="369574629" role=""/>
+<member type="way" ref="685919398" role=""/>
+<member type="way" ref="436377556" role=""/>
+<member type="way" ref="283504275" role=""/>
+<member type="way" ref="283504291" role=""/>
+<member type="way" ref="283706664" role=""/>
+<member type="way" ref="283706666" role=""/>
+<member type="way" ref="283706665" role=""/>
+<member type="way" ref="283707077" role=""/>
+<member type="way" ref="283707079" role=""/>
+<member type="way" ref="686168174" role=""/>
+<member type="way" ref="849536136" role=""/>
+<member type="way" ref="283706663" role=""/>
+<member type="way" ref="686168173" role=""/>
+<member type="way" ref="283706667" role=""/>
+<member type="way" ref="330237483" role=""/>
+<member type="way" ref="283504289" role=""/>
+<member type="way" ref="686176661" role=""/>
+<member type="way" ref="686273640" role=""/>
+<member type="way" ref="369574631" role=""/>
+<member type="way" ref="1221795411" role=""/>
+<member type="way" ref="1221795410" role=""/>
+<member type="way" ref="864986936" role=""/>
+<member type="way" ref="864986935" role=""/>
+<member type="way" ref="837075677" role=""/>
+<member type="way" ref="674028568" role=""/>
+<member type="way" ref="674028567" role=""/>
+<member type="way" ref="685904075" role=""/>
+<member type="way" ref="685904076" role=""/>
+<member type="way" ref="685904074" role=""/>
+<member type="way" ref="685900659" role=""/>
+<member type="way" ref="685900658" role=""/>
+<tag k="name" v="A3 Subsectiunea 2A Lot 2(Iernut-Chetani)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

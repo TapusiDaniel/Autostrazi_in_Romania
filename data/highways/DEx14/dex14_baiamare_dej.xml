@@ -1,0 +1,12 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448761 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="3417845" visible="true" version="29" changeset="151964658" timestamp="2024-05-28T21:51:46Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1101563822" role=""/>
+<member type="way" ref="1216288876" role=""/>
+<tag k="name" v="Oar - Satu Mare - Baia Mare Expressway"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
+<tag k="website" v="http://www.cnadnr.ro/proiect.php?id=67"/>
+<tag k="wikidata" v="Q771134"/>
+<tag k="wikipedia" v="ro:Drumul expres Baia Mare-Petea"/>
+</relation>
+</osm>

@@ -1,0 +1,75 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448760 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="3417845" visible="true" version="29" changeset="151964658" timestamp="2024-05-28T21:51:46Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1131150747" role=""/>
+<member type="way" ref="1131150746" role=""/>
+<member type="way" ref="1131150745" role=""/>
+<member type="way" ref="1131150748" role=""/>
+<member type="way" ref="1131150750" role=""/>
+<member type="way" ref="1131150743" role=""/>
+<member type="way" ref="1131150749" role=""/>
+<member type="way" ref="1131150744" role=""/>
+<member type="way" ref="1131150751" role=""/>
+<member type="way" ref="1131150753" role=""/>
+<member type="way" ref="1131150755" role=""/>
+<member type="way" ref="1131150752" role=""/>
+<member type="way" ref="1131150756" role=""/>
+<member type="way" ref="1131150754" role=""/>
+<member type="way" ref="1131146910" role=""/>
+<member type="way" ref="1131146916" role=""/>
+<member type="way" ref="1131146915" role=""/>
+<member type="way" ref="1131146911" role=""/>
+<member type="way" ref="1131146912" role=""/>
+<member type="way" ref="1131146913" role=""/>
+<member type="way" ref="1131146914" role=""/>
+<member type="way" ref="1131146917" role=""/>
+<member type="way" ref="1131146918" role=""/>
+<member type="way" ref="1216288875" role=""/>
+<member type="way" ref="1101563823" role=""/>
+<member type="way" ref="1101563820" role=""/>
+<member type="way" ref="991715887" role=""/>
+<member type="way" ref="762036893" role=""/>
+<member type="way" ref="762036894" role=""/>
+<member type="way" ref="966272348" role=""/>
+<member type="way" ref="966272347" role=""/>
+<member type="way" ref="966272349" role=""/>
+<member type="way" ref="966272345" role=""/>
+<member type="way" ref="1022574318" role=""/>
+<member type="way" ref="1022574319" role=""/>
+<member type="way" ref="1022574342" role=""/>
+<member type="way" ref="1022574341" role=""/>
+<member type="way" ref="732698552" role=""/>
+<member type="way" ref="966272346" role=""/>
+<member type="way" ref="670786647" role=""/>
+<member type="way" ref="677548462" role=""/>
+<member type="way" ref="677548463" role=""/>
+<member type="way" ref="677546694" role=""/>
+<member type="way" ref="677546693" role=""/>
+<member type="way" ref="677546692" role=""/>
+<member type="way" ref="677546691" role=""/>
+<member type="way" ref="741944501" role=""/>
+<member type="way" ref="741944502" role=""/>
+<member type="way" ref="677544896" role=""/>
+<member type="way" ref="677544900" role=""/>
+<member type="way" ref="677544888" role=""/>
+<member type="way" ref="677544891" role=""/>
+<member type="way" ref="677544884" role=""/>
+<member type="way" ref="677544879" role=""/>
+<member type="way" ref="677540374" role=""/>
+<member type="way" ref="677540375" role=""/>
+<member type="way" ref="677540377" role=""/>
+<member type="way" ref="732596300" role=""/>
+<member type="way" ref="662370972" role=""/>
+<member type="way" ref="662134597" role=""/>
+<member type="way" ref="455723164" role=""/>
+<member type="way" ref="1101563825" role=""/>
+<member type="way" ref="1101563818" role=""/>
+<member type="way" ref="455722624" role=""/>
+<member type="way" ref="662370973" role=""/>
+<tag k="name" v="Oar - Satu Mare - Baia Mare Expressway"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
+<tag k="website" v="http://www.cnadnr.ro/proiect.php?id=67"/>
+<tag k="wikidata" v="Q771134"/>
+<tag k="wikipedia" v="ro:Drumul expres Baia Mare-Petea"/>
+</relation>
+</osm>

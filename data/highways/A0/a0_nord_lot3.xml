@@ -1,0 +1,52 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448770 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9664282" visible="true" version="12" changeset="160073015" timestamp="2024-12-08T23:08:55Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="697840872" role=""/>
+<member type="way" ref="1339845942" role=""/>
+<member type="way" ref="697840870" role=""/>
+<member type="way" ref="697840871" role=""/>
+<member type="way" ref="1339845940" role=""/>
+<member type="way" ref="697840869" role=""/>
+<member type="way" ref="697842437" role=""/>
+<member type="way" ref="697842436" role=""/>
+<member type="way" ref="697842435" role=""/>
+<member type="way" ref="1341107425" role=""/>
+<member type="way" ref="697842434" role=""/>
+<member type="way" ref="697840865" role=""/>
+<member type="way" ref="697840864" role=""/>
+<member type="way" ref="697840863" role=""/>
+<member type="way" ref="697840867" role=""/>
+<member type="way" ref="697840866" role=""/>
+<member type="way" ref="697840868" role=""/>
+<member type="way" ref="285752140" role=""/>
+<member type="way" ref="285752138" role=""/>
+<member type="way" ref="285752137" role=""/>
+<member type="way" ref="285752126" role=""/>
+<member type="way" ref="285752132" role=""/>
+<member type="way" ref="285752124" role=""/>
+<member type="way" ref="1339217469" role=""/>
+<member type="way" ref="1339217472" role=""/>
+<member type="way" ref="1339217471" role=""/>
+<member type="way" ref="1339217467" role=""/>
+<member type="way" ref="1339217470" role=""/>
+<member type="way" ref="1339217466" role=""/>
+<member type="way" ref="285752123" role=""/>
+<member type="way" ref="285752127" role=""/>
+<member type="way" ref="1339217468" role=""/>
+<member type="way" ref="285752128" role=""/>
+<member type="way" ref="1339845946" role=""/>
+<member type="way" ref="285752125" role=""/>
+<member type="way" ref="285752129" role=""/>
+<member type="way" ref="285740036" role=""/>
+<member type="way" ref="1164871801" role=""/>
+<member type="way" ref="1164871800" role=""/>
+<member type="way" ref="1164871803" role=""/>
+<member type="way" ref="1164871802" role=""/>
+<member type="way" ref="254738263" role=""/>
+<member type="way" ref="285752139" role=""/>
+<member type="way" ref="285752135" role=""/>
+<member type="way" ref="285752136" role=""/>
+<tag k="name" v="A0 Nord Lot 3"/>
+<tag k="route" v="construction"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

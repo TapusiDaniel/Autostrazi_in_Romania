@@ -1,0 +1,49 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448755 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="3390167" visible="true" version="20" changeset="137883335" timestamp="2023-06-28T14:56:53Z" user="Vas111" uid="16951803">
+<member type="way" ref="255508441" role=""/>
+<member type="way" ref="1185533559" role=""/>
+<member type="way" ref="1185533558" role=""/>
+<member type="way" ref="255508443" role=""/>
+<member type="way" ref="1185533551" role=""/>
+<member type="way" ref="1185533553" role=""/>
+<member type="way" ref="373602808" role=""/>
+<member type="way" ref="1185533547" role=""/>
+<member type="way" ref="1185533546" role=""/>
+<member type="way" ref="1185533541" role=""/>
+<member type="way" ref="1185533540" role=""/>
+<member type="way" ref="373602805" role=""/>
+<member type="way" ref="1185533536" role=""/>
+<member type="way" ref="1185533537" role=""/>
+<member type="way" ref="254558232" role=""/>
+<member type="way" ref="1185533534" role=""/>
+<member type="way" ref="1185533535" role=""/>
+<member type="way" ref="254558233" role=""/>
+<member type="way" ref="953976510" role=""/>
+<member type="way" ref="254564516" role=""/>
+<member type="way" ref="254565686" role=""/>
+<member type="way" ref="254565685" role=""/>
+<member type="way" ref="254559132" role=""/>
+<member type="way" ref="1185533561" role=""/>
+<member type="way" ref="1185533560" role=""/>
+<member type="way" ref="255508451" role=""/>
+<member type="way" ref="1185533554" role=""/>
+<member type="way" ref="1185533555" role=""/>
+<member type="way" ref="255508454" role=""/>
+<member type="way" ref="1185533545" role=""/>
+<member type="way" ref="1185533544" role=""/>
+<member type="way" ref="1185533543" role=""/>
+<member type="way" ref="1185533542" role=""/>
+<member type="way" ref="373602806" role=""/>
+<member type="way" ref="1185533538" role=""/>
+<member type="way" ref="1185533539" role=""/>
+<member type="way" ref="373602807" role=""/>
+<member type="way" ref="373602804" role=""/>
+<tag k="name" v="Autostrada A6"/>
+<tag k="ref" v="A6"/>
+<tag k="route" v="road"/>
+<tag k="surface" v="asphalt"/>
+<tag k="type" v="route"/>
+<tag k="wikidata" v="Q15401612"/>
+<tag k="wikipedia" v="en:A6 motorway (Romania)"/>
+</relation>
+</osm>

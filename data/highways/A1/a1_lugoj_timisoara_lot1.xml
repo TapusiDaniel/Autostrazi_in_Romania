@@ -1,0 +1,25 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448753 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541392" visible="true" version="1" changeset="79196453" timestamp="2020-01-04T18:29:40Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="685000964" role=""/>
+<member type="way" ref="187160585" role=""/>
+<member type="way" ref="187160589" role=""/>
+<member type="way" ref="224984824" role=""/>
+<member type="way" ref="224984821" role=""/>
+<member type="way" ref="224984815" role=""/>
+<member type="way" ref="373602784" role=""/>
+<member type="way" ref="224984814" role=""/>
+<member type="way" ref="373602790" role=""/>
+<member type="way" ref="373602792" role=""/>
+<member type="way" ref="187160587" role=""/>
+<member type="way" ref="373602801" role=""/>
+<member type="way" ref="224984817" role=""/>
+<member type="way" ref="224984820" role=""/>
+<member type="way" ref="685220481" role=""/>
+<member type="way" ref="224984818" role=""/>
+<member type="way" ref="194030734" role=""/>
+<member type="way" ref="224984816" role=""/>
+<tag k="name" v="A1 Timisora-Lugoj (centura Timisoara)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

@@ -1,0 +1,56 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448772 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12018655" visible="true" version="7" changeset="139162842" timestamp="2023-07-29T08:17:22Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1149002464" role=""/>
+<member type="way" ref="1149002463" role=""/>
+<member type="way" ref="1149002462" role=""/>
+<member type="way" ref="1149002471" role=""/>
+<member type="way" ref="1149002475" role=""/>
+<member type="way" ref="924518054" role=""/>
+<member type="way" ref="924518055" role=""/>
+<member type="way" ref="924518056" role=""/>
+<member type="way" ref="924518071" role=""/>
+<member type="way" ref="1149002473" role=""/>
+<member type="way" ref="1149002472" role=""/>
+<member type="way" ref="924518075" role=""/>
+<member type="way" ref="1149002474" role=""/>
+<member type="way" ref="924518073" role=""/>
+<member type="way" ref="924518074" role=""/>
+<member type="way" ref="884856122" role=""/>
+<member type="way" ref="884856123" role=""/>
+<member type="way" ref="884856124" role=""/>
+<member type="way" ref="884856120" role=""/>
+<member type="way" ref="884856121" role=""/>
+<member type="way" ref="884856125" role=""/>
+<member type="way" ref="884856132" role=""/>
+<member type="way" ref="884856131" role=""/>
+<member type="way" ref="884856130" role=""/>
+<member type="way" ref="884856135" role=""/>
+<member type="way" ref="1149002470" role=""/>
+<member type="way" ref="1149002469" role=""/>
+<member type="way" ref="884856136" role=""/>
+<member type="way" ref="884856134" role=""/>
+<member type="way" ref="884856133" role=""/>
+<member type="way" ref="884856138" role=""/>
+<member type="way" ref="884856137" role=""/>
+<member type="way" ref="884856142" role=""/>
+<member type="way" ref="1149002468" role=""/>
+<member type="way" ref="1149002467" role=""/>
+<member type="way" ref="884856127" role=""/>
+<member type="way" ref="884856126" role=""/>
+<member type="way" ref="884856129" role=""/>
+<member type="way" ref="1149002461" role=""/>
+<member type="way" ref="884856128" role=""/>
+<member type="way" ref="1149002466" role=""/>
+<member type="way" ref="1149002465" role=""/>
+<member type="way" ref="884856143" role=""/>
+<member type="way" ref="884856140" role=""/>
+<member type="way" ref="884856139" role=""/>
+<member type="way" ref="924518058" role=""/>
+<member type="way" ref="924518069" role=""/>
+<member type="way" ref="924518059" role=""/>
+<member type="way" ref="924518060" role=""/>
+<tag k="name" v="DEx4 (A3-Tureni)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="construction"/>
+</relation>
+</osm>

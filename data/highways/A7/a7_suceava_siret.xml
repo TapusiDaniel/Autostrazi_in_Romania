@@ -1,0 +1,15 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448761 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="11247322" visible="true" version="13" changeset="156058001" timestamp="2024-09-01T14:46:37Z" user="RobertH-PUM" uid="9320232">
+<member type="relation" ref="17995399" role=""/>
+<member type="relation" ref="17858833" role=""/>
+<member type="way" ref="932101147" role=""/>
+<member type="way" ref="972243429" role=""/>
+<member type="way" ref="1312610668" role=""/>
+<member type="way" ref="1312610670" role=""/>
+<member type="way" ref="1312610669" role=""/>
+<member type="way" ref="1312610667" role=""/>
+<tag k="name" v="Autostrada Pascani-Siret"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

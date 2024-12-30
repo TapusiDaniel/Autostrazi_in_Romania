@@ -1,0 +1,12 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448756 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14664375" visible="true" version="3" changeset="133498472" timestamp="2023-03-09T23:50:05Z" user="avinet_ua" uid="1538111">
+<member type="way" ref="1101559139" role=""/>
+<member type="way" ref="1101559142" role=""/>
+<member type="way" ref="1130934667" role=""/>
+<member type="way" ref="1130934666" role=""/>
+<tag k="name" v="Drum express Satu Mare-Halmeu"/>
+<tag k="name:uk" v="Drum express Satu Mare-Halmeu"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

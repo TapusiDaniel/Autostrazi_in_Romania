@@ -1,0 +1,10 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448758 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17889351" visible="true" version="2" changeset="154600514" timestamp="2024-07-30T11:05:08Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1304626690" role=""/>
+<member type="way" ref="1304626408" role=""/>
+<member type="way" ref="1304626407" role=""/>
+<tag k="name" v="Drum radial 9"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

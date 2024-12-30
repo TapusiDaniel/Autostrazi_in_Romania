@@ -1,0 +1,44 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448764 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541367" visible="true" version="4" changeset="151394611" timestamp="2024-05-16T08:01:35Z" user="PulisakZ" uid="9026132">
+<member type="way" ref="218485044" role=""/>
+<member type="way" ref="218485061" role=""/>
+<member type="way" ref="198278208" role=""/>
+<member type="way" ref="218485066" role=""/>
+<member type="way" ref="198278210" role=""/>
+<member type="way" ref="198278211" role=""/>
+<member type="way" ref="219090289" role=""/>
+<member type="way" ref="197625062" role=""/>
+<member type="way" ref="197652218" role=""/>
+<member type="way" ref="197625058" role=""/>
+<member type="way" ref="199225881" role=""/>
+<member type="way" ref="219090287" role=""/>
+<member type="way" ref="219090283" role=""/>
+<member type="way" ref="219090282" role=""/>
+<member type="way" ref="229004608" role=""/>
+<member type="way" ref="219090288" role=""/>
+<member type="way" ref="229004614" role=""/>
+<member type="way" ref="229004613" role=""/>
+<member type="way" ref="229004607" role=""/>
+<member type="way" ref="229004610" role=""/>
+<member type="way" ref="229004611" role=""/>
+<member type="way" ref="229004612" role=""/>
+<member type="way" ref="229004609" role=""/>
+<member type="way" ref="199225884" role=""/>
+<member type="way" ref="199225882" role=""/>
+<member type="way" ref="199225880" role=""/>
+<member type="way" ref="219090285" role=""/>
+<member type="way" ref="219090286" role=""/>
+<member type="way" ref="1095444175" role=""/>
+<member type="way" ref="1095444176" role=""/>
+<member type="way" ref="197652081" role=""/>
+<member type="way" ref="116458757" role=""/>
+<member type="way" ref="219090284" role=""/>
+<member type="way" ref="1095444173" role=""/>
+<member type="way" ref="1095444174" role=""/>
+<member type="way" ref="219090290" role=""/>
+<member type="way" ref="1283547601" role=""/>
+<tag k="name" v="A1 Deva-Orastie"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

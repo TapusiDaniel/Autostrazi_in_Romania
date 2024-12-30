@@ -1,0 +1,31 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448758 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541481" visible="true" version="1" changeset="79196779" timestamp="2020-01-04T18:49:20Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="760815976" role=""/>
+<member type="way" ref="760815977" role=""/>
+<member type="way" ref="317946583" role=""/>
+<member type="way" ref="90519511" role=""/>
+<member type="way" ref="270739156" role=""/>
+<member type="way" ref="90518465" role=""/>
+<member type="way" ref="90524041" role=""/>
+<member type="way" ref="90523967" role=""/>
+<member type="way" ref="90524421" role=""/>
+<member type="way" ref="90524500" role=""/>
+<member type="way" ref="90516719" role=""/>
+<member type="way" ref="373602799" role=""/>
+<member type="way" ref="642935843" role=""/>
+<member type="way" ref="373602796" role=""/>
+<member type="way" ref="642935845" role=""/>
+<member type="way" ref="642935841" role=""/>
+<member type="way" ref="451544659" role=""/>
+<member type="way" ref="642935844" role=""/>
+<member type="way" ref="373602802" role=""/>
+<member type="way" ref="373602793" role=""/>
+<member type="way" ref="373602800" role=""/>
+<member type="way" ref="450062500" role=""/>
+<member type="way" ref="373602798" role=""/>
+<member type="way" ref="90516720" role=""/>
+<tag k="name" v="A1 Nadlac-Arad lot 1"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

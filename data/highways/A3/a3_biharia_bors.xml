@@ -1,0 +1,42 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448766 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9104961" visible="true" version="13" changeset="149761282" timestamp="2024-04-09T06:30:13Z" user="ITineris" uid="622084">
+<member type="way" ref="568043266" role=""/>
+<member type="way" ref="568043271" role=""/>
+<member type="way" ref="568043273" role=""/>
+<member type="way" ref="568043275" role=""/>
+<member type="way" ref="568043276" role=""/>
+<member type="way" ref="884417267" role=""/>
+<member type="way" ref="568043282" role=""/>
+<member type="way" ref="1271080502" role=""/>
+<member type="way" ref="1271080515" role=""/>
+<member type="way" ref="1271080503" role=""/>
+<member type="way" ref="563867906" role=""/>
+<member type="way" ref="654819203" role=""/>
+<member type="way" ref="568043272" role=""/>
+<member type="way" ref="568043274" role=""/>
+<member type="way" ref="563867892" role=""/>
+<member type="way" ref="568043278" role=""/>
+<member type="way" ref="568043280" role=""/>
+<member type="way" ref="508480305" role=""/>
+<member type="way" ref="1271080517" role=""/>
+<member type="way" ref="1271080510" role=""/>
+<member type="way" ref="1271080509" role=""/>
+<member type="way" ref="563867888" role=""/>
+<member type="way" ref="1268098141" role=""/>
+<member type="way" ref="563867887" role=""/>
+<member type="way" ref="563867890" role=""/>
+<member type="way" ref="568043277" role=""/>
+<member type="way" ref="563867891" role=""/>
+<member type="way" ref="563867886" role=""/>
+<member type="way" ref="563867893" role=""/>
+<member type="way" ref="563867895" role=""/>
+<member type="way" ref="563867898" role=""/>
+<member type="way" ref="568043269" role=""/>
+<member type="way" ref="568043270" role=""/>
+<member type="way" ref="563867884" role=""/>
+<member type="way" ref="563867885" role=""/>
+<tag k="name" v="A3 3C3(Bors-Biharia)"/>
+<tag k="route" v="construction"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

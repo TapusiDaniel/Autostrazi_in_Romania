@@ -1,0 +1,19 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448779 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541472" visible="true" version="2" changeset="79196724" timestamp="2020-01-04T18:46:00Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="684831220" role=""/>
+<member type="way" ref="684831215" role=""/>
+<member type="way" ref="90521081" role=""/>
+<member type="way" ref="684831219" role=""/>
+<member type="way" ref="360063355" role=""/>
+<member type="way" ref="90526489" role=""/>
+<member type="way" ref="90526488" role=""/>
+<member type="way" ref="90522966" role=""/>
+<member type="way" ref="90522040" role=""/>
+<member type="way" ref="90522943" role=""/>
+<member type="way" ref="90522992" role=""/>
+<member type="way" ref="317946584" role=""/>
+<tag k="name" v="A1 Nadlac-Arad lot 2"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

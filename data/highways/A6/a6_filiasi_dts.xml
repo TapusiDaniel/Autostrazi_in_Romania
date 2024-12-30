@@ -1,0 +1,40 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448756 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17901905" visible="true" version="3" changeset="160362735" timestamp="2024-12-18T18:00:25Z" user="ted3sco" uid="2112541">
+<member type="way" ref="1313553571" role=""/>
+<member type="way" ref="1313553572" role=""/>
+<member type="way" ref="1305245795" role=""/>
+<member type="way" ref="1305245790" role=""/>
+<member type="way" ref="1305245791" role=""/>
+<member type="way" ref="1305245796" role=""/>
+<member type="way" ref="1305245788" role=""/>
+<member type="way" ref="1305245792" role=""/>
+<member type="way" ref="1305245789" role=""/>
+<member type="way" ref="1305245797" role=""/>
+<member type="way" ref="1305245786" role=""/>
+<member type="way" ref="1305245785" role=""/>
+<member type="way" ref="1305245787" role=""/>
+<member type="way" ref="1305245784" role=""/>
+<member type="way" ref="1305245782" role=""/>
+<member type="way" ref="1305245781" role=""/>
+<member type="way" ref="1305245780" role=""/>
+<member type="way" ref="1305245777" role=""/>
+<member type="way" ref="1305245779" role=""/>
+<member type="way" ref="1305245778" role=""/>
+<member type="way" ref="1313553570" role=""/>
+<member type="way" ref="1313553569" role=""/>
+<member type="way" ref="1313553568" role=""/>
+<member type="way" ref="1313553567" role=""/>
+<member type="way" ref="1313553566" role=""/>
+<member type="way" ref="1313553565" role=""/>
+<member type="way" ref="1313553564" role=""/>
+<member type="way" ref="1313553563" role=""/>
+<member type="way" ref="1313553562" role=""/>
+<member type="way" ref="1313553560" role=""/>
+<member type="way" ref="1313553561" role=""/>
+<tag k="highway" v="proposed"/>
+<tag k="name" v="Autostrada Filiasi - DTS"/>
+<tag k="proposed" v="motorway"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

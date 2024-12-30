@@ -1,0 +1,96 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448778 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="3380044" visible="true" version="42" changeset="156355710" timestamp="2024-09-08T14:53:28Z" user="rarad74" uid="128281">
+<member type="way" ref="125665692" role=""/>
+<member type="way" ref="118072869" role=""/>
+<member type="way" ref="363705808" role=""/>
+<member type="way" ref="1136812653" role=""/>
+<member type="way" ref="363705806" role=""/>
+<member type="way" ref="118072864" role=""/>
+<member type="way" ref="134682430" role=""/>
+<member type="way" ref="670664442" role=""/>
+<member type="way" ref="671523117" role=""/>
+<member type="way" ref="671523103" role=""/>
+<member type="way" ref="686334648" role=""/>
+<member type="way" ref="670664441" role=""/>
+<member type="way" ref="220536884" role=""/>
+<member type="way" ref="118072874" role=""/>
+<member type="way" ref="671523114" role=""/>
+<member type="way" ref="671523104" role=""/>
+<member type="way" ref="686334649" role=""/>
+<member type="way" ref="118072871" role=""/>
+<member type="way" ref="670664448" role=""/>
+<member type="way" ref="124209768" role=""/>
+<member type="way" ref="363705805" role=""/>
+<member type="way" ref="363705807" role=""/>
+<member type="way" ref="220526002" role=""/>
+<member type="way" ref="124209749" role=""/>
+<member type="way" ref="233881887" role=""/>
+<member type="way" ref="429280756" role=""/>
+<member type="way" ref="429280759" role=""/>
+<member type="way" ref="125665700" role=""/>
+<member type="way" ref="229683218" role=""/>
+<member type="way" ref="229683216" role=""/>
+<member type="way" ref="229683215" role=""/>
+<member type="way" ref="427175786" role=""/>
+<member type="way" ref="1008652212" role=""/>
+<member type="way" ref="229683234" role=""/>
+<member type="way" ref="1139149617" role=""/>
+<member type="way" ref="130544340" role=""/>
+<member type="way" ref="229685770" role=""/>
+<member type="way" ref="298206168" role=""/>
+<member type="way" ref="298206152" role=""/>
+<member type="way" ref="229685771" role=""/>
+<member type="way" ref="225252588" role=""/>
+<member type="way" ref="225252591" role=""/>
+<member type="way" ref="250100438" role=""/>
+<member type="way" ref="250100442" role=""/>
+<member type="way" ref="225252587" role=""/>
+<member type="way" ref="250100441" role=""/>
+<member type="way" ref="587743784" role=""/>
+<member type="way" ref="587743783" role=""/>
+<member type="way" ref="976880184" role=""/>
+<member type="way" ref="976880182" role=""/>
+<member type="way" ref="976880183" role=""/>
+<member type="way" ref="976880180" role=""/>
+<member type="way" ref="712027610" role=""/>
+<member type="way" ref="1192339897" role=""/>
+<member type="way" ref="179416015" role=""/>
+<member type="way" ref="587743782" role=""/>
+<member type="way" ref="587743781" role=""/>
+<member type="way" ref="225252576" role=""/>
+<member type="way" ref="250100439" role=""/>
+<member type="way" ref="230101693" role=""/>
+<member type="way" ref="230101694" role=""/>
+<member type="way" ref="225252574" role=""/>
+<member type="way" ref="225252577" role=""/>
+<member type="way" ref="1314176918" role=""/>
+<member type="way" ref="125665699" role=""/>
+<member type="way" ref="429280765" role=""/>
+<member type="way" ref="1139149618" role=""/>
+<member type="way" ref="429280763" role=""/>
+<member type="way" ref="229682975" role=""/>
+<member type="way" ref="229683321" role=""/>
+<member type="way" ref="229683255" role=""/>
+<member type="way" ref="229683323" role=""/>
+<member type="way" ref="1008652209" role=""/>
+<member type="way" ref="427175787" role=""/>
+<member type="way" ref="298206161" role=""/>
+<member type="way" ref="229685737" role=""/>
+<member type="way" ref="229685735" role=""/>
+<member type="way" ref="298206170" role=""/>
+<member type="way" ref="298206157" role=""/>
+<member type="way" ref="233881881" role=""/>
+<member type="way" ref="225252594" role=""/>
+<member type="way" ref="1015392071" role=""/>
+<member type="way" ref="225252599" role=""/>
+<member type="relation" ref="9337538" role=""/>
+<tag k="name" v="Autostrada A4"/>
+<tag k="network" v="RO:A"/>
+<tag k="ref" v="A4"/>
+<tag k="route" v="road"/>
+<tag k="surface" v="asphalt"/>
+<tag k="type" v="route"/>
+<tag k="wikidata" v="Q789125"/>
+<tag k="wikipedia" v="en:A4 motorway (Romania)"/>
+</relation>
+</osm>

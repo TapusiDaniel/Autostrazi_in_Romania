@@ -1,0 +1,20 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448775 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9664281" visible="true" version="9" changeset="150872952" timestamp="2024-05-04T10:30:16Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="697846691" role=""/>
+<member type="way" ref="697846690" role=""/>
+<member type="way" ref="697846689" role=""/>
+<member type="way" ref="881235905" role=""/>
+<member type="way" ref="881235902" role=""/>
+<member type="way" ref="695644553" role=""/>
+<member type="way" ref="697846686" role=""/>
+<member type="way" ref="697846685" role=""/>
+<member type="way" ref="697846688" role=""/>
+<member type="way" ref="1164409702" role=""/>
+<member type="way" ref="698077959" role=""/>
+<member type="way" ref="881235903" role=""/>
+<member type="way" ref="881235904" role=""/>
+<tag k="name" v="A0 Nord Lot 4"/>
+<tag k="route" v="road"/>
+<tag k="type" v="construction"/>
+</relation>
+</osm>

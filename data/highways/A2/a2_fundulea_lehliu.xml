@@ -1,0 +1,66 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448780 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10546802" visible="true" version="4" changeset="131327990" timestamp="2023-01-16T08:55:29Z" user="andreiSk" uid="4688028">
+<member type="way" ref="760957951" role=""/>
+<member type="way" ref="31014042" role=""/>
+<member type="way" ref="42934945" role=""/>
+<member type="way" ref="760957952" role=""/>
+<member type="way" ref="31014082" role=""/>
+<member type="way" ref="294125257" role=""/>
+<member type="way" ref="1047228936" role=""/>
+<member type="way" ref="223843297" role=""/>
+<member type="way" ref="31013913" role=""/>
+<member type="way" ref="294125264" role=""/>
+<member type="way" ref="294125260" role=""/>
+<member type="way" ref="31013899" role=""/>
+<member type="way" ref="294125258" role=""/>
+<member type="way" ref="294125259" role=""/>
+<member type="way" ref="294125261" role=""/>
+<member type="way" ref="294125263" role=""/>
+<member type="way" ref="294125262" role=""/>
+<member type="way" ref="31013902" role=""/>
+<member type="way" ref="70812330" role=""/>
+<member type="way" ref="74220788" role=""/>
+<member type="way" ref="39976687" role=""/>
+<member type="way" ref="39976689" role=""/>
+<member type="way" ref="74220819" role=""/>
+<member type="way" ref="973029785" role=""/>
+<member type="way" ref="48781307" role=""/>
+<member type="way" ref="39976686" role=""/>
+<member type="way" ref="1132405113" role=""/>
+<member type="way" ref="37375403" role=""/>
+<member type="way" ref="223840559" role=""/>
+<member type="way" ref="74220780" role=""/>
+<member type="way" ref="70812319" role=""/>
+<member type="way" ref="74220767" role=""/>
+<member type="way" ref="74220799" role=""/>
+<member type="way" ref="973029786" role=""/>
+<member type="way" ref="39976688" role=""/>
+<member type="way" ref="39976690" role=""/>
+<member type="way" ref="70812327" role=""/>
+<member type="way" ref="70812325" role=""/>
+<member type="way" ref="24465017" role=""/>
+<member type="way" ref="673585184" role=""/>
+<member type="way" ref="673585185" role=""/>
+<member type="way" ref="74220827" role=""/>
+<member type="way" ref="74220793" role=""/>
+<member type="way" ref="74220815" role=""/>
+<member type="way" ref="224835431" role=""/>
+<member type="way" ref="224835430" role=""/>
+<member type="way" ref="224835429" role=""/>
+<member type="way" ref="224835428" role=""/>
+<member type="way" ref="74220824" role=""/>
+<member type="way" ref="74220794" role=""/>
+<member type="way" ref="74220810" role=""/>
+<member type="way" ref="74220771" role=""/>
+<member type="way" ref="82226701" role=""/>
+<member type="way" ref="82226697" role=""/>
+<member type="way" ref="82226699" role=""/>
+<member type="way" ref="82226696" role=""/>
+<member type="way" ref="75614839" role=""/>
+<member type="way" ref="75614843" role=""/>
+<member type="way" ref="75614842" role=""/>
+<tag k="name" v="A2- lot Fundulea-Lehliu"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

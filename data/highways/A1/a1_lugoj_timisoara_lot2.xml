@@ -1,0 +1,9 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448767 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541397" visible="true" version="2" changeset="79197163" timestamp="2020-01-04T19:10:46Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="252697316" role=""/>
+<member type="way" ref="685000963" role=""/>
+<tag k="name" v="A1 Timisoara-Lugoj lot 2"/>
+<tag k="route" v="road"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>
