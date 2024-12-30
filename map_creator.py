@@ -13,27 +13,76 @@ def create_highways_map(labels_position="below"):
     m = folium.Map(
         location=MAP_CENTER,
         zoom_start=MAP_ZOOM,
-        tiles='',  
-        bgcolor='white',
+        tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        attr='© OpenStreetMap contributors',  # Adăugat atribuirea
         prefer_canvas=True,
-        disable_3d=True,
-        zoom_control=False,  # Disable zoom control for better performance
-        attributionControl=False  # Disable attribution control
+        disable_3d=True
     )
     
-    # Add custom zoom control with fewer zoom levels
-    zoom_script = """
-    <script>
-    map.setMinZoom(6);
-    map.setMaxZoom(13);
-    </script>
+    header_content = """
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .title {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        background: white;
+        padding: 5px 15px;
+        border-radius: 3px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        font-family: Arial, sans-serif;
+    }
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 999;
+        background: white;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .footer a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    </style>
     """
-    m.get_root().html.add_child(folium.Element(zoom_script))
+    m.get_root().header.add_child(folium.Element(header_content))
     
+    # Adaugă titlu și footer
+    page_elements = """
+    <div class="title">Autostrăzi în România</div>
+    <div class="footer">
+        <a href="https://github.com/TapusiDaniel/Autostrazi_in_Romania" target="_blank">GitHub Repository</a>
+    </div>
+    """
+    m.get_root().html.add_child(folium.Element(page_elements))
+
     # Add tile layers
     folium.TileLayer(
         tiles='OpenStreetMap',
         name='OpenStreetMap',
+        attr='© OpenStreetMap contributors',  # Adăugat atribuirea
         control=True,
         overlay=False,
     ).add_to(m)
@@ -41,6 +90,7 @@ def create_highways_map(labels_position="below"):
     folium.TileLayer(
         tiles='CartoDB positron',
         name='CartoDB Light',
+        attr='© CartoDB',  # Adăugat atribuirea
         control=True,
         overlay=False,
     ).add_to(m)
@@ -48,13 +98,13 @@ def create_highways_map(labels_position="below"):
     folium.TileLayer(
         tiles='https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
         name='EGIS',
-        attr='Google Satellite',
+        attr='© Google',  # Adăugat atribuirea
         overlay=False,
     ).add_to(m)
 
     white_map = folium.TileLayer(
         tiles='',
-        attr='Highways.ro',
+        attr='© Highways.ro',  # Adăugat atribuirea
         bgcolor='white',
         name='Hartă Albă',
         overlay=False,
@@ -212,4 +262,40 @@ def create_highways_map(labels_position="below"):
     """
     m.get_root().html.add_child(folium.Element(visibility_script))
     
+# La final, adaugă script pentru loading screen
+    loading_screen = """
+    <div id="loading" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;">
+        <div>
+            <h2>Se încarcă harta...</h2>
+            <div style="width: 150px; height: 4px; background: #eee; border-radius: 2px;">
+                <div id="progress" style="width: 0%; height: 100%; background: #4CAF50; border-radius: 2px; transition: width 0.3s;"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('load', function() {
+        document.getElementById('loading').style.display = 'none';
+    });
+    let progress = 0;
+    const progressBar = document.getElementById('progress');
+    const interval = setInterval(() => {
+        progress += 5;
+        if (progress > 90) clearInterval(interval);
+        progressBar.style.width = progress + '%';
+    }, 100);
+    </script>
+    """
+    m.get_root().html.add_child(folium.Element(loading_screen))
+
     return m

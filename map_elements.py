@@ -9,6 +9,10 @@ import json
 import requests
 import xml.etree.ElementTree as ET
 from folium.features import GeoJson, GeoJsonTooltip
+import tempfile
+import os
+import json
+from folium import GeoJson, GeoJsonTooltip
 
 def add_cities_to_map(m, labels_position="below"):
     """Adaugă orașele pe hartă cu puncte și etichete."""
@@ -439,14 +443,20 @@ def add_xml_section_to_map(m, highway_code, section_name, section_data, default_
 def add_highway_section_to_map(m, highway_code, section_name, section_data, default_color):
     """Adaugă un tronson de autostradă pe hartă."""
     try:
+        # Definește base_url la începutul funcției
+        base_url = "https://raw.githubusercontent.com/TapusiDaniel/Autostrazi_in_Romania/main"
+        
         if 'geojson_file' in section_data:
             print(f"\nProcesez tronsonul {section_name}")
             
-            geojson_path = f"data/highways/{section_data['geojson_file']}"
+            geojson_path = f"{base_url}/data/highways/{section_data['geojson_file']}"
             print(f"Încercăm să citim fișierul: {geojson_path}")
             
-            with open(geojson_path, 'r') as f:
-                geojson_data = json.load(f)
+            # Folosește requests pentru a prelua datele
+            response = requests.get(geojson_path)
+            if response.status_code != 200:
+                raise ValueError(f"Nu s-a putut accesa fișierul: {geojson_path}")
+            geojson_data = response.json()
             
             # Apply more aggressive simplification
             simplified_data = simplify_geojson(geojson_data, tolerance=0.001)
@@ -512,7 +522,32 @@ def add_highway_section_to_map(m, highway_code, section_name, section_data, defa
                     add_section_delimiter(m, section_data['end_point'], formatted_coords)
                 
         elif 'xml_file' in section_data:
-            add_xml_section_to_map(m, highway_code, section_name, section_data, default_color)
+            xml_file_path = section_data['xml_file']
+            if not xml_file_path.startswith('A0/'):
+                xml_file_path = f"A0/{xml_file_path}"
+            xml_url = f"{base_url}/data/highways/{xml_file_path}"
+            print(f"Încercăm să citim fișierul XML: {xml_url}")
+            
+            response = requests.get(xml_url)
+            if response.status_code == 200:
+                # Creăm directorul temporar dacă nu există
+                temp_dir = "temp"
+                if not os.path.exists(temp_dir):
+                    os.makedirs(temp_dir)
+                
+                # Salvăm fișierul temporar în directorul temp
+                temp_path = os.path.join(temp_dir, f"temp_{os.path.basename(xml_file_path)}")
+                with open(temp_path, 'w', encoding='utf-8') as temp_file:
+                    temp_file.write(response.text)
+                
+                try:
+                    add_xml_section_to_map(m, highway_code, section_name, {'xml_file': temp_path}, default_color)
+                finally:
+                    # Ștergem fișierul temporar după ce am terminat
+                    if os.path.exists(temp_path):
+                        os.remove(temp_path)
+            else:
+                raise ValueError(f"Nu s-a putut accesa fișierul XML: {xml_url} (Status code: {response.status_code})")
             
     except Exception as e:
         print(f"Eroare la procesarea tronsonului {section_name}: {str(e)}")
