@@ -1,11 +1,19 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448777 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="18331897" visible="true" version="7" changeset="160652401" timestamp="2024-12-26T20:28:10Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448762 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18331897" visible="true" version="9" changeset="160766179" timestamp="2024-12-29T20:02:12Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1347128669" role=""/>
+<member type="way" ref="1347128672" role=""/>
+<member type="way" ref="1347128671" role=""/>
+<member type="way" ref="1347128670" role=""/>
 <member type="way" ref="1346241295" role=""/>
 <member type="way" ref="1346241297" role=""/>
 <member type="way" ref="1346241296" role=""/>
 <member type="way" ref="1346241299" role=""/>
 <member type="way" ref="1346241298" role=""/>
 <member type="way" ref="1346241294" role=""/>
+<member type="way" ref="1347128676" role=""/>
+<member type="way" ref="1347128674" role=""/>
+<member type="way" ref="1347128678" role=""/>
+<member type="way" ref="1347128680" role=""/>
 <member type="way" ref="1161740130" role=""/>
 <member type="way" ref="1344644974" role=""/>
 <member type="way" ref="1344644972" role=""/>
@@ -36,13 +44,20 @@
 <member type="way" ref="1346241302" role=""/>
 <member type="way" ref="1346241301" role=""/>
 <member type="way" ref="1346241300" role=""/>
+<member type="way" ref="1347128679" role=""/>
+<member type="way" ref="1347128673" role=""/>
+<member type="way" ref="1347128675" role=""/>
+<member type="way" ref="1347128677" role=""/>
 <member type="way" ref="919195629" role=""/>
 <member type="way" ref="1346241305" role=""/>
 <member type="way" ref="1161740129" role=""/>
 <member type="way" ref="1346241304" role=""/>
 <member type="way" ref="1161740131" role=""/>
+<member type="way" ref="1347152714" role=""/>
 <member type="way" ref="1169385711" role=""/>
 <member type="way" ref="1169385709" role=""/>
+<member type="way" ref="1347152723" role=""/>
+<member type="way" ref="1347152725" role=""/>
 <member type="way" ref="1169385707" role=""/>
 <member type="way" ref="1169385706" role=""/>
 <member type="way" ref="1169385708" role=""/>
@@ -74,6 +89,22 @@
 <member type="way" ref="1346445636" role=""/>
 <member type="way" ref="1346445638" role=""/>
 <member type="way" ref="1346445637" role=""/>
+<member type="way" ref="1347152717" role=""/>
+<member type="way" ref="1347152716" role=""/>
+<member type="way" ref="1347152724" role=""/>
+<member type="way" ref="1347152718" role=""/>
+<member type="way" ref="1347152720" role=""/>
+<member type="way" ref="1347152719" role=""/>
+<member type="way" ref="1347152721" role=""/>
+<member type="way" ref="1347152722" role=""/>
+<member type="way" ref="1347152713" role=""/>
+<member type="way" ref="1347152710" role=""/>
+<member type="way" ref="1347152709" role=""/>
+<member type="way" ref="1347152712" role=""/>
+<member type="way" ref="1347152711" role=""/>
+<member type="way" ref="1347152708" role=""/>
+<member type="way" ref="1347152706" role=""/>
+<member type="way" ref="1347152707" role=""/>
 <tag k="name" v="A9 lot 1 Remetea Mare - Jebel"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>
