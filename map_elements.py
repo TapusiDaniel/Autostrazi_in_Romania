@@ -453,7 +453,7 @@ def add_all_highways_to_map(m):
                             tooltip=f"{highway_code} - {section_name}",
                             name=section_name,
                             overlay=True,
-                            class_name=f'highway-section-{highway_code.lower()}'
+                            class_name=f'highway-section-{highway_code.lower().replace(" ", "-")}'
                         ).add_to(status_groups[status])
                         
                         # Add delimiter and logo if specified
@@ -506,7 +506,7 @@ def add_all_highways_to_map(m):
                                     tooltip=f"{highway_code} - {section_name}",
                                     name=section_name,
                                     overlay=True,
-                                    class_name=f'highway-section-{highway_code.lower()}'
+                                    class_name=f'highway-section-{highway_code.lower().replace(" ", "-")}'
                                 ).add_to(status_groups[status])
                         
                         # Add delimiter and logo if specified
@@ -580,7 +580,7 @@ def add_all_highways_to_map(m):
             
             document.querySelectorAll('.leaflet-pane path').forEach(path => {
                 const parentElement = path.closest('.leaflet-interactive');
-                if (parentElement && parentElement.classList.contains(`highway-section-${highwayCode.toLowerCase()}`)) {
+                if (parentElement && parentElement.classList.contains(`highway-section-${highwayCode.toLowerCase().replace(/ /g, '-')}`)) {
                     path.classList.add('highlighted-path');
                 }
             });
