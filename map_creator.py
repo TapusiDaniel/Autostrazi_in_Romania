@@ -159,15 +159,15 @@ def optimize_template(html_content):
     
     # Preload directives
     preload_tags = """
-    <link rel="preload" href="/static/vendors/leaflet.js" as="script">
-    <link rel="preload" href="/static/css/main.css" as="style">
+    <link rel="preload" href="assets/vendors/leaflet.js" as="script">
+    <link rel="preload" href="assets/css/main.css" as="style">
     """
     
     # Async CSS loading
     async_css = """
-    <link rel="stylesheet" href="/static/css/main.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/static/css/main.css"></noscript>
-    <link rel="stylesheet" href="/static/css/async.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+    <link rel="stylesheet" href="assets/css/async.css" media="print" onload="this.media='all'">
     """
     
     # Resource loader script
@@ -176,18 +176,18 @@ def optimize_template(html_content):
         function loadDeferred() {
             const resources = {
                 css: [
-                    '/static/vendors/leaflet.awesome-markers.css',
-                    '/static/vendors/bootstrap-glyphicons.css',
-                    '/static/vendors/fontawesome-all.min.css',
-                    '/static/vendors/bootstrap.min.css',
-                    '/static/vendors/leaflet.css',
-                    '/static/vendors/leaflet.awesome.rotate.min.css'
+                    'assets/vendors/leaflet.awesome-markers.css',
+                    'assets/vendors/bootstrap-glyphicons.css',
+                    'assets/vendors/fontawesome-all.min.css',
+                    'assets/vendors/bootstrap.min.css',
+                    'assets/vendors/leaflet.css',
+                    'assets/vendors/leaflet.awesome.rotate.min.css'
                 ],
                 js: [
-                    '/static/vendors/leaflet.awesome-markers.js',
-                    '/static/vendors/jquery.min.js',
-                    '/static/vendors/bootstrap.bundle.min.js',
-                    '/static/vendors/leaflet.js'
+                    'assets/vendors/leaflet.awesome-markers.js',
+                    'assets/vendors/jquery.min.js',
+                    'assets/vendors/bootstrap.bundle.min.js',
+                    'assets/vendors/leaflet.js'
                 ]
             };
 
@@ -293,7 +293,7 @@ def create_highways_map(labels_position="below"):
         select{padding:6px;border:1px solid #ddd;border-radius:3px;background:#fff}
     </style>
     """
-    
+
     resources = """
     <link rel="stylesheet" href="assets/vendors/leaflet.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap.min.css">
@@ -311,8 +311,8 @@ def create_highways_map(labels_position="below"):
             function loadDeferred() {
                 // Load non-critical CSS
                 const cssFiles = [
-                    '/static/vendors/leaflet.awesome-markers.css',
-                    '/static/vendors/bootstrap-glyphicons.css',
+                    'assets/vendors/leaflet.awesome-markers.css',
+                    'assets/vendors/bootstrap-glyphicons.css',
                     // etc
                 ];
                 
@@ -325,8 +325,8 @@ def create_highways_map(labels_position="below"):
                 
                 // Load non-critical JS
                 const jsFiles = [
-                    '/static/vendors/leaflet.awesome-markers.js',
-                    '/static/vendors/jquery.min.js',
+                    'assets/vendors/leaflet.awesome-markers.js',
+                    'assets/vendors/jquery.min.js',
                     // etc
                 ];
                 
