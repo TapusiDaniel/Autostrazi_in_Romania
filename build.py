@@ -1,3 +1,4 @@
+import gzip
 import os
 import requests
 from cssmin import cssmin
@@ -106,6 +107,25 @@ def optimize_resources():
         print("JavaScript optimization complete")
     except Exception as e:
         print(f"Error minifying JavaScript: {str(e)}")
+    
+    static_files = {
+        'css': ['main.css'],
+        'js': ['deferred.js'],
+        'vendors': [
+            'leaflet.js',
+            'leaflet.css',
+            'bootstrap.min.css',
+            'bootstrap.bundle.min.js'
+        ]
+    }
+    
+    for folder, files in static_files.items():
+        for file in files:
+            input_path = f'static/{folder}/{file}'
+            if os.path.exists(input_path):
+                with open(input_path, 'rb') as f_in:
+                    with gzip.open(f'{input_path}.gz', 'wb', compresslevel=9) as f_out:
+                        shutil.copyfileobj(f_in, f_out)
 
 if __name__ == '__main__':
     optimize_resources()

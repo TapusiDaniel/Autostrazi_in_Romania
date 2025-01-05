@@ -271,29 +271,29 @@ def create_highways_map(labels_position="below"):
         title = 'Harta autostrăzilor din România'
     )
     
-    # Add critical CSS inline
+     # Adăugăm meta tags pentru optimizare
+    meta_tags = """
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hartă interactivă a autostrăzilor din România">
+        <title>Autostrăzi în România</title>
+    """
+    m.get_root().header.add_child(folium.Element(meta_tags))
+    
+    # CSS critic optimizat
     critical_css = """
     <style>
-        body { 
-            margin: 0; 
-            padding: 0; 
-            font-family: Arial, sans-serif;
-        }
-        #map { 
-            position: absolute; 
-            top: 0; 
-            bottom: 0; 
-            width: 100%; 
-            height: 100vh;
-            z-index: 1;
-        }
-        .leaflet-container { 
-            height: 100vh; 
-            width: 100%; 
-            background: white;
-        }
+        body{margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif}
+        #map{position:absolute;top:0;bottom:0;width:100%;height:100vh;z-index:1}
+        .leaflet-container{height:100vh;width:100%;background:#fff}
+        .controls{position:absolute;top:10px;right:10px;background:#fff;padding:8px;border-radius:4px;box-shadow:0 2px 4px rgba(0,0,0,.1);z-index:1000}
+        .stats{position:fixed;bottom:20px;right:20px;background:#fff;padding:10px;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.1);z-index:1000;font-size:14px}
+        .btn{margin:2px 0;padding:6px 12px;border:1px solid #ddd;background:#fff;border-radius:3px;cursor:pointer}
+        .btn:hover{background:#f8f8f8}
+        select{padding:6px;border:1px solid #ddd;border-radius:3px;background:#fff}
     </style>
     """
+    m.get_root().header.add_child(folium.Element(critical_css))
 
     script_loader = """
         <script>
@@ -337,8 +337,41 @@ def create_highways_map(labels_position="below"):
         </script>
     """
     
-    m.get_root().header.add_child(folium.Element(critical_css))
     m.get_root().html.add_child(folium.Element(script_loader))
+
+    # Resource hints pentru optimizare
+    preload_hints = """
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    """
+    m.get_root().header.add_child(folium.Element(preload_hints))
+    
+    # Script de încărcare lazy pentru resurse non-critice
+    lazy_load = """
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function loadStyle(src) {
+            let link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = src;
+            link.media = 'print';
+            link.onload = function() {this.media='all'};
+            document.head.appendChild(link);
+        }
+        
+        // Încărcăm stilurile non-critice după ce pagina s-a încărcat
+        setTimeout(function() {
+            [
+                'https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css',
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css'
+            ].forEach(loadStyle);
+        }, 100);
+    });
+    </script>
+    """
+    m.get_root().header.add_child(folium.Element(lazy_load))
 
     # Adăugăm OpenStreetMap
     folium.TileLayer(
