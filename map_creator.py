@@ -293,7 +293,17 @@ def create_highways_map(labels_position="below"):
         select{padding:6px;border:1px solid #ddd;border-radius:3px;background:#fff}
     </style>
     """
+    
+    resources = """
+    <link rel="stylesheet" href="assets/vendors/leaflet.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/vendors/leaflet.js"></script>
+    <script defer src="assets/js/deferred.js"></script>
+    """
+    
     m.get_root().header.add_child(folium.Element(critical_css))
+    m.get_root().header.add_child(folium.Element(resources))
 
     script_loader = """
         <script>

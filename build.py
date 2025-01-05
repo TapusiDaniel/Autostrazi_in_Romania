@@ -35,7 +35,7 @@ def ensure_vendor_files():
         'bootstrap.bundle.min.js': 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
     }
     
-    vendors_dir = 'static/vendors'
+    vendors_dir = 'assets/vendors'
     os.makedirs(vendors_dir, exist_ok=True)
     
     for filename, url in vendor_files.items():
@@ -49,6 +49,10 @@ def ensure_vendor_files():
 
 def optimize_resources():
     """Combine and minify CSS and JavaScript files."""
+    # Create necessary directories
+    os.makedirs('assets/css', exist_ok=True)
+    os.makedirs('assets/js', exist_ok=True)
+    
     # First ensure we have all vendor files
     ensure_vendor_files()
     
@@ -66,7 +70,7 @@ def optimize_resources():
     combined_css = ''
     for css_file in css_files:
         try:
-            with open(f'static/vendors/{css_file}', 'r', encoding='utf-8') as f:
+            with open(f'assets/vendors/{css_file}', 'r', encoding='utf-8') as f:
                 print(f"Processing CSS: {css_file}")
                 combined_css += f.read() + '\n'
         except Exception as e:
@@ -75,7 +79,7 @@ def optimize_resources():
     # Minify and save CSS
     try:
         minified_css = cssmin(combined_css)
-        with open('static/css/main.css', 'w', encoding='utf-8') as f:
+        with open('assets/css/main.css', 'w', encoding='utf-8') as f:
             f.write(minified_css)
         print("CSS optimization complete")
     except Exception as e:
@@ -93,7 +97,7 @@ def optimize_resources():
     combined_js = ''
     for js_file in js_files:
         try:
-            with open(f'static/vendors/{js_file}', 'r', encoding='utf-8') as f:
+            with open(f'assets/vendors/{js_file}', 'r', encoding='utf-8') as f:
                 print(f"Processing JS: {js_file}")
                 combined_js += f.read() + '\n'
         except Exception as e:
@@ -102,13 +106,14 @@ def optimize_resources():
     # Minify and save JavaScript
     try:
         minified_js = jsmin(combined_js)
-        with open('static/js/deferred.js', 'w', encoding='utf-8') as f:
+        with open('assets/js/deferred.js', 'w', encoding='utf-8') as f:
             f.write(minified_js)
         print("JavaScript optimization complete")
     except Exception as e:
         print(f"Error minifying JavaScript: {str(e)}")
     
-    static_files = {
+    # Compress files
+    files_to_compress = {
         'css': ['main.css'],
         'js': ['deferred.js'],
         'vendors': [
@@ -119,9 +124,9 @@ def optimize_resources():
         ]
     }
     
-    for folder, files in static_files.items():
+    for folder, files in files_to_compress.items():
         for file in files:
-            input_path = f'static/{folder}/{file}'
+            input_path = f'assets/{folder}/{file}'
             if os.path.exists(input_path):
                 with open(input_path, 'rb') as f_in:
                     with gzip.open(f'{input_path}.gz', 'wb', compresslevel=9) as f_out:
