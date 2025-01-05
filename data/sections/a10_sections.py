@@ -5,6 +5,7 @@ A10_SECTIONS = {
         "length": "17 km",
         "constructor": "Asocierea SC Impresa Pizzarotti & C SpA - SC Pomponio SRL.",
         "cost": "108.3M",
+        "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A10/a10_lot1.xml",
         "end_point": [46.123812, 23.618792]  # Alba Iulia
     },
@@ -14,6 +15,7 @@ A10_SECTIONS = {
         "length": "24.25 km",
         "constructor": "Asocierea Aktor SA - SC Euroconstruct Trading SRL.",
         "cost": "109.8M",
+        "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A10/a10_lot2.xml",
         "start_point": [46.123812, 23.618792],  # Alba Iulia
         "end_point": [46.303941, 23.750336]  # Aiud
@@ -24,6 +26,7 @@ A10_SECTIONS = {
         "length": "12.45 km",
         "constructor": "Asocierea Tirrena Scavi SpA, Societa Italiana per Condotte d'Acqua S.p.A.",
         "cost": "84.1M",
+        "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A10/a10_lot3.xml",
         "start_point": [46.303941, 23.750336],  # Aiud
         "end_point": [46.390269, 23.780607]  # Decea
@@ -34,8 +37,8 @@ A10_SECTIONS = {
         "length": "16.30 km",
         "constructor": "Asocierea Porr Construct SRL, Porr Bau GmbH.",
         "cost": "94M",
+        "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A10/a10_lot4.xml",
         "start_point": [46.390269, 23.780607],  # Decea
     },
-
 }

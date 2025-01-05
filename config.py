@@ -38,60 +38,53 @@ CITIES = {
 
 CITY_BOUNDARIES = {
     "București": {
-        "relation_id": "377733",
+        "xml_file": "bucuresti.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Cluj-Napoca": {
-        "relation_id": "3277038",
+        "xml_file": "cluj-napoca.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Timișoara": {
-        "relation_id": "6927733",
+        "xml_file": "timisoara.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Iași": {
-        "relation_id": "1207838",
+        "xml_file": "iasi.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Constanța": {
-        "relation_id": "10487782",
+        "xml_file": "constanta.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Craiova": {
-        "relation_id": "9624263",
+        "xml_file": "craiova.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Brașov": {
-        "relation_id": "10367676",
+        "xml_file": "brasov.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Galați": {
-        "relation_id": "10487103",
+        "xml_file": "galati.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
     },
     "Ploiești": {
-        "relation_id": "10694407",
+        "xml_file": "ploiesti.xml",
         "fill_color": "#E0E0E0",
         "border_color": "#4A4A4A"
-    },
-    "Brăila": {
-        "relation_id": "7509955",
-        "fill_color": "#E0E0E0",
-        "border_color": "#4A4A4A"
-    },
+    }
 }
 
-# Data files
+# Data paths
+DATA_DIR = 'data'
+CITY_BOUNDARIES_DIR = 'data/city_boundaries'
 ROMANIA_GEOJSON_FILE = 'data/romania.geojson'
-A1_XML_FILE = 'a1.xml'
-
-# API URL
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"

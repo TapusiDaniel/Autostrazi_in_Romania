@@ -5,6 +5,7 @@ DEx12_SECTIONS = {
         "length": "17.70 km",
         "constructor": "Tirrena Scavi SpA",
         "cost": "71.6M",
+        "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul1.xml",
         "end_point": [44.344585, 24.049172]  # Robanesti
     },
@@ -14,6 +15,7 @@ DEx12_SECTIONS = {
         "length": "39.85 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL - Consitrans SRL",
         "cost": "290.7M",
+        "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul2.xml",
         "start_point": [44.344585, 24.049172],  # Robanesti
         "end_point": [44.471701, 24.424740]  # Slatina
@@ -24,6 +26,7 @@ DEx12_SECTIONS = {
         "length": "31.75 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
         "cost": "199.8M",
+        "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul3.xml",
         "start_point": [44.471701, 24.424740],  # Slatina
         "end_point": [44.646143, 24.705846]  # Colonesti
@@ -34,16 +37,19 @@ DEx12_SECTIONS = {
         "length": "19 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
         "cost": "123.4M",
+        "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul4.xml",
         "start_point": [44.646143, 24.705846],  # Colonesti
         "end_point": [44.7565707, 24.8599112]  # Albota
     },
     "Albota - A1 (tronsonul 4 - în construcție)": {
         "status": "in_construction",
-        "completion_date": "~ 2025",
+        "progress": "80%",
+        "completion_date": "2025",
         "length": "12.88 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
         "cost": "123.4M",
+        "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul4_inconstructie.xml",
         "start_point": [44.7565707, 24.8599112]  # Albota
     },

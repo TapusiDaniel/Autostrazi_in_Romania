@@ -1,18 +1,53 @@
 import folium
 from config import CITIES
-from utils import get_all_way_coordinates, simplify_geojson
+from utils import get_all_way_coordinates
 from config import CITY_BOUNDARIES
-from map_hover import add_hover_effect
 import xml.etree.ElementTree as ET
 import math
 import json
 import requests
 import xml.etree.ElementTree as ET
-from folium.features import GeoJson, GeoJsonTooltip
-import tempfile
-import os
-import json
-from folium import GeoJson, GeoJsonTooltip
+
+def add_highway_logo(m, coordinates, logo_path, highway_code):
+    """Adaugă logo-ul autostrăzii pe hartă."""
+    if not coordinates:
+        return
+        
+    # Calculăm centrul aproximativ al autostrăzii
+    lats = [coord[0] for coord in coordinates]
+    lons = [coord[1] for coord in coordinates]
+    center_lat = sum(lats) / len(lats)
+    center_lon = sum(lons) / len(lons)
+    
+    # Adăugăm un marker custom cu logo-ul
+    icon_html = f"""
+        <div class="highway-logo" style="
+            background-image: url('{logo_path}');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid #666;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        ">
+        </div>
+    """
+    
+    folium.Marker(
+        [center_lat, center_lon],
+        icon=folium.DivIcon(
+            html=icon_html,
+            icon_size=(30, 30),
+            icon_anchor=(15, 15),
+            class_name=f'highway-logo-marker {highway_code.lower()}'
+        )
+    ).add_to(m)
 
 def add_cities_to_map(m, labels_position="below"):
     """Adaugă orașele pe hartă cu puncte și etichete."""
@@ -72,160 +107,58 @@ def add_cities_to_map(m, labels_position="below"):
                 )
             ).add_to(m)
 
-def sort_boundary_ways(way_refs, nodes_data):
-    """Sort way segments to form a continuous boundary."""
-    if not way_refs:
-        return []
-    
-    # Create a dictionary of ways with their start and end nodes
-    ways = {}
-    for way_ref in way_refs:
-        if way_ref in nodes_data:
-            coords = nodes_data[way_ref]
-            if coords:
-                ways[way_ref] = {
-                    'start': coords[0],
-                    'end': coords[-1],
-                    'coords': coords
-                }
-    
-    # Find the correct order of ways
-    ordered_ways = []
-    current_way = way_refs[0]  # Start with the first way
-    used_ways = set()
-    
-    while len(ordered_ways) < len(way_refs) and current_way in ways:
-        if current_way in used_ways:
-            break
-            
-        ordered_ways.append(current_way)
-        used_ways.add(current_way)
-        current_end = ways[current_way]['end']
-        
-        # Find the next way that starts where this one ends
-        next_way = None
-        for way_ref, way_data in ways.items():
-            if way_ref not in used_ways and way_data['start'] == current_end:
-                next_way = way_ref
-                break
-        
-        if not next_way:
-            # If no way starts at our end, try finding one whose end connects to our end
-            for way_ref, way_data in ways.items():
-                if way_ref not in used_ways and way_data['end'] == current_end:
-                    next_way = way_ref
-                    # Reverse the coordinates of this way
-                    ways[way_ref]['coords'].reverse()
-                    ways[way_ref]['start'], ways[way_ref]['end'] = ways[way_ref]['end'], ways[way_ref]['start']
-                    break
-                    
-        current_way = next_way
-    
-    # Get the ordered coordinates
-    ordered_coords = []
-    for way_ref in ordered_ways:
-        if way_ref in ways:
-            ordered_coords.extend(ways[way_ref]['coords'])
-    
-    return ordered_coords
-
-def fill_city_boundary(m, coordinates, fill_color):
-    """Fill a city boundary with the specified color."""
-    if coordinates and coordinates[0] != coordinates[-1]:
-        coordinates.append(coordinates[0])
-
-    folium.Polygon(
-        locations=coordinates,
-        fill=True,
-        color=fill_color,
-        fillColor=fill_color,
-        fillOpacity=1,
-        weight=0
-    ).add_to(m)
-
 def add_city_boundaries(m):
-    """Add boundaries for all configured cities."""
+    """Add city boundaries using local JSON files."""
+    import json
+    from pathlib import Path
+    
     for city, config in CITY_BOUNDARIES.items():
         try:
-            overpass_url = "https://overpass-api.de/api/interpreter"
-            query = f"""
-            [out:xml][timeout:25];
-            relation({config['relation_id']});
-            way(r:"outer");
-            (._;>;);
-            out body;
-            """
+            json_file = Path('data/city_boundaries') / f"{city}.json"
             
-            response = requests.get(overpass_url, params={'data': query})
-            if response.status_code == 200:
-                root = ET.fromstring(response.text)
+            if not json_file.exists():
+                print(f"Warning: Missing JSON file for {city}: {json_file}")
+                continue
+            
+            # Citim datele JSON
+            with open(json_file, 'r', encoding='utf-8') as f:
+                boundary_data = json.load(f)
+            
+            # Procesăm coordonatele
+            all_coords = []
+            if boundary_data['type'] == 'Feature':
+                if boundary_data['geometry']['type'] == 'Polygon':
+                    # Convertim coordonatele din [lon, lat] în [lat, lon]
+                    all_coords = [[coord[1], coord[0]] for coord in boundary_data['geometry']['coordinates'][0]]
+            
+            if all_coords:
+                # Verificăm dacă primul și ultimul punct sunt identice
+                if all_coords[0] != all_coords[-1]:
+                    all_coords.append(all_coords[0])
                 
-                nodes = {}
-                for node in root.findall('.//node'):
-                    node_id = node.get('id')
-                    lat = float(node.get('lat'))
-                    lon = float(node.get('lon'))
-                    nodes[node_id] = [lat, lon]
+                # Add boundary as GeoJson with specific class
+                boundary = folium.GeoJson(
+                    {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[[coord[1], coord[0]] for coord in all_coords]]
+                        }
+                    },
+                    style_function=lambda x: {
+                        'fillColor': config['fill_color'],
+                        'color': config['border_color'],
+                        'weight': 2,
+                        'fillOpacity': 1,
+                        'opacity': 1
+                    },
+                    name="_",  # Important: use the same name as the outline layer
+                    class_name='city-boundary'
+                )
+                boundary.add_to(m)
                 
-                way_coords = {}
-                way_refs = []
-                for way in root.findall('.//way'):
-                    way_id = way.get('id')
-                    coords = []
-                    for nd in way.findall('nd'):
-                        node_ref = nd.get('ref')
-                        if node_ref in nodes:
-                            coords.append(nodes[node_ref])
-                    if coords:
-                        way_coords[way_id] = coords
-                        way_refs.append(way_id)
-                
-                all_coords = sort_boundary_ways(way_refs, way_coords)
-                
-                if all_coords:
-                    if all_coords[0] != all_coords[-1]:
-                        all_coords.append(all_coords[0])
-                    
-                    # Add boundary as GeoJson with specific class
-                    folium.GeoJson(
-                        {
-                            "type": "Feature",
-                            "geometry": {
-                                "type": "Polygon",
-                                "coordinates": [[[coord[1], coord[0]] for coord in all_coords]]
-                            }
-                        },
-                        style_function=lambda x: {
-                            'fillColor': config['fill_color'],
-                            'color': config['border_color'],
-                            'weight': 2,
-                            'fillOpacity': 1,
-                            'opacity': 1
-                        },
-                        class_name='city-boundary'
-                    ).add_to(m)
-                    
         except Exception as e:
             print(f"Error adding {city} boundary: {str(e)}")
-
-def create_lot_polygon(m, coordinates, lot_info, style=None):
-    """Creează un polygon pentru un lot cu hover effect."""
-    if style is None:
-        style = {
-            'fillColor': '#3388ff',
-            'color': '#3388ff',
-            'weight': 2,
-            'fillOpacity': 0.2
-        }
-    
-    polygon = folium.Polygon(
-        locations=coordinates,
-        popup=folium.Popup(lot_info, max_width=300),
-        **style
-    )
-    
-    polygon.add_to(m)
-    return polygon
 
 def create_section_popup(highway_code, section_name, section_data):
     """Creează popup-ul pentru un tronson de autostradă."""
@@ -243,7 +176,7 @@ def create_section_popup(highway_code, section_name, section_data):
         "tendered": "Lansat spre licitație"
     }
     
-    # Construim conținutul de bază al popup-ului
+    # Partea comună a popup-ului
     popup_content = f"""
     <div style='font-family: Arial; font-size: 12px; padding: 5px;'>
         <b>Autostrada {highway_code}</b><br>
@@ -251,16 +184,49 @@ def create_section_popup(highway_code, section_name, section_data):
         <hr style='margin: 5px 0;'>
         Status: <span style='color: {status_colors[section_data["status"]]};'>
             {status_text[section_data["status"]]}</span><br>
-        Data finalizării: {section_data["completion_date"]}<br>
         Lungime: {section_data["length"]}"""
 
-    # Adăugăm constructor doar dacă există
+    # Adăugăm informații specifice în funcție de status
+    if section_data["status"] == "finished":
+        popup_content += f"""<br>Data finalizării: {section_data.get("completion_date", "N/A")}"""
+    
+    elif section_data["status"] == "in_construction":
+        popup_content += f"""
+        <br>Finalizare: {section_data.get("completion_date", "N/A")}
+        <br>Progres: {section_data.get("progress", "N/A")}"""
+    
+    elif section_data["status"] == "tendered":
+        popup_content += f"""
+        <br>Finalizare licitație: {section_data.get("tender_end_date", "N/A")}
+        <br>Codul SEAP: {section_data.get("seap_code", "N/A")}
+        <br>Stadiul curent: {section_data.get("current_stage", "N/A")}
+        <br>Durata construcției: {section_data.get("construction_duration", "N/A")}"""
+    
+    elif section_data["status"] == "planned":
+        popup_content += f"""
+        <br>Finalizare studiu de fezabilitate: {section_data.get("feasibility_study_date", "N/A")}
+        <br>Data aproximativă a finalizării: {section_data.get("projected_completion_date", "N/A")}"""
+
+    # Adăugăm constructor dacă există
     if "constructor" in section_data:
         popup_content += f"<br>Constructor: {section_data['constructor']}"
+    if "designer" in section_data:
+        popup_content += f"<br>Proiectant: {section_data['designer']}"
 
-    # Adăugăm cost doar dacă există
-    if "cost" in section_data:
-        popup_content += f"<br>Cost: {section_data['cost']} €"
+    # Adăugăm cost sau cost estimat
+    if section_data["status"] in ["finished", "in_construction"]:
+        if "cost" in section_data:
+            popup_content += f"<br>Cost: {section_data['cost']} €"
+    else:
+        if "estimated_cost" in section_data:
+            popup_content += f"<br>Cost estimat: {section_data['estimated_cost']} €"
+
+    # Adăugăm sursa finanțării dacă există
+    if "financing" in section_data:
+        popup_content += f"<br>Finanțare: {section_data['financing']}"
+    
+    if "current_stage" in section_data:
+        popup_content += f"<br>Stadiul curent: {section_data['current_stage']}"
 
     popup_content += "</div>"
     
@@ -331,299 +297,424 @@ def add_section_delimiter(m, coordinates, way_coords):
         opacity=1
     ).add_to(m)
 
-def add_geojson_section_to_map(m, highway_code, section_name, section_data, default_color):
-    """Adaugă un tronson de autostradă din GeoJSON pe hartă."""
-    try:
-        with open(f"data/highways/{section_data['geojson_file']}", 'r') as f:
-            geojson_data = json.load(f)
-        
-        # Extrage coordonatele din GeoJSON
-        coordinates = geojson_data['geometry']['coordinates']
-        
-        status_colors = {
-            "finished": "green",
-            "in_construction": "orange",
-            "planned": "grey",
-            "tendered": "brown"
-        }
+def process_xml_ways(way_ids, ways_data):
+    """Helper function to process and combine XML ways properly"""
+    if not way_ids or not ways_data:
+        return []
 
-        line_color = status_colors.get(section_data["status"], default_color)
+    # Convert IDs to int for consistency
+    way_ids = [int(wid) for wid in way_ids if int(wid) in ways_data]
+    
+    # Create a graph of connected ways
+    connections = {}
+    for wid in way_ids:
+        coords = ways_data[wid]
+        if len(coords) < 2:
+            continue
+        start = tuple(coords[0])
+        end = tuple(coords[-1])
+        connections[wid] = {'coords': coords, 'start': start, 'end': end}
+
+    # Find connected segments and merge them
+    merged_paths = []
+    used_ways = set()
+    
+    def find_connected_ways(current_way, current_path):
+        used_ways.add(current_way)
+        current_end = connections[current_way]['end']
         
-        # Convertim coordonatele în formatul [lat, lon]
-        formatted_coords = [[coord[1], coord[0]] for coord in coordinates]
-        
-        folium.PolyLine(
-            formatted_coords,
-            weight=4,
-            color=line_color,
-            opacity=1,
-            popup=folium.Popup(
-                html=create_section_popup(highway_code, section_name, section_data),
-                max_width=250
-            )
-        ).add_to(m)
-        
-        # Adaugă delimitator la sfârșitul secțiunii dacă există coordonate
-        if 'end_point' in section_data and formatted_coords:
-            add_section_delimiter(m, section_data['end_point'], formatted_coords)
+        # Look for ways that connect to our end point
+        for wid, data in connections.items():
+            if wid not in used_ways:
+                if data['start'] == current_end:
+                    return wid
+                elif data['end'] == current_end:
+                    # Reverse the coordinates if needed
+                    connections[wid]['coords'].reverse()
+                    connections[wid]['start'], connections[wid]['end'] = connections[wid]['end'], connections[wid]['start']
+                    return wid
+        return None
+
+    # Process each unused way as a potential start of a path
+    for start_way in way_ids:
+        if start_way in used_ways:
+            continue
             
-    except Exception as e:
-        print(f"Eroare la procesarea tronsonului {section_name}: {str(e)}")
-
-def add_xml_section_to_map(m, highway_code, section_name, section_data, default_color):
-    """Adaugă un tronson de autostradă din XML pe hartă."""
-    try:
-        tree = ET.parse(f"data/highways/{section_data['xml_file']}")
-        root = tree.getroot()
-        way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
-        ways_data = get_all_way_coordinates(way_ids)
+        current_path = connections[start_way]['coords'][:]
+        current_way = start_way
         
-        status_colors = {
-            "finished": "green",
-            "in_construction": "orange",
-            "planned": "grey",
-            "tendered": "brown"
-        }
+        while True:
+            next_way = find_connected_ways(current_way, current_path)
+            if not next_way:
+                break
+                
+            # Add coordinates without duplicating the connecting point
+            next_coords = connections[next_way]['coords']
+            if current_path[-1] == next_coords[0]:
+                current_path.extend(next_coords[1:])
+            else:
+                current_path.extend(next_coords)
+                
+            current_way = next_way
+            
+        if current_path:  # Adăugăm path-ul doar dacă nu e gol
+            merged_paths.append(current_path)
 
-        line_color = status_colors.get(section_data["status"], default_color)
+    return merged_paths  # Returnăm toate path-urile
+
+def calculate_logo_position(coordinates, logo_position, offset=0.1):
+    """
+    Calculează poziția logo-ului în funcție de coordonatele secțiunii și poziția dorită
+    """
+    if not coordinates:
+        return None
         
-        style_function = lambda x: {
-            'color': line_color,
+    # Calculăm centrul secțiunii
+    lats = [coord[0] for coord in coordinates]
+    lons = [coord[1] for coord in coordinates]
+    center_lat = sum(lats) / len(lats)
+    center_lon = sum(lons) / len(lons)
+    
+    # Ajustăm poziția în funcție de preferință
+    if logo_position == "right":
+        return [center_lat, center_lon + offset]
+    elif logo_position == "left":
+        return [center_lat, center_lon - offset]
+    elif logo_position == "top":
+        return [center_lat + offset, center_lon]
+    elif logo_position == "bottom":
+        return [center_lat - offset, center_lon]
+    else:
+        return [center_lat, center_lon]
+
+def add_section_logo(m, coordinates, logo_data, logo_group, highway_code):
+    """Adaugă logo-ul pentru o secțiune specifică"""
+    if not logo_data or not coordinates:
+        return
+        
+    logo_position = logo_data.get("position", "right")
+    logo_path = logo_data.get("path")
+    
+    if not logo_path:
+        return
+        
+    # Calculăm poziția logo-ului
+    logo_coords = calculate_logo_position(coordinates, logo_position)
+    
+    if not logo_coords:
+        return
+        
+    # Adăugăm logo-ul cu dimensiuni mai mici
+    icon_html = f"""
+        <div class="highway-logo highway-{highway_code.lower()}" 
+             data-highway="{highway_code}"
+             style="
+                background-image: url('{logo_path}');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: white;
+                border: 2px solid #666;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+        "
+        onclick="highlightHighway('{highway_code}')">
+        </div>
+    """
+    
+    folium.Marker(
+        logo_coords,
+        icon=folium.DivIcon(
+            html=icon_html,
+            icon_size=(25, 25),
+            icon_anchor=(12.5, 12.5),
+            class_name=f'highway-logo-marker {highway_code.lower()}'
+        )
+    ).add_to(logo_group)
+
+def add_all_highways_to_map(m):
+    """Optimized version with correct section rendering and hover effects"""
+    from highway_data import HIGHWAYS
+    
+    # Create feature groups for each status
+    status_groups = {
+        "finished": folium.FeatureGroup(name="Finished"),
+        "in_construction": folium.FeatureGroup(name="In Construction"),
+        "tendered": folium.FeatureGroup(name="Tendered"),
+        "planned": folium.FeatureGroup(name="Planned")
+    }
+    
+    # Create corresponding delimiter groups for each status
+    delimiter_groups = {
+        "finished": folium.FeatureGroup(name="_delimiters_finished", show=False),
+        "in_construction": folium.FeatureGroup(name="_delimiters_in_construction", show=False),
+        "tendered": folium.FeatureGroup(name="_delimiters_tendered", show=False),
+        "planned": folium.FeatureGroup(name="_delimiters_planned", show=False)
+    }
+    
+    # Create a feature group for logos
+    logo_group = folium.FeatureGroup(name="_logos", show=True)
+    logo_group.add_to(m)
+    
+    for group in status_groups.values():
+        group.add_to(m)
+    for group in delimiter_groups.values():
+        group.add_to(m)
+    
+    status_colors = {
+        "finished": "green",
+        "in_construction": "orange",
+        "planned": "grey",
+        "tendered": "brown"
+    }
+    
+    def style_function(feature):
+        """Style function that uses the status from feature properties"""
+        status = feature['properties']['status']
+        return {
+            'color': status_colors.get(status, "grey"),
             'weight': 4,
             'opacity': 1
         }
-        
-        highlight_function = lambda x: {
-            'color': line_color,
+
+    def highlight_function(feature):
+        """Highlight function that uses the status from feature properties"""
+        status = feature['properties']['status']
+        return {
+            'color': status_colors.get(status, "grey"),
             'weight': 6,
-            'opacity': 1
+            'opacity': 0.8
         }
-
-        for way_id in way_ids:
-            if int(way_id) in ways_data:
-                geojson_data = {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "LineString",
-                        "coordinates": [[coord[1], coord[0]] for coord in ways_data[int(way_id)]]
-                    },
-                    "properties": {
-                        'name': section_name,
-                        'highway': highway_code,
-                        'status': section_data["status"],
-                        'completion_date': section_data.get("completion_date", "N/A"),
-                        'length': section_data.get("length", "N/A")
-                    }
-                }
-                
-                gjson = GeoJson(
-                    geojson_data,
-                    style_function=style_function,
-                    highlight_function=highlight_function,
-                    tooltip=GeoJsonTooltip(
-                        fields=['name', 'highway', 'status', 'completion_date', 'length'],
-                        aliases=['Tronson:', 'Autostrada:', 'Status:', 'Data finalizării:', 'Lungime:'],
-                        style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;")
-                    )
-                )
-                gjson.add_to(m)
-        
-        # Adaugă delimitator la sfârșitul secțiunii dacă există coordonate
-        all_coords = []
-        for way_id in way_ids:
-            if int(way_id) in ways_data:
-                all_coords.extend(ways_data[int(way_id)])
-                
-        if 'end_point' in section_data and all_coords:
-            add_section_delimiter(m, section_data['end_point'], all_coords)
-            
-    except Exception as e:
-        print(f"Eroare la procesarea tronsonului {section_name}: {str(e)}")
-
-def add_highway_section_to_map(m, highway_code, section_name, section_data, default_color):
-    """Adaugă un tronson de autostradă pe hartă."""
-    try:
-        # Definește base_url la începutul funcției
-        base_url = "https://raw.githubusercontent.com/TapusiDaniel/Autostrazi_in_Romania/main"
-        
-        if 'geojson_file' in section_data:
-            print(f"\nProcesez tronsonul {section_name}")
-            
-            geojson_path = f"{base_url}/data/highways/{section_data['geojson_file']}"
-            print(f"Încercăm să citim fișierul: {geojson_path}")
-            
-            # Folosește requests pentru a prelua datele
-            response = requests.get(geojson_path)
-            if response.status_code != 200:
-                raise ValueError(f"Nu s-a putut accesa fișierul: {geojson_path}")
-            geojson_data = response.json()
-            
-            # Apply more aggressive simplification
-            simplified_data = simplify_geojson(geojson_data, tolerance=0.001)
-            
-            if not 'features' in simplified_data:
-                raise ValueError("Nu există features în GeoJSON")
-            
-            status_colors = {
-                "finished": "green",
-                "in_construction": "orange",
-                "planned": "grey",
-                "tendered": "brown"
-            }
-
-            line_color = status_colors.get(section_data["status"], default_color)
-            
-            # Create a single GeoJSON object for all features
-            combined_features = {
-                'type': 'FeatureCollection',
-                'features': []
-            }
-
-            for feature in simplified_data['features']:
-                if feature['geometry']['type'] == 'LineString':
-                    feature['properties'] = {
-                        'name': section_name,
-                        'highway': highway_code,
-                        'status': section_data["status"],
-                        'completion_date': section_data.get("completion_date", "N/A"),
-                        'length': section_data.get("length", "N/A")
-                    }
-                    combined_features['features'].append(feature)
-
-            if combined_features['features']:
-                gjson = GeoJson(
-                    combined_features,
-                    style_function=lambda x: {
-                        'color': line_color,
-                        'weight': 4,
-                        'opacity': 1
-                    },
-                    highlight_function=lambda x: {
-                        'color': line_color,
-                        'weight': 6,
-                        'opacity': 1
-                    },
-                    tooltip=GeoJsonTooltip(
-                        fields=['name', 'highway', 'status', 'completion_date', 'length'],
-                        aliases=['Tronson:', 'Autostrada:', 'Status:', 'Data finalizării:', 'Lungime:'],
-                        style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;")
-                    ),
-                    embed=False,
-                    overlay=True
-                )
-                gjson.add_to(m)
-                print(f"GeoJson adăugat cu succes pentru {section_name}")
-            
-            if 'end_point' in section_data and combined_features['features']:
-                coordinates = [coord for feature in combined_features['features'] 
-                             for coord in feature['geometry']['coordinates']]
-                formatted_coords = [[coord[1], coord[0]] for coord in coordinates]
-                if formatted_coords:
-                    add_section_delimiter(m, section_data['end_point'], formatted_coords)
-                
-        elif 'xml_file' in section_data:
-            xml_file_path = section_data['xml_file']
-            if not xml_file_path.startswith('A0/'):
-                xml_file_path = f"A0/{xml_file_path}"
-            xml_url = f"{base_url}/data/highways/{xml_file_path}"
-            print(f"Încercăm să citim fișierul XML: {xml_url}")
-            
-            response = requests.get(xml_url)
-            if response.status_code == 200:
-                # Creăm directorul temporar dacă nu există
-                temp_dir = "temp"
-                if not os.path.exists(temp_dir):
-                    os.makedirs(temp_dir)
-                
-                # Salvăm fișierul temporar în directorul temp
-                temp_path = os.path.join(temp_dir, f"temp_{os.path.basename(xml_file_path)}")
-                with open(temp_path, 'w', encoding='utf-8') as temp_file:
-                    temp_file.write(response.text)
-                
-                try:
-                    add_xml_section_to_map(m, highway_code, section_name, {'xml_file': temp_path}, default_color)
-                finally:
-                    # Ștergem fișierul temporar după ce am terminat
-                    if os.path.exists(temp_path):
-                        os.remove(temp_path)
-            else:
-                raise ValueError(f"Nu s-a putut accesa fișierul XML: {xml_url} (Status code: {response.status_code})")
-            
-    except Exception as e:
-        print(f"Eroare la procesarea tronsonului {section_name}: {str(e)}")
-        import traceback
-        traceback.print_exc()
-
-def add_highway_to_map(m, highway_code, highway_data):
-    """Adaugă o autostradă completă pe hartă."""
-    print(f"\nAdaug autostrada {highway_code} pe hartă")
-    sections = highway_data["sections"]
     
-    # Pentru a păstra coordonatele între secțiuni
-    all_coords = []
-    added_delimiters = set()  # Set pentru a ține evidența delimiterilor adăugate
-    
-    for i, (section_name, section_data) in enumerate(sections.items()):
-        print(f"\nProcesez secțiunea {section_name} din {highway_code}")
-        if 'geojson_file' in section_data:
-            print(f"Procesez fișier GeoJSON: {section_data['geojson_file']}")
-        elif 'xml_file' in section_data:
-            print(f"Procesez fișier XML: {section_data['xml_file']}")
+    for highway_code, highway_data in HIGHWAYS.items():
+        for section_name, section_data in highway_data["sections"].items():
             try:
-                tree = ET.parse(f"data/highways/{section_data['xml_file']}")
-                root = tree.getroot()
-                way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
-                ways_data = get_all_way_coordinates(way_ids)
+                status = section_data["status"]
+                if status not in status_groups:
+                    continue
                 
-                # Adăugăm coordonatele secțiunii curente
-                for way_id in way_ids:
-                    if int(way_id) in ways_data:
-                        all_coords.extend(ways_data[int(way_id)])
-            except Exception as e:
-                print(f"Eroare la procesarea XML: {str(e)}")
-                continue
-                
-        add_highway_section_to_map(m, 
-                                highway_code, 
-                                section_name, 
-                                section_data, 
-                                highway_data["color"])
-        
-        # Adaugă delimitări între secțiuni consecutive
-        if i < len(sections) - 1:
-            current_section = section_data
-            next_section = list(sections.values())[i + 1]
-            
-            if ('end_point' in current_section and 
-                'start_point' in next_section and 
-                current_section['end_point'] != next_section['start_point'] and 
-                all_coords):
-                    # Creăm o cheie unică pentru acest delimiter
-                    delimiter_key = f"{current_section['end_point'][0]},{current_section['end_point'][1]}"
-                    if delimiter_key not in added_delimiters:
-                        add_section_delimiter(m, current_section['end_point'], all_coords)
-                        added_delimiters.add(delimiter_key)
-
-def add_all_highways_to_map(feature_group):
-    """Adaugă toate autostrăzile pe hartă."""
-    from highway_data import HIGHWAYS
-    print("\nÎncep adăugarea autostrăzilor...")
-    
-    # Process highways in chunks
-    chunk_size = 5
-    highways_items = list(HIGHWAYS.items())
-    
-    for i in range(0, len(highways_items), chunk_size):
-        chunk = highways_items[i:i + chunk_size]
-        for highway_code, highway_data in chunk:
-            print(f"\nProcesez autostrada {highway_code}")
-            print(f"Secțiuni găsite: {list(highway_data['sections'].keys())}")
-            for section_name, section_data in highway_data['sections'].items():
-                print(f"\nProcesez secțiunea {section_name}")
-                print(f"Date secțiune: {section_data}")
                 if 'geojson_file' in section_data:
-                    print(f"Găsit fișier GeoJSON: {section_data['geojson_file']}")
-            add_highway_to_map(feature_group, highway_code, highway_data)
+                    with open(f"data/highways/{section_data['geojson_file']}", 'r') as f:
+                        geojson_data = json.load(f)
+                    
+                    coordinates = []
+                    if 'features' in geojson_data:
+                        for feature in geojson_data['features']:
+                            if feature['geometry']['type'] == 'LineString':
+                                coordinates.extend(feature['geometry']['coordinates'])
+                    elif 'geometry' in geojson_data:
+                        if geojson_data['geometry']['type'] == 'LineString':
+                            coordinates.extend(geojson_data['geometry']['coordinates'])
+                        elif geojson_data['geometry']['type'] == 'MultiLineString':
+                            for line in geojson_data['geometry']['coordinates']:
+                                coordinates.extend(line)
+                    
+                    if coordinates:
+                        feature = {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": coordinates
+                            },
+                            "properties": {
+                                "name": section_name,
+                                "highway": highway_code,
+                                "status": status,
+                                "completion_date": section_data.get("completion_date", "N/A"),
+                                "length": section_data.get("length", "N/A"),
+                                "constructor": section_data.get("constructor", "N/A"),
+                                "cost": section_data.get("cost", "N/A")
+                            }
+                        }
+                        
+                        folium.GeoJson(
+                            feature,
+                            style_function=style_function,
+                            highlight_function=highlight_function,
+                            popup=folium.Popup(
+                                html=create_section_popup(highway_code, section_name, section_data),
+                                max_width=250
+                            ),
+                            tooltip=f"{highway_code} - {section_name}",
+                            name=section_name,
+                            overlay=True,
+                            class_name=f'highway-section-{highway_code.lower()}'
+                        ).add_to(status_groups[status])
+                        
+                        if 'end_point' in section_data:
+                            formatted_coords = [[coord[1], coord[0]] for coord in coordinates]
+                            add_section_delimiter(delimiter_groups[status], section_data['end_point'], formatted_coords)
+                            
+                        if "logo" in section_data:
+                            add_section_logo(m, [[coord[1], coord[0]] for coord in coordinates], 
+                                           section_data["logo"], logo_group, highway_code)
+                
+                elif 'xml_file' in section_data:
+                    tree = ET.parse(f"data/highways/{section_data['xml_file']}")
+                    root = tree.getroot()
+                    way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
+                    ways_data = get_all_way_coordinates(way_ids)
+                    
+                    if ways_data:
+                        paths = process_xml_ways(way_ids, ways_data)
+                        
+                        for path in paths:
+                            if path:
+                                feature = {
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "LineString",
+                                        "coordinates": [[coord[1], coord[0]] for coord in path]
+                                    },
+                                    "properties": {
+                                        "name": section_name,
+                                        "highway": highway_code,
+                                        "status": status,
+                                        "completion_date": section_data.get("completion_date", "N/A"),
+                                        "length": section_data.get("length", "N/A"),
+                                        "constructor": section_data.get("constructor", "N/A"),
+                                        "cost": section_data.get("cost", "N/A")
+                                    }
+                                }
+                                
+                                folium.GeoJson(
+                                    feature,
+                                    style_function=style_function,
+                                    highlight_function=highlight_function,
+                                    popup=folium.Popup(
+                                        html=create_section_popup(highway_code, section_name, section_data),
+                                        max_width=250
+                                    ),
+                                    tooltip=f"{highway_code} - {section_name}",
+                                    name=section_name,
+                                    overlay=True,
+                                    class_name=f'highway-section-{highway_code.lower()}'
+                                ).add_to(status_groups[status])
+                        
+                        if paths and 'end_point' in section_data:
+                            add_section_delimiter(delimiter_groups[status], section_data['end_point'], paths[-1])
+                            
+                        if paths and "logo" in section_data:
+                            add_section_logo(m, paths[-1], section_data["logo"], logo_group, highway_code)
+                            
+            except Exception as e:
+                print(f"Error processing {highway_code} - {section_name}: {str(e)}")
+                continue
+
+    folium.LayerControl(collapsed=False).add_to(m)
+
+    # Add JavaScript to sync delimiter visibility with section visibility
+    m.get_root().html.add_child(folium.Element("""
+        <style>
+            .leaflet-interactive {
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+            
+            .highway-logo {
+                transition: all 0.3s ease;
+            }
+
+            .highway-logo:hover {
+                transform: scale(1.2);
+                box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+            }
+
+            .highway-logo-marker {
+                z-index: 1000 !important;
+            }
+            
+            .leaflet-pane .leaflet-overlay-pane div[class*="highway-logo"] {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+            
+            .highlighted-path {
+                animation: pulse 1.5s infinite;
+                stroke-width: 6px !important;
+            }
+            
+            @keyframes pulse {
+                0% { opacity: 1; }
+                50% { opacity: 0.6; }
+                100% { opacity: 1; }
+            }
+        </style>
+        <script>
+        let activeHighway = null;
+        
+        function highlightHighway(highwayCode) {
+            console.log('Highlighting highway:', highwayCode);  // Pentru debugging
+            
+            // Resetăm highlight-ul anterior
+            document.querySelectorAll('.highlighted-path').forEach(path => {
+                path.classList.remove('highlighted-path');
+            });
+            
+            // Dacă apăsăm pe același logo, doar eliminăm highlight-ul
+            if (activeHighway === highwayCode) {
+                activeHighway = null;
+                return;
+            }
+            
+            // Setăm noul highway activ și adăugăm highlight
+            activeHighway = highwayCode;
+            
+            // Selectăm toate path-urile pentru această autostradă
+            document.querySelectorAll('.leaflet-pane path').forEach(path => {
+                const parentElement = path.closest('.leaflet-interactive');
+                if (parentElement && parentElement.classList.contains(`highway-section-${highwayCode.toLowerCase()}`)) {
+                    path.classList.add('highlighted-path');
+                }
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to sync delimiter visibility with section visibility
+            function syncDelimiterVisibility() {
+                const layerControls = document.querySelectorAll('.leaflet-control-layers-overlays input[type="checkbox"]');
+                layerControls.forEach(control => {
+                    const labelText = control.nextElementSibling.textContent.trim();
+                    if (labelText === '_logos') {
+                        control.checked = true;
+                        if (control.onchange) control.onchange();
+                        control.parentElement.style.display = 'none';
+                    }
+                    const delimiterControl = Array.from(layerControls).find(c => 
+                        c.nextElementSibling.textContent.trim() === `_delimiters_${labelText.toLowerCase().replace(' ', '_')}`
+                    );
+                    if (delimiterControl) {
+                        delimiterControl.checked = control.checked;
+                        if (delimiterControl.onchange) delimiterControl.onchange();
+                    }
+                });
+            }
+
+            const sectionControls = document.querySelectorAll('.leaflet-control-layers-overlays input[type="checkbox"]');
+            sectionControls.forEach(control => {
+                control.addEventListener('change', syncDelimiterVisibility);
+            });
+
+            syncDelimiterVisibility();
+            
+            const logoControl = Array.from(sectionControls).find(c => 
+                c.nextElementSibling.textContent.trim() === '_logos'
+            );
+            if (logoControl) {
+                logoControl.parentElement.style.display = 'none';
+            }
+        });
+        </script>
+    """))
+
+    print("Finished adding highways to map")
 
 def add_romania_outline_to_map(feature_group, romania_outline):
     """Adaugă conturul României pe hartă."""
@@ -649,3 +740,26 @@ def add_base_layer(m):
         overlay=True,
         control=False,
     ).add_to(m)
+
+def calculate_highway_totals(highways_data):
+    """Calculate totals for each status."""
+    totals = {
+        "finished": 0,
+        "in_construction": 0,
+        "planned": 0,
+        "tendered": 0,
+        "total": 0
+    }
+    
+    for highway in highways_data.values():
+        for section in highway['sections'].values():
+            if 'length' in section:
+                try:
+                    length = float(section['length'].replace(' km', ''))
+                    status = section['status']
+                    totals[status] += length
+                    totals['total'] += length
+                except (ValueError, KeyError):
+                    continue
+    
+    return totals

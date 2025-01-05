@@ -1,0 +1,30 @@
+# custom_template.html
+<!DOCTYPE html>
+<html>
+<head>
+    {%macro header()%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" as="style">
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Add critical styles here */
+        .leaflet-container {
+            height: 100vh;
+            width: 100%;
+            background: white;
+        }
+    </style>
+    {{this.header.render()}}
+    {%endmacro%}
+    {{header()}}
+</head>
+<body>
+    {{this.html.render()}}
+    {{this.script.render()}}
+</body>
+</html>

@@ -32,13 +32,15 @@ HIGHWAYS = {
         "name": "Centura București",
         "sections": A0_SECTIONS,
         "color": "green",
-        "total_length": "100.7 km"
+        "total_length": "100.7 km",
+        "logo": "data/photos/A0-RO.png"
     },
     "A1": {
         "name": "Autostrada București - Nădlac",
         "sections": A1_SECTIONS,
         "color": "green",
-        "total_length": "578.48 km"
+        "total_length": "578.48 km",
+        "logo": "data/photos/A1-RO.png"
     },
     "A2": {
         "name": "Autostrada Soarelui",

@@ -1,116 +1,371 @@
 import folium
 import json
 from config import MAP_CENTER, MAP_ZOOM, ROMANIA_GEOJSON_FILE, CITIES, CITY_BOUNDARIES
+from highway_data import HIGHWAYS
 from utils import get_romania_outline
 from map_elements import (add_cities_to_map, 
                          add_all_highways_to_map, 
                          add_romania_outline_to_map,
                          add_base_layer,
-                         add_city_boundaries)
-from map_hover import add_hover_effect
+                         add_city_boundaries,
+                         calculate_highway_totals)
+
+def add_totals_table(m, highways_data):
+    """Add the totals table to the map."""
+    totals = calculate_highway_totals(highways_data)
+    
+    # Create the table HTML
+    table_html = f"""
+    <div id="totals-table" class="totals-table">
+        <table>
+            <tr class="total-row">
+                <td>Total:</td>
+                <td>{totals['total']:.1f} km</td>
+            </tr>
+            <tr class="status-row finished">
+                <td>Finalizat:</td>
+                <td>{totals['finished']:.1f} km</td>
+            </tr>
+            <tr class="status-row in-construction">
+                <td>În construcție:</td>
+                <td>{totals['in_construction']:.1f} km</td>
+            </tr>
+            <tr class="status-row planned">
+                <td>Planificat:</td>
+                <td>{totals['planned']:.1f} km</td>
+            </tr>
+            <tr class="status-row tendered">
+                <td>Licitat:</td>
+                <td>{totals['tendered']:.1f} km</td>
+            </tr>
+        </table>
+    </div>
+    """
+    
+    # Add CSS
+    css = """
+    <style>
+    .totals-table {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+    
+    .totals-table table {
+        border-collapse: collapse;
+    }
+    
+    .totals-table td {
+        padding: 3px 10px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .totals-table tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .total-row {
+        font-weight: bold;
+    }
+    
+    .status-row.finished td:first-child {
+        color: green;
+    }
+    
+    .status-row.in-construction td:first-child {
+        color: orange;
+    }
+    
+    .status-row.planned td:first-child {
+        color: grey;
+    }
+    
+    .status-row.tendered td:first-child {
+        color: brown;
+    }
+    </style>
+    """
+    
+    # Add elements to map
+    m.get_root().html.add_child(folium.Element(css))
+    m.get_root().html.add_child(folium.Element(table_html))
+
+def optimize_template(html_content):
+    """Optimize the Folium-generated HTML template."""
+    
+    # Curățăm title-ul întâi
+    html_content = html_content.replace(
+        '/* Essential styles for initial render */ .map-container { height: 100vh; width: 100%; } .loading { position: fixed; /* etc */ }',
+        'Harta autostrăzilor din România'  # sau alt titlu dorit
+    )
+    
+    # Split the content to insert our optimizations
+    head_end = html_content.find('</head>')
+    body_end = html_content.find('</body>')
+    
+    if head_end == -1 or body_end == -1:
+        return html_content
+        
+    # Critical CSS that should be inlined
+    critical_css = """
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif;
+        }
+        #map { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            width: 100%; 
+            height: 100vh;
+            z-index: 1;
+        }
+        .leaflet-container { 
+            height: 100vh; 
+            width: 100%; 
+            background: white;
+        }
+        .map-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+            z-index: 1000;
+        }
+        .totals-table {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+    </style>
+    """
+    
+    # Preload directives
+    preload_tags = """
+    <link rel="preload" href="/static/vendors/leaflet.js" as="script">
+    <link rel="preload" href="/static/css/main.css" as="style">
+    """
+    
+    # Async CSS loading
+    async_css = """
+    <link rel="stylesheet" href="/static/css/main.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/static/css/main.css"></noscript>
+    <link rel="stylesheet" href="/static/css/async.css" media="print" onload="this.media='all'">
+    """
+    
+    # Resource loader script
+    resource_loader = """
+    <script>
+        function loadDeferred() {
+            const resources = {
+                css: [
+                    '/static/vendors/leaflet.awesome-markers.css',
+                    '/static/vendors/bootstrap-glyphicons.css',
+                    '/static/vendors/fontawesome-all.min.css',
+                    '/static/vendors/bootstrap.min.css',
+                    '/static/vendors/leaflet.css',
+                    '/static/vendors/leaflet.awesome.rotate.min.css'
+                ],
+                js: [
+                    '/static/vendors/leaflet.awesome-markers.js',
+                    '/static/vendors/jquery.min.js',
+                    '/static/vendors/bootstrap.bundle.min.js',
+                    '/static/vendors/leaflet.js'
+                ]
+            };
+
+            // Load CSS files
+            resources.css.forEach(file => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = file;
+                document.head.appendChild(link);
+            });
+
+            // Load JS files
+            let loadedScripts = 0;
+            resources.js.forEach(file => {
+                const script = document.createElement('script');
+                script.src = file;
+                script.async = true;
+                script.onload = () => {
+                    loadedScripts++;
+                    if (loadedScripts === resources.js.length) {
+                        // Initialize any deferred functionality
+                        if (window.initMap) window.initMap();
+                    }
+                };
+                document.body.appendChild(script);
+            });
+        }
+
+        // Load deferred resources after initial render
+        if (document.readyState === 'complete') {
+            loadDeferred();
+        } else {
+            window.addEventListener('load', loadDeferred);
+        }
+    </script>
+    """
+    
+    # Inject our optimizations
+    optimized_html = (
+        html_content[:head_end] +
+        critical_css +
+        preload_tags +
+        async_css +
+        html_content[head_end:body_end] +
+        resource_loader +
+        html_content[body_end:]
+    )
+    
+    # Remove any blocking scripts and CSS from the original template
+    blocking_resources = [
+        'leaflet.awesome-markers.js',
+        'jquery-3.7.1.min.js',
+        'bootstrap.bundle.min.js',
+        'leaflet.js',
+        'leaflet.awesome-markers.css',
+        'bootstrap-glyphicons.css',
+        'fontawesome-free',
+        'bootstrap.min.css',
+        'leaflet.css',
+        'leaflet.awesome.rotate.min.css'
+    ]
+    
+    for resource in blocking_resources:
+        optimized_html = optimized_html.replace(
+            f'<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/{resource}"',
+            f'<!-- Deferred: {resource} -->'
+        )
+        optimized_html = optimized_html.replace(
+            f'<script src="https://cdn.jsdelivr.net/npm/{resource}"',
+            f'<!-- Deferred: {resource} -->'
+        )
+    
+    return optimized_html
 
 def create_highways_map(labels_position="below"):
     m = folium.Map(
         location=MAP_CENTER,
         zoom_start=MAP_ZOOM,
-        tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        attr='© OpenStreetMap contributors',  # Adăugat atribuirea
-        prefer_canvas=True,
-        disable_3d=True
+        tiles='',  # Începem cu tiles gol pentru harta albă
+        bgcolor='white',  # Fundal alb implicit
+        title = 'Harta autostrăzilor din România'
     )
     
-    header_content = """
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    # Add critical CSS inline
+    critical_css = """
     <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    .title {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 999;
-        background: white;
-        padding: 5px 15px;
-        border-radius: 3px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        font-family: Arial, sans-serif;
-    }
-    .footer {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        z-index: 999;
-        background: white;
-        padding: 3px 8px;
-        border-radius: 3px;
-        font-size: 12px;
-        font-family: Arial, sans-serif;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-    .footer a {
-        color: #0066cc;
-        text-decoration: none;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif;
+        }
+        #map { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            width: 100%; 
+            height: 100vh;
+            z-index: 1;
+        }
+        .leaflet-container { 
+            height: 100vh; 
+            width: 100%; 
+            background: white;
+        }
     </style>
     """
-    m.get_root().header.add_child(folium.Element(header_content))
-    
-    # Adaugă titlu și footer
-    page_elements = """
-    <div class="title">Autostrăzi în România</div>
-    <div class="footer">
-        <a href="https://github.com/TapusiDaniel/Autostrazi_in_Romania" target="_blank">GitHub Repository</a>
-    </div>
-    """
-    m.get_root().html.add_child(folium.Element(page_elements))
 
-    # Add tile layers
+    script_loader = """
+        <script>
+            // Defer non-critical resource loading
+            function loadDeferred() {
+                // Load non-critical CSS
+                const cssFiles = [
+                    '/static/vendors/leaflet.awesome-markers.css',
+                    '/static/vendors/bootstrap-glyphicons.css',
+                    // etc
+                ];
+                
+                cssFiles.forEach(file => {
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = file;
+                    document.head.appendChild(link);
+                });
+                
+                // Load non-critical JS
+                const jsFiles = [
+                    '/static/vendors/leaflet.awesome-markers.js',
+                    '/static/vendors/jquery.min.js',
+                    // etc
+                ];
+                
+                jsFiles.forEach(file => {
+                    const script = document.createElement('script');
+                    script.src = file;
+                    script.async = true;
+                    document.body.appendChild(script);
+                });
+            }
+            
+            // Load deferred resources after initial render
+            if (document.readyState === 'complete') {
+                loadDeferred();
+            } else {
+                window.addEventListener('load', loadDeferred);
+            }
+        </script>
+    """
+    
+    m.get_root().header.add_child(folium.Element(critical_css))
+    m.get_root().html.add_child(folium.Element(script_loader))
+
+    # Adăugăm OpenStreetMap
     folium.TileLayer(
         tiles='OpenStreetMap',
         name='OpenStreetMap',
-        attr='© OpenStreetMap contributors',  # Adăugat atribuirea
         control=True,
         overlay=False,
     ).add_to(m)
     
-    folium.TileLayer(
-        tiles='CartoDB positron',
-        name='CartoDB Light',
-        attr='© CartoDB',  # Adăugat atribuirea
-        control=True,
-        overlay=False,
-    ).add_to(m)
-    
+    # Adăugăm EGIS (satellite)
     folium.TileLayer(
         tiles='https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
         name='EGIS',
-        attr='© Google',  # Adăugat atribuirea
+        attr='Google Satellite',
         overlay=False,
     ).add_to(m)
 
+    # Adăugăm harta albă ca tile layer de bază
     white_map = folium.TileLayer(
         tiles='',
-        attr='© Highways.ro',  # Adăugat atribuirea
+        attr='Highways.ro',
         bgcolor='white',
         name='Hartă Albă',
         overlay=False,
     ).add_to(m)
     
-    # Add Romania outline
+    # Adăugăm conturul României (vizibil doar pe harta albă)
     with open(ROMANIA_GEOJSON_FILE, 'r', encoding='utf-8') as f:
         romania_geojson = json.load(f)
     romania_outline = get_romania_outline(romania_geojson)
@@ -130,12 +385,12 @@ def create_highways_map(labels_position="below"):
     outline.add_to(m)
     add_city_boundaries(m)
     
-    # Add city labels
+    # Adăugăm numele orașelor (pentru harta albă și EGIS)
     for city, coords in CITIES.items():
         if labels_position == "below":
             icon_anchor = (0, -10)
             padding_top = "8px"
-        else:
+        else:  # "above"
             icon_anchor = (0, 20)
             padding_top = "-18px"
             
@@ -152,11 +407,11 @@ def create_highways_map(labels_position="below"):
         )
         marker.add_to(m)
     
-    # Add city markers
+    # Adăugăm punctele roșii pentru orașe (vizibile pe toate hărțile)
     for city, coords in CITIES.items():
-        if city not in CITY_BOUNDARIES:
-            fill_color = "#E0E0E0"
-            border_color = "#4A4A4A"
+        if city not in CITY_BOUNDARIES:  # Adăugăm puncte doar pentru orașele fără boundary
+            fill_color = "#E0E0E0"  # culoare implicită pentru fill
+            border_color = "#4A4A4A"  # culoare implicită pentru border
             
             folium.CircleMarker(
                 coords,
@@ -168,134 +423,438 @@ def create_highways_map(labels_position="below"):
                 weight=1,
                 name="_"
             ).add_to(m)
+    
+    # Adăugăm autostrăzile (vizibile pe toate hărțile)
+    add_all_highways_to_map(m)
+    
+    # Adăugăm JavaScript pentru a gestiona elementele hărții albe
+    script = """
+    <style>
+    .minimize-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        z-index: 1001;
+    }
 
-    # Create a FeatureGroup for highways
-    highways_group = folium.FeatureGroup(name="Highways")
-    add_all_highways_to_map(highways_group)
-    highways_group.add_to(m)
-    
-    # Add hover effect
-    add_hover_effect(m, highways_group)
-    
-    # Add layer control
-    folium.LayerControl(position='topright').add_to(m)
-    
-    # Add loading indicator
-    loading_script = """
-    <script>
-    var loadingControl = L.control({position: 'topright'});
-    loadingControl.onAdd = function (map) {
-        var div = L.DomUtil.create('div', 'loading-indicator');
-        div.innerHTML = 'Se încarcă...';
-        div.style.display = 'none';
-        div.style.padding = '5px';
-        div.style.background = 'white';
-        div.style.border = '1px solid #ccc';
-        return div;
-    };
-    loadingControl.addTo(map);
-    
-    map.on('layeradd', function(e) {
-        document.querySelector('.loading-indicator').style.display = 'block';
-    });
-    map.on('layerremove', function(e) {
-        document.querySelector('.loading-indicator').style.display = 'none';
-    });
-    </script>
-    """
-    m.get_root().html.add_child(folium.Element(loading_script))
-    
-    # Add visibility control script
-    visibility_script = """
+    .minimize-button:hover {
+        background: #f0f0f0;
+    }
+
+    .map-controls.minimized .map-button-group {
+        display: none;
+    }
+
+    .map-controls.minimized {
+        background: transparent;  /* Make background transparent */
+        box-shadow: none;  /* Remove shadow */
+        width: 20px;  /* Match button width */
+        height: 20px;  /* Match button height */
+        padding: 0;  /* Remove padding */
+    }
+
+    .map-controls {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+        z-index: 1000;
+    }
+
+    .map-button {
+        display: block;
+        margin: 5px 0;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        background: #fff;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 150px;
+        text-align: left;
+    }
+
+    .map-button:hover {
+        background: #f0f0f0;
+    }
+
+    .map-button.active {
+        background: #4a90e2;
+        color: white;
+    }
+
+    .map-button-group {
+        margin-bottom: 15px;
+    }
+
+    .map-button-group-title {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #666;
+    }
+
+    .section-button {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        padding: 8px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #fff;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 150px;
+    }
+
+    .section-button.active {
+        border-color: #4a90e2;
+        background: #f5f9ff;
+    }
+
+    .section-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .section-all .section-indicator {
+        background: linear-gradient(45deg, green 25%, orange 25% 50%, brown 50% 75%, grey 75%);
+    }
+
+    .section-finished .section-indicator {
+        background-color: green;
+    }
+
+    .section-in-construction .section-indicator {
+        background-color: orange;
+    }
+
+    .section-tendered .section-indicator {
+        background-color: brown;
+    }
+
+    .section-planned .section-indicator {
+        background-color: grey;
+    }
+
+    .highway-path {
+        transition: all 0.3s ease;
+    }
+
+    .highway-path:hover {
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+
+    .status-finished:hover {
+        stroke: #00ff00;
+    }
+
+    .status-in_construction:hover {
+        stroke: #ffa500;
+    }
+
+    .status-planned:hover {
+        stroke: #808080;
+    }
+
+    .status-tendered:hover {
+        stroke: #a52a2a;
+    }
+
+    .leaflet-control-layers-base {
+        display: none !important;
+    }
+    .leaflet-control-layers-overlays label:first-child {
+        display: none !important;
+    }
+    .leaflet-control-layers-toggle {
+        display: none !important;
+    }
+    .leaflet-control-layers {
+        display: none !important;
+    }
+    .leaflet-control {
+        display: none !important;
+    }
+
+    .year-button {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        padding: 8px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #fff;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 150px;
+    }
+
+    .year-button.active {
+        border-color: #4a90e2;
+        background: #f5f9ff;
+    }
+
+    .highway-logo {
+        transition: all 0.3s ease;
+    }
+
+    .highway-logo:hover {
+        transform: scale(1.2);
+        box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    }
+
+    /* Asigură-te că logo-urile sunt mereu deasupra altor elemente */
+    .highway-logo-marker {
+        z-index: 1000 !important;
+    }
+
+    </style>
+
+    <div class="map-controls">
+        <button class="minimize-button">−</button>
+        <div class="map-button-group">
+            <div class="map-button-group-title">Stil hartă</div>
+            <button class="map-button active" data-map="white">Hartă Albă</button>
+            <button class="map-button" data-map="osm">OpenStreetMap</button>
+            <button class="map-button" data-map="satellite">Satelit</button>
+        </div>
+
+        <div class="map-button-group">
+            <div class="map-button-group-title">Secțiuni</div>
+            <button class="section-button section-all active" data-section="all">
+                <span class="section-indicator"></span>
+                Toate secțiunile
+            </button>
+            <button class="section-button section-finished" data-section="Finished">
+                <span class="section-indicator"></span>
+                Doar finalizate
+            </button>
+            <button class="section-button section-in-construction" data-section="In Construction">
+                <span class="section-indicator"></span>
+                Doar în construcție
+            </button>
+            <button class="section-button section-tendered" data-section="Tendered">
+                <span class="section-indicator"></span>
+                Doar în licitație
+            </button>
+            <button class="section-button section-planned" data-section="Planned">
+                <span class="section-indicator"></span>
+                Doar planificate
+            </button>
+        </div>
+    </div>
+
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+        var mapButtons = document.querySelectorAll('.map-button[data-map]');
+        var sectionButtons = document.querySelectorAll('.section-button');
         var overlays = document.querySelector('.leaflet-control-layers-overlays');
+        var minimizeButton = document.querySelector('.minimize-button');
+        var mapControls = document.querySelector('.map-controls');
         if(overlays) {
             overlays.style.display = 'none';
         }
         
+        if (minimizeButton && mapControls) {
+                minimizeButton.addEventListener('click', function() {
+                    mapControls.classList.toggle('minimized');
+                    minimizeButton.textContent = mapControls.classList.contains('minimized') ? '+' : '−';
+                });
+            }
+
         var labels = document.querySelectorAll('.city-label');
         var outline = document.querySelector('.leaflet-overlay-pane .romania-outline');
         
-        function updateVisibility() {
-            var activeLayer = document.querySelector('.leaflet-control-layers-base input:checked').parentElement.textContent.trim();
-            var isWhiteMap = activeLayer === 'Hartă Albă';
-            var isEGIS = activeLayer === 'EGIS';
-            var isCartoDB = activeLayer === 'CartoDB Light';
-            var isOSM = activeLayer === 'OpenStreetMap';
+        function updateMapStyle(activeButton, skipButtonUpdate = false) {
+            if (!skipButtonUpdate) {
+                mapButtons.forEach(button => button.classList.remove('active'));
+                activeButton.classList.add('active');
+            }
             
+            var mapStyle = activeButton.getAttribute('data-map');
+            
+            // Handle the white background and outline specifically
+            if (outline) {
+                outline.style.display = mapStyle === 'white' ? 'block' : 'none';
+            }
+            
+            // Only hide the white background element, not all overlay paths
+            document.querySelectorAll('.leaflet-overlay-pane .romania-outline, .leaflet-overlay-pane .white-background').forEach(function(element) {
+                element.style.display = mapStyle === 'white' ? 'block' : 'none';
+            });
+            
+            if (!skipButtonUpdate) {
+                // Find and click the correct base layer radio button
+                var baseLayerName = {
+                    'white': 'Hartă Albă',
+                    'osm': 'OpenStreetMap',
+                    'satellite': 'EGIS'
+                }[mapStyle];
+                
+                var baseInput = Array.from(document.querySelectorAll('.leaflet-control-layers-base input'))
+                    .find(input => input.nextElementSibling.textContent.trim() === baseLayerName);
+                if (baseInput) baseInput.click();
+            }
+            
+            var isWhiteMap = mapStyle === 'white';
+            var isEGIS = mapStyle === 'satellite';
+            
+            // Update labels
             labels.forEach(function(label) {
                 label.style.display = (isWhiteMap || isEGIS) ? 'block' : 'none';
                 label.style.color = isEGIS ? 'white' : 'black';
                 label.style.textShadow = isEGIS ? '2px 2px 2px black' : 'none';
             });
             
-            if (outline) {
-                outline.style.display = isWhiteMap ? 'block' : 'none';
-            }
-
+            // Update city boundaries
             document.querySelectorAll('.city-boundary').forEach(function(element) {
                 element.style.display = isWhiteMap ? 'block' : 'none';
                 element.style.visibility = isWhiteMap ? 'visible' : 'hidden';
             });
-
+            
+            // Update city dots
             document.querySelectorAll('.leaflet-circle-marker-pane > *').forEach(function(dot) {
-                dot.style.display = (isCartoDB || isWhiteMap || isEGIS) ? 'block' : 'none';
+                dot.style.display = (isWhiteMap || isEGIS) ? 'block' : 'none';
             });
+
+            // Ensure proper z-index for background elements
+            if (outline) {
+                outline.parentElement.style.zIndex = isWhiteMap ? '1' : '-1';
+            }
+        }
+
+        function selectSection(button) {
+            sectionButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            var sectionName = button.getAttribute('data-section');
+            var activeMapButton = document.querySelector('.map-button.active');
+            var isWhiteMap = activeMapButton && activeMapButton.getAttribute('data-map') === 'white';
+            
+            // Update section visibility while preserving city boundaries and outline
+            var overlayInputs = document.querySelectorAll('.leaflet-control-layers-overlays input[type="checkbox"]');
+            overlayInputs.forEach(function(input) {
+                var label = input.nextElementSibling.textContent.trim();
+                
+                // Skip processing for elements we want to preserve
+                if (label === '_') {
+                    return;  // Skip the outline layer
+                }
+
+                // Handle highway sections
+                if (sectionName === 'all') {
+                    if (!input.checked) input.click();
+                } else {
+                    if (label === sectionName && !input.checked) input.click();
+                    else if (label !== sectionName && input.checked) input.click();
+                }
+            });
+
+            // For white map, ensure all elements remain visible
+            if (isWhiteMap) {
+                // Ensure outline is visible
+                if (outline) {
+                    outline.style.display = 'block';
+                    outline.parentElement.style.zIndex = '1';
+                }
+                
+                // Ensure Romania outline and white background are visible
+                document.querySelectorAll('.leaflet-overlay-pane .romania-outline, .leaflet-overlay-pane .white-background').forEach(function(element) {
+                    element.style.display = 'block';
+                });
+                
+                // Explicitly ensure city boundaries are visible
+                document.querySelectorAll('.city-boundary').forEach(function(element) {
+                    element.style.display = 'block';
+                    element.style.visibility = 'visible';
+                    // Force a repaint
+                    element.style.opacity = 0.99;
+                    setTimeout(() => {
+                        element.style.opacity = 1;
+                    }, 10);
+                });
+                
+                // Ensure labels are visible
+                document.querySelectorAll('.city-label').forEach(function(label) {
+                    label.style.display = 'block';
+                    label.style.color = 'black';
+                    label.style.textShadow = 'none';
+                });
+                
+                // Ensure city dots are visible
+                document.querySelectorAll('.leaflet-circle-marker-pane > *').forEach(function(dot) {
+                    dot.style.display = 'block';
+                });
+            }
         }
         
-        var layerInputs = document.querySelectorAll('.leaflet-control-layers-base input');
-        layerInputs.forEach(function(input) {
-            input.addEventListener('change', updateVisibility);
+        // Event listeners
+        mapButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                updateMapStyle(this);
+            });
+        });
+
+        sectionButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                selectSection(this);
+            });
         });
         
-        var whiteMapRadio = Array.from(layerInputs).find(input => 
-            input.parentElement.textContent.trim() === 'Hartă Albă'
-        );
-        if (whiteMapRadio) {
-            whiteMapRadio.click();
+        // Initial setup
+        var whiteMapButton = document.querySelector('.map-button[data-map="white"]');
+        if (whiteMapButton) {
+            updateMapStyle(whiteMapButton);
         }
-        
-        updateVisibility();
-    });
-    </script>
-    """
-    m.get_root().html.add_child(folium.Element(visibility_script))
-    
-# La final, adaugă script pentru loading screen
-    loading_screen = """
-    <div id="loading" style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: white;
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, sans-serif;">
-        <div>
-            <h2>Se încarcă harta...</h2>
-            <div style="width: 150px; height: 4px; background: #eee; border-radius: 2px;">
-                <div id="progress" style="width: 0%; height: 100%; background: #4CAF50; border-radius: 2px; transition: width 0.3s;"></div>
-            </div>
-        </div>
-    </div>
-    <script>
-    window.addEventListener('load', function() {
-        document.getElementById('loading').style.display = 'none';
-    });
-    let progress = 0;
-    const progressBar = document.getElementById('progress');
-    const interval = setInterval(() => {
-        progress += 5;
-        if (progress > 90) clearInterval(interval);
-        progressBar.style.width = progress + '%';
-    }, 100);
-    </script>
-    """
-    m.get_root().html.add_child(folium.Element(loading_screen))
 
+        // Show all sections initially
+        var allButton = document.querySelector('.section-button[data-section="all"]');
+        if (allButton) {
+            selectSection(allButton);
+        }
+    });
+    </script>
+    """
+
+    # Add the layer control and script
+    m.get_root().html.add_child(folium.Element(script))
+    folium.LayerControl(position='topright').add_to(m)
+
+    add_totals_table(m, HIGHWAYS)
+    
+    original_save = m.save
+    
+    def optimized_save(path, **kwargs):
+        original_save(path, **kwargs)
+        with open(path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        optimized_content = optimize_template(content)
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(optimized_content)
+    
+    m.save = optimized_save
+    
     return m
