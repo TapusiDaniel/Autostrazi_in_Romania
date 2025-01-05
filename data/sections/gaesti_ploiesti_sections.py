@@ -1,5 +1,5 @@
 Gaesti_Ploiesti_SECTIONS = {
-    "Drumul expres Găești - Ploiești": {
+    "Găești - Ploiești": {
         "status": "planned",
         "feasibility_study_date": "2026",
         "designer": "SEARCH CORPORATION – MEGA MUHENDISLIK MUSAVIRLIK A.S.",

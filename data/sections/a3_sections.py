@@ -12,7 +12,7 @@ A3_SECTIONS = {
     "Moara Vlăsiei - Ploiești": {
         "status": "finished",
         "completion_date": "2012",
-        "length": "45.69 km",
+        "length": "42.5 km",
         "constructor": "Spedition UMB, Euroconstruct Trading și Pa&Co",
         "cost": "492M",
         "financing": "Bugetul de stat",
@@ -29,7 +29,11 @@ A3_SECTIONS = {
         "estimated_cost": "5.7B",
         "xml_file": 'A3/a3_ploiesti_brasov.xml',  
         "start_point": [44.8846567, 26.0324882],  # Ploiesti
-        "end_point": [45.577342, 25.444551]  # Brasov
+        "end_point": [45.577342, 25.444551],  # Brasov
+        "logo": {
+            "path": "data/photos/A3-RO.png",
+            "position": "left"  
+        }
     },
     "Râșnov - Cristian": {
         "status": "finished",
@@ -56,7 +60,7 @@ A3_SECTIONS = {
     "Ungheni - Ogra (subsecțiunea 1C - lot 2)": {
         "status": "finished",
         "completion_date": "2015",
-        "length": "10.11 km",
+        "length": "10.10 km",
         "constructor": "Strabag SRL și Straco Group SRL",
         "cost": "50.2M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
@@ -147,7 +151,7 @@ A3_SECTIONS = {
         "status": "in_construction",
         "progress": "65.30%",
         "completion_date": "2025",
-        "length": "13.26 km",
+        "length": "12.24 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
         "cost": "136M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
@@ -158,7 +162,7 @@ A3_SECTIONS = {
     "Poarta Sălajului - Nușfalău (subsecțiunea 3B - lot 3 și lot 4)": {
         "status": "tendered",
         "tender_end_date": "2025", 
-        "length": "40.98 km",
+        "length": "41 km",
         "estimated_cost": "1.3B",
         "construction_duration": "78 de luni",  
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
@@ -166,7 +170,11 @@ A3_SECTIONS = {
         "current_stage": "Au fost înregistrate contestații",
         "xml_file": 'A3/a3_poartasalajului_nusfalau.xml',  
         "start_point": [47.0866324, 23.1797234],  # Poarta Salajului
-        "end_point": [47.177794, 22.7039123]  # Nusfalau
+        "end_point": [47.177794, 22.7039123],  # Nusfalau
+        "logo": {
+            "path": "data/photos/A3-RO.png",
+            "position": "bottom"  
+        }
     },
     "Nușfalău - Suplacu de Barcău (subsecțiunea 3B - lot 5)": {
         "status": "finished",

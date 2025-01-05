@@ -1,8 +1,64 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448754 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="13071523" visible="true" version="3" changeset="123131160" timestamp="2022-07-02T19:32:32Z" user="ted3sco" uid="2112541">
-<member type="way" ref="971638538" role=""/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448776 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="13071523" visible="true" version="5" changeset="160948214" timestamp="2025-01-03T13:07:09Z" user="InformationFlow" uid="19198459">
+<member type="way" ref="1348244602" role=""/>
+<member type="way" ref="1348244614" role=""/>
+<member type="way" ref="1348244613" role=""/>
+<member type="way" ref="1348244603" role=""/>
+<member type="way" ref="1348203127" role=""/>
+<member type="way" ref="1348203130" role=""/>
+<member type="way" ref="1348203111" role=""/>
+<member type="way" ref="1348203113" role=""/>
+<member type="way" ref="1348203115" role=""/>
+<member type="way" ref="1348203114" role=""/>
+<member type="way" ref="1348203129" role=""/>
+<member type="way" ref="1348203128" role=""/>
+<member type="way" ref="1348244605" role=""/>
+<member type="way" ref="1348244615" role=""/>
+<member type="way" ref="1348244616" role=""/>
+<member type="way" ref="1348244604" role=""/>
+<member type="way" ref="1348244623" role=""/>
+<member type="way" ref="1348244622" role=""/>
+<member type="way" ref="1348203125" role=""/>
+<member type="way" ref="1348203118" role=""/>
+<member type="way" ref="1348203117" role=""/>
+<member type="way" ref="1348203116" role=""/>
+<member type="way" ref="1348203120" role=""/>
+<member type="way" ref="1348203119" role=""/>
+<member type="way" ref="1348203121" role=""/>
+<member type="way" ref="1348203122" role=""/>
+<member type="way" ref="1348203123" role=""/>
+<member type="way" ref="1348203124" role=""/>
+<member type="way" ref="1348203126" role=""/>
+<member type="way" ref="1348203108" role=""/>
+<member type="way" ref="1348203109" role=""/>
+<member type="way" ref="1348203112" role=""/>
+<member type="way" ref="1348203107" role=""/>
+<member type="way" ref="1348203106" role=""/>
+<member type="way" ref="1348203105" role=""/>
+<member type="way" ref="1348203110" role=""/>
+<member type="way" ref="1348244609" role=""/>
+<member type="way" ref="1348244608" role=""/>
+<member type="way" ref="1348244607" role=""/>
+<member type="way" ref="1348244606" role=""/>
+<member type="way" ref="1348244611" role=""/>
+<member type="way" ref="1348244620" role=""/>
+<member type="way" ref="1348244610" role=""/>
+<member type="way" ref="1348244619" role=""/>
+<member type="way" ref="1348244618" role=""/>
+<member type="way" ref="1348244612" role=""/>
+<member type="way" ref="1348244621" role=""/>
+<member type="way" ref="1348244617" role=""/>
+<member type="way" ref="1348244624" role=""/>
+<member type="way" ref="1348244626" role=""/>
+<member type="way" ref="1348244627" role=""/>
+<member type="way" ref="1348244625" role=""/>
+<member type="way" ref="1348244629" role=""/>
+<member type="way" ref="1348244628" role=""/>
+<tag k="from" v="Bacău"/>
 <tag k="name" v="Drum expres Bacau - Piatra Neamt"/>
-<tag k="route" v="proposed"/>
+<tag k="ref" v="DEx5"/>
+<tag k="route" v="road"/>
+<tag k="to" v="Piatra Neamț"/>
 <tag k="type" v="route"/>
 </relation>
 </osm>

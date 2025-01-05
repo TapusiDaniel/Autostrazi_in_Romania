@@ -2,7 +2,7 @@ A0_SECTIONS = {
     "A0 Sud Lot 1": {
         "status": "finished",
         "completion_date": "2024",
-        "length": "16.9 km",
+        "length": "16.93 km",
         "constructor": "Alsim Alarko Sanayi Tesisleri ve Ticaret AS",
         "cost": "166.1M",
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
@@ -29,7 +29,7 @@ A0_SECTIONS = {
         "status": "in_construction",
         "progress": "77.10%",
         "completion_date": "2025",
-        "length": "17.97 km",
+        "length": "17.96 km",
         "constructor": "Asocierea Aktor SA - Euro Construct Trading SRL",
         "cost": "170.6M",
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",

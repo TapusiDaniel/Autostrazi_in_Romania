@@ -1,5 +1,5 @@
 Bucuresti_Targoviste_SECTIONS = {
-    "Drumul expres București - Târgoviște": {
+    "București - Târgoviște": {
         "status": "planned",
         "feasibility_study_date": "2025",
         "designer": "TPF INGINERIE S.R.L.",

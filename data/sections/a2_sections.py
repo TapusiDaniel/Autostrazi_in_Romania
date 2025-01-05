@@ -12,7 +12,7 @@ A2_SECTIONS = {
     "Fundulea - Lehliu": {
         "status": "finished",
         "completion_date": "2004",
-        "length": "29.1 km",
+        "length": "29.2 km",
         "constructor": "Asocierea Yuksel - Makimsar - Ener",
         "cost": "87M",
         "financing": "Guvernul României şi Banca Europeană de Investiţii",
@@ -49,7 +49,7 @@ A2_SECTIONS = {
     "Fetești - Cernavodă": {
         "status": "finished",
         "completion_date": "1987",
-        "length": "17.58 km",
+        "length": "17.54 km",
         "xml_file": "A2/a2_fetesti_cernavoda.xml",
         "start_point": [44.3996075, 27.8110284],  # Fetesti
         "end_point": [44.3369619, 28.0238743]  # Cernavoda

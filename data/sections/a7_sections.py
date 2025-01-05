@@ -23,13 +23,17 @@ A7_SECTIONS = {
         "status": "in_construction",
         "progress": "98.29%",
         "completion_date": "2025",
-        "length": "28.5 km",
+        "length": "28.35 km",
         "constructor": "Asocierea Coni SRL - Trace Group",
         "cost": "250M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_mizil_pietroasele.xml",
         "start_point": [44.949735, 26.454692],  # Mizil
-        "end_point": [45.082487, 26.744910]  # Pietroasele
+        "end_point": [45.082487, 26.744910],  # Pietroasele
+        "logo": {
+            "path": "data/photos/A7-RO.png",
+            "position": "bottom"  
+        }
     },
     "Ploiești - Buzău (lot 3)": {
         "status": "in_construction",
@@ -91,7 +95,7 @@ A7_SECTIONS = {
     "Buzău - Focșani (lot 4)": {
         "status": "finished",
         "completion_date": "2024",
-        "length": "36.10 km",
+        "length": "10.94 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "152.7M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
@@ -156,13 +160,17 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_bacau_pascani_lot1.xml",
         "start_point": [46.635502, 26.933831],  # Bacau Nord
-        "end_point": [46.889990, 26.880120]  # Trifesti
+        "end_point": [46.889990, 26.880120],  # Trifesti
+        "logo": {
+            "path": "data/photos/A7-RO.png",
+            "position": "right"  
+        }
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
         "progress": "21.60%",
         "completion_date": "2026",
-        "length": "18.99 km",
+        "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "256M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",

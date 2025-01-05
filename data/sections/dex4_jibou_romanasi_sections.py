@@ -1,5 +1,5 @@
 DEx4_JIBOU_ROMANASI_SECTIONS = {
-    "Drumul Expres Jibou – Românași (DEx4), legătura la Autostrada Transilvania": {
+    "Jibou – Românași": {
         "status": "planned",
         "feasibility_study_date": "2026",
         "length": "20 km",

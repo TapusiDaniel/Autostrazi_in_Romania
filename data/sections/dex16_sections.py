@@ -32,7 +32,11 @@ DEx16_SECTIONS = {
         "current_stage": "Evaluare oferte",
         "xml_file": "DEx16/dex16_arad_oradea_lot2.xml",
         "start_point": [46.519595, 21.500858],  # Chisineu Cris
-        "end_point": [46.793249, 21.694058]  # Salonta
+        "end_point": [46.793249, 21.694058],  # Salonta
+        "logo": {
+            "path": "data/photos/DEx16-RO.png",
+            "position": "right"  
+        }
     },
     "Arad - Oradea (lot 1)": {
         "status": "tendered",

@@ -1,111 +1,10 @@
 import folium
-from config import CITIES
+from config import CITIES, CITY_BOUNDARIES
 from utils import get_all_way_coordinates
-from config import CITY_BOUNDARIES
 import xml.etree.ElementTree as ET
 import math
 import json
 import requests
-import xml.etree.ElementTree as ET
-
-def add_highway_logo(m, coordinates, logo_path, highway_code):
-    """Adaugă logo-ul autostrăzii pe hartă."""
-    if not coordinates:
-        return
-        
-    # Calculăm centrul aproximativ al autostrăzii
-    lats = [coord[0] for coord in coordinates]
-    lons = [coord[1] for coord in coordinates]
-    center_lat = sum(lats) / len(lats)
-    center_lon = sum(lons) / len(lons)
-    
-    # Adăugăm un marker custom cu logo-ul
-    icon_html = f"""
-        <div class="highway-logo" style="
-            background-image: url('{logo_path}');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: white;
-            border: 2px solid #666;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        ">
-        </div>
-    """
-    
-    folium.Marker(
-        [center_lat, center_lon],
-        icon=folium.DivIcon(
-            html=icon_html,
-            icon_size=(30, 30),
-            icon_anchor=(15, 15),
-            class_name=f'highway-logo-marker {highway_code.lower()}'
-        )
-    ).add_to(m)
-
-def add_cities_to_map(m, labels_position="below"):
-    """Adaugă orașele pe hartă cu puncte și etichete."""
-    from config import CITIES, CITY_BOUNDARIES
-    
-    # Configurăm poziția etichetelor
-    if labels_position == "below":
-        icon_anchor = (0, -10)
-        padding_top = "8px"
-    else:  # "above"
-        icon_anchor = (0, 20)
-        padding_top = "-18px"
-
-    # Adăugăm orașele cu puncte și nume
-    for city, coords in CITIES.items():
-        # Folosim culorile din CITY_BOUNDARIES dacă există, altfel folosim culori implicite
-        fill_color = "#E0E0E0"  # culoare implicită pentru fill
-        border_color = "#4A4A4A"  # culoare implicită pentru border
-        
-        if city in CITY_BOUNDARIES:
-            fill_color = CITY_BOUNDARIES[city].get('fill_color', fill_color)
-            border_color = CITY_BOUNDARIES[city].get('border_color', border_color)
-            
-            # Adăugăm doar textul pentru orașele cu boundary
-            folium.Marker(
-                coords,
-                icon=folium.DivIcon(
-                    html=f'<div style="font-size: 11px; font-weight: bold; color: {border_color}; '
-                         f'text-align: center; position: absolute; width: 100px; '
-                         f'margin-left: -50px; padding-top: {padding_top};">{city}</div>',
-                    icon_size=(0, 0),
-                    icon_anchor=icon_anchor,
-                    class_name="transparent"
-                )
-            ).add_to(m)
-        else:
-            # Adăugăm punct și text doar pentru orașele fără boundary
-            folium.CircleMarker(
-                coords,
-                radius=3,
-                color=border_color,
-                fill=True,
-                fillColor=fill_color,
-                fillOpacity=1,
-                weight=1
-            ).add_to(m)
-
-            folium.Marker(
-                coords,
-                icon=folium.DivIcon(
-                    html=f'<div style="font-size: 11px; font-weight: bold; color: {border_color}; '
-                         f'text-align: center; position: absolute; width: 100px; '
-                         f'margin-left: -50px; padding-top: {padding_top};">{city}</div>',
-                    icon_size=(0, 0),
-                    icon_anchor=icon_anchor,
-                    class_name="transparent"
-                )
-            ).add_to(m)
 
 def add_city_boundaries(m):
     """Add city boundaries using local JSON files."""
@@ -120,19 +19,19 @@ def add_city_boundaries(m):
                 print(f"Warning: Missing JSON file for {city}: {json_file}")
                 continue
             
-            # Citim datele JSON
+            # Load JSON data
             with open(json_file, 'r', encoding='utf-8') as f:
                 boundary_data = json.load(f)
             
-            # Procesăm coordonatele
+            # Process coordinates
             all_coords = []
             if boundary_data['type'] == 'Feature':
                 if boundary_data['geometry']['type'] == 'Polygon':
-                    # Convertim coordonatele din [lon, lat] în [lat, lon]
+                    # Convert coordinates from [lon, lat] to [lat, lon]
                     all_coords = [[coord[1], coord[0]] for coord in boundary_data['geometry']['coordinates'][0]]
             
             if all_coords:
-                # Verificăm dacă primul și ultimul punct sunt identice
+                # Ensure first and last points are identical for closed polygon
                 if all_coords[0] != all_coords[-1]:
                     all_coords.append(all_coords[0])
                 
@@ -152,7 +51,7 @@ def add_city_boundaries(m):
                         'fillOpacity': 1,
                         'opacity': 1
                     },
-                    name="_",  # Important: use the same name as the outline layer
+                    name="_",  
                     class_name='city-boundary'
                 )
                 boundary.add_to(m)
@@ -161,7 +60,7 @@ def add_city_boundaries(m):
             print(f"Error adding {city} boundary: {str(e)}")
 
 def create_section_popup(highway_code, section_name, section_data):
-    """Creează popup-ul pentru un tronson de autostradă."""
+    """Creates an HTML popup for a highway section with relevant information based on its status."""
     status_colors = {
         "finished": "green",
         "in_construction": "orange",
@@ -170,76 +69,76 @@ def create_section_popup(highway_code, section_name, section_data):
     }
     
     status_text = {
-        "finished": "Finalizat",
-        "in_construction": "În construcție",
-        "planned": "Planificat",
-        "tendered": "Lansat spre licitație"
+        "finished": "Completed",
+        "in_construction": "Under Construction",
+        "planned": "Planned",
+        "tendered": "Out for Tender"
     }
     
-    # Partea comună a popup-ului
+    # Create base popup content
     popup_content = f"""
     <div style='font-family: Arial; font-size: 12px; padding: 5px;'>
-        <b>Autostrada {highway_code}</b><br>
-        <b>Tronson: {section_name}</b>
+        <b>Highway {highway_code}</b><br>
+        <b>Section: {section_name}</b>
         <hr style='margin: 5px 0;'>
         Status: <span style='color: {status_colors[section_data["status"]]};'>
             {status_text[section_data["status"]]}</span><br>
-        Lungime: {section_data["length"]}"""
+        Length: {section_data["length"]}"""
 
-    # Adăugăm informații specifice în funcție de status
+    # Add status-specific information
     if section_data["status"] == "finished":
-        popup_content += f"""<br>Data finalizării: {section_data.get("completion_date", "N/A")}"""
+        popup_content += f"""<br>Completion Date: {section_data.get("completion_date", "N/A")}"""
     
     elif section_data["status"] == "in_construction":
         popup_content += f"""
-        <br>Finalizare: {section_data.get("completion_date", "N/A")}
-        <br>Progres: {section_data.get("progress", "N/A")}"""
+        <br>Expected Completion: {section_data.get("completion_date", "N/A")}
+        <br>Progress: {section_data.get("progress", "N/A")}"""
     
     elif section_data["status"] == "tendered":
         popup_content += f"""
-        <br>Finalizare licitație: {section_data.get("tender_end_date", "N/A")}
-        <br>Codul SEAP: {section_data.get("seap_code", "N/A")}
-        <br>Stadiul curent: {section_data.get("current_stage", "N/A")}
-        <br>Durata construcției: {section_data.get("construction_duration", "N/A")}"""
+        <br>Tender End Date: {section_data.get("tender_end_date", "N/A")}
+        <br>SEAP Code: {section_data.get("seap_code", "N/A")}
+        <br>Current Stage: {section_data.get("current_stage", "N/A")}
+        <br>Construction Duration: {section_data.get("construction_duration", "N/A")}"""
     
     elif section_data["status"] == "planned":
         popup_content += f"""
-        <br>Finalizare studiu de fezabilitate: {section_data.get("feasibility_study_date", "N/A")}
-        <br>Data aproximativă a finalizării: {section_data.get("projected_completion_date", "N/A")}"""
+        <br>Feasibility Study Completion: {section_data.get("feasibility_study_date", "N/A")}
+        <br>Projected Completion Date: {section_data.get("projected_completion_date", "N/A")}"""
 
-    # Adăugăm constructor dacă există
+    # Add optional information if available
     if "constructor" in section_data:
         popup_content += f"<br>Constructor: {section_data['constructor']}"
     if "designer" in section_data:
-        popup_content += f"<br>Proiectant: {section_data['designer']}"
+        popup_content += f"<br>Designer: {section_data['designer']}"
 
-    # Adăugăm cost sau cost estimat
+    # Add cost information
     if section_data["status"] in ["finished", "in_construction"]:
         if "cost" in section_data:
             popup_content += f"<br>Cost: {section_data['cost']} €"
     else:
         if "estimated_cost" in section_data:
-            popup_content += f"<br>Cost estimat: {section_data['estimated_cost']} €"
+            popup_content += f"<br>Estimated Cost: {section_data['estimated_cost']} €"
 
-    # Adăugăm sursa finanțării dacă există
+    # Add financing and current stage if available
     if "financing" in section_data:
-        popup_content += f"<br>Finanțare: {section_data['financing']}"
+        popup_content += f"<br>Financing: {section_data['financing']}"
     
     if "current_stage" in section_data:
-        popup_content += f"<br>Stadiul curent: {section_data['current_stage']}"
+        popup_content += f"<br>Current Stage: {section_data['current_stage']}"
 
     popup_content += "</div>"
     
     return popup_content
 
 def add_section_delimiter(m, coordinates, way_coords):
-    """Adaugă un marcaj de delimitare perpendicular pe autostradă."""
+    """Adds a perpendicular delimiter marker on the highway at specified coordinates."""
     if not way_coords or len(way_coords) < 2:
         return
         
     lat, lon = coordinates
     
-    # Găsim cel mai apropiat segment de drum
+    # Find the closest road segment
     min_dist = float('inf')
     best_idx = 0
     
@@ -257,6 +156,7 @@ def add_section_delimiter(m, coordinates, way_coords):
             continue
             
         try:
+            # Calculate distance from point to line segment
             d = abs((dx)*(p1[0]-lat) - (p1[1]-lon)*(dy)) / math.sqrt(dx*dx + dy*dy)
             if d < min_dist:
                 min_dist = d
@@ -276,29 +176,31 @@ def add_section_delimiter(m, coordinates, way_coords):
     if dx == 0 and dy == 0:
         return
     
+    # Calculate perpendicular line
     angle = math.atan2(dy, dx)
     perpendicular_angle = angle + math.pi/2
     
-    road_width = 0.0008  # lățime fixă pentru vizibilitate mai bună
+    road_width = 0.0008  # Fixed width for better visibility
     delimiter_length = road_width * 1.2
-    delimiter_weight = 5  # subțiem linia pentru claritate mai bună
+    delimiter_weight = 5  # Line thickness
     
+    # Calculate delimiter endpoints
     x1 = lon + delimiter_length * math.cos(perpendicular_angle)
     y1 = lat + delimiter_length * math.sin(perpendicular_angle)
     x2 = lon - delimiter_length * math.cos(perpendicular_angle)
     y2 = lat - delimiter_length * math.sin(perpendicular_angle)
     
-    # Adăugăm linia delimitatorului
+    # Add delimiter line
     folium.PolyLine(
         locations=[[y1, x1], [y2, x2]],
         weight=delimiter_weight,
         color='black',
-        dash_array=None,  # eliminăm dash_array pentru o linie solidă
+        dash_array=None,  # Solid line
         opacity=1
     ).add_to(m)
 
 def process_xml_ways(way_ids, ways_data):
-    """Helper function to process and combine XML ways properly"""
+    """Process and combine XML ways into continuous paths."""
     if not way_ids or not ways_data:
         return []
 
@@ -320,6 +222,7 @@ def process_xml_ways(way_ids, ways_data):
     used_ways = set()
     
     def find_connected_ways(current_way, current_path):
+        """Find ways that connect to the current way's endpoint."""
         used_ways.add(current_way)
         current_end = connections[current_way]['end']
         
@@ -348,7 +251,7 @@ def process_xml_ways(way_ids, ways_data):
             if not next_way:
                 break
                 
-            # Add coordinates without duplicating the connecting point
+            # Add coordinates without duplicating connecting points
             next_coords = connections[next_way]['coords']
             if current_path[-1] == next_coords[0]:
                 current_path.extend(next_coords[1:])
@@ -357,25 +260,26 @@ def process_xml_ways(way_ids, ways_data):
                 
             current_way = next_way
             
-        if current_path:  # Adăugăm path-ul doar dacă nu e gol
+        if current_path:  # Only add non-empty paths
             merged_paths.append(current_path)
 
-    return merged_paths  # Returnăm toate path-urile
+    return merged_paths
 
 def calculate_logo_position(coordinates, logo_position, offset=0.1):
     """
-    Calculează poziția logo-ului în funcție de coordonatele secțiunii și poziția dorită
+    Calculate logo position based on section coordinates and desired position (right/left/top/bottom).
+    Returns [lat, lon] coordinates for the logo placement.
     """
     if not coordinates:
         return None
         
-    # Calculăm centrul secțiunii
+    # Calculate section center
     lats = [coord[0] for coord in coordinates]
     lons = [coord[1] for coord in coordinates]
     center_lat = sum(lats) / len(lats)
     center_lon = sum(lons) / len(lons)
     
-    # Ajustăm poziția în funcție de preferință
+    # Adjust position based on preference
     if logo_position == "right":
         return [center_lat, center_lon + offset]
     elif logo_position == "left":
@@ -388,7 +292,7 @@ def calculate_logo_position(coordinates, logo_position, offset=0.1):
         return [center_lat, center_lon]
 
 def add_section_logo(m, coordinates, logo_data, logo_group, highway_code):
-    """Adaugă logo-ul pentru o secțiune specifică"""
+    """Add a logo marker for a specific highway section."""
     if not logo_data or not coordinates:
         return
         
@@ -398,13 +302,13 @@ def add_section_logo(m, coordinates, logo_data, logo_group, highway_code):
     if not logo_path:
         return
         
-    # Calculăm poziția logo-ului
+    # Calculate logo position
     logo_coords = calculate_logo_position(coordinates, logo_position)
     
     if not logo_coords:
         return
         
-    # Adăugăm logo-ul cu dimensiuni mai mici
+    # Create logo HTML with hover effects
     icon_html = f"""
         <div class="highway-logo highway-{highway_code.lower()}" 
              data-highway="{highway_code}"
@@ -439,10 +343,10 @@ def add_section_logo(m, coordinates, logo_data, logo_group, highway_code):
     ).add_to(logo_group)
 
 def add_all_highways_to_map(m):
-    """Optimized version with correct section rendering and hover effects"""
+    """Add all highways to map with proper styling, popups, and interactive features."""
     from highway_data import HIGHWAYS
     
-    # Create feature groups for each status
+    # Initialize feature groups for different highway statuses
     status_groups = {
         "finished": folium.FeatureGroup(name="Finished"),
         "in_construction": folium.FeatureGroup(name="In Construction"),
@@ -450,7 +354,7 @@ def add_all_highways_to_map(m):
         "planned": folium.FeatureGroup(name="Planned")
     }
     
-    # Create corresponding delimiter groups for each status
+    # Initialize delimiter groups
     delimiter_groups = {
         "finished": folium.FeatureGroup(name="_delimiters_finished", show=False),
         "in_construction": folium.FeatureGroup(name="_delimiters_in_construction", show=False),
@@ -458,15 +362,17 @@ def add_all_highways_to_map(m):
         "planned": folium.FeatureGroup(name="_delimiters_planned", show=False)
     }
     
-    # Create a feature group for logos
+    # Create logo group
     logo_group = folium.FeatureGroup(name="_logos", show=True)
     logo_group.add_to(m)
     
+    # Add groups to map
     for group in status_groups.values():
         group.add_to(m)
     for group in delimiter_groups.values():
         group.add_to(m)
     
+    # Define status colors
     status_colors = {
         "finished": "green",
         "in_construction": "orange",
@@ -475,7 +381,7 @@ def add_all_highways_to_map(m):
     }
     
     def style_function(feature):
-        """Style function that uses the status from feature properties"""
+        """Define highway styling based on status"""
         status = feature['properties']['status']
         return {
             'color': status_colors.get(status, "grey"),
@@ -484,7 +390,7 @@ def add_all_highways_to_map(m):
         }
 
     def highlight_function(feature):
-        """Highlight function that uses the status from feature properties"""
+        """Define highway highlight styling"""
         status = feature['properties']['status']
         return {
             'color': status_colors.get(status, "grey"),
@@ -492,6 +398,7 @@ def add_all_highways_to_map(m):
             'opacity': 0.8
         }
     
+    # Process each highway section
     for highway_code, highway_data in HIGHWAYS.items():
         for section_name, section_data in highway_data["sections"].items():
             try:
@@ -499,6 +406,7 @@ def add_all_highways_to_map(m):
                 if status not in status_groups:
                     continue
                 
+                # Handle GeoJSON data
                 if 'geojson_file' in section_data:
                     with open(f"data/highways/{section_data['geojson_file']}", 'r') as f:
                         geojson_data = json.load(f)
@@ -516,6 +424,7 @@ def add_all_highways_to_map(m):
                                 coordinates.extend(line)
                     
                     if coordinates:
+                        # Create and add highway feature
                         feature = {
                             "type": "Feature",
                             "geometry": {
@@ -547,6 +456,7 @@ def add_all_highways_to_map(m):
                             class_name=f'highway-section-{highway_code.lower()}'
                         ).add_to(status_groups[status])
                         
+                        # Add delimiter and logo if specified
                         if 'end_point' in section_data:
                             formatted_coords = [[coord[1], coord[0]] for coord in coordinates]
                             add_section_delimiter(delimiter_groups[status], section_data['end_point'], formatted_coords)
@@ -555,6 +465,7 @@ def add_all_highways_to_map(m):
                             add_section_logo(m, [[coord[1], coord[0]] for coord in coordinates], 
                                            section_data["logo"], logo_group, highway_code)
                 
+                # Handle XML data
                 elif 'xml_file' in section_data:
                     tree = ET.parse(f"data/highways/{section_data['xml_file']}")
                     root = tree.getroot()
@@ -566,6 +477,7 @@ def add_all_highways_to_map(m):
                         
                         for path in paths:
                             if path:
+                                # Create and add feature for each path
                                 feature = {
                                     "type": "Feature",
                                     "geometry": {
@@ -597,6 +509,7 @@ def add_all_highways_to_map(m):
                                     class_name=f'highway-section-{highway_code.lower()}'
                                 ).add_to(status_groups[status])
                         
+                        # Add delimiter and logo if specified
                         if paths and 'end_point' in section_data:
                             add_section_delimiter(delimiter_groups[status], section_data['end_point'], paths[-1])
                             
@@ -607,9 +520,10 @@ def add_all_highways_to_map(m):
                 print(f"Error processing {highway_code} - {section_name}: {str(e)}")
                 continue
 
+    # Add layer control and interactive features
     folium.LayerControl(collapsed=False).add_to(m)
 
-    # Add JavaScript to sync delimiter visibility with section visibility
+    # Add CSS and JavaScript for interactivity
     m.get_root().html.add_child(folium.Element("""
         <style>
             .leaflet-interactive {
@@ -649,25 +563,21 @@ def add_all_highways_to_map(m):
         </style>
         <script>
         let activeHighway = null;
-        
+
         function highlightHighway(highwayCode) {
-            console.log('Highlighting highway:', highwayCode);  // Pentru debugging
+            console.log('Highlighting highway:', highwayCode);
             
-            // Resetăm highlight-ul anterior
             document.querySelectorAll('.highlighted-path').forEach(path => {
                 path.classList.remove('highlighted-path');
             });
             
-            // Dacă apăsăm pe același logo, doar eliminăm highlight-ul
             if (activeHighway === highwayCode) {
                 activeHighway = null;
                 return;
             }
             
-            // Setăm noul highway activ și adăugăm highlight
             activeHighway = highwayCode;
             
-            // Selectăm toate path-urile pentru această autostradă
             document.querySelectorAll('.leaflet-pane path').forEach(path => {
                 const parentElement = path.closest('.leaflet-interactive');
                 if (parentElement && parentElement.classList.contains(`highway-section-${highwayCode.toLowerCase()}`)) {
@@ -675,18 +585,30 @@ def add_all_highways_to_map(m):
                 }
             });
         }
-        
+
         document.addEventListener('DOMContentLoaded', function() {
-            // Function to sync delimiter visibility with section visibility
             function syncDelimiterVisibility() {
                 const layerControls = document.querySelectorAll('.leaflet-control-layers-overlays input[type="checkbox"]');
+                const highwayLogos = document.querySelectorAll('.highway-logo-marker');
+                let checkedStatusSections = 0;
+                let totalStatusSections = 0;
+
                 layerControls.forEach(control => {
                     const labelText = control.nextElementSibling.textContent.trim();
+                    
+                    if (['Finished', 'In Construction', 'Tendered', 'Planned'].includes(labelText)) {
+                        totalStatusSections++;
+                        if (control.checked) {
+                            checkedStatusSections++;
+                        }
+                    }
+                    
                     if (labelText === '_logos') {
                         control.checked = true;
                         if (control.onchange) control.onchange();
                         control.parentElement.style.display = 'none';
                     }
+
                     const delimiterControl = Array.from(layerControls).find(c => 
                         c.nextElementSibling.textContent.trim() === `_delimiters_${labelText.toLowerCase().replace(' ', '_')}`
                     );
@@ -694,6 +616,11 @@ def add_all_highways_to_map(m):
                         delimiterControl.checked = control.checked;
                         if (delimiterControl.onchange) delimiterControl.onchange();
                     }
+                });
+
+                const showLogos = checkedStatusSections === totalStatusSections || checkedStatusSections === 0;
+                highwayLogos.forEach(logo => {
+                    logo.style.display = showLogos ? 'block' : 'none';
                 });
             }
 
@@ -716,33 +643,8 @@ def add_all_highways_to_map(m):
 
     print("Finished adding highways to map")
 
-def add_romania_outline_to_map(feature_group, romania_outline):
-    """Adaugă conturul României pe hartă."""
-    
-    folium.GeoJson(
-        romania_outline,
-        style_function=lambda x: {
-            'fillColor': 'white',
-            'color': 'gray',
-            'weight': 1.5,
-            'fillOpacity': 1,
-            'opacity': 1
-        }
-    ).add_to(feature_group)
-
-def add_base_layer(m):
-    """Adaugă stratul de bază alb pe hartă."""
-    
-    folium.TileLayer(
-        tiles='',
-        attr='Map data',
-        bgcolor='white',
-        overlay=True,
-        control=False,
-    ).add_to(m)
-
 def calculate_highway_totals(highways_data):
-    """Calculate totals for each status."""
+    """Calculate total lengths for each highway status and overall total."""
     totals = {
         "finished": 0,
         "in_construction": 0,

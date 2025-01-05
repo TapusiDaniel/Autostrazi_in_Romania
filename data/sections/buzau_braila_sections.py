@@ -1,5 +1,5 @@
 Buzau_Braila_SECTIONS = {
-    "Drumul expres Buzău - Brăila": {
+    "Buzău - Brăila": {
         "status": "planned",
         "feasibility_study_date": "2026",
         "designer": "Obra",

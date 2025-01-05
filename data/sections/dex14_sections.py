@@ -61,7 +61,11 @@ DEx14_SECTIONS = {
         "length": "63 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot2.xml",
         # "start_point": [47.6004733437346, 23.4113941569071],  # Baia Mare
-        "end_point": [47.311637, 25.101952]  # Vatra Dornei
+        "end_point": [47.311637, 25.101952],  # Vatra Dornei
+        "logo": {
+            "path": "data/photos/DEx14-RO.png",
+            "position": "top"  
+        }
     },
     "Vatra Dornei - Suceava": {
         "status": "planned",

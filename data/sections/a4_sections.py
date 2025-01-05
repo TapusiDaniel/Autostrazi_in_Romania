@@ -2,7 +2,7 @@ A4_SECTIONS = {
     "Centura Constanța": {
         "status": "finished",
         "completion_date": "2013",
-        "length": "21.80 km",
+        "length": "21.78 km",
         "constructor": "Consortiul Astaldi - FCC",
         "cost": "420M",
         "financing": "Fonduri de Coeziune (85%) și bugetul de stat + alte surse de finanțare (15%)",
@@ -20,6 +20,10 @@ A4_SECTIONS = {
         "seap_code": "CN1069784",
         "current_stage": "Evaluare oferte",
         "xml_file": "A4/a4_alternativa_techirghiol.xml",
+        "logo": {
+            "path": "data/photos/A4-RO.png",
+            "position": "left"  
+        }
         # "start_point": [44.1083402, 28.6345646],  # Portul Constanta
         # "end_point": [44.1083402, 28.6345646]  # Portul Constanta
     }

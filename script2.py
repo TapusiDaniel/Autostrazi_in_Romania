@@ -3,33 +3,45 @@ import json
 from datetime import datetime
 
 def query_feature_layer(layer_url, layer_name):
+    """
+    Query an ArcGIS feature layer and save the data as a GeoJSON file.
+
+    Args:
+        layer_url (str): The URL of the ArcGIS feature layer.
+        layer_name (str): The name of the layer for identification.
+
+    Returns:
+        bool: True if the download and save were successful, False otherwise.
+    """
     params = {
-        'where': '1=1',
-        'outFields': '*',
-        'returnGeometry': 'true',
-        'f': 'geojson',
-        'outSR': '4326'  # WGS84
+        'where': '1=1',  # Select all records
+        'outFields': '*',  # Include all fields
+        'returnGeometry': 'true',  # Include geometry in the response
+        'f': 'geojson',  # Response format as GeoJSON
+        'outSR': '4326'  # Coordinate system (WGS84 lat/long)
     }
     
     try:
-        print(f"\nDescărcare layer: {layer_name}")
+        print(f"\nDownloading layer: {layer_name}")
         print(f"URL: {layer_url}")
         
+        # Make the request to the ArcGIS server
         response = requests.get(f"{layer_url}/query", params=params)
         
         if response.status_code == 200:
             data = response.json()
             
-            # Salvăm datele
-            filename = f"monitorizare_rutier_{layer_name.lower()}_{datetime.now().strftime('%Y%m%d')}.geojson"
+            # Save the data to a GeoJSON file
+            filename = f"road_monitoring_{layer_name.lower()}_{datetime.now().strftime('%Y%m%d')}.geojson"
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
             
+            # Display statistics about the downloaded features
             features = data.get('features', [])
-            print(f"Features descărcate: {len(features)}")
+            print(f"Features downloaded: {len(features)}")
             
             if features:
-                print("Exemplu proprietăți primul feature:")
+                print("Example properties of the first feature:")
                 properties = features[0].get('properties', {})
                 for key, value in properties.items():
                     print(f"- {key}: {value}")
@@ -37,27 +49,27 @@ def query_feature_layer(layer_url, layer_name):
             return True
             
         else:
-            print(f"Eroare descărcare: {response.status_code}")
+            print(f"Download error: {response.status_code}")
             print(response.text)
             return False
             
     except Exception as e:
-        print(f"Eroare: {str(e)}")
+        print(f"Error: {str(e)}")
         return False
 
-# Definim layerele disponibile
+# Define the available layers
 base_url = "https://services7.arcgis.com/CC3A0nBoLM6gxwLd/arcgis/rest/services/Monitorizare_rutier/FeatureServer"
 layers = [
-    {"id": 0, "name": "Localitati"},
+    {"id": 0, "name": "Localities"},
     {"id": 1, "name": "VO"},
-    {"id": 2, "name": "Autostrazi"},
-    {"id": 3, "name": "Drum_expres"},
-    {"id": 4, "name": "Primara_Secundara"},
-    {"id": 5, "name": "Transregio"},
+    {"id": 2, "name": "Highways"},
+    {"id": 3, "name": "Express_Roads"},
+    {"id": 4, "name": "Primary_Secondary"},
+    {"id": 5, "name": "Transregional"},
     {"id": 6, "name": "TENT"}
 ]
 
-# Descărcăm fiecare layer
+# Download each layer
 successful_downloads = []
 failed_downloads = []
 
@@ -70,26 +82,28 @@ for layer in layers:
     else:
         failed_downloads.append(layer['name'])
 
-# Afișăm sumarul
-print("\nRezumat descărcare:")
-print(f"\nLayere descărcate cu succes ({len(successful_downloads)}):")
+# Display a summary of the download process
+print("\nDownload summary:")
+print(f"\nSuccessfully downloaded layers ({len(successful_downloads)}):")
 for name in successful_downloads:
     print(f"- {name}")
 
-print(f"\nLayere eșuate ({len(failed_downloads)}):")
+print(f"\nFailed layers ({len(failed_downloads)}):")
 for name in failed_downloads:
     print(f"- {name}")
 
-# Salvăm metadata despre setul de date
-metadata = {
-    "service_name": "Monitorizare_rutier",
-    "download_date": datetime.now().isoformat(),
-    "layers": layers,
-    "successful_downloads": successful_downloads,
-    "failed_downloads": failed_downloads
-}
+# Save metadata about the dataset
+metadata = [
+    {"id": 0, "name": "Localitati"},
+    {"id": 1, "name": "VO"},
+    {"id": 2, "name": "Autostrazi"},
+    {"id": 3, "name": "Drum_expres"},
+    {"id": 4, "name": "Primara_Secundara"},
+    {"id": 5, "name": "Transregio"},
+    {"id": 6, "name": "TENT"}
+]
 
-with open("monitorizare_rutier_metadata.json", 'w', encoding='utf-8') as f:
+with open("road_monitoring_metadata.json", 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=2)
 
-print("\nProcesul de descărcare s-a încheiat. Verifică fișierele generate.")
+print("\nDownload process completed. Check the generated files.")

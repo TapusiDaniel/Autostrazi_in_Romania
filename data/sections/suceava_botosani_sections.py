@@ -1,5 +1,5 @@
 Suceava_Botosani_SECTIONS = {
-    "Drumul expres Suceava - Botoșani": {
+    "Suceava - Botoșani": {
         "status": "planned",
         "feasibility_study_date": "2026",
         "designer": "CONSITRANS SRL",

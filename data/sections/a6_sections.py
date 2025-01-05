@@ -1,5 +1,5 @@
 A6_SECTIONS = {
-    "București - Alexandria (Studiu de fezabilitate)": {
+    "București - Alexandria": {
         "status": "planned",
         "feasibility_study_date": "2025",
         "length": "77.02 km",
@@ -141,7 +141,7 @@ A6_SECTIONS = {
         "constructor": "JV Monte Adriano Engenharia e Construcao SA – Sociedade de Construcoes Soares da Costa, SA",
         "cost": "24.2M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
-        "geojson_file": "A6/a6_lugoj_a1.geojson",
+        "xml_file": "A6/a6_lugoj.xml",
         "start_point": [45.738521, 21.892289]   # Lugoj
     },
                   

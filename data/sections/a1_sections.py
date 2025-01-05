@@ -2,7 +2,7 @@ A1_SECTIONS = {
     "București - Pitești": {
         "status": "finished",
         "completion_date": "1972",
-        "length": "109.6 km",
+        "length": "96 km",
         "xml_file": "A1/a1_buc_pit.xml",
         "end_point": [44.8193510, 24.9456566]  # Pitesti Sud
     },
@@ -62,7 +62,11 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot3.xml",
         "start_point": [45.1649474, 24.5602304],  # Tigveni
-        "end_point": [45.3882424, 24.3060366]  # Cornetu
+        "end_point": [45.3882424, 24.3060366],  # Cornetu
+        "logo": {
+            "path": "data/photos/A1-RO.png",
+            "position": "left"  
+        }
     },
     "Pitești - Sibiu (lot 2)": {
         "status": "in_construction",
@@ -112,7 +116,7 @@ A1_SECTIONS = {
     "Sibiu - Orăștie (lot 3)": {
         "status": "finished",
         "completion_date": "2016",
-        "length": "22.10 km",
+        "length": "22.11 km",
         "constructor": "Impregilo",
         "cost": "120.9M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
@@ -178,7 +182,7 @@ A1_SECTIONS = {
     "Deva - Lugoj (lot 2)": {
         "status": "finished",
         "completion_date": "2017",
-        "length": "15.08 km",
+        "length": "15.44 km",
         "constructor": "JV Salini SPA și Secol SPA", 
         "cost": "128M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
@@ -196,12 +200,16 @@ A1_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",  
         "xml_file": "A1/a1_deva_lugoj_lot2_constructie.xml",
         "start_point": [45.9455296, 22.6294017],  # Ilia
-        "end_point": [45.8605624, 22.2475641]  # Faget
+        "end_point": [45.8605624, 22.2475641],  # Faget
+        "logo": {
+            "path": "data/photos/A1-RO.png",
+            "position": "top"  
+        }
     },
     "Deva - Lugoj (lot 1)": {
         "status": "finished",
         "completion_date": "2013",
-        "length": "27.62 km",
+        "length": "38.14 km",
         "constructor": "Tirrena Scavi, Societa Italiana per Condotte d'Acqua și Cossi Costruzioni", 
         "cost": "136.2M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
@@ -212,7 +220,7 @@ A1_SECTIONS = {
     "Lugoj - Timișoara (lot 2)": {
         "status": "finished",
         "completion_date": "2015",
-        "length": "25.63 km",
+        "length": "24.63 km",
         "constructor": "Tirrena Scavi și Societa Italiana per Condotte D'Acqua", 
         "cost": "94.7M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",

@@ -33,7 +33,48 @@ CITIES = {
     'Tulcea': [45.1667, 28.8000],
     'Botoșani': [47.7488, 26.6614],
     'Buzău': [45.1500, 26.8167],
-    'Focșani': [45.6967, 27.1833]
+    'Focșani': [45.6967, 27.1833],
+    'Piatra Neamț': [46.9260, 26.3716],
+    'Drobeta-Turnu Severin': [44.6333, 22.6667],
+    'Bistrița': [47.1333, 24.5000],
+    'Dej': [47.1444, 23.8777]
+}
+
+CITY_LABELS = {
+    'București': 'left',
+    'Pitești': 'left',
+    'Sibiu': 'top',
+    'Deva': 'bottom',
+    'Timișoara': 'left',
+    'Cluj-Napoca': 'right',
+    'Brașov': 'right',
+    'Constanța': 'right',
+    'Craiova': 'bottom',
+    'Iași': 'bottom',
+    'Oradea': 'right',
+    'Arad': 'right',
+    'Brăila': 'bottom',
+    'Galați': 'right',
+    'Bacău': 'left',
+    'Suceava': 'left',
+    'Baia Mare': 'right',
+    'Zalău': 'top',
+    'Târgu Mureș': 'top',
+    'Alba Iulia': 'left',
+    'Târgoviște': 'top',
+    'Ploiești': 'top',
+    'Giurgiu': 'right',
+    'Alexandria': 'bottom',
+    'Slatina': 'top',
+    'Târgu Jiu': 'left',
+    'Tulcea': 'right',
+    'Botoșani': 'right',
+    'Buzău': 'left',
+    'Focșani': 'left',
+    'Piatra Neamț': 'left',
+    'Drobeta-Turnu Severin': 'left',
+    'Bistrița': 'top',
+    'Dej': 'left'
 }
 
 CITY_BOUNDARIES = {

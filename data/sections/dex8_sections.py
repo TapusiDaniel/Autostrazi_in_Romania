@@ -19,5 +19,9 @@ DEx8_SECTIONS = {
         "designer": "Search Corporation SRL – Egis România SA",
         "length": "96 km",
         "geojson_file": "DEx8/dex8_ovidiu_cataloi.geojson",
+        "logo": {
+            "path": "data/photos/DEx8-RO.png",
+            "position": "left"  
+        }
     },
 }

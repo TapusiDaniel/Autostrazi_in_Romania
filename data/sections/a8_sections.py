@@ -35,7 +35,11 @@ A8_SECTIONS = {
         "current_stage": "Evaluare ofertă",
         "xml_file": "A8/a8_lot1c.xml",
         "start_point": [46.569293, 25.059833],  # Sarateni
-        "end_point": [46.677736, 25.384139]  # Joseni
+        "end_point": [46.677736, 25.384139],  # Joseni
+        "logo": {
+            "path": "data/photos/A8-RO.png",
+            "position": "bottom"  
+        }
     },
     "Joseni - Ditrău (lot 1D)": {
         "status": "tendered",
@@ -104,11 +108,15 @@ A8_SECTIONS = {
     "Târgu Neamț - Ungheni": {
         "status": "planned",
         "feasibility_study_date": "2024",
-        "length": "27 km",
+        "length": "89 km",
         "current_stage": "Urmează să fie lansată licitația pentru proiectare și execuție",
         "xml_file": "A8/a8_tgneamt_ungheni.xml",
         "start_point": [47.197218, 26.612588],  # Targu Neamt
-        "end_point": [47.249882, 27.746310]  # Ungheni
+        "end_point": [47.249882, 27.746310],  # Ungheni
+        "logo": {
+            "path": "data/photos/A8-RO.png",
+            "position": "top"  
+        }
         # "end_point": [47.231106, 27.007978]  # Targu Frumos (lot1)
         # "end_point": [47.209067, 27.372780]  # Letcani (lot2)
         # "end_point": [47.261211, 27.562632]  # DN24 (lot3)

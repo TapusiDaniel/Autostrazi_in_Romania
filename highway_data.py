@@ -64,7 +64,7 @@ HIGHWAYS = {
         "name": "Autostrada Sudului",
         "sections": A5_SECTIONS,
         "color": "green",
-        "total_length": "125.8 km"
+        "total_length": "55.2 km"
     },
     "A6": {
         "name": "Autosrada Sud",
@@ -100,7 +100,7 @@ HIGHWAYS = {
         "name": "Autosrada Sibiu - Bacău",
         "sections": A13_SECTIONS,
         "color": "green",
-        "total_length": "300 km"
+        "total_length": "280 km"
     },
     "DEx12": {
             "name": "Drumul Expres Craiova - Pitești",

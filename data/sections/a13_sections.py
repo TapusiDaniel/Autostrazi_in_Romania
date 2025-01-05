@@ -12,7 +12,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 2)": {
         "status": "in_construction",
-        "completion_date": "~ 2027",
+        "completion_date": "2027",
         "length": "19.92 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
         "cost": "308M",
@@ -23,7 +23,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 3)": {
         "status": "in_construction",
-        "completion_date": "~ 2027",
+        "completion_date": "2027",
         "length": "17.61 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
         "cost": "354M",
@@ -34,14 +34,18 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 4)": {
         "status": "in_construction",
-        "completion_date": "~ 2027",
+        "completion_date": "2027",
         "length": "16.26 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
         "cost": "238M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "A13/a13_sibiu_fagaras_lot4.xml",
         "start_point": [45.795428, 24.812906],  # Sambata de Sus
-        "end_point": [45.805056, 25.048160]  # Fagaras
+        "end_point": [45.805056, 25.048160],  # Fagaras
+        "logo": {
+            "path": "data/photos/A13-RO.png",
+            "position": "top"  
+        }
     },
     "Făgăraș - Brașov": {
         "status": "planned",

@@ -1,5 +1,5 @@
 Tisita_Albita_SECTIONS = {
-    "Drumul expres Tișița - Albița": {
+    "Tișița - Albița": {
         "status": "planned",
         "feasibility_study_date": "2025",
         "designer": "Asocierea Search - EGIS",

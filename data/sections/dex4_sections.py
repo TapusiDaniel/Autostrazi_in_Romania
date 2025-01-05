@@ -1,5 +1,5 @@
 DEx4_SECTIONS = {
-    "Drum legătură A3 - Tureni": {
+    "Drum de legătură A3 - Tureni": {
         "status": "in_construction",
         "progress": "74%",
         "completion_date": "2025",
@@ -16,6 +16,10 @@ DEx4_SECTIONS = {
         "designer": "Specialist Consulting SRL - Specialist Smart Group SRL - Perfect Consult Europe SRL",
         "length": "75 km",
         "geojson_file": "DEx4/dex4_tureni_cluj.geojson",
+        "logo": {
+            "path": "data/photos/DEx4-RO.png",
+            "position": "right"  
+        }
         # "end_point": [23.9081403430355, 47.1459310178365]  # Dej
     },
 }
