@@ -20,19 +20,19 @@ def add_totals_table(m, highways_data):
                 <td>{totals['total']:.2f} km</td>
             </tr>
             <tr class="status-row finished">
-                <td>Completed:</td>
+                <td>Finalizat:</td>
                 <td>{totals['finished']:.2f} km</td>
             </tr>
             <tr class="status-row in-construction">
-                <td>Under Construction:</td>
+                <td>În construcție :</td>
                 <td>{totals['in_construction']:.2f} km</td>
             </tr>
             <tr class="status-row planned">
-                <td>Planned:</td>
+                <td>Planificat:</td>
                 <td>{totals['planned']:.2f} km</td>
             </tr>
             <tr class="status-row tendered">
-                <td>Tendered:</td>
+                <td>Licitat:</td>
                 <td>{totals['tendered']:.2f} km</td>
             </tr>
         </table>
@@ -692,33 +692,33 @@ def create_highways_map(labels_position="below"):
     <div class="map-controls">
         <button class="minimize-button">−</button>
         <div class="map-button-group">
-            <div class="map-button-group-title">Map Style</div>
-            <button class="map-button active" data-map="white">White Map</button>
+            <div class="map-button-group-title">Stil hartă</div>
+            <button class="map-button active" data-map="white">Hartă Albă</button>
             <button class="map-button" data-map="osm">OpenStreetMap</button>
-            <button class="map-button" data-map="satellite">Satellite</button>
+            <button class="map-button" data-map="satellite">Satelit</button>
         </div>
 
         <div class="map-button-group">
             <div class="map-button-group-title">Sections</div>
             <button class="section-button section-all active" data-section="all">
                 <span class="section-indicator"></span>
-                All Sections
+                Toate secțiunile
             </button>
             <button class="section-button section-finished" data-section="Finished">
                 <span class="section-indicator"></span>
-                Completed Only
+                Doar finalizate
             </button>
             <button class="section-button section-in-construction" data-section="In Construction">
                 <span class="section-indicator"></span>
-                Under Construction Only
+                Doar în construcție
             </button>
             <button class="section-button section-tendered" data-section="Tendered">
                 <span class="section-indicator"></span>
-                Tendered Only
+                Doar în licitație
             </button>
             <button class="section-button section-planned" data-section="Planned">
                 <span class="section-indicator"></span>
-                Planned Only
+                Doar planificate
             </button>
         </div>
     </div>

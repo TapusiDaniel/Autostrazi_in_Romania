@@ -28,159 +28,159 @@ from data.sections.dex_drumuri_radiale_sections import DEx_DRUMURI_RADIALE_SECTI
 import os
 
 HIGHWAYS = {
-    "A0": {
+    "Autostrada A0": {
         "name": "Centura București",
         "sections": A0_SECTIONS,
         "color": "green",
         "total_length": "100.7 km",
         "logo": "data/photos/A0-RO.png"
     },
-    "A1": {
+    "Autostrada A1": {
         "name": "Autostrada București - Nădlac",
         "sections": A1_SECTIONS,
         "color": "green",
         "total_length": "578.48 km",
         "logo": "data/photos/A1-RO.png"
     },
-    "A2": {
+    "Autostrada A2": {
         "name": "Autostrada Soarelui",
         "sections": A2_SECTIONS,
         "color": "green",
         "total_length": "202.79 km"
     },
-    "A3": {
+    "Autostrada A3": {
         "name": "Autostrada Transilvania",
         "sections": A3_SECTIONS,
         "color": "green",
         "total_length": "438 km"
     },
-    "A4": {
+    "Autostrada A4": {
         "name": "Constanța Bypass",
         "sections": A4_SECTIONS,
         "color": "green",
         "total_length": "52.39 km"
     },
-    "A5": {
+    "Autostrada A5": {
         "name": "Autostrada Sudului",
         "sections": A5_SECTIONS,
         "color": "green",
         "total_length": "55.2 km"
     },
-    "A6": {
+    "Autostrada A6": {
         "name": "Autosrada Sud",
         "sections": A6_SECTIONS,
         "color": "green",
         "total_length": "450 km"
     },
-    "A7": {
+    "Autostrada A7": {
         "name": "Autosrada Moldovei",
         "sections": A7_SECTIONS,
         "color": "green",
         "total_length": "437 km"
     },
-    "A8": {
+    "Autostrada A8": {
         "name": "Autosrada Unirii",
         "sections": A8_SECTIONS,
         "color": "green",
         "total_length": "307.88 km"
     },
-    "A9": {
+    "Autostrada A9": {
         "name": "Autosrada Timișoara - Moravița",
         "sections": A9_SECTIONS,
         "color": "green",
         "total_length": "72.93 km"
     },
-    "A10": {
+    "Autostrada A10": {
         "name": "Autosrada Sebeș - Turda",
         "sections": A10_SECTIONS,
         "color": "green",
         "total_length": "70 km"
     },
-    "A13": {
+    "Autostrada A13": {
         "name": "Autosrada Sibiu - Bacău",
         "sections": A13_SECTIONS,
         "color": "green",
         "total_length": "280 km"
     },
-    "DEx12": {
+    "Drumul expres DEx12": {
             "name": "Drumul Expres Craiova - Pitești",
             "sections": DEx12_SECTIONS,
             "color": "green",
             "total_length": "121.25 km"
     },
-    "DEx4": {
+    "Drumul expres DEx4": {
             "name": "Drumul Expres Turda - Dej",
             "sections": DEx4_SECTIONS,
             "color": "green",
             "total_length": "70 km"
     },
-    "DEx5A": {
+    "Drumul expres DEx5A": {
             "name": "Drumul Expres DEx5A Bacău - Piatra Neamț",
             "sections": DEx5A_SECTIONS,
             "color": "green",
             "total_length": "51 km"
     },
-    "DEx6": {
+    "Drumul expres DEx6": {
             "name": "Drumul Expres Focșani - Brăila - Galați",
             "sections": DEx6_SECTIONS,
             "color": "green",
             "total_length": "85.81 km"
     },
-    "DEx8": {
+    "Drumul expres DEx8": {
             "name": "Drumul Expres Constanța - Tulcea - Brăila",
             "sections": DEx8_SECTIONS,
             "color": "green",
             "total_length": "172 km"
     },
-    "DEx16": {
+    "Drumul expres DEx16": {
             "name": "Drumul Expres Arad - Oradea",
             "sections": DEx16_SECTIONS,
             "color": "green",
             "total_length": "136.97 km"
     },
-    "Buzău - Brăila": {
+    "Drumul expres Buzău - Brăila": {
             "name": "Drumul Expres Buzău - Brăila",
             "sections": Buzau_Braila_SECTIONS,
             "color": "green",
             "total_length": "94 km"
     },
-    "Tișița - Albița": {
+    "Drumul expres Tișița - Albița": {
             "name": "Drumul Expres Tișița - Albița",
             "sections": Tisita_Albita_SECTIONS,
             "color": "green",
             "total_length": "~ 160 km"
     },
-    "Găești - Ploiești": {
+    "Drumul expres Găești - Ploiești": {
             "name": "Drumul Expres Găești - Ploiești",
             "sections":Gaesti_Ploiesti_SECTIONS,
             "color": "green",
             "total_length": "~ 81.5 km"
     },
-    "București - Târgoviște": {
+    "Drumul expres Valahia": {
             "name": "Drumul Expres București - Târgoviște",
             "sections":Bucuresti_Targoviste_SECTIONS,
             "color": "green",
             "total_length": "~ 62 km"
     },
-    "Suceava - Botoșani": {
+    "Drumul expres Suceava - Botoșani": {
             "name": "Drumul Expres Suceava - Botoșani",
             "sections":Suceava_Botosani_SECTIONS,
             "color": "green",
             "total_length": "~ 20 km"
     },
-    "Jibou - Românași": {
-            "name": "Drumul Expres Jibou – Românași (DEx4), legătura la Autostrada Transilvania",
+    "Drumul expres Jibou - Românași (DEx4), legătura la Autostrada Transilvania": {
+            "name": "Jibou – Românași",
             "sections":DEx4_JIBOU_ROMANASI_SECTIONS,
             "color": "green",
             "total_length": "~ 20 km"
     },
-    "DEx14": {
+    "Drumul expres DEx14": {
             "name": "Autostrada Nordului",
             "sections":DEx14_SECTIONS,
             "color": "green",
             "total_length": "335 km"
     },
-    "Pitești - Mioveni": {
+    "Drumul expres Dacia": {
             "name": "Drumul Expres Dacia",
             "sections":DEx_PITESTI_MIOVENI_SECTIONS,
             "color": "green",

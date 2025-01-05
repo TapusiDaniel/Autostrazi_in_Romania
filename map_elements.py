@@ -69,48 +69,48 @@ def create_section_popup(highway_code, section_name, section_data):
     }
     
     status_text = {
-        "finished": "Completed",
-        "in_construction": "Under Construction",
-        "planned": "Planned",
-        "tendered": "Out for Tender"
+        "finished": "Finalizat",
+        "in_construction": "În construcție",
+        "planned": "Planificat",
+        "tendered": "Lansat spre licitație"
     }
     
     # Create base popup content
     popup_content = f"""
     <div style='font-family: Arial; font-size: 12px; padding: 5px;'>
-        <b>Highway {highway_code}</b><br>
-        <b>Section: {section_name}</b>
+        <b>{highway_code}</b><br>
+        <b>Tronson: {section_name}</b>
         <hr style='margin: 5px 0;'>
         Status: <span style='color: {status_colors[section_data["status"]]};'>
             {status_text[section_data["status"]]}</span><br>
-        Length: {section_data["length"]}"""
+        Lungime: {section_data["length"]}"""
 
     # Add status-specific information
     if section_data["status"] == "finished":
-        popup_content += f"""<br>Completion Date: {section_data.get("completion_date", "N/A")}"""
+        popup_content += f"""<br>Data finalizării: {section_data.get("completion_date", "N/A")}"""
     
     elif section_data["status"] == "in_construction":
         popup_content += f"""
-        <br>Expected Completion: {section_data.get("completion_date", "N/A")}
-        <br>Progress: {section_data.get("progress", "N/A")}"""
+        <br>Finalizare: {section_data.get("completion_date", "N/A")}
+        <br>Progres: {section_data.get("progress", "N/A")}"""
     
     elif section_data["status"] == "tendered":
         popup_content += f"""
-        <br>Tender End Date: {section_data.get("tender_end_date", "N/A")}
-        <br>SEAP Code: {section_data.get("seap_code", "N/A")}
-        <br>Current Stage: {section_data.get("current_stage", "N/A")}
-        <br>Construction Duration: {section_data.get("construction_duration", "N/A")}"""
+        <br>Finalizare licitație: {section_data.get("tender_end_date", "N/A")}
+        <br>Codul SEAP: {section_data.get("seap_code", "N/A")}
+        <br>Stadiul curent: {section_data.get("current_stage", "N/A")}
+        <br>Durata construcției: {section_data.get("construction_duration", "N/A")}"""
     
     elif section_data["status"] == "planned":
         popup_content += f"""
-        <br>Feasibility Study Completion: {section_data.get("feasibility_study_date", "N/A")}
-        <br>Projected Completion Date: {section_data.get("projected_completion_date", "N/A")}"""
+        <br>Finalizare studiu de fezabilitate: {section_data.get("feasibility_study_date", "N/A")}
+        <br>Data aproximativă a finalizării: {section_data.get("projected_completion_date", "N/A")}"""
 
     # Add optional information if available
     if "constructor" in section_data:
         popup_content += f"<br>Constructor: {section_data['constructor']}"
     if "designer" in section_data:
-        popup_content += f"<br>Designer: {section_data['designer']}"
+        popup_content += f"<br>Proiectant: {section_data['designer']}"
 
     # Add cost information
     if section_data["status"] in ["finished", "in_construction"]:
@@ -118,14 +118,14 @@ def create_section_popup(highway_code, section_name, section_data):
             popup_content += f"<br>Cost: {section_data['cost']} €"
     else:
         if "estimated_cost" in section_data:
-            popup_content += f"<br>Estimated Cost: {section_data['estimated_cost']} €"
+            popup_content += f"<br>Cost estimat: {section_data['estimated_cost']} €"
 
     # Add financing and current stage if available
     if "financing" in section_data:
-        popup_content += f"<br>Financing: {section_data['financing']}"
+        popup_content += f"<br>Finanțare: {section_data['financing']}"
     
     if "current_stage" in section_data:
-        popup_content += f"<br>Current Stage: {section_data['current_stage']}"
+        popup_content += f"<br>Stadiul curent: {section_data['current_stage']}"
 
     popup_content += "</div>"
     

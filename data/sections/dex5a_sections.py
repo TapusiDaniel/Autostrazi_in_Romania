@@ -1,5 +1,5 @@
 DEx5A_SECTIONS = {
-    "Drum expres Bacău - Piatra Neamț": {
+    "Bacău - Piatra Neamț": {
         "status": "tendered",
         "tender_end_date": "2025", 
         "length": "51 km",
