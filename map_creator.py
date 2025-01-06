@@ -699,7 +699,7 @@ def create_highways_map(labels_position="below"):
         </div>
 
         <div class="map-button-group">
-            <div class="map-button-group-title">Sections</div>
+            <div class="map-button-group-title">Secțiuni</div>
             <button class="section-button section-all active" data-section="all">
                 <span class="section-indicator"></span>
                 Toate secțiunile
