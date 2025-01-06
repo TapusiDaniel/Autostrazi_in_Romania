@@ -16,7 +16,7 @@ DEx14_SECTIONS = {
         "completion_date": "2022",
         "length": "12 km",
         "constructor": "Asocierea Itinera – Collini Lavori",
-        "cost": "80.6B",
+        "cost": "80.6M",
         "financing": "Fondul European de Dezvoltare Regională (75%) și bugetul de stat (25%) - POIM",
         "xml_file": "DEx14/dex14_vo_satumare.xml",
     },
