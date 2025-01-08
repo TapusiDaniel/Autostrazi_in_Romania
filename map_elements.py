@@ -124,7 +124,7 @@ def create_section_popup(highway_code, section_name, section_data):
     if "financing" in section_data:
         popup_content += f"<br>Finanțare: {section_data['financing']}"
     
-    if "current_stage" in section_data:
+    if "current_stage" in section_data and section_data["status"] != "tendered":
         popup_content += f"<br>Stadiul curent: {section_data['current_stage']}"
 
     popup_content += "</div>"

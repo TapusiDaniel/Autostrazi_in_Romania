@@ -7,7 +7,7 @@ DEx6_SECTIONS = {
         "construction_duration": "42 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1073267",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "DEx6/dex6_focsani_braila.xml",
         "logo": {
             "path": "data/photos/DEx6-RO.png",
