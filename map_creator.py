@@ -706,19 +706,19 @@ def create_highways_map(labels_position="below"):
             </button>
             <button class="section-button section-finished" data-section="Finished">
                 <span class="section-indicator"></span>
-                Doar finalizate
+                Finalizate
             </button>
             <button class="section-button section-in-construction" data-section="In Construction">
                 <span class="section-indicator"></span>
-                Doar în construcție
+                În construcție
             </button>
             <button class="section-button section-tendered" data-section="Tendered">
                 <span class="section-indicator"></span>
-                Doar în licitație
+                În licitație
             </button>
             <button class="section-button section-planned" data-section="Planned">
                 <span class="section-indicator"></span>
-                Doar planificate
+                Planificate
             </button>
         </div>
     </div>
