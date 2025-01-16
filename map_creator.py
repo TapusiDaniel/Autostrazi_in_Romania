@@ -274,7 +274,7 @@ def create_highways_map(labels_position="below"):
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Interactive map of highways in Romania">
-        <title>Romania Highways</title>
+        <title>Autostrăzi în România</title>
     """
     m.get_root().header.add_child(folium.Element(meta_tags))
     
@@ -914,7 +914,7 @@ def create_highways_map(labels_position="below"):
         font-family: Arial, sans-serif;
         color: #666;
         font-size: 10px;">
-        Ultima actualizare: 8 ianuarie 2025
+        Ultima actualizare: 16 ianuarie 2025
     </div>
     """
     m.get_root().html.add_child(folium.Element(update_text))
