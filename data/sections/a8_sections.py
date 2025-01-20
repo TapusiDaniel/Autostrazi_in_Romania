@@ -88,7 +88,7 @@ A8_SECTIONS = {
         "construction_duration": "48 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1068571",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - UMB Spedition",
         "xml_file": "A8/a8_lot2c.xml",
         "start_point": [47.185855, 26.028449],  # Pipirig
         "end_point": [47.213855, 26.252413]  # Leghin
