@@ -1,0 +1,60 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448758 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18623125" visible="true" version="3" changeset="162028595" timestamp="2025-02-01T22:47:11Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1355248866" role=""/>
+<member type="way" ref="1355248865" role=""/>
+<member type="way" ref="1355248862" role=""/>
+<member type="way" ref="1355248861" role=""/>
+<member type="way" ref="1355007800" role=""/>
+<member type="way" ref="1355007801" role=""/>
+<member type="way" ref="1355248860" role=""/>
+<member type="way" ref="1355248863" role=""/>
+<member type="way" ref="1355248864" role=""/>
+<member type="way" ref="1355248867" role=""/>
+<member type="way" ref="1081595650" role=""/>
+<member type="way" ref="1098343113" role=""/>
+<member type="way" ref="1129215193" role=""/>
+<member type="way" ref="1129215194" role=""/>
+<member type="way" ref="1129215197" role=""/>
+<member type="way" ref="1064159214" role=""/>
+<member type="way" ref="1129215196" role=""/>
+<member type="way" ref="1129215195" role=""/>
+<member type="way" ref="1127887135" role=""/>
+<member type="way" ref="1346058727" role=""/>
+<member type="way" ref="1127887134" role=""/>
+<member type="way" ref="1356046186" role=""/>
+<member type="way" ref="1356046197" role=""/>
+<member type="way" ref="1127887137" role=""/>
+<member type="way" ref="1127887138" role=""/>
+<member type="way" ref="1356046198" role=""/>
+<member type="way" ref="1356046199" role=""/>
+<member type="way" ref="1127887136" role=""/>
+<member type="way" ref="1127887133" role=""/>
+<member type="way" ref="1127868678" role=""/>
+<member type="way" ref="1127868679" role=""/>
+<member type="way" ref="1127868676" role=""/>
+<member type="way" ref="1127868677" role=""/>
+<member type="way" ref="1127868675" role=""/>
+<member type="way" ref="1129215192" role=""/>
+<member type="way" ref="1355248869" role=""/>
+<member type="way" ref="1355248868" role=""/>
+<member type="way" ref="1356046196" role=""/>
+<member type="way" ref="1356046195" role=""/>
+<member type="way" ref="1356046191" role=""/>
+<member type="way" ref="1356046192" role=""/>
+<member type="way" ref="1356046194" role=""/>
+<member type="way" ref="1356046193" role=""/>
+<member type="way" ref="1356046187" role=""/>
+<member type="way" ref="1356046190" role=""/>
+<member type="way" ref="1356046184" role=""/>
+<member type="way" ref="1356046188" role=""/>
+<member type="way" ref="1356046189" role=""/>
+<member type="way" ref="1356046185" role=""/>
+<member type="way" ref="1356046183" role=""/>
+<member type="way" ref="1356046182" role=""/>
+<member type="way" ref="1356046180" role=""/>
+<member type="way" ref="1356046181" role=""/>
+<tag k="name" v="A8 (Târgu Neamț - Iași - Ungheni): Tronson 1 Moțca - Târgu Frumos"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
+</relation>
+</osm>

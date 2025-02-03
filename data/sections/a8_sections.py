@@ -105,10 +105,10 @@ A8_SECTIONS = {
         "start_point": [47.213855, 26.252413],  # Leghin
         "end_point": [47.197218, 26.612588]  # Targu Neamt
     },
-    "Târgu Neamț - Ungheni": {
+    "Târgu Neamț - Ungheni (restul loturilor)": {
         "status": "planned",
         "feasibility_study_date": "2024",
-        "length": "89 km",
+        "length": "62 km",
         "current_stage": "Urmează să fie lansată licitația pentru proiectare și execuție",
         "xml_file": "A8/a8_tgneamt_ungheni.xml",
         "start_point": [47.197218, 26.612588],  # Targu Neamt
@@ -120,6 +120,19 @@ A8_SECTIONS = {
         # "end_point": [47.231106, 27.007978]  # Targu Frumos (lot1)
         # "end_point": [47.209067, 27.372780]  # Letcani (lot2)
         # "end_point": [47.261211, 27.562632]  # DN24 (lot3)
+    },
+    "Târgu Neamț - Ungheni lot 1 (Moțca - Târgu Frumos)": {
+        "status": "tendered",
+        "tender_end_date": "2025",
+        "length": "27 km",
+        "estimated_cost": "1.2B",
+        "construction_duration": "46 de luni",
+        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "seap_code": "CN1077231",
+        "current_stage": "Depunere oferte",
+        "xml_file": "A8/a8_motca_targu_frumos_lot1.xml",
+        "start_point": [47.197218, 26.612607],  # Motca
+        "end_point": [47.231512, 27.010151]  # Targu Frumos
     },
     "Pod Ungheni": {
         "status": "in_construction",

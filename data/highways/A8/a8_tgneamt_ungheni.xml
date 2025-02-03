@@ -1,68 +1,36 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448777 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="17954863" visible="true" version="3" changeset="160587311" timestamp="2024-12-24T20:39:52Z" user="RobertH-PUM" uid="9320232">
-<member type="way" ref="1081595650" role=""/>
-<member type="way" ref="1098343113" role=""/>
-<member type="way" ref="1129215193" role=""/>
-<member type="way" ref="1129215194" role=""/>
-<member type="way" ref="1129215197" role=""/>
-<member type="way" ref="1064159214" role=""/>
-<member type="way" ref="1129215195" role=""/>
-<member type="way" ref="1129215196" role=""/>
-<member type="way" ref="1127877217" role=""/>
-<member type="way" ref="1127877221" role=""/>
-<member type="way" ref="1127868675" role=""/>
-<member type="way" ref="1127868677" role=""/>
-<member type="way" ref="1127868679" role=""/>
-<member type="way" ref="1127868676" role=""/>
-<member type="way" ref="1127868678" role=""/>
-<member type="way" ref="1129215192" role=""/>
-<member type="way" ref="1127887137" role=""/>
-<member type="way" ref="1127887134" role=""/>
-<member type="way" ref="1346058727" role=""/>
-<member type="way" ref="1127887135" role=""/>
-<member type="way" ref="1127887133" role=""/>
-<member type="way" ref="1127887138" role=""/>
-<member type="way" ref="1127887136" role=""/>
-<member type="way" ref="1127887142" role=""/>
-<member type="way" ref="1127887147" role=""/>
-<member type="way" ref="1127887140" role=""/>
-<member type="way" ref="1127887139" role=""/>
-<member type="way" ref="1127887141" role=""/>
-<member type="way" ref="1129215191" role=""/>
-<member type="way" ref="1127870849" role=""/>
-<member type="way" ref="1127870852" role=""/>
-<member type="way" ref="1127870850" role=""/>
-<member type="way" ref="1127870851" role=""/>
-<member type="way" ref="1127870854" role=""/>
-<member type="way" ref="1127870848" role=""/>
-<member type="way" ref="1127870847" role=""/>
-<member type="way" ref="1127870846" role=""/>
-<member type="way" ref="1127870843" role=""/>
-<member type="way" ref="1127870845" role=""/>
-<member type="way" ref="1127870844" role=""/>
-<member type="way" ref="1127870842" role=""/>
-<member type="way" ref="1127870853" role=""/>
-<member type="way" ref="1127877207" role=""/>
-<member type="way" ref="1346058728" role=""/>
-<member type="way" ref="1127877210" role=""/>
-<member type="way" ref="1127877209" role=""/>
-<member type="way" ref="1127877206" role=""/>
-<member type="way" ref="1346058726" role=""/>
-<member type="way" ref="1127877215" role=""/>
-<member type="way" ref="1127877211" role=""/>
-<member type="way" ref="1127877214" role=""/>
-<member type="way" ref="1127877212" role=""/>
-<member type="way" ref="1127877213" role=""/>
-<member type="way" ref="1127877220" role=""/>
-<member type="way" ref="1127877226" role=""/>
-<member type="way" ref="1127877227" role=""/>
-<member type="way" ref="1127877225" role=""/>
-<member type="way" ref="1127877224" role=""/>
-<member type="way" ref="1127877222" role=""/>
-<member type="way" ref="1127877223" role=""/>
-<member type="way" ref="1127877216" role=""/>
-<tag k="name" v="TarguNeamt-Iasi-Ungheni"/>
-<tag k="route" v="proposed"/>
-<tag k="type" v="route"/>
-</relation>
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448768 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+  <relation id="17954863" visible="true" version="8" changeset="162028595" timestamp="2025-02-01T22:47:11Z" user="k9h10a" uid="21676723">
+    <member type="way" ref="1127877217" role=""/>
+    <member type="way" ref="1127877221" role=""/>
+    <member type="way" ref="1129215191" role=""/>
+    <member type="way" ref="1127870849" role=""/>
+    <member type="way" ref="1127870852" role=""/>
+    <member type="way" ref="1127870850" role=""/>
+    <member type="way" ref="1127870851" role=""/>
+    <member type="way" ref="1127870854" role=""/>
+    <member type="way" ref="1127870848" role=""/>
+    <member type="way" ref="1127870847" role=""/>
+    <member type="way" ref="1127870846" role=""/>
+    <member type="way" ref="1127870843" role=""/>
+    <member type="way" ref="1127870845" role=""/>
+    <member type="way" ref="1127870844" role=""/>
+    <member type="way" ref="1127870842" role=""/>
+    <member type="way" ref="1346058726" role=""/>
+    <member type="way" ref="1127877215" role=""/>
+    <member type="way" ref="1127877211" role=""/>
+    <member type="way" ref="1127877214" role=""/>
+    <member type="way" ref="1127877212" role=""/>
+    <member type="way" ref="1127877213" role=""/>
+    <member type="way" ref="1127877220" role=""/>
+    <member type="way" ref="1127877226" role=""/>
+    <member type="way" ref="1127877227" role=""/>
+    <member type="way" ref="1127877225" role=""/>
+    <member type="way" ref="1127877224" role=""/>
+    <member type="way" ref="1127877222" role=""/>
+    <member type="way" ref="1127877223" role=""/>
+    <member type="way" ref="1127877216" role=""/>
+    <tag k="name" v="TarguNeamt-Iasi-Ungheni"/>
+    <tag k="route" v="proposed"/>
+    <tag k="type" v="route"/>
+  </relation>
 </osm>

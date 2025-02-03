@@ -26,7 +26,7 @@ A6_SECTIONS = {
         "construction_duration": "34 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1072205",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot1.xml",
         "end_point": [44.3619447, 23.7786428]  # Craiova Nord
     },
