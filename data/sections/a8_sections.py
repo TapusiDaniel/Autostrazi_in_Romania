@@ -84,7 +84,7 @@ A8_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025",
         "length": "19.30 km",
-        "estimated_cost": "660M",
+        "estimated_cost": "538.2M",
         "construction_duration": "48 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1068571",

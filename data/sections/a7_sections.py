@@ -105,7 +105,7 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 1)": {
         "status": "in_construction",
-        "progress": "36%",
+        "progress": "42%",
         "completion_date": "2025",
         "length": "35.60 km",
         "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
