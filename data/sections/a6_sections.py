@@ -4,8 +4,8 @@ A6_SECTIONS = {
         "feasibility_study_date": "2025",
         "length": "77.02 km",
         "projected_completion_date": "~ 2029",
-        "geojson_file": 'A6/a6_bucuresti_alexandria.geojson', 
-        "end_point": [44.023789, 25.245323]  # Alexandria
+        "xml_file": 'A6/a6_bucuresti_alexandria.xml', 
+        "end_point": [44.02492, 25.26474]  # Alexandria
     },
     "Alexandria - Craiova": {
         "status": "planned",

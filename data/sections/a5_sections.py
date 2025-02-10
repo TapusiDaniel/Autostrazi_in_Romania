@@ -5,7 +5,7 @@ A5_SECTIONS = {
         "length": "55.20 km",
         "projected_completion_date": "~ 2030",
         "current_stage": "Evaluarea ofertelor pentru studiul de fezabilitate",
-        "geojson_file": 'A5/a5_bucuresti_giurgiu.geojson', 
+        "xml_file": 'A5/a5_bucuresti_giurgiu.xml', 
         "logo": {
             "path": "data/photos/A5-RO.png",
             "position": "right"  

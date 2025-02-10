@@ -7,7 +7,7 @@ A9_SECTIONS = {
         "construction_duration": "48 de luni",  
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1073697",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A9/a9_lot1.xml",
         "end_point": [45.561812, 21.248784]  # Jebel
     },
