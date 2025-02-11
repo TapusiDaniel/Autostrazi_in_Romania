@@ -58,6 +58,6 @@ DEx_DRUMURI_RADIALE_SECTIONS = {
         "feasibility_study_date": "2026",
         "designer": "Asocierea DP Consult SA – Explan SRL – Geologic Site SRL",
         "length": "9.62 km",
-        "geojson_file": "Drumuri Radiale/dr10.geojson",
+        "xml_file": "Drumuri Radiale/dr10.xml",
     }
 }
