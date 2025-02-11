@@ -1,6 +1,30 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (237702 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="18675872" visible="true" version="4" changeset="162342258" timestamp="2025-02-10T09:30:14Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448770 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18675872" visible="true" version="7" changeset="162369512" timestamp="2025-02-10T21:58:20Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1358422247" role=""/>
+<member type="way" ref="1358878194" role=""/>
+<member type="way" ref="1358878196" role=""/>
+<member type="way" ref="1358877164" role=""/>
+<member type="way" ref="1358877166" role=""/>
+<member type="way" ref="1358877170" role=""/>
+<member type="way" ref="1358877173" role=""/>
+<member type="way" ref="1358877175" role=""/>
+<member type="way" ref="1358877176" role=""/>
+<member type="way" ref="1358877196" role=""/>
+<member type="way" ref="1358877198" role=""/>
+<member type="way" ref="1358721301" role=""/>
+<member type="way" ref="1358721304" role=""/>
+<member type="way" ref="1358721303" role=""/>
+<member type="way" ref="1358721302" role=""/>
+<member type="way" ref="1358877197" role=""/>
+<member type="way" ref="1358877195" role=""/>
+<member type="way" ref="1358877177" role=""/>
+<member type="way" ref="1358877174" role=""/>
+<member type="way" ref="1358877172" role=""/>
+<member type="way" ref="1358877171" role=""/>
+<member type="way" ref="1358877165" role=""/>
+<member type="way" ref="1358877163" role=""/>
+<member type="way" ref="1358878195" role=""/>
+<member type="way" ref="1358878193" role=""/>
 <member type="way" ref="1358422248" role=""/>
 <member type="way" ref="1127870852" role=""/>
 <member type="way" ref="1358530650" role=""/>
@@ -55,6 +79,25 @@
 <member type="way" ref="1358437016" role=""/>
 <member type="way" ref="1358437012" role=""/>
 <member type="way" ref="1358437013" role=""/>
+<member type="way" ref="1358877185" role=""/>
+<member type="way" ref="1358877189" role=""/>
+<member type="way" ref="1358877188" role=""/>
+<member type="way" ref="1358877187" role=""/>
+<member type="way" ref="1358877186" role=""/>
+<member type="way" ref="1358877191" role=""/>
+<member type="way" ref="1358877192" role=""/>
+<member type="way" ref="1358877193" role=""/>
+<member type="way" ref="1358877190" role=""/>
+<member type="way" ref="1358877194" role=""/>
+<member type="way" ref="1358877181" role=""/>
+<member type="way" ref="1358877182" role=""/>
+<member type="way" ref="1358877183" role=""/>
+<member type="way" ref="1358877184" role=""/>
+<member type="way" ref="1358877178" role=""/>
+<member type="way" ref="1358877179" role=""/>
+<member type="way" ref="1358877180" role=""/>
+<member type="way" ref="1358877162" role=""/>
+<member type="way" ref="1358877161" role=""/>
 <tag k="name" v="A8 (Tg. Frumos - Lețcani)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="proposed"/>
