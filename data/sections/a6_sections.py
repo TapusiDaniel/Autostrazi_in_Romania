@@ -38,7 +38,7 @@ A6_SECTIONS = {
         "construction_duration": "34 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1072256",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot2.xml",
         "start_point": [44.3619447, 23.7786428],  # Craiova Nord
         "end_point": [44.4373536, 23.671621]  # Beharca

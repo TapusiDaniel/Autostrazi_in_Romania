@@ -46,7 +46,7 @@ DEx16_SECTIONS = {
         "construction_duration": "24 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1065535",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea PRECON TRANSILVANIA SRL - AUTOMAGISTRAL PIVDEN SRL",
         "xml_file": "DEx16/dex16_arad_oradea_lot1.xml",
         "start_point": [46.793249, 21.694058],  # Salonta
         "end_point": [47.072718, 21.873508]  # Oradea

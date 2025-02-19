@@ -914,7 +914,7 @@ def create_highways_map(labels_position="below"):
         font-family: Arial, sans-serif;
         color: #666;
         font-size: 10px;">
-        Ultima actualizare: 10 februarie 2025
+        Ultima actualizare: 19 februarie 2025
     </div>
     """
     m.get_root().html.add_child(folium.Element(update_text))
