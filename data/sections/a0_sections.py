@@ -27,7 +27,7 @@ A0_SECTIONS = {
     },
     "A0 Sud Lot 3": {
         "status": "in_construction",
-        "progress": "77.10%",
+        "progress": "80.35%",
         "completion_date": "2025",
         "length": "17.96 km",
         "constructor": "Asocierea Aktor SA - Euro Construct Trading SRL",
@@ -62,7 +62,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 3": {
         "status": "in_construction",
-        "progress": "23%",
+        "progress": "36%",
         "completion_date": "2025",
         "length": "8.6 km",
         "constructor": "China Civil Engineering Construction Corporation",

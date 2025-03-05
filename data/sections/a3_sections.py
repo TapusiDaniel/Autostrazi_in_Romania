@@ -137,7 +137,7 @@ A3_SECTIONS = {
     },
     "Mihăiești - Zimbor (subsecțiunea 3B - lot 1)": {
         "status": "in_construction",
-        "progress": "81.60%",
+        "progress": "81.90%",
         "completion_date": "2026",
         "length": "13.26 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - Electromontaj SA",
@@ -149,7 +149,7 @@ A3_SECTIONS = {
     },
     "Zimbor - Poarta Sălajului (subsecțiunea 3B - lot 2)": {
         "status": "in_construction",
-        "progress": "65.30%",
+        "progress": "67.88%",
         "completion_date": "2025",
         "length": "12.24 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
@@ -167,7 +167,7 @@ A3_SECTIONS = {
         "construction_duration": "78 de luni",  
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1051824",
-        "current_stage": "Au fost înregistrate contestații",
+        "current_stage": "Semnare contract - Asocierea Makyol-Ozaltin",
         "xml_file": 'A3/a3_poartasalajului_nusfalau.xml',  
         "start_point": [47.0866324, 23.1797234],  # Poarta Salajului
         "end_point": [47.177794, 22.7039123],  # Nusfalau
@@ -200,6 +200,7 @@ A3_SECTIONS = {
     },
     "Chiribiș - Biharia (subsecțiunea 3C - lot 2)": {
         "status": "in_construction",
+        "progress": "2.73%",
         "completion_date": "2027",
         "length": "28.55 km",
         "constructor": "Asocierea Precon Transilvania SRL – Citadina 98 SA",

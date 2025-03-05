@@ -19,7 +19,7 @@ A9_SECTIONS = {
         "construction_duration": "48 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1073923",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A9/a9_lot2.xml",
         "start_point": [45.561812, 21.248784],  # Jebel
         "end_point": [45.268393, 21.282575],  # Moravita

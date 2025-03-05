@@ -21,7 +21,7 @@ A7_SECTIONS = {
     },
     "Ploiești - Buzău (lot 2)": {
         "status": "in_construction",
-        "progress": "98.29%",
+        "progress": "98.60%",
         "completion_date": "2025",
         "length": "28.35 km",
         "constructor": "Asocierea Coni SRL - Trace Group",
@@ -37,7 +37,7 @@ A7_SECTIONS = {
     },
     "Ploiești - Buzău (lot 3)": {
         "status": "in_construction",
-        "progress": "33%",
+        "progress": "35%",
         "completion_date": "2025",
         "length": "13.90 km",
         "constructor": "Asocierea Nurol Inşaat Ve Ticaret A.S. (lider) - Makyol Insaat Sanayi Turizm Ve Ticaret A.S.",
@@ -60,7 +60,7 @@ A7_SECTIONS = {
     },
     "Buzău - Focșani (lot 1 - în construcție)": {
         "status": "in_construction",
-        "progress": "90%",
+        "progress": "95%",
         "completion_date": "2025",
         "length": "N/A",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
