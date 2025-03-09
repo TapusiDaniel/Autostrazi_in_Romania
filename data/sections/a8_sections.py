@@ -32,7 +32,7 @@ A8_SECTIONS = {
         "construction_duration": "54 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1074910",
-        "current_stage": "Evaluare ofertă",
+        "current_stage": "Semnare contract - UMB Spedition",
         "xml_file": "A8/a8_lot1c.xml",
         "start_point": [46.569293, 25.059833],  # Sarateni
         "end_point": [46.677736, 25.384139],  # Joseni
