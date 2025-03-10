@@ -62,7 +62,7 @@ A8_SECTIONS = {
         "construction_duration": "54 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1074946",
-        "current_stage": "Evaluare ofertă",
+        "current_stage": "Semnare contract - UMB Spedition",
         "xml_file": "A8/a8_lot2a.xml",
         "start_point": [46.767823, 25.501604],  # Ditrau
         "end_point": [46.973066, 25.813955]  # Grinties
@@ -75,7 +75,7 @@ A8_SECTIONS = {
         "construction_duration": "54 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1075544",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A8/a8_lot2b.xml",
         "start_point": [46.973066, 25.813955],  # Grinties
         "end_point": [47.185855, 26.028449]  # Pipirig
