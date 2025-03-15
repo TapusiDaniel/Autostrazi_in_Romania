@@ -7,7 +7,7 @@ DEx14_SECTIONS = {
         "construction_duration": "24 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1064596",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Construcții Erbașu S.A.",
         "xml_file": "DEx14/dex14_oar_satumare.xml",
         "end_point": [47.79583, 22.83047]  # Satu Mare
     },
