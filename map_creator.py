@@ -803,14 +803,45 @@ def create_highways_map(labels_position="below"):
         }
 
         function selectSection(button) {
-            sectionButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            var sectionName = button.getAttribute('data-section');
+            // Toggle active class instead of removing from all
+            button.classList.toggle('active');
+            
+            // Get all currently active sections
+            var activeSections = Array.from(document.querySelectorAll('.section-button.active'))
+                .map(btn => btn.getAttribute('data-section'));
+            
             var activeMapButton = document.querySelector('.map-button.active');
             var isWhiteMap = activeMapButton && activeMapButton.getAttribute('data-map') === 'white';
             
-            // Update section visibility while preserving city boundaries and outline
+            // Handle the "all" section specially
+            if (button.getAttribute('data-section') === 'all') {
+                // If "all" was clicked, deactivate other sections
+                sectionButtons.forEach(btn => {
+                    if (btn.getAttribute('data-section') !== 'all') {
+                        btn.classList.remove('active');
+                    }
+                });
+                activeSections = ['all'];
+            } else {
+                // If a specific section was clicked, deactivate "all"
+                var allButton = document.querySelector('.section-button[data-section="all"]');
+                if (allButton) {
+                    allButton.classList.remove('active');
+                }
+                // Remove 'all' from activeSections if it exists
+                activeSections = activeSections.filter(section => section !== 'all');
+            }
+            
+            // If no sections are active, activate "all"
+            if (activeSections.length === 0) {
+                var allButton = document.querySelector('.section-button[data-section="all"]');
+                if (allButton) {
+                    allButton.classList.add('active');
+                    activeSections = ['all'];
+                }
+            }
+            
+            // Update overlay visibility based on active sections
             var overlayInputs = document.querySelectorAll('.leaflet-control-layers-overlays input[type="checkbox"]');
             overlayInputs.forEach(function(input) {
                 var label = input.nextElementSibling.textContent.trim();
@@ -821,15 +852,16 @@ def create_highways_map(labels_position="below"):
                 }
 
                 // Handle highway sections
-                if (sectionName === 'all') {
+                if (activeSections.includes('all')) {
+                    if (!input.checked) input.click();
+                } else if (activeSections.includes(label)) {
                     if (!input.checked) input.click();
                 } else {
-                    if (label === sectionName && !input.checked) input.click();
-                    else if (label !== sectionName && input.checked) input.click();
+                    if (input.checked) input.click();
                 }
             });
 
-            // For white map, ensure all elements remain visible
+            // For white map, ensure all elements remain visible (same as before)
             if (isWhiteMap) {
                 // Ensure outline is visible
                 if (outline) {
@@ -846,7 +878,6 @@ def create_highways_map(labels_position="below"):
                 document.querySelectorAll('.city-boundary').forEach(function(element) {
                     element.style.display = 'block';
                     element.style.visibility = 'visible';
-                    // Force a repaint
                     element.style.opacity = 0.99;
                     setTimeout(() => {
                         element.style.opacity = 1;
