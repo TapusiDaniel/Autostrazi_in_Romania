@@ -1,0 +1,130 @@
+.minimize-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 1001;
+}
+
+.minimize-button:hover {
+    background: #f0f0f0;
+}
+
+.map-controls.minimized .map-button-group {
+    display: none;
+}
+
+.map-controls.minimized {
+    background: transparent;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.map-button {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 150px;
+    text-align: left;
+}
+
+.map-button:hover {
+    background: #f0f0f0;
+}
+
+.map-button.active {
+    background: #4a90e2;
+    color: white;
+}
+
+.map-button-group {
+    margin-bottom: 15px;
+}
+
+.map-button-group-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.section-button {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 150px;
+}
+
+.section-button.active {
+    border-color: #4a90e2;
+    background: #f5f9ff;
+}
+
+.section-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.section-all .section-indicator {
+    background: linear-gradient(45deg, green 25%, orange 25% 50%, brown 50% 75%, grey 75%);
+}
+
+.section-finished .section-indicator {
+    background-color: green;
+}
+
+.section-in-construction .section-indicator {
+    background-color: orange;
+}
+
+.section-tendered .section-indicator {
+    background-color: brown;
+}
+
+.section-planned .section-indicator {
+    background-color: grey;
+}
+
+.leaflet-control-layers-base {
+    display: none !important;
+}
+.leaflet-control-layers-overlays label:first-child {
+    display: none !important;
+}
+.leaflet-control-layers-toggle {
+    display: none !important;
+}
+.leaflet-control-layers {
+    display: none !important;
+}
+.leaflet-control {
+    display: none !important;
+}

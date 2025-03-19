@@ -1,0 +1,45 @@
+.totals-table {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.totals-table table {
+    border-collapse: collapse;
+}
+
+.totals-table td {
+    padding: 3px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.totals-table tr:last-child td {
+    border-bottom: none;
+}
+
+.total-row {
+    font-weight: bold;
+}
+
+.status-row.finished td:first-child {
+    color: green;
+}
+
+.status-row.in-construction td:first-child {
+    color: orange;
+}
+
+.status-row.planned td:first-child {
+    color: grey;
+}
+
+.status-row.tendered td:first-child {
+    color: brown;
+}
