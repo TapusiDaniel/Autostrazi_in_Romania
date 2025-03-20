@@ -189,6 +189,7 @@ A3_SECTIONS = {
     },
     "Suplacu de Barcău - Chiribiș (subsecțiunea 3C - lot 1)": {
         "status": "in_construction",
+        "progress": "2.73%",
         "completion_date": "2026",
         "length": "26.35 km",
         "constructor": "Constructii Erbasu SA",
@@ -200,7 +201,6 @@ A3_SECTIONS = {
     },
     "Chiribiș - Biharia (subsecțiunea 3C - lot 2)": {
         "status": "in_construction",
-        "progress": "2.73%",
         "completion_date": "2027",
         "length": "28.55 km",
         "constructor": "Asocierea Precon Transilvania SRL – Citadina 98 SA",

@@ -59,6 +59,7 @@ A8_SECTIONS = {
         "progress": "0%",
         "completion_date": "2030",
         "length": "37.90 km",
+        "constructor": "Asocierea SA&PE Construct (Lider) – Tehnostrade S.R.L. – Euro Asfalt D.O.O - Spedition UMB",
         "cost": "1.22B",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A8/a8_lot2a.xml",

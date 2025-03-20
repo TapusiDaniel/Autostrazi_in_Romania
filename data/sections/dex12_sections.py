@@ -48,7 +48,7 @@ DEx12_SECTIONS = {
     },
     "Albota - A1 (tronsonul 4 - în construcție)": {
         "status": "in_construction",
-        "progress": "80%",
+        "progress": "84%",
         "completion_date": "2025",
         "length": "12.88 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
