@@ -55,14 +55,12 @@ A8_SECTIONS = {
         "end_point": [46.767823, 25.501604]  # Ditrau
     },
     "Ditrău - Grințieș (lot 2A)": {
-        "status": "tendered",
-        "tender_end_date": "2025",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2030",
         "length": "37.90 km",
-        "estimated_cost": "1.28B",
-        "construction_duration": "54 de luni",
+        "cost": "1.22B",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1074946",
-        "current_stage": "Semnare contract - UMB Spedition",
         "xml_file": "A8/a8_lot2a.xml",
         "start_point": [46.767823, 25.501604],  # Ditrau
         "end_point": [46.973066, 25.813955]  # Grinties
