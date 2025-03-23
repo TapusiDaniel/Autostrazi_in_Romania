@@ -1,0 +1,51 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529603 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="15639343" visible="true" version="2" changeset="150699456" timestamp="2024-04-30T10:12:11Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1278448442" role=""/>
+<member type="way" ref="1278448441" role=""/>
+<member type="way" ref="1278448443" role=""/>
+<member type="way" ref="1278448440" role=""/>
+<member type="way" ref="1278448452" role=""/>
+<member type="way" ref="1278448453" role=""/>
+<member type="way" ref="1278448446" role=""/>
+<member type="way" ref="1157064482" role=""/>
+<member type="way" ref="1157064483" role=""/>
+<member type="way" ref="1278448449" role=""/>
+<member type="way" ref="1278448448" role=""/>
+<member type="way" ref="1157064469" role=""/>
+<member type="way" ref="1278448451" role=""/>
+<member type="way" ref="1278448450" role=""/>
+<member type="way" ref="1157064468" role=""/>
+<member type="way" ref="1157064485" role=""/>
+<member type="way" ref="1157064484" role=""/>
+<member type="way" ref="1157064487" role=""/>
+<member type="way" ref="1157064486" role=""/>
+<member type="way" ref="1157064470" role=""/>
+<member type="way" ref="1157064495" role=""/>
+<member type="way" ref="1157064476" role=""/>
+<member type="way" ref="1157064472" role=""/>
+<member type="way" ref="1278448445" role=""/>
+<member type="way" ref="1278448444" role=""/>
+<member type="way" ref="1157064475" role=""/>
+<member type="way" ref="1157064471" role=""/>
+<member type="way" ref="1157064494" role=""/>
+<member type="way" ref="1157064479" role=""/>
+<member type="way" ref="1157064478" role=""/>
+<member type="way" ref="1157064496" role=""/>
+<member type="way" ref="1157064489" role=""/>
+<member type="way" ref="1157064477" role=""/>
+<member type="way" ref="1157064488" role=""/>
+<member type="way" ref="1157064497" role=""/>
+<member type="way" ref="1157064480" role=""/>
+<member type="way" ref="1157064481" role=""/>
+<member type="way" ref="1157064498" role=""/>
+<member type="way" ref="1157064492" role=""/>
+<member type="way" ref="1157064473" role=""/>
+<member type="way" ref="1157064491" role=""/>
+<member type="way" ref="1157064493" role=""/>
+<member type="way" ref="1157064474" role=""/>
+<member type="way" ref="1157064490" role=""/>
+<tag k="name" v="Nod Romanasi"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

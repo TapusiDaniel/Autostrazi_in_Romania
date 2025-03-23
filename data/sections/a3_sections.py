@@ -159,6 +159,16 @@ A3_SECTIONS = {
         "start_point": [46.9925073, 23.2415513],  # Zimbor
         "end_point": [47.0866324, 23.1797234]  # Poarta Salajului
     },
+    "Nod Românași": {
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2025",
+        "length": "0 km",
+        "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
+        "cost": "14.2M",
+        "financing": "Planul Național de Redresare și Reziliență - PNRR",
+        "xml_file": 'A3/a3_nod_romanasi.xml',  
+    },
     "Poarta Sălajului - Nușfalău (subsecțiunea 3B - lot 3 și lot 4)": {
         "status": "tendered",
         "tender_end_date": "2025", 

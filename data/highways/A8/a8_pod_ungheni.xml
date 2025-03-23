@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448755 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="16162422" visible="true" version="5" changeset="159923872" timestamp="2024-12-04T15:37:11Z" user="Moldovan_Merkator" uid="6837259">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529606 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="16162422" visible="true" version="6" changeset="162458875" timestamp="2025-02-13T09:31:58Z" user="coro85" uid="21695255">
 <member type="way" ref="1129336682" role=""/>
 <member type="way" ref="1129336681" role=""/>
 <member type="way" ref="1194966060" role=""/>
@@ -8,8 +8,6 @@
 <member type="way" ref="1129336680" role=""/>
 <member type="way" ref="1129336679" role=""/>
 <member type="way" ref="1340102399" role=""/>
-<member type="way" ref="1305330083" role=""/>
-<member type="way" ref="1305330084" role=""/>
 <member type="way" ref="1340102398" role=""/>
 <tag k="name" v="Pod Ungheni"/>
 <tag k="route" v="road"/>

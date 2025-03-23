@@ -37,7 +37,7 @@ A7_SECTIONS = {
     },
     "Ploiești - Buzău (lot 3)": {
         "status": "in_construction",
-        "progress": "35%",
+        "progress": "40%",
         "completion_date": "2025",
         "length": "13.90 km",
         "constructor": "Asocierea Nurol Inşaat Ve Ticaret A.S. (lider) - Makyol Insaat Sanayi Turizm Ve Ticaret A.S.",

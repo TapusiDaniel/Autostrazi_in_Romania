@@ -1,0 +1,12 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529588 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18697656" visible="true" version="1" changeset="162444519" timestamp="2025-02-12T20:31:23Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1359398774" role=""/>
+<member type="way" ref="1359398772" role=""/>
+<member type="way" ref="1359398771" role=""/>
+<member type="way" ref="1359398770" role=""/>
+<member type="way" ref="1359398773" role=""/>
+<tag k="name" v="DEx Suceava-Botoșani"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
+</relation>
+</osm>
