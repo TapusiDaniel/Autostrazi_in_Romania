@@ -198,7 +198,7 @@ A7_SECTIONS = {
         "construction_duration": "30 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1071176",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "xml_file": "A7/a7_pascani_suceava_lot1.xml",
         "start_point": [47.263212, 26.690015],  # Pascani
         "end_point": [47.516672, 26.579559]  # Roscani
