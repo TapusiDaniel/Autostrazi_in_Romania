@@ -1,7 +1,7 @@
 DEx4_SECTIONS = {
     "Drum de legătură A3 - Tureni": {
         "status": "in_construction",
-        "progress": "80%",
+        "progress": "80.9%",
         "completion_date": "2025",
         "length": "4.96 km",
         "constructor": "Asocierea Dimex2000 - Obras - OPR - Autotehnorom - Con-A",

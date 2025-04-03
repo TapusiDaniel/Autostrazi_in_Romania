@@ -94,7 +94,7 @@ A8_SECTIONS = {
     },
     "Leghin - Târgu Neamț": {
         "status": "in_construction",
-        "progress": "0%",
+        "progress": "12%",
         "completion_date": "2026",
         "length": "29.91 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
