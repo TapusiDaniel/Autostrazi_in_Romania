@@ -175,7 +175,7 @@ A3_SECTIONS = {
         "completion_date": "2032",
         "length": "41 km",
         "constructor": "Asocierea Makyol-Ozaltin",
-        "cost": "1.32M",
+        "cost": "1.32B",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": 'A3/a3_poartasalajului_nusfalau.xml',  
         "start_point": [47.0866324, 23.1797234],  # Poarta Salajului
