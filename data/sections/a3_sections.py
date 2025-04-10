@@ -170,21 +170,16 @@ A3_SECTIONS = {
         "xml_file": 'A3/a3_nod_romanasi.xml',  
     },
     "Poarta Sălajului - Nușfalău (subsecțiunea 3B - lot 3 și lot 4)": {
-        "status": "tendered",
-        "tender_end_date": "2025", 
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2032",
         "length": "41 km",
-        "estimated_cost": "1.3B",
-        "construction_duration": "78 de luni",  
+        "constructor": "Asocierea Makyol-Ozaltin",
+        "cost": "1.32M",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1051824",
-        "current_stage": "Semnare contract - Asocierea Makyol-Ozaltin",
         "xml_file": 'A3/a3_poartasalajului_nusfalau.xml',  
         "start_point": [47.0866324, 23.1797234],  # Poarta Salajului
         "end_point": [47.177794, 22.7039123],  # Nusfalau
-        "logo": {
-            "path": "data/photos/A3-RO.png",
-            "position": "bottom"  
-        }
     },
     "Nușfalău - Suplacu de Barcău (subsecțiunea 3B - lot 5)": {
         "status": "finished",
