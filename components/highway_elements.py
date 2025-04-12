@@ -23,7 +23,7 @@ def add_totals_table(m):
                 <td>{totals['finished']:.2f} km</td>
             </tr>
             <tr class="status-row in-construction">
-                <td>În construcție :</td>
+                <td>În construcție:</td>
                 <td>{totals['in_construction']:.2f} km</td>
             </tr>
             <tr class="status-row planned">
@@ -54,7 +54,7 @@ def add_totals_table(m):
         font-family: Arial, sans-serif;
         color: #666;
         font-size: 10px;">
-        Ultima actualizare: 11 aprilie 2025
+        Ultima actualizare: 12 aprilie 2025
     </div>
     """
     m.get_root().html.add_child(folium.Element(update_text))
