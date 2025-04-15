@@ -51,7 +51,7 @@ A6_SECTIONS = {
         "construction_duration": "34 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1072257",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot3.xml",
         "start_point": [44.4373536, 23.671621],  # Beharca
         "end_point": [44.5700524, 23.4850849]  # Filiasi
