@@ -80,14 +80,13 @@ A8_SECTIONS = {
         "end_point": [47.185855, 26.028449]  # Pipirig
     },
     "Pipirig - Leghin (lot 2C)": {
-        "status": "tendered",
-        "tender_end_date": "2025",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2029",
         "length": "19.30 km",
-        "estimated_cost": "538.2M",
-        "construction_duration": "48 de luni",
+        "constructor": "Asocierea SA&PE CONSTRUCT S.R.L. – SPEDITION UMB S.R.L. – TEHNOSTRADE S.R.L. – EURO-ASFALT d.o.o.",
+        "cost": "538M",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1068571",
-        "current_stage": "Semnare contract - UMB Spedition",
         "xml_file": "A8/a8_lot2c.xml",
         "start_point": [47.185855, 26.028449],  # Pipirig
         "end_point": [47.213855, 26.252413]  # Leghin
