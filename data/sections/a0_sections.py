@@ -27,7 +27,7 @@ A0_SECTIONS = {
     },
     "A0 Sud Lot 3": {
         "status": "in_construction",
-        "progress": "80.35%",
+        "progress": "92%",
         "completion_date": "2025",
         "length": "17.96 km",
         "constructor": "Asocierea Aktor SA - Euro Construct Trading SRL",
@@ -74,7 +74,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 4": {
         "status": "in_construction",
-        "progress": "50%",
+        "progress": "50.50%",
         "completion_date": "2025",
         "length": "4.47 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",

@@ -1,10 +1,10 @@
 A5_SECTIONS = {
-    "București - Giurgiu": {
+    "București - Giurgiu (variante traseu)": {
         "status": "planned",
-        "feasibility_study_date": "2026",
+        "feasibility_study_date": "2027",
+        "designer": "Asocierea SC PROIECT-CONSTRUCT REGIUNEA TRANSILVANIA (lider) -Roads Design",
         "length": "55.20 km",
         "projected_completion_date": "~ 2030",
-        "current_stage": "Evaluarea ofertelor pentru studiul de fezabilitate",
         "xml_file": 'A5/a5_bucuresti_giurgiu.xml', 
         "logo": {
             "path": "data/photos/A5-RO.png",

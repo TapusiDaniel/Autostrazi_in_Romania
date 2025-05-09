@@ -1,8 +1,13 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448762 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14655503" visible="true" version="1" changeset="127012528" timestamp="2022-10-04T19:23:07Z" user="RobertH-PUM" uid="9320232">
-<member type="way" ref="1100925013" role=""/>
-<tag k="name" v="Drum de viteza Giurgiu"/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529587 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="19103224" visible="true" version="1" changeset="165990325" timestamp="2025-05-08T15:38:27Z" user="anonymous123123" uid="22067548">
+<member type="way" ref="1384710046" role=""/>
+<member type="way" ref="1384710045" role=""/>
+<member type="way" ref="1384710044" role=""/>
+<member type="way" ref="1384710043" role=""/>
+<member type="way" ref="1384710042" role=""/>
+<tag k="name" v="Drum de Mare Viteză București – Giurgiu"/>
 <tag k="route" v="proposed"/>
+<tag k="source" v="www.cnir.ro/proiecte/bucuresti-giurgiu/"/>
 <tag k="type" v="route"/>
 </relation>
 </osm>
