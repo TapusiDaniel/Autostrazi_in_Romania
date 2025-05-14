@@ -15,11 +15,11 @@ A8_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025",
         "length": "23.40 km",
-        "estimated_cost": "548M",
+        "estimated_cost": "585M",
         "construction_duration": "30 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1067339",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea OZALTIN INSAAT TICARET VE SANAYI A.S. (lider) - INFRAVIS SRL",
         "xml_file": "A8/a8_lot1b.xml",
         "start_point": [46.516661, 24.786825],  # Miercurea Nirajului
         "end_point": [46.569293, 25.059833]  # Sarateni

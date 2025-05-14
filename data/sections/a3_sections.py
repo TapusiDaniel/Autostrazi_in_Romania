@@ -149,7 +149,7 @@ A3_SECTIONS = {
     },
     "Zimbor - Poarta Sălajului (subsecțiunea 3B - lot 2)": {
         "status": "in_construction",
-        "progress": "70%",
+        "progress": "73.10%",
         "completion_date": "2025",
         "length": "12.24 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
