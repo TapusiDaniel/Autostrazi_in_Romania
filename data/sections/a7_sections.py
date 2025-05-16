@@ -219,8 +219,8 @@ A7_SECTIONS = {
     "Suceava - Siret (primii 26.4 km vor fi la profil de autostradă, iar restul de 29.3 km la profil de drum expres)": {
         "status": "planned",
         "feasibility_study_date": "2025",
-        "designer": "EGIS",
         "length": "55.7 km",
+        "current_stage": "Urmează parcurgerea tuturor etapelor de avizare",
         "xml_file": "A7/a7_suceava_siret.xml",
         "start_point": [47.687404, 26.311792],  # Aeroport Suceava
     },

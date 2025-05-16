@@ -44,7 +44,7 @@ DEx16_SECTIONS = {
         "completion_date": "2027",
         "length": "33.7 km",
         "constructor": "Asocierea PRECON TRANSILVANIA SRL - AUTOMAGISTRAL PIVDEN SRL",
-        "estimated_cost": "455M",
+        "cost": "455M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "DEx16/dex16_arad_oradea_lot1.xml",
         "start_point": [46.793249, 21.694058],  # Salonta

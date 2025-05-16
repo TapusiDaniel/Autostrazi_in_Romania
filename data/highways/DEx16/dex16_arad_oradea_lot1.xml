@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448779 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="17290442" visible="true" version="10" changeset="150586267" timestamp="2024-04-27T15:50:48Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529594 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17290442" visible="true" version="11" changeset="166297264" timestamp="2025-05-15T10:34:15Z" user="RobertH-PUM" uid="9320232">
 <member type="way" ref="1277594657" role=""/>
 <member type="way" ref="1277594659" role=""/>
 <member type="way" ref="1277594658" role=""/>
@@ -159,6 +159,6 @@
 <member type="way" ref="1256359033" role=""/>
 <tag k="name" v="DEx16 - Lot 1"/>
 <tag k="route" v="road"/>
-<tag k="type" v="proposed"/>
+<tag k="type" v="construction"/>
 </relation>
 </osm>

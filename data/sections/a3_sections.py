@@ -125,7 +125,7 @@ A3_SECTIONS = {
     },
     "Nădășelu - Mihăiești (subsecțiunea 3A - lot 2)": {
         "status": "in_construction",
-        "progress": "81.90%",
+        "progress": "83.50%",
         "completion_date": "2026",
         "length": "16.80 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - Electromontaj SA și OZALTIN INSAAT TICARET VE SANAYI A.S. - ILGAZ INSAAT TICARET A.S. - VISIO CONSTRUCTION WORKS S.R.L pentru viaduct",
@@ -206,6 +206,7 @@ A3_SECTIONS = {
     },
     "Chiribiș - Biharia (subsecțiunea 3C - lot 2)": {
         "status": "in_construction",
+        "progress": "0%",
         "completion_date": "2027",
         "length": "28.55 km",
         "constructor": "Asocierea Precon Transilvania SRL – Citadina 98 SA",
