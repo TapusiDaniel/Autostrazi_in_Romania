@@ -127,7 +127,7 @@ A8_SECTIONS = {
         "construction_duration": "46 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1077231",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A8/a8_motca_targu_frumos_lot1.xml",
         "start_point": [47.197218, 26.612607],  # Motca
         "end_point": [47.231512, 27.010151]  # Targu Frumos
