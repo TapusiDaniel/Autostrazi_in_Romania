@@ -180,6 +180,10 @@ A3_SECTIONS = {
         "xml_file": 'A3/a3_poartasalajului_nusfalau.xml',  
         "start_point": [47.0866324, 23.1797234],  # Poarta Salajului
         "end_point": [47.177794, 22.7039123],  # Nusfalau
+        "logo": {
+            "path": "data/photos/A3-RO.png",
+            "position": "bottom"  
+        }
     },
     "Nușfalău - Suplacu de Barcău (subsecțiunea 3B - lot 5)": {
         "status": "finished",
