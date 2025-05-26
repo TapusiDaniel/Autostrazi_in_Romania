@@ -1,6 +1,5 @@
-
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529607 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="19167020" visible="true" version="2" changeset="166669528" timestamp="2025-05-23T18:44:11Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529589 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="19168631" visible="true" version="2" changeset="166748805" timestamp="2025-05-25T19:27:07Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1389078076" role=""/>
 <member type="way" ref="1389078074" role=""/>
 <member type="way" ref="1389078073" role=""/>
@@ -173,21 +172,56 @@
 <member type="way" ref="1389119049" role=""/>
 <member type="way" ref="1389119048" role=""/>
 <member type="way" ref="1389119047" role=""/>
+<member type="way" ref="1389564122" role=""/>
+<member type="way" ref="1389564121" role=""/>
+<member type="way" ref="1389624136" role=""/>
+<member type="way" ref="1389624135" role=""/>
 <member type="way" ref="1344760383" role=""/>
+<member type="way" ref="1389616939" role=""/>
+<member type="way" ref="1389616940" role=""/>
 <member type="way" ref="1389119045" role=""/>
 <member type="way" ref="1389119044" role=""/>
 <member type="way" ref="1389119035" role=""/>
 <member type="way" ref="1389119034" role=""/>
 <member type="way" ref="1389119040" role=""/>
 <member type="way" ref="1389119039" role=""/>
+<member type="way" ref="1389564120" role=""/>
+<member type="way" ref="1389564119" role=""/>
 <member type="way" ref="1389119038" role=""/>
 <member type="way" ref="1389119037" role=""/>
 <member type="way" ref="1389119036" role=""/>
 <member type="way" ref="1389119033" role=""/>
 <member type="way" ref="1389119043" role=""/>
 <member type="way" ref="1389119042" role=""/>
-<tag k="name" v="DEx Constanța-Tulcea"/>
-<tag k="route" v="proposed"/>
+<member type="way" ref="1389564117" role=""/>
+<member type="way" ref="1389564118" role=""/>
+<member type="way" ref="1389564116" role=""/>
+<member type="way" ref="1389564115" role=""/>
+<member type="way" ref="1389564114" role=""/>
+<member type="way" ref="1389564113" role=""/>
+<member type="way" ref="1389564112" role=""/>
+<member type="way" ref="1389564111" role=""/>
+<member type="way" ref="1389616946" role=""/>
+<member type="way" ref="1389616942" role=""/>
+<member type="way" ref="1389616941" role=""/>
+<member type="way" ref="1389616947" role=""/>
+<member type="way" ref="1389616948" role=""/>
+<member type="way" ref="1389616949" role=""/>
+<member type="way" ref="1389616945" role=""/>
+<member type="way" ref="1389616944" role=""/>
+<member type="way" ref="1389616943" role=""/>
+<member type="way" ref="1389616930" role=""/>
+<member type="way" ref="1389616938" role=""/>
+<member type="way" ref="1389616932" role=""/>
+<member type="way" ref="1389616936" role=""/>
+<member type="way" ref="1389616937" role=""/>
+<member type="way" ref="1389616934" role=""/>
+<member type="way" ref="1389616933" role=""/>
+<member type="way" ref="1389616931" role=""/>
+<member type="way" ref="1389616935" role=""/>
+<tag k="name" v="DEx Constanța - Tulcea"/>
+<tag k="network" v="RO:DEx"/>
+<tag k="route" v="road"/>
 <tag k="type" v="route"/>
 </relation>
 </osm>

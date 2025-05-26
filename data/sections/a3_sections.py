@@ -210,7 +210,7 @@ A3_SECTIONS = {
     },
     "Chiribiș - Biharia (subsecțiunea 3C - lot 2)": {
         "status": "in_construction",
-        "progress": "0%",
+        "progress": "0.5%",
         "completion_date": "2027",
         "length": "28.55 km",
         "constructor": "Asocierea Precon Transilvania SRL – Citadina 98 SA",
