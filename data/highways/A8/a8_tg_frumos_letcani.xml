@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448766 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="18675872" visible="true" version="12" changeset="162516230" timestamp="2025-02-14T19:51:16Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858164 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18675872" visible="true" version="13" changeset="167008537" timestamp="2025-05-31T11:39:49Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1359142038" role=""/>
 <member type="way" ref="1359142040" role=""/>
 <member type="way" ref="1359142044" role=""/>
@@ -174,7 +174,7 @@
 <member type="way" ref="1359127553" role=""/>
 <member type="way" ref="1359127552" role=""/>
 <member type="way" ref="1359127551" role=""/>
-<tag k="name" v="A8 (Tg. Frumos - Lețcani)"/>
+<tag k="name" v="A8 Tronson 2 (Tg. Frumos - Lețcani)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="proposed"/>
 </relation>

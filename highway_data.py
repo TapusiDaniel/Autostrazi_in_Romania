@@ -82,7 +82,7 @@ HIGHWAYS = {
         "name": "Autosrada Unirii",
         "sections": A8_SECTIONS,
         "color": "green",
-        "total_length": "307.88 km"
+        "total_length": "305.68 km"
     },
     "Autostrada A9": {
         "name": "Autosrada Timișoara - Moravița",
@@ -191,5 +191,5 @@ HIGHWAYS = {
             "sections":DEx_DRUMURI_RADIALE_SECTIONS,
             "color": "green",
             "total_length": "96.11 km"
-    },
+    }
 }

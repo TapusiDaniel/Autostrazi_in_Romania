@@ -102,22 +102,6 @@ A8_SECTIONS = {
         "start_point": [47.213855, 26.252413],  # Leghin
         "end_point": [47.197218, 26.612588]  # Targu Neamt
     },
-    "Târgu Neamț - Ungheni (restul loturilor)": {
-        "status": "planned",
-        "feasibility_study_date": "2025",
-        "length": "33.4 km",
-        "current_stage": "Urmează să fie lansată licitația pentru proiectare și execuție",
-        "xml_file": "A8/a8_tgneamt_ungheni.xml",
-        "start_point": [47.197218, 26.612588],  # Targu Neamt
-        "end_point": [47.249882, 27.746310],  # Ungheni
-        "logo": {
-            "path": "data/photos/A8-RO.png",
-            "position": "top"  
-        }
-        # "end_point": [47.231106, 27.007978]  # Targu Frumos (lot1)
-        # "end_point": [47.209067, 27.372780]  # Letcani (lot2)
-        # "end_point": [47.261211, 27.562632]  # DN24 (lot3)
-    },
     "Târgu Neamț - Ungheni lot 1 (Moțca - Târgu Frumos)": {
         "status": "tendered",
         "tender_end_date": "2025",
@@ -143,6 +127,45 @@ A8_SECTIONS = {
         "xml_file": "A8/a8_tg_frumos_letcani.xml",
         "start_point": [47.231512, 27.010151],  # Targu Frumos
         "end_point": [47.208894, 27.374226]  # Letcani
+    },
+    "Târgu Neamț - Ungheni lot 3 (Lețcani - Iași Nord)": {
+        "status": "tendered",
+        "tender_end_date": "2026",
+        "length": "17.7 km",
+        "estimated_cost": "1.04B",
+        "construction_duration": "46 de luni",
+        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "seap_code": "CN1081660",
+        "current_stage": "Depunere oferte",
+        "xml_file": "A8/a8_letcani_iasi.xml",
+        "start_point": [47.208894, 27.374226],  # Letcani
+        "end_point": [47.259529, 27.566248]  # Iasi Nord
+    },
+    "Târgu Neamț - Ungheni lot 4 (Iași Nord - Golăiești)": {
+        "status": "tendered",
+        "tender_end_date": "2026",
+        "length": "12.7 km",
+        "estimated_cost": "820M",
+        "construction_duration": "46 de luni",
+        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "seap_code": "CN1081661",
+        "current_stage": "Depunere oferte",
+        "xml_file": "A8/a8_iasi_golaiesti.xml",
+        "start_point": [47.259529, 27.566248],  # Iasi Nord
+        "end_point": [47.256906, 27.715057]  # Golaiesti
+    },
+    "Târgu Neamț - Ungheni lot 5 (Golăiești - Pod Ungheni)": {
+        "status": "tendered",
+        "tender_end_date": "2026",
+        "length": "2.77 km",
+        "estimated_cost": "53.4M",
+        "construction_duration": "18 de luni",
+        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "seap_code": "CN1081662",
+        "current_stage": "Depunere oferte",
+        "xml_file": "A8/a8_golaiesti_pod_ungheni.xml",
+        "start_point": [47.256906, 27.715057],  # Golaiesti
+        "end_point": [47.249882, 27.746310]  # Ungheni
     },
     "Pod Ungheni": {
         "status": "in_construction",
