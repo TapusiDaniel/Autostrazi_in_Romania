@@ -139,7 +139,11 @@ A8_SECTIONS = {
         "current_stage": "Depunere oferte",
         "xml_file": "A8/a8_letcani_iasi.xml",
         "start_point": [47.208894, 27.374226],  # Letcani
-        "end_point": [47.259529, 27.566248]  # Iasi Nord
+        "end_point": [47.259529, 27.566248],  # Iasi Nord
+        "logo": {
+            "path": "data/photos/A8-RO.png",
+            "position": "top"  
+        }
     },
     "Târgu Neamț - Ungheni lot 4 (Iași Nord - Golăiești)": {
         "status": "tendered",
