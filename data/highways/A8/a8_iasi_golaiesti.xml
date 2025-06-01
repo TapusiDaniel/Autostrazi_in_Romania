@@ -1,7 +1,16 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858171 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="19197719" visible="true" version="1" changeset="167028402" timestamp="2025-05-31T20:49:29Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858173 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="19197719" visible="true" version="2" changeset="167051587" timestamp="2025-06-01T13:41:54Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1391136644" role=""/>
+<member type="way" ref="1391372349" role=""/>
+<member type="way" ref="1391372350" role=""/>
 <member type="way" ref="1391136645" role=""/>
+<member type="way" ref="1391372348" role=""/>
+<member type="way" ref="1391372347" role=""/>
+<member type="way" ref="1391372351" role=""/>
+<member type="way" ref="1346062501" role=""/>
+<member type="way" ref="1346062505" role=""/>
+<member type="way" ref="1346062503" role=""/>
+<member type="way" ref="1346062502" role=""/>
 <tag k="name" v="A8 Tronson 4 (Iași, DN24 - Golăiești)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="proposed"/>
