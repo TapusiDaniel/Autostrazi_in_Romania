@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448775 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="17591222" visible="true" version="5" changeset="159537383" timestamp="2024-11-24T15:05:21Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858187 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17591222" visible="true" version="6" changeset="165587226" timestamp="2025-04-29T11:14:46Z" user="RobertH-PUM" uid="9320232">
 <member type="way" ref="1283469593" role=""/>
 <member type="way" ref="1283469594" role=""/>
 <member type="way" ref="1159442070" role=""/>
@@ -201,6 +201,6 @@
 <member type="way" ref="1283479416" role=""/>
 <tag k="name" v="A8 Sectiunea 2 Lot 2C(Pipirig-Leghin)"/>
 <tag k="route" v="road"/>
-<tag k="type" v="proposed"/>
+<tag k="type" v="construction"/>
 </relation>
 </osm>

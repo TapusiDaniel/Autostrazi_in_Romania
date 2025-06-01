@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448778 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14641917" visible="true" version="12" changeset="141523847" timestamp="2023-09-20T17:09:27Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858174 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14641917" visible="true" version="13" changeset="161927573" timestamp="2025-01-30T08:35:36Z" user="sorin86" uid="20487705">
 <member type="way" ref="1126774879" role=""/>
 <member type="way" ref="1126774873" role=""/>
 <member type="way" ref="1126774876" role=""/>
@@ -28,10 +28,6 @@
 <member type="way" ref="1126722034" role=""/>
 <member type="way" ref="1126722033" role=""/>
 <member type="way" ref="1126722035" role=""/>
-<member type="way" ref="1125886850" role=""/>
-<member type="way" ref="1125886852" role=""/>
-<member type="way" ref="1125886849" role=""/>
-<member type="way" ref="1125886851" role=""/>
 <member type="way" ref="1101802426" role=""/>
 <member type="way" ref="1101802427" role=""/>
 <member type="way" ref="1101802428" role=""/>

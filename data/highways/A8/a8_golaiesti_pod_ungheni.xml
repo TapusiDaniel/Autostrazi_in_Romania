@@ -1,15 +1,15 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448768 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-  <relation id="17954863" visible="true" version="8" changeset="162028595" timestamp="2025-02-01T22:47:11Z" user="k9h10a" uid="21676723">
-    <member type="way" ref="1127877220" role=""/>
-    <member type="way" ref="1127877226" role=""/>
-    <member type="way" ref="1127877227" role=""/>
-    <member type="way" ref="1127877225" role=""/>
-    <member type="way" ref="1127877224" role=""/>
-    <member type="way" ref="1127877222" role=""/>
-    <member type="way" ref="1127877223" role=""/>
-    <member type="way" ref="1127877216" role=""/>
-    <tag k="name" v="TarguNeamt-Iasi-Ungheni"/>
-    <tag k="route" v="proposed"/>
-    <tag k="type" v="route"/>
-  </relation>
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858161 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="19197718" visible="true" version="1" changeset="167028402" timestamp="2025-05-31T20:49:29Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1127877220" role=""/>
+<member type="way" ref="1127877216" role=""/>
+<member type="way" ref="1127877224" role=""/>
+<member type="way" ref="1127877222" role=""/>
+<member type="way" ref="1127877227" role=""/>
+<member type="way" ref="1127877226" role=""/>
+<member type="way" ref="1127877225" role=""/>
+<member type="way" ref="1127877223" role=""/>
+<tag k="name" v="A8 Tronson 5 (Golăiești - Vamă, Pot peste Prut)"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
+</relation>
 </osm>
