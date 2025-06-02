@@ -123,7 +123,7 @@ A8_SECTIONS = {
         "construction_duration": "46 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1077647",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A8/a8_tg_frumos_letcani.xml",
         "start_point": [47.231512, 27.010151],  # Targu Frumos
         "end_point": [47.208894, 27.374226]  # Letcani

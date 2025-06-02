@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858180 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="19196442" visible="true" version="3" changeset="167065849" timestamp="2025-06-01T19:45:58Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858187 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="19196442" visible="true" version="4" changeset="167066449" timestamp="2025-06-01T20:07:46Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1127877221" role=""/>
 <member type="way" ref="1391157122" role=""/>
 <member type="way" ref="1391157124" role=""/>
@@ -42,6 +42,7 @@
 <member type="way" ref="1391433578" role=""/>
 <member type="way" ref="1391433577" role=""/>
 <member type="way" ref="1391433576" role=""/>
+<member type="way" ref="1391436672" role=""/>
 <tag k="name" v="A8 Tronson 3 (Lețcani, DN28 - Iași, DN24)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="proposed"/>
