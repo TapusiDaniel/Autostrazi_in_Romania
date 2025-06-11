@@ -15,29 +15,17 @@ A1_SECTIONS = {
         "financing": "BERD (53%) și Guvernul României (47%)",
         "xml_file": "A1/a1_centura_pitesti.xml",
         "start_point": [44.8193510, 24.9456566],  # Pitesti Sud
-        "end_point": [44.8964906, 24.8366860]  # Bascov
+        "end_point": [44.896588, 24.838835],  # Bascov
     },
     "Pitești - Sibiu (lot 5)": {
         "status": "finished",
-        "completion_date": "2024",
-        "length": "15.77 km",
-        "constructor": "Astaldi",
-        "cost": "342M",
-        "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "xml_file": "A1/a1_pitesti_sibiu_lot5_partial.xml",
-        "start_point": [44.8964906, 24.8366860],  # Bascov
-        "end_point": [45.0046866, 24.7344591]  # Valcele
-    },
-    "Pitești - Sibiu (lot 5 - în construcție)": {
-        "status": "in_construction",
-        "progress": "95%",
         "completion_date": "2025",
-        "length": "14.58 km",
+        "length": "30.35 km",
         "constructor": "Astaldi",
         "cost": "342M",
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "xml_file": "A1/a1_pitesti_sibiu_lot5_constructie.xml",
-        "start_point": [45.0046866, 24.7344591],  # Valcele
+        "xml_file": "A1/a1_pitesti_sibiu_lot5.xml",
+        "start_point": [44.896588, 24.838835],  # Bascov
         "end_point": [45.111734, 24.6525843]  # Curtea de Arges
     },
     "Pitești - Sibiu (lot 4)": {
