@@ -42,8 +42,8 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 3)": {
         "status": "in_construction",
-        "progress": "0%",
-        "completion_date": "2027",
+        "progress": "4.57%",
+        "completion_date": "2028",
         "length": "37.4 km",
         "constructor": "Asocierea Astaldi/WeBuild - Tancrad",
         "cost": "1.06B",
@@ -58,8 +58,8 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 2)": {
         "status": "in_construction",
-        "progress": "5%",
-        "completion_date": "2028",
+        "progress": "5.24%",
+        "completion_date": "2029",
         "length": "31.33 km",
         "constructor": "Asocierea Mapa Insaat Ve Ticaret AS - Cengiz Insaat Sanayi Ve Ticaret",
         "cost": "850M",
