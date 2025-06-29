@@ -23,19 +23,18 @@ A0_SECTIONS = {
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A0/a0_sud_lot2.xml",
         "start_point": [44.329383, 26.139320],  # CF902
-        "end_point": [44.3559926, 25.9684591],  # DN6
+        "end_point": [44.360345, 25.957394],  # DN6
     },
     "A0 Sud Lot 3": {
-        "status": "in_construction",
-        "progress": "92%",
+        "status": "finished",
         "completion_date": "2025",
         "length": "17.96 km",
         "constructor": "Asocierea Aktor SA - Euro Construct Trading SRL",
         "cost": "170.6M",
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A0/a0_sud_lot3.xml",
-        "start_point": [44.3559926, 25.9684591],  # DN6
-        "end_point": [44.477138, 25.899284]  # A1
+        "start_point": [44.360345, 25.957394],  # DN6
+        "end_point": [44.477971, 25.899582]  # A1
     },
     "A0 Nord Lot 1": {
         "status": "in_construction",
@@ -46,7 +45,7 @@ A0_SECTIONS = {
         "cost": "163M",
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A0/a0_nord_lot1.xml",
-        "start_point": [44.477138, 25.899284],  # A1
+        "start_point": [44.477971, 25.899582],  # A1
         "end_point": [44.587087, 26.047665]  # DN1
     },
     "A0 Nord Lot 2": {

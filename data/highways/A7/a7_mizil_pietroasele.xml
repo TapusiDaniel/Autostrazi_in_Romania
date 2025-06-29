@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858176 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="12800155" visible="true" version="16" changeset="166120020" timestamp="2025-05-11T17:42:52Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2703681 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12800155" visible="true" version="19" changeset="168021386" timestamp="2025-06-23T20:54:58Z" user="rarad74" uid="128281">
 <member type="way" ref="1343075689" role=""/>
 <member type="way" ref="1344409959" role=""/>
 <member type="way" ref="1030820466" role=""/>
@@ -65,23 +65,17 @@
 <member type="way" ref="949814036" role=""/>
 <member type="way" ref="949814035" role=""/>
 <member type="way" ref="949814034" role=""/>
+<member type="way" ref="1408912356" role=""/>
 <member type="way" ref="949814047" role=""/>
-<member type="way" ref="1344838477" role=""/>
-<member type="way" ref="1358997238" role=""/>
 <member type="way" ref="948152050" role=""/>
 <member type="way" ref="1344656888" role=""/>
 <member type="way" ref="1344656887" role=""/>
 <member type="way" ref="1344656885" role=""/>
 <member type="way" ref="1344656886" role=""/>
-<member type="way" ref="1344656890" role=""/>
 <member type="way" ref="948152047" role=""/>
-<member type="way" ref="1344656889" role=""/>
 <member type="way" ref="948152048" role=""/>
 <member type="way" ref="948152049" role=""/>
-<member type="way" ref="1358997237" role=""/>
-<member type="way" ref="1344838478" role=""/>
 <member type="way" ref="949814041" role=""/>
-<member type="way" ref="1344409961" role=""/>
 <member type="way" ref="1344409963" role=""/>
 <member type="way" ref="1344409962" role=""/>
 <member type="way" ref="949814044" role=""/>
@@ -102,8 +96,10 @@
 <member type="way" ref="950225632" role=""/>
 <member type="way" ref="950225631" role=""/>
 <member type="way" ref="923801596" role=""/>
+<member type="way" ref="1408795942" role=""/>
 <member type="way" ref="1338347428" role=""/>
 <member type="way" ref="1338347425" role=""/>
+<member type="way" ref="1408795941" role=""/>
 <member type="way" ref="950225617" role=""/>
 <member type="way" ref="950225616" role=""/>
 <member type="way" ref="950225592" role=""/>
@@ -125,6 +121,6 @@
 <member type="way" ref="949814038" role=""/>
 <tag k="name" v="A7 - Lotul 2 (Mizil - Pietroasele)"/>
 <tag k="route" v="road"/>
-<tag k="type" v="construction"/>
+<tag k="type" v="route"/>
 </relation>
 </osm>

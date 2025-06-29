@@ -1,11 +1,7 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448763 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="12807448" visible="true" version="6" changeset="144326995" timestamp="2023-11-22T13:35:16Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2703678 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12807448" visible="true" version="9" changeset="168221877" timestamp="2025-06-28T10:53:27Z" user="RobertH-PUM" uid="9320232">
 <member type="way" ref="1030821032" role=""/>
 <member type="way" ref="1030821033" role=""/>
-<member type="way" ref="951189961" role=""/>
-<member type="way" ref="951189959" role=""/>
-<member type="way" ref="951189962" role=""/>
-<member type="way" ref="951189958" role=""/>
 <member type="way" ref="951189969" role=""/>
 <member type="way" ref="951189968" role=""/>
 <member type="way" ref="951189970" role=""/>
@@ -28,6 +24,7 @@
 <member type="way" ref="951189993" role=""/>
 <member type="way" ref="951189992" role=""/>
 <member type="way" ref="951189991" role=""/>
+<member type="way" ref="1409714474" role=""/>
 <member type="way" ref="951189997" role=""/>
 <member type="way" ref="951189995" role=""/>
 <member type="way" ref="951189998" role=""/>
@@ -45,6 +42,7 @@
 <member type="way" ref="256086668" role=""/>
 <member type="way" ref="951189994" role=""/>
 <member type="way" ref="951189996" role=""/>
+<member type="way" ref="1409714473" role=""/>
 <member type="way" ref="796586585" role=""/>
 <member type="way" ref="796586596" role=""/>
 <member type="way" ref="796586584" role=""/>
@@ -77,10 +75,6 @@
 <member type="way" ref="796586575" role=""/>
 <member type="way" ref="951189966" role=""/>
 <member type="way" ref="796586577" role=""/>
-<member type="way" ref="951189957" role=""/>
-<member type="way" ref="951189965" role=""/>
-<member type="way" ref="951189956" role=""/>
-<member type="way" ref="951189964" role=""/>
 <tag k="name" v="A7 - Lotul 3 (Pietroasele - Municipiul Buzau)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="construction"/>
