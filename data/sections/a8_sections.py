@@ -48,7 +48,7 @@ A8_SECTIONS = {
         "construction_duration": "34 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1074301",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea Danlin XXL (Lider) - Groma Hold LTD - Intertranscom Impex S.R.L.",
         "xml_file": "A8/a8_lot1d.xml",
         "start_point": [46.677736, 25.384139],  # Joseni
         "end_point": [46.767823, 25.501604]  # Ditrau
