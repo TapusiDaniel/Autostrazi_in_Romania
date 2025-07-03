@@ -3,7 +3,7 @@ DEx12_SECTIONS = {
         "status": "finished",
         "completion_date": "2024",
         "length": "17.70 km",
-        "constructor": "Tirrena Scavi SpA",
+        "constructor": "Tirrena Scavi SpA (reziliat) și Asocierea Ozaltin Insaat Ticaret ve Sanayi Anonim Sirketi – Strade Bauunternehmung S.R.L. – Visio Construction Works S.R.L.",
         "cost": "71.6M",
         "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul1.xml",
