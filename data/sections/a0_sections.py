@@ -61,7 +61,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 3": {
         "status": "in_construction",
-        "progress": "44%",
+        "progress": "48%",
         "completion_date": "2025",
         "length": "8.6 km",
         "constructor": "China Civil Engineering Construction Corporation",
