@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448781 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10546818" visible="true" version="3" changeset="140843101" timestamp="2023-09-05T10:23:29Z" user="alexnder" uid="8430074">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3124537 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10546818" visible="true" version="4" changeset="168048819" timestamp="2025-06-24T13:09:16Z" user="Gergő Ilyés" uid="22336522">
 <member type="way" ref="760961326" role=""/>
 <member type="way" ref="4278038" role=""/>
 <member type="way" ref="39976692" role=""/>
@@ -43,6 +43,7 @@
 <member type="way" ref="48781936" role=""/>
 <member type="way" ref="229240161" role=""/>
 <member type="way" ref="760961325" role=""/>
+<tag k="colour" v="green"/>
 <tag k="name" v="A2- lot Lehliu-Drajna"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>

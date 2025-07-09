@@ -30,7 +30,7 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 4)": {
         "status": "in_construction",
-        "progress": "73.75%",
+        "progress": "75%",
         "completion_date": "2026",
         "length": "9.86 km",
         "constructor": "Porr Construct SRL",
@@ -42,7 +42,7 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 3)": {
         "status": "in_construction",
-        "progress": "4.57%",
+        "progress": "5.26%",
         "completion_date": "2028",
         "length": "37.4 km",
         "constructor": "Asocierea Astaldi/WeBuild - Tancrad",

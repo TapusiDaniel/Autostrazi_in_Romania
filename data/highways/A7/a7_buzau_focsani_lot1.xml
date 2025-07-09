@@ -1,5 +1,18 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448776 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3124536 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
 <relation id="13764168" visible="true" version="8" changeset="160669640" timestamp="2024-12-27T10:33:37Z" user="Liviu Roman" uid="408317">
+<member type="way" ref="217527601" role=""/>
+<member type="way" ref="1028507743" role=""/>
+<member type="way" ref="1028507744" role=""/>
+<member type="way" ref="1028507749" role=""/>
+<member type="way" ref="1028507751" role=""/>
+<member type="way" ref="1028507745" role=""/>
+<member type="way" ref="1028507742" role=""/>
+<member type="way" ref="1028507750" role=""/>
+<member type="way" ref="1028507748" role=""/>
+<member type="way" ref="1028507763" role=""/>
+<member type="way" ref="1028507761" role=""/>
+<member type="way" ref="1028507764" role=""/>
+<member type="way" ref="1028507762" role=""/>
 <member type="way" ref="1028507774" role=""/>
 <member type="way" ref="1028507773" role=""/>
 <member type="way" ref="1028507776" role=""/>
@@ -12,6 +25,30 @@
 <member type="way" ref="1028507778" role=""/>
 <member type="way" ref="1028507969" role=""/>
 <member type="way" ref="1028507968" role=""/>
+<member type="way" ref="796594523" role=""/>
+<member type="way" ref="796594522" role=""/>
+<member type="way" ref="1028507771" role=""/>
+<member type="way" ref="1346601345" role=""/>
+<member type="way" ref="796594521" role=""/>
+<member type="way" ref="1028507766" role=""/>
+<member type="way" ref="1028507765" role=""/>
+<member type="way" ref="796594518" role=""/>
+<member type="way" ref="1028507754" role=""/>
+<member type="way" ref="1028507756" role=""/>
+<member type="way" ref="1028507755" role=""/>
+<member type="way" ref="796594527" role=""/>
+<member type="way" ref="796594520" role=""/>
+<member type="way" ref="796594526" role=""/>
+<member type="way" ref="1028507753" role=""/>
+<member type="way" ref="1028507752" role=""/>
+<member type="way" ref="1028507758" role=""/>
+<member type="way" ref="1028507757" role=""/>
+<member type="way" ref="796594525" role=""/>
+<member type="way" ref="1346601346" role=""/>
+<member type="way" ref="1028507760" role=""/>
+<member type="way" ref="1028507759" role=""/>
+<member type="way" ref="796594524" role=""/>
+<member type="way" ref="796594529" role=""/>
 <tag k="name" v="A7 - Lotul 1 (Buzau-Vadu Pasii)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>

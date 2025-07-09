@@ -49,26 +49,14 @@ A7_SECTIONS = {
     },
     "Buzău - Focșani (lot 1)": {
         "status": "finished",
-        "completion_date": "2024",
+        "completion_date": "2025",
         "length": "4.60 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "137.8M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
-        "xml_file": "A7/a7_buzau_focsani_lot1_deschis.xml",
+        "xml_file": "A7/a7_buzau_focsani_lot1.xml",
         "start_point": [45.130454, 26.878942],  # Buzau
         "end_point": [45.160176, 26.913162]  # Vadu Pasii
-    },
-    "Buzău - Focșani (lot 1 - în construcție)": {
-        "status": "in_construction",
-        "progress": "96.20%",
-        "completion_date": "2025",
-        "length": "N/A",
-        "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
-        "cost": "137.8M",
-        "financing": "Planul Național de Redresare și Reziliență - PNRR",
-        "xml_file": "A7/a7_buzau_focsani_lot1.xml",
-        # "start_point": [45.130442, 26.878942],  # Buzau
-        # "end_point": [45.130442, 26.878942]  # Vadu Pasii
     },
     "Buzău - Focșani (lot 2)": {
         "status": "finished",
