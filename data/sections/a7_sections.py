@@ -6,18 +6,8 @@ A7_SECTIONS = {
         "constructor": "Asocierea Impressa Pizzarotti & C SPA - Pizzarotti SA - Retter Project Management SRL",
         "cost": "293.6M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
-        "xml_file": "A7/a7_dumbrava_mizil_opened.xml",
-        "end_point": [44.949735, 26.454692]  # Mizil
-    },
-    "Ploiești - Buzău (lot 1 - în construcție)": {
-        "status": "in_construction",
-        "progress": "89%",
-        "completion_date": "2025",
-        "length": "N/A",
-        "constructor": "Asocierea Impressa Pizzarotti & C SPA - Pizzarotti SA - Retter Project Management SRL",
-        "cost": "293.6M",
-        "financing": "Planul Național de Redresare și Reziliență - PNRR",
-        "xml_file": "A7/a7_dumbrava_mizil_under_construction.xml",
+        "xml_file": "A7/a7_dumbrava_mizil.xml",
+        "end_point": [44.94790, 26.44317]  # Mizil
     },
     "Ploiești - Buzău (lot 2)": {
         "status": "in_construction",
@@ -28,7 +18,7 @@ A7_SECTIONS = {
         "cost": "250M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_mizil_pietroasele.xml",
-        "start_point": [44.949735, 26.454692],  # Mizil
+        "start_point": [44.94790, 26.44317],  # Mizil
         "end_point": [45.082487, 26.744910],  # Pietroasele
         "logo": {
             "path": "data/photos/A7-RO.png",
