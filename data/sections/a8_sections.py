@@ -68,12 +68,12 @@ A8_SECTIONS = {
     "Grințieș - Pipirig (lot 2B)": {
         "status": "tendered",
         "tender_end_date": "2025",
-        "length": "34.10 km",
-        "estimated_cost": "1.38B",
+        "length": "31.50 km",
+        "estimated_cost": "1.17B",
         "construction_duration": "54 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1075544",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea SA&PE CONSTRUCT S.R.L (Lider Asociere) - Euro-Asfalt d.o.o. - TEHNOSTRADE S.R.L. SPEDITION UMB S.R.L.",
         "xml_file": "A8/a8_lot2b.xml",
         "start_point": [46.973066, 25.813955],  # Grinties
         "end_point": [47.185855, 26.028449]  # Pipirig
