@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "0%",
+        "progress": "7.73%",
         "completion_date": "2026",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",

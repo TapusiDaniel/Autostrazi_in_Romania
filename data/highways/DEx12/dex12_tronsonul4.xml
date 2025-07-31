@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (2361031 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="7403284" visible="true" version="38" changeset="169684468" timestamp="2025-07-29T17:12:13Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (2494486 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="7403284" visible="true" version="39" changeset="169764972" timestamp="2025-07-31T11:20:17Z" user="Buraddo" uid="2287200">
 <member type="way" ref="1389308719" role=""/>
 <member type="way" ref="1389308721" role=""/>
 <member type="way" ref="1389308720" role=""/>
@@ -24,14 +24,12 @@
 <member type="way" ref="1417064124" role=""/>
 <member type="way" ref="539721683" role=""/>
 <member type="way" ref="539701055" role=""/>
-<member type="way" ref="539721846" role=""/>
 <member type="way" ref="1416256840" role=""/>
 <member type="way" ref="539701060" role=""/>
 <member type="way" ref="539701061" role=""/>
 <member type="way" ref="1085386084" role=""/>
 <member type="way" ref="1389310250" role=""/>
 <member type="way" ref="1389310249" role=""/>
-<member type="way" ref="539701062" role=""/>
 <member type="way" ref="539701063" role=""/>
 <member type="way" ref="539701064" role=""/>
 <member type="way" ref="539701065" role=""/>
@@ -74,12 +72,10 @@
 <member type="way" ref="539721685" role=""/>
 <member type="way" ref="1061531370" role=""/>
 <member type="way" ref="539721684" role=""/>
-<member type="way" ref="539721780" role=""/>
 <member type="way" ref="539721777" role=""/>
 <member type="way" ref="1085386083" role=""/>
 <member type="way" ref="1389310251" role=""/>
 <member type="way" ref="1389310252" role=""/>
-<member type="way" ref="539721778" role=""/>
 <member type="way" ref="679838991" role=""/>
 <member type="way" ref="1061531372" role=""/>
 <member type="way" ref="539721824" role=""/>
