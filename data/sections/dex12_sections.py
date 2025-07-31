@@ -44,16 +44,5 @@ DEx12_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul4.xml",
         "start_point": [44.646143, 24.705846],  # Colonesti
-    },
-    "Albota - A1 (tronsonul 4)": {
-        "status": "finished",
-        "completion_date": "2025",
-        "length": "12.88 km",
-        "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
-        "cost": "123.4M",
-        "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
-        "xml_file": "DEx12/dex12_tronsonul4.xml",
-        "start_point": [44.7565707, 24.8599112]  # Albota
-    },
-
+    }
 }
