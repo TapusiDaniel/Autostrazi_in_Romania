@@ -12,11 +12,11 @@ DEx16_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025", 
         "length": "47.07 km",
-        "estimated_cost": "594M",
+        "estimated_cost": "562M",
         "construction_duration": "24 de luni",  
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1065639",
-        "current_stage": "Semnare contract - Asocierea PRECON TRANSILVANIA SRL - AUTOMAGISTRAL PIVDEN SRL",
+        "current_stage": "Semnare contract - NUROL INSAAT VE TICARET A.S.",
         "xml_file": "DEx16/dex16_arad_oradea_lot3.xml",
         "start_point": [46.197998, 21.229526],  # Arad
         "end_point": [46.519595, 21.500858]  # Chisineu Cris

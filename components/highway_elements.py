@@ -54,7 +54,7 @@ def add_totals_table(m):
         font-family: Arial, sans-serif;
         color: #666;
         font-size: 10px;">
-        Ultima actualizare: 18 iulie 2025
+        Ultima actualizare: 31 iulie 2025
     </div>
     """
     m.get_root().html.add_child(folium.Element(update_text))
