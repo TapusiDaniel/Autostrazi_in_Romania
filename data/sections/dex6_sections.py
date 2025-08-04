@@ -3,7 +3,7 @@ DEx6_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025", 
         "length": "73.52 km",
-        "estimated_cost": "1.06B",
+        "estimated_cost": "1.08B",
         "construction_duration": "42 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1073267",

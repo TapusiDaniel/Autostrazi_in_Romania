@@ -46,7 +46,7 @@ A1_SECTIONS = {
         "completion_date": "2028",
         "length": "37.4 km",
         "constructor": "Asocierea Astaldi/WeBuild - Tancrad",
-        "cost": "1.06B",
+        "cost": "1.41B",
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot3.xml",
         "start_point": [45.1649474, 24.5602304],  # Tigveni
@@ -62,7 +62,7 @@ A1_SECTIONS = {
         "completion_date": "2029",
         "length": "31.33 km",
         "constructor": "Asocierea Mapa Insaat Ve Ticaret AS - Cengiz Insaat Sanayi Ve Ticaret",
-        "cost": "850M",
+        "cost": "1.47B",
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot2.xml",
         "start_point": [45.3882424, 24.3060366],  # Cornetu

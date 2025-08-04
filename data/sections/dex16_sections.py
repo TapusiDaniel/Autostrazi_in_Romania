@@ -25,11 +25,11 @@ DEx16_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025",
         "length": "39.7 km",
-        "estimated_cost": "682M",
+        "estimated_cost": "545M",
         "construction_duration": "24 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1066760",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea ONUR TAAHHUT TASIMACILIK INSAAT TICARET VE SANAYI A.S - STRACO HOLDING S.R.L.",
         "xml_file": "DEx16/dex16_arad_oradea_lot2.xml",
         "start_point": [46.519595, 21.500858],  # Chisineu Cris
         "end_point": [46.793249, 21.694058],  # Salonta
