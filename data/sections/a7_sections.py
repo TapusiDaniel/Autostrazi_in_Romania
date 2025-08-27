@@ -27,7 +27,7 @@ A7_SECTIONS = {
     },
     "Ploiești - Buzău (lot 3)": {
         "status": "in_construction",
-        "progress": "67.02%",
+        "progress": "73.59%",
         "completion_date": "2025",
         "length": "13.90 km",
         "constructor": "Asocierea Nurol Inşaat Ve Ticaret A.S. (lider) - Makyol Insaat Sanayi Turizm Ve Ticaret A.S.",
@@ -108,7 +108,7 @@ A7_SECTIONS = {
     "Focșani - Bacău (lot 3)": {
         "status": "in_construction",
         "progress": "31%",
-        "completion_date": "2025",
+        "completion_date": "2026",
         "length": "21.52 km",
         "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "423.6M",
@@ -130,7 +130,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "36%",
+        "progress": "38%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -146,7 +146,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "34.10%",
+        "progress": "35%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -158,7 +158,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
-        "progress": "34.90%",
+        "progress": "36%",
         "completion_date": "2026",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -197,6 +197,7 @@ A7_SECTIONS = {
     "Suceava - Siret (primii 26.4 km vor fi la profil de autostradă, iar restul de 29.3 km la profil de drum expres)": {
         "status": "planned",
         "feasibility_study_date": "2025",
+        "designer": "Search Corporation SRL – Egis România SA",
         "length": "55.7 km",
         "current_stage": "Urmează parcurgerea tuturor etapelor de avizare",
         "xml_file": "A7/a7_suceava_siret.xml",

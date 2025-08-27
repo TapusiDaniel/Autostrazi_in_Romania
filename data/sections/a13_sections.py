@@ -24,7 +24,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 3)": {
         "status": "in_construction",
-        "progress": "9.60%",
+        "progress": "12.38%",
         "completion_date": "2027",
         "length": "17.61 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
@@ -55,6 +55,7 @@ A13_SECTIONS = {
         "feasibility_study_date": "2025",
         "designer": "Asocierea SEARCH CORPORATION SRL – PROTELCO SA – LIKE CONSULTING SRL – MEGAMUHENDISLIK MUSAVIRLIK A.S.",
         "length": "50.2 km",
+        "projected_completion_date": "~ 2029",
         "xml_file": "A13/a13_fagaras_brasov.xml",
         # "start_point": [45.805056, 25.048160],  # Fagaras
         "end_point": [45.737610, 25.479366]  # Brasov

@@ -14,7 +14,7 @@ DEx14_SECTIONS = {
     "Varianta Ocolitoare Satu Mare": {
         "status": "finished",
         "completion_date": "2022",
-        "length": "12 km",
+        "length": "0 km",
         "constructor": "Asocierea Itinera – Collini Lavori",
         "cost": "80.6M",
         "financing": "Fondul European de Dezvoltare Regională (75%) și bugetul de stat (25%) - POIM",

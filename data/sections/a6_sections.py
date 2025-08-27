@@ -2,6 +2,7 @@ A6_SECTIONS = {
     "București - Alexandria": {
         "status": "planned",
         "feasibility_study_date": "2025",
+        "designer": "ASOCIEREA S.C. D P CONSULT S.A. – S.C. EXPLAN S.R.L. – S.C.A. TEAHA & FUZESI",
         "length": "77.02 km",
         "projected_completion_date": "~ 2029",
         "xml_file": 'A6/a6_bucuresti_alexandria.xml', 
@@ -127,7 +128,7 @@ A6_SECTIONS = {
     },
     "Caransebeș - Lugoj": {
         "status": "planned",
-        "completion_date": "2026",
+        "feasibility_study_date": "2025",
         "designer": "Ingenieria Especializada Obra Civil e Industrial",
         "length": "50 km",
         "geojson_file": 'A6/a6_caransebes_lugoj.geojson',  

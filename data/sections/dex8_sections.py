@@ -2,7 +2,7 @@ DEx8_SECTIONS = {
     "Jijilia - Cataloi": {
         "status": "planned",
         "feasibility_study_date": "2025",
-        "designer": "Obra",
+        "designer": "INGINERIA ESPECIALIZADA OBRA CIVIL E INDUSTRIAL SA",
         "length": "61.6 km",
         "geojson_file": "DEx8/dex8_jijilia_cataloi.geojson",
         "logo": {

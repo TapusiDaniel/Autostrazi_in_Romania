@@ -13,7 +13,7 @@ DEx4_SECTIONS = {
         "status": "planned",
         "feasibility_study_date": "2026",
         "designer": "Specialist Consulting SRL - Specialist Smart Group SRL - Perfect Consult Europe SRL",
-        "length": "75 km",
+        "length": "69.50 km",
         "geojson_file": "DEx4/dex4_tureni_cluj.geojson",
         "logo": {
             "path": "data/photos/DEx4-RO.png",
