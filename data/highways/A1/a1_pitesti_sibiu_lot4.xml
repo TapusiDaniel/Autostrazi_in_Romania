@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2514279 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9433129" visible="true" version="11" changeset="167658540" timestamp="2025-06-15T16:17:17Z" user="jupe" uid="1776672">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (682953 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9433129" visible="true" version="12" changeset="171577249" timestamp="2025-09-07T10:31:06Z" user="RobertH-PUM" uid="9320232">
 <member type="way" ref="1395541752" role=""/>
 <member type="way" ref="845190294" role=""/>
 <member type="way" ref="845190293" role=""/>
@@ -19,9 +19,9 @@
 <member type="way" ref="845196143" role=""/>
 <member type="way" ref="845196144" role=""/>
 <member type="way" ref="254975005" role=""/>
+<member type="way" ref="845190288" role=""/>
 <member type="way" ref="254975006" role=""/>
 <member type="way" ref="1321934347" role=""/>
-<member type="way" ref="845190288" role=""/>
 <member type="way" ref="254975009" role=""/>
 <member type="way" ref="254975004" role=""/>
 <member type="way" ref="254975008" role=""/>
@@ -59,6 +59,7 @@
 <member type="way" ref="845195940" role=""/>
 <member type="way" ref="845195944" role=""/>
 <member type="way" ref="845195945" role=""/>
+<member type="way" ref="1395541753" role=""/>
 <tag k="name" v="PiSi - Lotul 4"/>
 <tag k="route" v="road"/>
 <tag k="type" v="construction"/>

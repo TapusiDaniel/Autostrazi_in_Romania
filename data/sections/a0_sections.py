@@ -38,7 +38,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 1": {
         "status": "in_construction",
-        "progress": "11%",
+        "progress": "21%",
         "completion_date": "2026",
         "length": "17.5 km",
         "constructor": "Impresa - Pizzarotti - Retter Project Management",
