@@ -22,14 +22,13 @@ DEx16_SECTIONS = {
         "end_point": [46.519595, 21.500858]  # Chisineu Cris
     },
     "Arad - Oradea (lot 2)": {
-        "status": "tendered",
-        "tender_end_date": "2025",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2028",
         "length": "39.7 km",
-        "estimated_cost": "545M",
-        "construction_duration": "24 de luni",
+        "constructor": "Asocierea Onur Taahhut Tasimacilik Insaat Ticaret VE Sanayi AS - Straco Holding SRL",
+        "cost": "544M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
-        "seap_code": "CN1066760",
-        "current_stage": "Semnare contract - Asocierea ONUR TAAHHUT TASIMACILIK INSAAT TICARET VE SANAYI A.S - STRACO HOLDING S.R.L.",
         "xml_file": "DEx16/dex16_arad_oradea_lot2.xml",
         "start_point": [46.519595, 21.500858],  # Chisineu Cris
         "end_point": [46.793249, 21.694058],  # Salonta
@@ -41,7 +40,7 @@ DEx16_SECTIONS = {
     "Arad - Oradea (lot 1)": {
         "status": "in_construction",
         "progress": "0%",
-        "completion_date": "2027",
+        "completion_date": "2029",
         "length": "33.7 km",
         "constructor": "Asocierea PRECON TRANSILVANIA SRL - AUTOMAGISTRAL PIVDEN SRL",
         "cost": "455M",
