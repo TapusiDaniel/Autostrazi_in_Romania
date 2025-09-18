@@ -30,7 +30,7 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 4)": {
         "status": "in_construction",
-        "progress": "77%",
+        "progress": "77.63%",
         "completion_date": "2026",
         "length": "9.86 km",
         "constructor": "Porr Construct SRL",
@@ -180,7 +180,7 @@ A1_SECTIONS = {
     },
     "Deva - Lugoj (lot 2 - în construcție)": {
         "status": "in_construction",
-        "progress": "30%",
+        "progress": "34.92%",
         "completion_date": "2026",
         "length": "13.16 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - SA&PE Construct SRL - Euro-Asfalt d.o.o.", 

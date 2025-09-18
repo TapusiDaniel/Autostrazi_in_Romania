@@ -73,7 +73,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 4": {
         "status": "in_construction",
-        "progress": "76.06%",
+        "progress": "80.05%",
         "completion_date": "2025",
         "length": "4.47 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
