@@ -34,7 +34,6 @@ DEx14_SECTIONS = {
         "length": "N/A",
         "designer": "Asocierea SC Drum Pod Invest SRL – SC Search Corporation SRL",
         "xml_file": "DEx14/dex14_satumare_halmeu.xml",
-        # "start_point": [47.8133130640134, 23.0852407066008],  # Baia Mare
     },
     "Baia Mare - Dej": {
         "status": "planned",
@@ -51,7 +50,6 @@ DEx14_SECTIONS = {
         "designer": "Asocierea Quadrante Viaponte – Metroul – Capital Vision",
         "length": "70 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot1.xml",
-        # "start_point": [47.6004733437346, 23.4113941569071],  # Baia Mare
         "end_point": [47.172448, 24.609429]  # Bistrita
     },
     "Bistrița - Vatra Dornei": {
@@ -60,7 +58,6 @@ DEx14_SECTIONS = {
         "designer": "SC EXPLAN SRL",
         "length": "63 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot2.xml",
-        # "start_point": [47.6004733437346, 23.4113941569071],  # Baia Mare
         "end_point": [47.311637, 25.101952],  # Vatra Dornei
         "logo": {
             "path": "data/photos/DEx14-RO.png",
@@ -73,15 +70,5 @@ DEx14_SECTIONS = {
         "designer": "ASOCIEREA BEST CONSULTING & DESIGN S.R.L. – INGENIERIA ESPECIALIZADA OBRA CIVIL E INDUSTRIAL S.A.",
         "length": "107 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot3.xml",
-        # "start_point": [47.6004733437346, 23.4113941569071],  # Baia Mare
-        # "end_point": [47.1459310178365, 23.9081403430355]  # Dej
     },
-    #  "Bistrița - Vatra Dornei și Vatra Dornei - Suceava ": {
-    #     "status": "planned",
-    #     "completion_date": "~ 2025",
-    #     "length": "~ 170 km",
-    #     "geojson_file": "DEx14/dex14_bistrita_suceava.geojson",
-    #     # "start_point": [47.6004733437346, 23.4113941569071],  # Baia Mare
-    #     # "end_point": [47.1459310178365, 23.9081403430355]  # Dej
-    # },
 }

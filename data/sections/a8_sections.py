@@ -173,7 +173,7 @@ A8_SECTIONS = {
     },
     "Pod Ungheni": {
         "status": "in_construction",
-        "progress": "0%",
+        "progress": "15%",
         "completion_date": "2026",
         "length": "1.1 km",
         "constructor": "Ness Proiect Europe SRL",

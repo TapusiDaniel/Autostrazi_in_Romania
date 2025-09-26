@@ -1,8 +1,10 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448753 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="12599428" visible="true" version="6" changeset="145619220" timestamp="2023-12-28T13:11:06Z" user="Buraddo" uid="2287200">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (682952 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12599428" visible="true" version="7" changeset="172182056" timestamp="2025-09-19T21:00:09Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1431366819" role=""/>
+<member type="way" ref="1431366818" role=""/>
+<member type="way" ref="1431366817" role=""/>
+<member type="way" ref="1431366816" role=""/>
 <member type="way" ref="932236822" role=""/>
-<member type="way" ref="932236792" role=""/>
-<member type="way" ref="932236793" role=""/>
 <member type="way" ref="932236824" role=""/>
 <member type="way" ref="932236823" role=""/>
 <member type="way" ref="932236825" role=""/>
@@ -19,22 +21,40 @@
 <member type="way" ref="1234893750" role=""/>
 <member type="way" ref="1234893751" role=""/>
 <member type="way" ref="1234893749" role=""/>
-<member type="way" ref="1234893747" role=""/>
-<member type="way" ref="1234893746" role=""/>
-<member type="way" ref="1234893748" role=""/>
-<member type="way" ref="1234893745" role=""/>
-<member type="way" ref="1234893743" role=""/>
-<member type="way" ref="1234893742" role=""/>
-<member type="way" ref="1234893741" role=""/>
-<member type="way" ref="1234893739" role=""/>
-<member type="way" ref="1234893740" role=""/>
 <member type="way" ref="1234893744" role=""/>
 <member type="way" ref="1234893753" role=""/>
 <member type="way" ref="1234893755" role=""/>
 <member type="way" ref="1234893752" role=""/>
 <member type="way" ref="1234893757" role=""/>
 <member type="way" ref="1234893756" role=""/>
-<tag k="name" v="Gaesti - Ploiesti"/>
+<member type="way" ref="1431366810" role=""/>
+<member type="way" ref="1431366811" role=""/>
+<member type="way" ref="1431366812" role=""/>
+<member type="way" ref="1431366815" role=""/>
+<member type="way" ref="1431366809" role=""/>
+<member type="way" ref="1431366813" role=""/>
+<member type="way" ref="1431366814" role=""/>
+<member type="way" ref="1431366805" role=""/>
+<member type="way" ref="1431366806" role=""/>
+<member type="way" ref="1431366804" role=""/>
+<member type="way" ref="1431366803" role=""/>
+<member type="way" ref="1431366802" role=""/>
+<member type="way" ref="1431366807" role=""/>
+<member type="way" ref="1431366796" role=""/>
+<member type="way" ref="1431366801" role=""/>
+<member type="way" ref="1431366798" role=""/>
+<member type="way" ref="1431366797" role=""/>
+<member type="way" ref="1431366795" role=""/>
+<member type="way" ref="1431366800" role=""/>
+<member type="way" ref="1431366799" role=""/>
+<member type="way" ref="1431366789" role=""/>
+<member type="way" ref="1431366794" role=""/>
+<member type="way" ref="1431366793" role=""/>
+<member type="way" ref="1431366791" role=""/>
+<member type="way" ref="1431366790" role=""/>
+<member type="way" ref="1431366808" role=""/>
+<member type="way" ref="1431366792" role=""/>
+<tag k="name" v="DEx Găești - Ploiești"/>
 <tag k="route" v="proposed"/>
 <tag k="type" v="route"/>
 </relation>
