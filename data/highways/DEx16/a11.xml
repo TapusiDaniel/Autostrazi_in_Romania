@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448778 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9414134" visible="true" version="8" changeset="117812500" timestamp="2022-02-24T13:26:12Z" user="rarad74" uid="128281">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113216 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9414134" visible="true" version="10" changeset="171045051" timestamp="2025-08-26T18:28:43Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="704852018" role=""/>
 <member type="way" ref="704852017" role=""/>
 <member type="way" ref="1034802192" role=""/>
@@ -7,6 +7,7 @@
 <member type="way" ref="142145604" role=""/>
 <member type="way" ref="142145779" role=""/>
 <member type="way" ref="142144044" role=""/>
+<member type="way" ref="1363423904" role=""/>
 <member type="way" ref="354925056" role=""/>
 <member type="way" ref="354925059" role=""/>
 <member type="way" ref="354925061" role=""/>
@@ -15,11 +16,15 @@
 <member type="way" ref="354925455" role=""/>
 <member type="way" ref="354925449" role=""/>
 <member type="way" ref="865716374" role=""/>
+<member type="way" ref="1425062181" role=""/>
+<member type="way" ref="1425062180" role=""/>
 <member type="way" ref="354925451" role=""/>
 <member type="way" ref="248982496" role=""/>
 <member type="way" ref="350946329" role=""/>
 <member type="way" ref="674751022" role=""/>
+<member type="way" ref="1425062179" role=""/>
 <member type="way" ref="674751024" role=""/>
+<member type="way" ref="1363423905" role=""/>
 <tag k="name" v="Autostrada A11"/>
 <tag k="network" v="RO:A"/>
 <tag k="ref" v="A11"/>

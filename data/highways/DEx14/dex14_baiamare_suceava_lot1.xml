@@ -1,5 +1,8 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448764 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14316732" visible="true" version="2" changeset="142721273" timestamp="2023-10-17T16:44:47Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113195 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14316732" visible="true" version="3" changeset="172865941" timestamp="2025-10-05T12:51:03Z" user="ted3sco" uid="2112541">
+<member type="way" ref="1075415052" role=""/>
+<member type="way" ref="1435648836" role=""/>
+<member type="way" ref="1435648837" role=""/>
 <member type="way" ref="1216291849" role=""/>
 <tag k="name" v="Drum expres Baia Mare - Suceava Lot 1 Baia Mare - Bistrita"/>
 <tag k="route" v="road"/>

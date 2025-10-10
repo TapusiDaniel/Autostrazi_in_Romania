@@ -1,10 +1,11 @@
 import folium
 from config import CITIES, CITY_BOUNDARIES
-from utils import get_all_way_coordinates
+from utils import get_all_way_coordinates, get_relation_ways_fast  # ← Added get_relation_ways_fast
 import xml.etree.ElementTree as ET
 import math
 import json
 import requests
+import time
 
 def add_city_boundaries(m):
     """Add city boundaries using local JSON files."""
@@ -346,6 +347,8 @@ def add_all_highways_to_map(m):
     """Add all highways to map with proper styling, popups, and interactive features."""
     from highway_data import HIGHWAYS
     
+    print(f"\n  → Processing {len(HIGHWAYS)} highways...")
+    
     # Initialize feature groups for different highway statuses
     status_groups = {
         "finished": folium.FeatureGroup(name="Finished"),
@@ -399,15 +402,28 @@ def add_all_highways_to_map(m):
         }
     
     # Process each highway section
+    total_highways = len(HIGHWAYS)
+    highway_counter = 0
+    
     for highway_code, highway_data in HIGHWAYS.items():
+        highway_counter += 1
+        total_sections = len(highway_data["sections"])
+        print(f"\n  [{highway_counter}/{total_highways}] Processing {highway_code} ({total_sections} sections)...")
+        
+        section_counter = 0
         for section_name, section_data in highway_data["sections"].items():
+            section_counter += 1
+            print(f"    [{section_counter}/{total_sections}] {section_name}...", end=" ")
+            
             try:
                 status = section_data["status"]
                 if status not in status_groups:
+                    print("✗ Invalid status, skipping")
                     continue
                 
                 # Handle GeoJSON data
                 if 'geojson_file' in section_data:
+                    print(f"(GeoJSON)", end=" ")
                     with open(f"data/highways/{section_data['geojson_file']}", 'r') as f:
                         geojson_data = json.load(f)
                     
@@ -464,16 +480,40 @@ def add_all_highways_to_map(m):
                         if "logo" in section_data:
                             add_section_logo(m, [[coord[1], coord[0]] for coord in coordinates], 
                                            section_data["logo"], logo_group, highway_code)
+                    
+                    print("✓")
                 
-                # Handle XML data
+                # ===== UPDATED XML HANDLING SECTION WITH TIMING =====
                 elif 'xml_file' in section_data:
+                    print(f"(XML)", end=" ")
                     tree = ET.parse(f"data/highways/{section_data['xml_file']}")
                     root = tree.getroot()
-                    way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
-                    ways_data = get_all_way_coordinates(way_ids)
+                    
+                    # Check if this is a relation or just ways
+                    relation = root.find(".//relation")
+                    
+                    if relation is not None:
+                        # FAST PATH: Fetch the entire relation at once!
+                        relation_id = relation.get('id')
+                        print(f"[rel:{relation_id}]", end=" ", flush=True)
+                        
+                        ways_data = get_relation_ways_fast(relation_id)
+                        
+                        # Extract way IDs to maintain order from XML
+                        way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
+                        
+                    else:
+                        # SLOW PATH: Fetch individual ways (fallback)
+                        way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
+                        print(f"[{len(way_ids)} ways]", end=" ", flush=True)
+                        
+                        ways_data = get_all_way_coordinates(way_ids)
                     
                     if ways_data:
+                        process_start = time.time()
                         paths = process_xml_ways(way_ids, ways_data)
+                        process_time = time.time() - process_start
+                        print(f"[process: {process_time:.1f}s]", end=" ", flush=True)
                         
                         for path in paths:
                             if path:
@@ -515,10 +555,18 @@ def add_all_highways_to_map(m):
                             
                         if paths and "logo" in section_data:
                             add_section_logo(m, paths[-1], section_data["logo"], logo_group, highway_code)
+                    
+                    print("✓")
+                # ===== END OF UPDATED SECTION =====
+                
+                else:
+                    print("✗ No data source")
                             
             except Exception as e:
-                print(f"Error processing {highway_code} - {section_name}: {str(e)}")
+                print(f"✗ Error: {str(e)}")
                 continue
+    
+    print(f"\n  ✓ Finished processing all highways\n")
 
     # Add layer control and interactive features
     folium.LayerControl(collapsed=False).add_to(m)

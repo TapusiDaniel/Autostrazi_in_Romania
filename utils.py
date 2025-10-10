@@ -1,102 +1,173 @@
-import requests
+import httpx
 import xml.etree.ElementTree as ET
 from shapely.geometry import MultiPolygon, Polygon, shape
 from shapely.ops import unary_union
 import time
 import json
 
-def get_all_way_coordinates(way_ids):
+# Create httpx client with connection pooling
+CLIENT = httpx.Client(
+    timeout=60.0,
+    limits=httpx.Limits(max_keepalive_connections=10, max_connections=20),
+    http2=True,  # Enable HTTP/2
+    verify=True,  # Keep SSL verification
+    headers={
+        'User-Agent': 'Highway-Fetcher/1.0',
+        'Accept-Encoding': 'gzip, deflate',
+    }
+)
+
+def get_relation_ways_fast(relation_id, timeout=60):
     """
-    Fetch coordinates for a list of OpenStreetMap way IDs using the Overpass API.
+    Fetch all ways from a relation using httpx (faster than requests).
     """
-    ways_str = ','.join(way_ids)
-    overpass_url = "https://overpass-api.de/api/interpreter"
-    
     query = f"""
-    [out:json];
-    way(id:{ways_str});
+    [out:json][timeout:{timeout}];
+    relation({relation_id});
     (._;>;);
     out body;
     """
     
-    # Adăugăm retry logic și error handling
-    max_retries = 3
-    retry_delay = 2  # secunde
+    endpoints = [
+        "https://overpass.private.coffee/api/interpreter",  # This was fastest in curl
+        "https://overpass-api.de/api/interpreter",
+        "https://lz4.overpass-api.de/api/interpreter",
+    ]
     
-    for attempt in range(max_retries):
+    for endpoint in endpoints:
         try:
-            response = requests.post(overpass_url, data=query, timeout=30)
-            response.raise_for_status()  # Verifică pentru erori HTTP
+            print(f"\n      Trying {endpoint.split('/')[2]}...", end=" ", flush=True)
             
-            # Verifică dacă răspunsul este JSON valid
-            try:
-                data = response.json()
-            except json.JSONDecodeError:
-                print(f"Invalid JSON response: {response.text[:200]}...")
-                raise
-                
-            # Procesează datele
+            t0 = time.time()
+            
+            response = CLIENT.post(
+                endpoint,
+                data={"data": query},
+                timeout=timeout
+            )
+            
+            t1 = time.time()
+            print(f"got {len(response.content)/1024:.0f}KB in {t1-t0:.1f}s...", end=" ", flush=True)
+            
+            response.raise_for_status()
+            
+            # Parse JSON
+            t2 = time.time()
+            data = response.json()
+            t3 = time.time()
+            print(f"parsed in {t3-t2:.1f}s...", end=" ", flush=True)
+            
+            # Parse nodes and ways
             nodes = {}
             ways = {}
             
             for element in data['elements']:
                 if element['type'] == 'node':
                     nodes[element['id']] = [element['lat'], element['lon']]
-                elif element['type'] == 'way':
-                    ways[element['id']] = [nodes[node_id] for node_id in element['nodes'] if node_id in nodes]
+                elif element['type'] == 'way' and 'nodes' in element:
+                    way_id = element['id']
+                    coords = [nodes[node_id] for node_id in element['nodes'] if node_id in nodes]
+                    if coords:
+                        ways[way_id] = coords
+            
+            t4 = time.time()
+            print(f"processed {len(ways)} ways in {t4-t3:.1f}s", end=" ", flush=True)
+            
+            total_time = t4 - t0
+            print(f"\n      ✓ Total: {total_time:.1f}s", end=" ", flush=True)
             
             return ways
             
-        except requests.exceptions.RequestException as e:
-            print(f"Request attempt {attempt + 1} failed: {str(e)}")
-            if attempt < max_retries - 1:
-                time.sleep(retry_delay * (attempt + 1))
-            else:
-                print(f"Failed after {max_retries} attempts")
-                raise
-                
+        except httpx.TimeoutException:
+            print(f"[TIMEOUT]", flush=True)
+            continue
+        except httpx.HTTPStatusError as e:
+            print(f"[HTTP {e.response.status_code}]", flush=True)
+            continue
         except Exception as e:
-            print(f"Error processing data: {str(e)}")
-            if attempt < max_retries - 1:
-                time.sleep(retry_delay * (attempt + 1))
-            else:
-                raise
+            print(f"[ERROR: {str(e)[:50]}]", flush=True)
+            continue
+    
+    print("\n      ✗ All endpoints failed!")
+    return {}
 
-    return {}  # Returnează dict gol dacă totul eșuează
+def get_all_way_coordinates(way_ids, timeout=60):
+    """
+    Fetch coordinates for individual ways (slower).
+    """
+    if not way_ids:
+        return {}
+    
+    ways_str = ','.join(str(w) for w in way_ids)
+    
+    query = f"""
+    [out:json][timeout:{timeout}];
+    way(id:{ways_str});
+    (._;>;);
+    out body;
+    """
+    
+    endpoints = [
+        "https://overpass.private.coffee/api/interpreter",
+        "https://overpass-api.de/api/interpreter",
+    ]
+    
+    for endpoint in endpoints:
+        try:
+            t0 = time.time()
+            
+            response = CLIENT.post(
+                endpoint,
+                data={"data": query},
+                timeout=timeout
+            )
+            
+            t1 = time.time()
+            print(f"fetched in {t1-t0:.1f}s...", end=" ", flush=True)
+            
+            response.raise_for_status()
+            data = response.json()
+            
+            # Parse nodes and ways
+            nodes = {}
+            ways = {}
+            
+            for element in data['elements']:
+                if element['type'] == 'node':
+                    nodes[element['id']] = [element['lat'], element['lon']]
+                elif element['type'] == 'way' and 'nodes' in element:
+                    way_id = element['id']
+                    coords = [nodes[node_id] for node_id in element['nodes'] if node_id in nodes]
+                    if coords:
+                        ways[way_id] = coords
+            
+            return ways
+            
+        except Exception as e:
+            print(f"[ERROR: {str(e)[:50]}]", flush=True)
+            continue
+    
+    return {}
 
 def get_romania_outline(geojson_data):
     """
     Generate a unified outline of Romania from GeoJSON data containing county polygons.
-
-    Args:
-        geojson_data (dict): GeoJSON data containing Romania's county polygons.
-
-    Returns:
-        dict: A GeoJSON feature representing the unified outline of Romania.
     """
-    # Convert all county polygons into Shapely objects
     polygons = []
     for feature in geojson_data['features']:
         geom = shape(feature['geometry'])
         if isinstance(geom, MultiPolygon):
-            # If the geometry is a MultiPolygon, extract individual polygons
             polygons.extend(list(geom.geoms))
         else:
-            # Otherwise, add the polygon directly
             polygons.append(geom)
     
-    # Merge all polygons into a single geometry
     union = unary_union(polygons)
     
-    # Convert the unified geometry back to GeoJSON format
     if isinstance(union, MultiPolygon):
-        # If the result is a MultiPolygon, use the first polygon's exterior coordinates
         exterior_coords = [list(union.geoms[0].exterior.coords)]
     else:
-        # Otherwise, use the exterior coordinates of the single polygon
         exterior_coords = [list(union.exterior.coords)]
     
-    # Return the unified outline as a GeoJSON feature
     return {
         "type": "Feature",
         "properties": {},

@@ -3,11 +3,11 @@ DEx6_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025", 
         "length": "73.52 km",
-        "estimated_cost": "1.08B",
+        "estimated_cost": "846M",
         "construction_duration": "42 de luni",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "seap_code": "CN1073267",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea SA&PE Construct S.R.L - Spedition UMB - Tehnostrade S.R.L - Arcada Company",
         "xml_file": "DEx6/dex6_focsani_braila.xml",
         "logo": {
             "path": "data/photos/DEx6-RO.png",

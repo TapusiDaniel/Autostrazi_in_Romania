@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (63294 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10540742" visible="true" version="13" changeset="171225505" timestamp="2025-08-30T12:37:18Z" user="rarad74" uid="128281">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113198 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10540742" visible="true" version="15" changeset="173065764" timestamp="2025-10-09T19:32:06Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="254466243" role=""/>
 <member type="way" ref="628081109" role=""/>
 <member type="way" ref="1282776551" role=""/>
@@ -26,13 +26,35 @@
 <member type="way" ref="696320383" role=""/>
 <member type="way" ref="1375032907" role=""/>
 <member type="way" ref="1375032908" role=""/>
+<member type="way" ref="1433503459" role=""/>
+<member type="way" ref="1433503446" role=""/>
+<member type="way" ref="1433503457" role=""/>
+<member type="way" ref="1433503458" role=""/>
+<member type="way" ref="1436756390" role=""/>
+<member type="way" ref="1436756391" role=""/>
+<member type="way" ref="1436756392" role=""/>
+<member type="way" ref="1436756393" role=""/>
+<member type="way" ref="1436756395" role=""/>
+<member type="way" ref="1436756394" role=""/>
 <member type="way" ref="696320384" role=""/>
+<member type="way" ref="1433503442" role=""/>
 <member type="way" ref="1383601100" role=""/>
+<member type="way" ref="1433503441" role=""/>
+<member type="way" ref="1433503443" role=""/>
+<member type="way" ref="1433503440" role=""/>
 <member type="way" ref="123721839" role=""/>
+<member type="way" ref="1436756384" role=""/>
+<member type="way" ref="1436756385" role=""/>
+<member type="way" ref="1436756386" role=""/>
+<member type="way" ref="1436756387" role=""/>
+<member type="way" ref="1436756388" role=""/>
+<member type="way" ref="1436756389" role=""/>
 <member type="way" ref="1375032909" role=""/>
 <member type="way" ref="1383601099" role=""/>
 <member type="way" ref="1426024104" role=""/>
+<member type="way" ref="1433503445" role=""/>
 <member type="way" ref="1375032910" role=""/>
+<member type="way" ref="1433503444" role=""/>
 <member type="way" ref="1426024103" role=""/>
 <member type="way" ref="123721838" role=""/>
 <member type="way" ref="123721836" role=""/>
