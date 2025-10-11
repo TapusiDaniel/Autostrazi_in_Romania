@@ -1,11 +1,10 @@
 import folium
 from config import CITIES, CITY_BOUNDARIES
-from utils import get_all_way_coordinates, get_relation_ways_fast  # ← Added get_relation_ways_fast
+from utils import get_all_way_coordinates
 import xml.etree.ElementTree as ET
 import math
 import json
 import requests
-import time
 
 def add_city_boundaries(m):
     """Add city boundaries using local JSON files."""
@@ -483,37 +482,21 @@ def add_all_highways_to_map(m):
                     
                     print("✓")
                 
-                # ===== UPDATED XML HANDLING SECTION WITH TIMING =====
+                # Handle XML data
                 elif 'xml_file' in section_data:
                     print(f"(XML)", end=" ")
                     tree = ET.parse(f"data/highways/{section_data['xml_file']}")
                     root = tree.getroot()
+                    way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
                     
-                    # Check if this is a relation or just ways
-                    relation = root.find(".//relation")
+                    print(f"[{len(way_ids)} ways]", end=" ")
+                    print("fetching...", end=" ", flush=True)
                     
-                    if relation is not None:
-                        # FAST PATH: Fetch the entire relation at once!
-                        relation_id = relation.get('id')
-                        print(f"[rel:{relation_id}]", end=" ", flush=True)
-                        
-                        ways_data = get_relation_ways_fast(relation_id)
-                        
-                        # Extract way IDs to maintain order from XML
-                        way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
-                        
-                    else:
-                        # SLOW PATH: Fetch individual ways (fallback)
-                        way_ids = [member.get('ref') for member in root.findall(".//member[@type='way']")]
-                        print(f"[{len(way_ids)} ways]", end=" ", flush=True)
-                        
-                        ways_data = get_all_way_coordinates(way_ids)
+                    ways_data = get_all_way_coordinates(way_ids)
                     
                     if ways_data:
-                        process_start = time.time()
+                        print(f"processing...", end=" ", flush=True)
                         paths = process_xml_ways(way_ids, ways_data)
-                        process_time = time.time() - process_start
-                        print(f"[process: {process_time:.1f}s]", end=" ", flush=True)
                         
                         for path in paths:
                             if path:
@@ -557,8 +540,6 @@ def add_all_highways_to_map(m):
                             add_section_logo(m, paths[-1], section_data["logo"], logo_group, highway_code)
                     
                     print("✓")
-                # ===== END OF UPDATED SECTION =====
-                
                 else:
                     print("✗ No data source")
                             

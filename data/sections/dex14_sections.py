@@ -42,7 +42,7 @@ DEx14_SECTIONS = {
         "length": "75 km",
         "xml_file": "DEx14/dex14_baiamare_dej.xml",
         "start_point": [47.6004733437346, 23.4113941569071],  # Baia Mare
-        "end_point": [47.167864, 23.887829]  # Dej
+        "end_point": [47.176272, 23.875759]  # Dej
     },
     "Dej - Bistrița": {
         "status": "planned",
