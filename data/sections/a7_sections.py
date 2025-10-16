@@ -10,11 +10,10 @@ A7_SECTIONS = {
         "end_point": [44.94790, 26.44317]  # Mizil
     },
     "Ploiești - Buzău (lot 2)": {
-        "status": "in_construction",
-        "progress": "99.80%",
+        "status": "finished",
         "completion_date": "2025",
         "length": "28.35 km",
-        "constructor": "Asocierea Coni SRL - Trace Group",
+        "constructor": "Asocierea SC Coni SRL – Trace Group Hold PLC",
         "cost": "250M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_mizil_pietroasele.xml",

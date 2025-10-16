@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448783 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="16891545" visible="true" version="3" changeset="145619220" timestamp="2023-12-28T13:11:06Z" user="Buraddo" uid="2287200">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113200 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="16891545" visible="true" version="4" changeset="172182056" timestamp="2025-09-19T21:00:09Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1234867774" role=""/>
 <member type="way" ref="1234886978" role=""/>
 <member type="way" ref="1234886977" role=""/>
@@ -35,11 +35,6 @@
 <member type="way" ref="1234891766" role=""/>
 <member type="way" ref="1234891769" role=""/>
 <member type="way" ref="1234867767" role=""/>
-<member type="way" ref="1234893752" role=""/>
-<member type="way" ref="1234893753" role=""/>
-<member type="way" ref="1234893755" role=""/>
-<member type="way" ref="1234893757" role=""/>
-<member type="way" ref="1234893756" role=""/>
 <member type="way" ref="1234893754" role=""/>
 <tag k="name" v="Drum expres București - Târgoviște"/>
 <tag k="route" v="proposed"/>

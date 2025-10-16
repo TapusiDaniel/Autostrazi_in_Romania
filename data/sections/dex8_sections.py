@@ -4,7 +4,7 @@ DEx8_SECTIONS = {
         "feasibility_study_date": "2025",
         "designer": "INGINERIA ESPECIALIZADA OBRA CIVIL E INDUSTRIAL SA",
         "length": "61.6 km",
-        "geojson_file": "DEx8/dex8_jijilia_cataloi.geojson",
+        "xml_file": "DEx8/dex8_jijilia_cataloi.xml",
         "logo": {
             "path": "data/photos/DEx8-RO.png",
             "position": "bottom"  

@@ -10,7 +10,7 @@ def get_all_way_coordinates(way_ids):
     Fetch coordinates for a list of OpenStreetMap way IDs using the Overpass API.
     """
     ways_str = ','.join(way_ids)
-    overpass_url = "https://overpass.private.coffee/api/interpreter"
+    overpass_url = "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
     
     query = f"""
     [out:json];
@@ -25,7 +25,7 @@ def get_all_way_coordinates(way_ids):
     
     for attempt in range(max_retries):
         try:
-            response = requests.post(overpass_url, data=query, timeout=30)
+            response = requests.post(overpass_url, data=query, timeout=20)
             response.raise_for_status()  # Verifică pentru erori HTTP
             
             # Verifică dacă răspunsul este JSON valid
