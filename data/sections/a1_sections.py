@@ -77,7 +77,7 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot1.xml",
         "start_point": [45.6460508, 24.2577428],  # Boita
-        "end_point": [45.7519655, 24.2003537]  # Sibiu
+        "end_point": [45.748888, 24.201124]  # Sibiu
     },
     "Centura Sibiu": {
         "status": "finished",
@@ -87,7 +87,7 @@ A1_SECTIONS = {
         "cost": "48.8M",
         "financing": "ISPA (75%) și bugetul de stat (25%)",
         "xml_file": "A1/a1_centura_sibiu.xml",
-        "start_point": [45.7519655, 24.2003537],  # Sibiu
+        "start_point": [45.748888, 24.201124],  # Sibiu
         "end_point": [45.8165199, 24.0711167]  # Sibiu Vest
     },
     "Sibiu - Orăștie (lot 4)": {

@@ -1,13 +1,12 @@
 DEx14_SECTIONS = {
     "Oar - Satu Mare": {
-        "status": "tendered",
-        "tender_end_date": "2025", 
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2028", 
         "length": "10.83 km",
-        "estimated_cost": "147.6M",
-        "construction_duration": "24 de luni",
+        "constructor": "Construcții Erbașu",
+        "cost": "141.5M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
-        "seap_code": "CN1064596",
-        "current_stage": "Au fost înregistrate contestații",
         "xml_file": "DEx14/dex14_oar_satumare.xml",
         "end_point": [47.79583, 22.83047]  # Satu Mare
     },

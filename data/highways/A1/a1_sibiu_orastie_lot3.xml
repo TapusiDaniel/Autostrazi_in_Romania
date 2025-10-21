@@ -1,7 +1,11 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448767 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10541299" visible="true" version="1" changeset="79195755" timestamp="2020-01-04T17:54:33Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (2643841 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541299" visible="true" version="2" changeset="173467813" timestamp="2025-10-18T21:07:54Z" user="anonymous123123" uid="22067548">
+<member type="way" ref="1443089134" role=""/>
+<member type="way" ref="1443089133" role=""/>
 <member type="way" ref="237843589" role=""/>
 <member type="way" ref="252413565" role=""/>
+<member type="way" ref="1443089135" role=""/>
+<member type="way" ref="1443089136" role=""/>
 <member type="way" ref="237845090" role=""/>
 <member type="way" ref="237845061" role=""/>
 <member type="way" ref="237845044" role=""/>
@@ -10,8 +14,12 @@
 <member type="way" ref="237845094" role=""/>
 <member type="way" ref="237845073" role=""/>
 <member type="way" ref="369454329" role=""/>
+<member type="way" ref="1443089139" role=""/>
+<member type="way" ref="1443089138" role=""/>
 <member type="way" ref="369454330" role=""/>
 <member type="way" ref="237843588" role=""/>
+<member type="way" ref="1443089137" role=""/>
+<member type="way" ref="1443089140" role=""/>
 <member type="way" ref="443850824" role=""/>
 <member type="way" ref="238883342" role=""/>
 <member type="way" ref="443850826" role=""/>
@@ -27,6 +35,10 @@
 <member type="way" ref="443850822" role=""/>
 <member type="way" ref="238883343" role=""/>
 <member type="way" ref="369461818" role=""/>
+<member type="way" ref="1443089143" role=""/>
+<member type="way" ref="1443089144" role=""/>
+<member type="way" ref="1443089142" role=""/>
+<member type="way" ref="1443089141" role=""/>
 <member type="way" ref="237845089" role=""/>
 <tag k="name" v="A1 Orastie-Sibiu lot 3"/>
 <tag k="route" v="road"/>

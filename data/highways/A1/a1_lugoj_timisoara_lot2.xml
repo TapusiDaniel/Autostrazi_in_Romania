@@ -1,7 +1,55 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448767 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10541397" visible="true" version="2" changeset="79197163" timestamp="2020-01-04T19:10:46Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113207 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541397" visible="true" version="3" changeset="173460993" timestamp="2025-10-18T17:32:49Z" user="anonymous123123" uid="22067548">
+<member type="way" ref="1443050636" role=""/>
+<member type="way" ref="1443050635" role=""/>
+<member type="way" ref="1443050632" role=""/>
+<member type="way" ref="1443050631" role=""/>
+<member type="way" ref="1443050629" role=""/>
+<member type="way" ref="1443050627" role=""/>
+<member type="way" ref="1443050624" role=""/>
+<member type="way" ref="1443050623" role=""/>
+<member type="way" ref="1443050621" role=""/>
+<member type="way" ref="1443050620" role=""/>
+<member type="way" ref="1443050618" role=""/>
+<member type="way" ref="1443050617" role=""/>
+<member type="way" ref="1443050613" role=""/>
+<member type="way" ref="1443050612" role=""/>
+<member type="way" ref="1443050609" role=""/>
+<member type="way" ref="1443050608" role=""/>
+<member type="way" ref="1443050605" role=""/>
+<member type="way" ref="1443050604" role=""/>
+<member type="way" ref="1443050602" role=""/>
+<member type="way" ref="1443050601" role=""/>
+<member type="way" ref="1443050596" role=""/>
+<member type="way" ref="1443050595" role=""/>
+<member type="way" ref="1443050592" role=""/>
+<member type="way" ref="1443050591" role=""/>
 <member type="way" ref="252697316" role=""/>
 <member type="way" ref="685000963" role=""/>
+<member type="way" ref="1443050593" role=""/>
+<member type="way" ref="1443050594" role=""/>
+<member type="way" ref="1443050597" role=""/>
+<member type="way" ref="1443050598" role=""/>
+<member type="way" ref="1443050599" role=""/>
+<member type="way" ref="1443050600" role=""/>
+<member type="way" ref="1443050603" role=""/>
+<member type="way" ref="1443050606" role=""/>
+<member type="way" ref="1443050607" role=""/>
+<member type="way" ref="1443050610" role=""/>
+<member type="way" ref="1443050611" role=""/>
+<member type="way" ref="1443050614" role=""/>
+<member type="way" ref="1443050615" role=""/>
+<member type="way" ref="1443050616" role=""/>
+<member type="way" ref="1443050619" role=""/>
+<member type="way" ref="1443050622" role=""/>
+<member type="way" ref="1443050625" role=""/>
+<member type="way" ref="1443050626" role=""/>
+<member type="way" ref="1443050628" role=""/>
+<member type="way" ref="1443050630" role=""/>
+<member type="way" ref="1443050633" role=""/>
+<member type="way" ref="1443050634" role=""/>
+<member type="way" ref="1443050637" role=""/>
+<member type="way" ref="1443050638" role=""/>
 <tag k="name" v="A1 Timisoara-Lugoj lot 2"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>

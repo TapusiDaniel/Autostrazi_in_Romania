@@ -1,26 +1,62 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448774 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10541626" visible="true" version="2" changeset="137883335" timestamp="2023-06-28T14:56:53Z" user="Vas111" uid="16951803">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113223 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541626" visible="true" version="3" changeset="173460993" timestamp="2025-10-18T17:32:49Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="685108832" role=""/>
+<member type="way" ref="1443050551" role=""/>
+<member type="way" ref="1443050552" role=""/>
 <member type="way" ref="252697183" role=""/>
+<member type="way" ref="1443050553" role=""/>
+<member type="way" ref="1443050554" role=""/>
 <member type="way" ref="388167828" role=""/>
+<member type="way" ref="1443050555" role=""/>
+<member type="way" ref="1443050558" role=""/>
+<member type="way" ref="1443050557" role=""/>
+<member type="way" ref="1443050556" role=""/>
 <member type="way" ref="397667999" role=""/>
 <member type="way" ref="388167826" role=""/>
 <member type="way" ref="388167827" role=""/>
 <member type="way" ref="373602783" role=""/>
 <member type="way" ref="388167825" role=""/>
+<member type="way" ref="1443050562" role=""/>
+<member type="way" ref="1443050561" role=""/>
 <member type="way" ref="373602803" role=""/>
+<member type="way" ref="1443050565" role=""/>
+<member type="way" ref="1443050566" role=""/>
+<member type="way" ref="1443050564" role=""/>
+<member type="way" ref="1443050563" role=""/>
 <member type="way" ref="373602782" role=""/>
+<member type="way" ref="1443050559" role=""/>
+<member type="way" ref="1443050560" role=""/>
 <member type="way" ref="373602787" role=""/>
 <member type="way" ref="373602789" role=""/>
 <member type="way" ref="373602791" role=""/>
+<member type="way" ref="1443050570" role=""/>
+<member type="way" ref="1443050569" role=""/>
 <member type="way" ref="315476233" role=""/>
+<member type="way" ref="1443050572" role=""/>
+<member type="way" ref="1443050574" role=""/>
+<member type="way" ref="1443050577" role=""/>
+<member type="way" ref="1443050578" role=""/>
 <member type="way" ref="438697366" role=""/>
 <member type="way" ref="1185533563" role=""/>
 <member type="way" ref="1185533562" role=""/>
 <member type="way" ref="256145003" role=""/>
+<member type="way" ref="1443050580" role=""/>
+<member type="way" ref="1443050582" role=""/>
+<member type="way" ref="1443050585" role=""/>
+<member type="way" ref="1443050586" role=""/>
+<member type="way" ref="1443050576" role=""/>
+<member type="way" ref="1443050575" role=""/>
+<member type="way" ref="1443050573" role=""/>
+<member type="way" ref="1443050571" role=""/>
 <member type="way" ref="373602785" role=""/>
+<member type="way" ref="1443050567" role=""/>
+<member type="way" ref="1443050568" role=""/>
 <member type="way" ref="1185533565" role=""/>
 <member type="way" ref="1185533564" role=""/>
+<member type="way" ref="1443050584" role=""/>
+<member type="way" ref="1443050583" role=""/>
+<member type="way" ref="1443050581" role=""/>
+<member type="way" ref="1443050579" role=""/>
 <member type="way" ref="315476232" role=""/>
 <member type="way" ref="373602794" role=""/>
 <member type="way" ref="262524229" role=""/>
@@ -30,8 +66,12 @@
 <member type="way" ref="256145000" role=""/>
 <member type="way" ref="256144992" role=""/>
 <member type="way" ref="252697315" role=""/>
+<member type="way" ref="1443050589" role=""/>
+<member type="way" ref="1443050590" role=""/>
 <member type="way" ref="540376847" role=""/>
 <member type="way" ref="256144999" role=""/>
+<member type="way" ref="1443050587" role=""/>
+<member type="way" ref="1443050588" role=""/>
 <tag k="name" v="A1 Lugoj-Deva lot 1"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>

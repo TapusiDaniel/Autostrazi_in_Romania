@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448782 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10541320" visible="true" version="5" changeset="131949449" timestamp="2023-02-01T07:00:08Z" user="rarad74" uid="128281">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113195 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541320" visible="true" version="6" changeset="173467813" timestamp="2025-10-18T21:07:54Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="760807656" role=""/>
 <member type="way" ref="760807655" role=""/>
 <member type="way" ref="721303757" role=""/>
@@ -9,7 +9,11 @@
 <member type="way" ref="721303760" role=""/>
 <member type="way" ref="721303759" role=""/>
 <member type="way" ref="237845109" role=""/>
+<member type="way" ref="1443089146" role=""/>
+<member type="way" ref="1443089145" role=""/>
 <member type="way" ref="721303756" role=""/>
+<member type="way" ref="1443089148" role=""/>
+<member type="way" ref="1443089147" role=""/>
 <member type="way" ref="253468451" role=""/>
 <member type="way" ref="253468443" role=""/>
 <member type="way" ref="253468442" role=""/>
@@ -23,25 +27,45 @@
 <member type="way" ref="218146594" role=""/>
 <member type="way" ref="218146579" role=""/>
 <member type="way" ref="968530479" role=""/>
+<member type="way" ref="1443089160" role=""/>
+<member type="way" ref="1443089159" role=""/>
 <member type="way" ref="218146583" role=""/>
 <member type="way" ref="218146552" role=""/>
 <member type="way" ref="218146586" role=""/>
+<member type="way" ref="1443089149" role=""/>
+<member type="way" ref="1443089152" role=""/>
+<member type="way" ref="1443089155" role=""/>
+<member type="way" ref="1443089156" role=""/>
 <member type="way" ref="1136908384" role=""/>
 <member type="way" ref="1136908383" role=""/>
 <member type="way" ref="218146588" role=""/>
 <member type="way" ref="1136908380" role=""/>
+<member type="way" ref="1443089165" role=""/>
+<member type="way" ref="1443089168" role=""/>
 <member type="way" ref="218493482" role=""/>
 <member type="way" ref="218146601" role=""/>
 <member type="way" ref="218146563" role=""/>
 <member type="way" ref="1136912314" role=""/>
+<member type="way" ref="1443089158" role=""/>
+<member type="way" ref="1443089157" role=""/>
 <member type="way" ref="968530480" role=""/>
 <member type="way" ref="218146550" role=""/>
 <member type="way" ref="886751191" role=""/>
 <member type="way" ref="1136908382" role=""/>
+<member type="way" ref="1443089150" role=""/>
+<member type="way" ref="1443089151" role=""/>
+<member type="way" ref="1443089154" role=""/>
+<member type="way" ref="1443089153" role=""/>
 <member type="way" ref="218146567" role=""/>
 <member type="way" ref="218146593" role=""/>
 <member type="way" ref="218146576" role=""/>
+<member type="way" ref="1443089161" role=""/>
+<member type="way" ref="1443089162" role=""/>
+<member type="way" ref="1443089164" role=""/>
+<member type="way" ref="1443089163" role=""/>
 <member type="way" ref="218146557" role=""/>
+<member type="way" ref="1443089167" role=""/>
+<member type="way" ref="1443089166" role=""/>
 <member type="way" ref="1136908381" role=""/>
 <tag k="name" v="A1 Orastie-Sibiu lot 2"/>
 <tag k="route" v="road"/>
