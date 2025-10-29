@@ -1,12 +1,38 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1727050 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="16094026" visible="true" version="2" changeset="169943836" timestamp="2025-08-04T09:37:55Z" user="YellowSoul" uid="16061279">
-<member type="way" ref="1419926793" role=""/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113214 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="16094026" visible="true" version="5" changeset="173797061" timestamp="2025-10-26T14:24:40Z" user="RobertH-PUM" uid="9320232">
+<member type="way" ref="1445173796" role=""/>
 <member type="way" ref="1189801865" role=""/>
 <member type="way" ref="1189801867" role=""/>
 <member type="way" ref="1189801864" role=""/>
-<member type="way" ref="1189801866" role=""/>
-<member type="way" ref="1189801863" role=""/>
-<tag k="name" v="Radial Bucuresti"/>
+<member type="way" ref="1444330516" role=""/>
+<member type="way" ref="1444330517" role=""/>
+<member type="way" ref="1444330515" role=""/>
+<member type="way" ref="1444684887" role=""/>
+<member type="way" ref="1444684883" role=""/>
+<member type="way" ref="1444684885" role=""/>
+<member type="way" ref="1444684884" role=""/>
+<member type="way" ref="1444684888" role=""/>
+<member type="way" ref="1444684886" role=""/>
+<member type="way" ref="1444684882" role=""/>
+<member type="way" ref="1444684877" role=""/>
+<member type="way" ref="1444684881" role=""/>
+<member type="way" ref="1444684878" role=""/>
+<member type="way" ref="1444684864" role=""/>
+<member type="way" ref="1444684880" role=""/>
+<member type="way" ref="1444684879" role=""/>
+<member type="way" ref="1444684874" role=""/>
+<member type="way" ref="1444684876" role=""/>
+<member type="way" ref="1444684875" role=""/>
+<member type="way" ref="1444684873" role=""/>
+<member type="way" ref="1444684871" role=""/>
+<member type="way" ref="1444684872" role=""/>
+<member type="way" ref="1444684869" role=""/>
+<member type="way" ref="1444684868" role=""/>
+<member type="way" ref="1444684870" role=""/>
+<member type="way" ref="1444684866" role=""/>
+<member type="way" ref="1444684867" role=""/>
+<member type="way" ref="1444684865" role=""/>
+<tag k="name" v="Drum radial 1"/>
 <tag k="route" v="road"/>
 <tag k="type" v="proposed"/>
 </relation>

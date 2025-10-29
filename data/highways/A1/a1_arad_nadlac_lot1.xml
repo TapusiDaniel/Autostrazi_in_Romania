@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (822333 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10541481" visible="true" version="5" changeset="173460993" timestamp="2025-10-18T17:32:49Z" user="anonymous123123" uid="22067548">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113206 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10541481" visible="true" version="6" changeset="173691457" timestamp="2025-10-23T20:24:07Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="760815976" role=""/>
 <member type="way" ref="760815977" role=""/>
 <member type="way" ref="317946583" role=""/>
@@ -10,6 +10,8 @@
 <member type="way" ref="90523967" role=""/>
 <member type="way" ref="90524421" role=""/>
 <member type="way" ref="90524500" role=""/>
+<member type="way" ref="1444363390" role=""/>
+<member type="way" ref="1444363389" role=""/>
 <member type="way" ref="1443050760" role=""/>
 <member type="way" ref="1443050759" role=""/>
 <member type="way" ref="1443050752" role=""/>
@@ -37,8 +39,15 @@
 <member type="way" ref="1443050754" role=""/>
 <member type="way" ref="1443050757" role=""/>
 <member type="way" ref="1443050758" role=""/>
+<member type="way" ref="1444363397" role=""/>
+<member type="way" ref="1444363396" role=""/>
+<member type="way" ref="1444363398" role=""/>
+<member type="way" ref="1444363392" role=""/>
 <member type="way" ref="1443050761" role=""/>
+<member type="way" ref="1444363393" role=""/>
+<member type="way" ref="1444363391" role=""/>
 <member type="way" ref="1443050762" role=""/>
+<member type="way" ref="1444363395" role=""/>
 <member type="way" ref="1362846680" role=""/>
 <member type="way" ref="373602796" role=""/>
 <member type="way" ref="1443050755" role=""/>
@@ -48,13 +57,19 @@
 <member type="way" ref="450062500" role=""/>
 <member type="way" ref="1367670272" role=""/>
 <member type="way" ref="373602793" role=""/>
+<member type="way" ref="1444363394" role=""/>
+<member type="way" ref="1444363394" role=""/>
+<member type="way" ref="373602793" role=""/>
+<member type="way" ref="1444363394" role=""/>
+<member type="way" ref="373602793" role=""/>
+<member type="way" ref="1444363394" role=""/>
 <member type="way" ref="373602793" role=""/>
 <member type="way" ref="373602793" role=""/>
-<member type="way" ref="373602793" role=""/>
-<member type="way" ref="373602793" role=""/>
+<member type="way" ref="1444363394" role=""/>
 <member type="way" ref="450062500" role=""/>
 <member type="way" ref="1367670272" role=""/>
 <member type="way" ref="373602793" role=""/>
+<member type="way" ref="1444363394" role=""/>
 <member type="way" ref="450062500" role=""/>
 <member type="way" ref="1367670272" role=""/>
 <tag k="name" v="A1 Nadlac-Arad lot 1"/>

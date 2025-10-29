@@ -1,13 +1,12 @@
 DEx6_SECTIONS = {
     "Focșani - Brăila": {
-        "status": "tendered",
-        "tender_end_date": "2025", 
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2029",
         "length": "73.52 km",
-        "estimated_cost": "846M",
-        "construction_duration": "42 de luni",
+        "constructor": "Asocierea SA&PE Construct S.R.L - Spedition UMB - Tehnostrade S.R.L - Arcada Company",
+        "cost": "846M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
-        "seap_code": "CN1073267",
-        "current_stage": "Semnare contract - Asocierea SA&PE Construct S.R.L - Spedition UMB - Tehnostrade S.R.L - Arcada Company",
         "xml_file": "DEx6/dex6_focsani_braila.xml",
         "logo": {
             "path": "data/photos/DEx6-RO.png",
