@@ -105,11 +105,11 @@ A8_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2025",
         "length": "27 km",
-        "estimated_cost": "1.2B",
+        "estimated_cost": "937M",
         "construction_duration": "46 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1077231",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea Danlin XXL - Groma Hold Ltd - Intertranscom Impex - Evropeiski Patishta",
         "xml_file": "A8/a8_motca_targu_frumos_lot1.xml",
         "start_point": [47.197218, 26.612607],  # Motca
         "end_point": [47.231512, 27.010151]  # Targu Frumos
@@ -135,7 +135,7 @@ A8_SECTIONS = {
         "construction_duration": "46 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "seap_code": "CN1081660",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Evaluare oferte",
         "xml_file": "A8/a8_letcani_iasi.xml",
         "start_point": [47.208894, 27.374226],  # Letcani
         "end_point": [47.259529, 27.566248],  # Iasi Nord
