@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113205 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14026443" visible="true" version="43" changeset="173947268" timestamp="2025-10-29T20:19:54Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893122 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14026443" visible="true" version="44" changeset="174677444" timestamp="2025-11-15T08:43:06Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1326124362" role=""/>
 <member type="way" ref="1326124363" role=""/>
 <member type="way" ref="1326124364" role=""/>
@@ -411,8 +411,10 @@
 <member type="way" ref="1337558040" role=""/>
 <member type="way" ref="1337558041" role=""/>
 <member type="way" ref="1337558042" role=""/>
+<member type="way" ref="1450825622" role=""/>
+<member type="way" ref="1450825623" role=""/>
 <tag k="name" v="DEx6 Focșani - Brăila"/>
-<tag k="route" v="proposed"/>
-<tag k="type" v="route"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
 </relation>
 </osm>

@@ -3,9 +3,7 @@
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
 <meta osm_base="2025-10-16T16:50:15Z"/>
 
-  <!-- Incepe definitia Relatiei care grupeaza toate drumurile -->
   <relation id="-1" visible="true" version="1">
-    <!-- Lista tuturor segmentelor de drum (ways) ca membri ai relatiei -->
     <member type="way" ref="1344760363" role=""/>
     <member type="way" ref="1344760364" role=""/>
     <member type="way" ref="1344760365" role=""/>
@@ -192,7 +190,35 @@
     <member type="way" ref="1351894453" role=""/>
     <member type="way" ref="1351894455" role=""/>
     <member type="way" ref="1351894456" role=""/>
-    <!-- Etichetele (tags) care descriu relatia ca intreg -->
+    <member type="way" ref="1447526689" role=""/>
+    <member type="way" ref="1447526687" role=""/>
+    <member type="way" ref="1447526688" role=""/>
+    <member type="way" ref="1447526686" role=""/>
+    <member type="way" ref="1447526670" role=""/>
+    <member type="way" ref="1447526679" role=""/>
+    <member type="way" ref="1447526680" role=""/>
+    <member type="way" ref="1447526677" role=""/>
+    <member type="way" ref="1447526678" role=""/>
+    <member type="way" ref="1447526673" role=""/>
+    <member type="way" ref="1447526674" role=""/>
+    <member type="way" ref="1447526671" role=""/>
+    <member type="way" ref="1447526672" role=""/>
+    <member type="way" ref="1447526675" role=""/>
+    <member type="way" ref="1447526676" role=""/>
+    <member type="way" ref="1447526682" role=""/>
+    <member type="way" ref="1447526681" role=""/>
+    <member type="way" ref="1447526659" role=""/>
+    <member type="way" ref="1447526658" role=""/>
+    <member type="way" ref="1344760366" role=""/>
+    <member type="way" ref="1447526663" role=""/>
+    <member type="way" ref="1447526662" role=""/>
+    <member type="way" ref="1447526661" role=""/>
+    <member type="way" ref="1447526665" role=""/>
+    <member type="way" ref="1447526664" role=""/>
+    <member type="way" ref="1447526666" role=""/>
+    <member type="way" ref="1447526669" role=""/>
+    <member type="way" ref="1447526667" role=""/>
+    <member type="way" ref="1447526668" role=""/>
     <tag k="name" v="DEx8 Brăila-Tulcea (Proiect Complet)"/>
     <tag k="network" v="RO:DEx"/>
     <tag k="ref" v="DEx8"/>

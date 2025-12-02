@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113195 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10524726" visible="true" version="9" changeset="173628381" timestamp="2025-10-22T13:36:26Z" user="anonymous123123" uid="22067548">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893105 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10524726" visible="true" version="10" changeset="173937160" timestamp="2025-10-29T16:05:10Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="611977701" role=""/>
 <member type="way" ref="1443944247" role=""/>
 <member type="way" ref="1443944248" role=""/>
@@ -76,7 +76,9 @@
 <member type="way" ref="1101823217" role=""/>
 <member type="way" ref="530974213" role=""/>
 <member type="way" ref="701097328" role=""/>
+<tag k="distance" v="12.45"/>
 <tag k="name" v="A10 - Lot 3 (Aiud-Decea)"/>
+<tag k="network" v="RO:A"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>
 </relation>

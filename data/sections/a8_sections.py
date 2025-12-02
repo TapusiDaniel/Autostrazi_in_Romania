@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "20.50%",
+        "progress": "25.12%",
         "completion_date": "2026",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
@@ -24,14 +24,13 @@ A8_SECTIONS = {
         "end_point": [46.569293, 25.059833]  # Sarateni
     },
     "Sărățeni - Joseni (lot 1C)": {
-        "status": "tendered",
-        "tender_end_date": "2025",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2031",
         "length": "32.40 km",
-        "estimated_cost": "1.22B",
-        "construction_duration": "54 de luni",
+        "constructor": "Asocierea SA&PE Construct SRL – Tehnostrade SRL – Spedition UMB – Euro Asfalt",
+        "cost": "980M",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1074910",
-        "current_stage": "Semnare contract - UMB Spedition",
         "xml_file": "A8/a8_lot1c.xml",
         "start_point": [46.569293, 25.059833],  # Sarateni
         "end_point": [46.677736, 25.384139],  # Joseni
@@ -41,14 +40,13 @@ A8_SECTIONS = {
         }
     },
     "Joseni - Ditrău (lot 1D)": {
-        "status": "tendered",
-        "tender_end_date": "2025",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2029",
         "length": "14.40 km",
-        "estimated_cost": "240M",
-        "construction_duration": "34 de luni",
+        "constructor": "Asocierea Danlin XXL (Lider) - Groma Hold LTD - Intertranscom Impex S.R.L.",
+        "cost": "161.1M",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1074301",
-        "current_stage": "Semnare contract - Asocierea Danlin XXL (Lider) - Groma Hold LTD - Intertranscom Impex S.R.L.",
         "xml_file": "A8/a8_lot1d.xml",
         "start_point": [46.677736, 25.384139],  # Joseni
         "end_point": [46.767823, 25.501604]  # Ditrau

@@ -24,7 +24,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 3)": {
         "status": "in_construction",
-        "progress": "23%",
+        "progress": "24.34%",
         "completion_date": "2028",
         "length": "17.61 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
@@ -36,7 +36,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 4)": {
         "status": "in_construction",
-        "progress": "7.46%",
+        "progress": "9.14%",
         "completion_date": "2028",
         "length": "16.26 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",

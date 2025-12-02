@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113197 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10524729" visible="true" version="17" changeset="173628381" timestamp="2025-10-22T13:36:26Z" user="anonymous123123" uid="22067548">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893124 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10524729" visible="true" version="18" changeset="173937160" timestamp="2025-10-29T16:05:10Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="506987579" role=""/>
 <member type="way" ref="999589941" role=""/>
 <member type="way" ref="1016954055" role=""/>
@@ -117,7 +117,9 @@
 <member type="way" ref="341992870" role=""/>
 <member type="way" ref="712440699" role=""/>
 <member type="way" ref="341992871" role=""/>
+<tag k="distance" v="16.3"/>
 <tag k="name" v="A10 - Lot 4 (Decea-Turda)"/>
+<tag k="network" v="RO:A"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>
 </relation>

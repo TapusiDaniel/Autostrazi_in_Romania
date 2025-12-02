@@ -1,9 +1,7 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (2643941 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="7391264" visible="true" version="47" changeset="173628381" timestamp="2025-10-22T13:36:26Z" user="anonymous123123" uid="22067548">
-<member type="way" ref="999520008" role=""/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893107 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="7391264" visible="true" version="50" changeset="174211465" timestamp="2025-11-04T20:08:10Z" user="melo_1" uid="1281559">
 <member type="way" ref="999520009" role=""/>
 <member type="way" ref="999056734" role=""/>
-<member type="way" ref="999056735" role=""/>
 <member type="way" ref="682145136" role=""/>
 <member type="way" ref="682145135" role=""/>
 <member type="way" ref="682145134" role=""/>
@@ -13,7 +11,6 @@
 <member type="way" ref="682141286" role=""/>
 <member type="way" ref="682141162" role=""/>
 <member type="way" ref="682141166" role=""/>
-<member type="way" ref="682124624" role=""/>
 <member type="way" ref="682123697" role=""/>
 <member type="way" ref="682123696" role=""/>
 <member type="way" ref="682123698" role=""/>
@@ -69,7 +66,9 @@
 <member type="way" ref="682116136" role=""/>
 <member type="way" ref="682116142" role=""/>
 <member type="way" ref="488610388" role=""/>
+<member type="way" ref="1447529924" role=""/>
 <member type="way" ref="253677743" role=""/>
+<member type="way" ref="1447529923" role=""/>
 <member type="way" ref="255040397" role=""/>
 <member type="way" ref="255040400" role=""/>
 <member type="way" ref="253677744" role=""/>
@@ -110,7 +109,6 @@
 <member type="way" ref="679734630" role=""/>
 <member type="way" ref="255040398" role=""/>
 <member type="way" ref="253677742" role=""/>
-<member type="way" ref="253677741" role=""/>
 <member type="way" ref="675145674" role=""/>
 <member type="way" ref="675145673" role=""/>
 <member type="way" ref="1443944254" role=""/>
@@ -149,7 +147,9 @@
 <member type="way" ref="685006749" role=""/>
 <member type="way" ref="685006750" role=""/>
 <member type="way" ref="999056732" role=""/>
-<tag k="name" v="A10 - Lot 2 (AlbaIulia-Aiud)"/>
+<tag k="distance" v="24.25"/>
+<tag k="name" v="A10 - Lot 2 (Alba Iulia-Aiud)"/>
+<tag k="network" v="RO:A"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>
 </relation>

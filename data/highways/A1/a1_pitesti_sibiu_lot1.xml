@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113215 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="7397614" visible="true" version="55" changeset="173489647" timestamp="2025-10-19T12:40:47Z" user="Costi Oșlobanu" uid="6270930">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113211 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="7397614" visible="true" version="57" changeset="173833584" timestamp="2025-10-27T11:33:11Z" user="cripistipi" uid="4454837">
 <member type="way" ref="1283272806" role=""/>
 <member type="way" ref="1083600127" role=""/>
 <member type="way" ref="1122244936" role=""/>
@@ -22,8 +22,8 @@
 <member type="way" ref="1443214158" role=""/>
 <member type="way" ref="591561834" role=""/>
 <member type="way" ref="1443214159" role=""/>
+<member type="way" ref="1445397559" role=""/>
 <member type="way" ref="1443214157" role=""/>
-<member type="way" ref="842699150" role=""/>
 <member type="way" ref="591561832" role=""/>
 <member type="way" ref="251520961" role=""/>
 <member type="way" ref="591561830" role=""/>

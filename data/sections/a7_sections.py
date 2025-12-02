@@ -25,8 +25,7 @@ A7_SECTIONS = {
         }
     },
     "Ploiești - Buzău (lot 3)": {
-        "status": "in_construction",
-        "progress": "85%",
+        "status": "finished",
         "completion_date": "2025",
         "length": "13.90 km",
         "constructor": "Asocierea Nurol Inşaat Ve Ticaret A.S. (lider) - Makyol Insaat Sanayi Turizm Ve Ticaret A.S.",
@@ -129,7 +128,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "39.70%",
+        "progress": "40.70%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -145,7 +144,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "37.60%",
+        "progress": "38.30%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -157,7 +156,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
-        "progress": "39.20%",
+        "progress": "40.10%",
         "completion_date": "2026",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",

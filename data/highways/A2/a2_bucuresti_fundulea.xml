@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (756244 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10546798" visible="true" version="12" changeset="168638224" timestamp="2025-07-08T08:50:18Z" user="rarad74" uid="128281">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893112 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10546798" visible="true" version="14" changeset="174733578" timestamp="2025-11-16T15:46:24Z" user="rarad74" uid="128281">
 <member type="way" ref="347290634" role=""/>
 <member type="way" ref="1413208459" role=""/>
 <member type="way" ref="21047568" role=""/>
@@ -12,6 +12,7 @@
 <member type="way" ref="16859175" role=""/>
 <member type="way" ref="74220808" role=""/>
 <member type="way" ref="48781306" role=""/>
+<member type="way" ref="1447367349" role=""/>
 <member type="way" ref="973029784" role=""/>
 <member type="way" ref="973029783" role=""/>
 <member type="way" ref="31021071" role=""/>
@@ -36,6 +37,7 @@
 <member type="way" ref="25248084" role=""/>
 <member type="way" ref="1123717993" role=""/>
 <member type="way" ref="25247684" role=""/>
+<member type="way" ref="1451092843" role=""/>
 <member type="way" ref="218599329" role=""/>
 <member type="way" ref="25247929" role=""/>
 <member type="way" ref="22557642" role=""/>
@@ -67,6 +69,8 @@
 <member type="way" ref="1123802200" role=""/>
 <member type="way" ref="45779994" role=""/>
 <member type="way" ref="694112677" role=""/>
+<member type="way" ref="1447367348" role=""/>
+<member type="way" ref="1447367347" role=""/>
 <tag k="name" v="A2- lot Bucuresti-Fundulea"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>

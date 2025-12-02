@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113201 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9331329" visible="true" version="62" changeset="173628381" timestamp="2025-10-22T13:36:26Z" user="anonymous123123" uid="22067548">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893119 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9331329" visible="true" version="63" changeset="173937160" timestamp="2025-10-29T16:05:10Z" user="anonymous123123" uid="22067548">
 <member type="way" ref="886519754" role=""/>
 <member type="way" ref="1085554128" role=""/>
 <member type="way" ref="933377818" role=""/>
@@ -133,7 +133,9 @@
 <member type="way" ref="245324558" role=""/>
 <member type="way" ref="245324557" role=""/>
 <tag k="addr:city" v="Sebeș"/>
-<tag k="name" v="A10 - Lot 1 (Sebes-AlbaIulia)"/>
+<tag k="distance" v="17"/>
+<tag k="name" v="A10 - Lot 1 (Sebes-Alba Iulia)"/>
+<tag k="network" v="RO:A"/>
 <tag k="route" v="road"/>
 <tag k="type" v="route"/>
 </relation>
