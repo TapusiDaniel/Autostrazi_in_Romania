@@ -2,7 +2,7 @@
 <relation id="16510052" visible="true" version="1" changeset="142724446" timestamp="2023-10-17T18:07:08Z" user="RobertH-PUM" uid="9320232">
 <member type="way" ref="1216307990" role=""/>
 <member type="way" ref="1216307987" role=""/>
-<member type="way" ref="1216307988" role=""/>
+<member type="way" ref="1456555663" role=""/>
 <tag k="name" v="Drum radial 4"/>
 <tag k="route" v="road"/>
 <tag k="type" v="proposed"/>

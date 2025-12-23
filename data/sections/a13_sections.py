@@ -52,7 +52,7 @@ A13_SECTIONS = {
     },
     "Făgăraș - Brașov": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Asocierea SEARCH CORPORATION SRL – PROTELCO SA – LIKE CONSULTING SRL – MEGAMUHENDISLIK MUSAVIRLIK A.S.",
         "length": "50.2 km",
         "projected_completion_date": "~ 2029",
@@ -69,6 +69,4 @@ A13_SECTIONS = {
         # "start_point": [45.805056, 25.048160],  # Fagaras
         # "end_point": [45.805056, 25.048160]  # Fagaras
     },
-
-
 }

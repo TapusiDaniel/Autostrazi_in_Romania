@@ -1,7 +1,7 @@
 DEx_DRUMURI_RADIALE_SECTIONS = {
     "Drumul Radial 1 - Vest Expres": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Asocierea Explan SRL – Geologic Site SRL – DP Consult SA",
         "length": "8.98 km",
         "xml_file": "Drumuri Radiale/dr1.xml",
@@ -48,7 +48,7 @@ DEx_DRUMURI_RADIALE_SECTIONS = {
     },
     "Drumul Radial 9 - Sud Expres": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Asocierea DP Consult SA – Explan SRL – Geologic Site SRL",
         "length": "13.86 km",
         "xml_file": "Drumuri Radiale/dr9.xml",

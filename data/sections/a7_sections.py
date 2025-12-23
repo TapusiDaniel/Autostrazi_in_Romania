@@ -80,8 +80,7 @@ A7_SECTIONS = {
         "end_point": [45.734901, 27.212207]  # Focsani Nord
     },
     "Focșani - Bacău (lot 1)": {
-        "status": "in_construction",
-        "progress": "85%",
+        "status": "finished",
         "completion_date": "2025",
         "length": "35.60 km",
         "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
@@ -91,16 +90,27 @@ A7_SECTIONS = {
         "start_point": [45.734901, 27.212207],  # Focsani Nord
         "end_point": [46.029979, 27.183955]  # Domnesti Targ
     },
-    "Focșani - Bacău (lot 2)": {
-        "status": "in_construction",
-        "progress": "85%",
+    "Focșani - Bacău (lot 2) - deschis": {
+        "status": "finished",
         "completion_date": "2025",
-        "length": "38.78 km",
+        "length": "14.40 km",
         "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "629.4M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
-        "xml_file": "A7/a7_focsani_bacau_lot2.xml",
+        "xml_file": "A7/a7_focsani_bacau_lot2_deschis.xml",
         "start_point": [46.029979, 27.183955],  # Domnesti Targ
+        "end_point": [46.137032, 27.169114]  # Adjud
+    },
+    "Focșani - Bacău (lot 2) - în construcție": {
+        "status": "in_construction",
+        "progress": "85%",
+        "completion_date": "2026",
+        "length": "24.38 km",
+        "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
+        "cost": "629.4M",
+        "financing": "Planul Național de Redresare și Reziliență - PNRR",
+        "xml_file": "A7/a7_focsani_bacau_lot2_in_constructie.xml",
+        "start_point": [46.137032, 27.169114],  # Adjud
         "end_point": [46.332904, 27.022513]  # Racaciuni
     },
     "Focșani - Bacău (lot 3)": {
@@ -113,7 +123,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot3.xml",
         "start_point": [46.332904, 27.022513],  # Racaciuni
-        "end_point": [46.332904, 27.022513]  # Bacau
+        "end_point": [46.498804, 26.953057]  # Bacau
     },
     "Centura Bacău": {
         "status": "finished",
@@ -123,7 +133,7 @@ A7_SECTIONS = {
         "cost": "133.6M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A7/a7_centura_bacau.xml",
-        "start_point": [46.332904, 27.022513],  # Bacau
+        "start_point": [46.498804, 26.953057],  # Bacau
         "end_point": [46.635502, 26.933831]  # Bacau Nord
     },
     "Bacău - Pașcani (lot 1)": {
@@ -168,7 +178,7 @@ A7_SECTIONS = {
     },
     "Pașcani - Suceava (lot 1)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "33 km",
         "estimated_cost": "776M",
         "construction_duration": "30 de luni",
@@ -181,7 +191,7 @@ A7_SECTIONS = {
     },
     "Pașcani - Suceava (lot 2)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "28.97 km",
         "estimated_cost": "720M",
         "construction_duration": "30 de luni",
@@ -194,7 +204,7 @@ A7_SECTIONS = {
     },
     "Suceava - Siret (primii 26.4 km vor fi la profil de autostradă, iar restul de 29.3 km la profil de drum expres)": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Search Corporation SRL – Egis România SA",
         "length": "55.7 km",
         "current_stage": "Urmează parcurgerea tuturor etapelor de avizare",

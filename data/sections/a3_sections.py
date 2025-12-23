@@ -150,7 +150,7 @@ A3_SECTIONS = {
     "Zimbor - Poarta Sălajului (subsecțiunea 3B - lot 2)": {
         "status": "in_construction",
         "progress": "89.10%",
-        "completion_date": "2025",
+        "completion_date": "2026",
         "length": "12.24 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
         "cost": "136M",
@@ -162,7 +162,7 @@ A3_SECTIONS = {
     "Nod Românași": {
         "status": "in_construction",
         "progress": "0%",
-        "completion_date": "2025",
+        "completion_date": "2026",
         "length": "0 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
         "cost": "14.2M",
@@ -210,7 +210,7 @@ A3_SECTIONS = {
     },
     "Chiribiș - Biharia (subsecțiunea 3C - lot 2)": {
         "status": "in_construction",
-        "progress": "25%",
+        "progress": "30%",
         "completion_date": "2026",
         "length": "28.55 km",
         "constructor": "Asocierea Precon Transilvania SRL – Citadina 98 SA",

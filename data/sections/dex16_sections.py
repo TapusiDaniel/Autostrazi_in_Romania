@@ -10,7 +10,7 @@ DEx16_SECTIONS = {
     },
     "Arad - Oradea (lot 3)": {
         "status": "tendered",
-        "tender_end_date": "2025", 
+        "tender_end_date": "2026", 
         "length": "47.07 km",
         "estimated_cost": "562M",
         "construction_duration": "24 de luni",  
@@ -24,7 +24,7 @@ DEx16_SECTIONS = {
     "Arad - Oradea (lot 2)": {
         "status": "in_construction",
         "progress": "0%",
-        "completion_date": "2028",
+        "completion_date": "2029",
         "length": "39.7 km",
         "constructor": "Asocierea Onur Taahhut Tasimacilik Insaat Ticaret VE Sanayi AS - Straco Holding SRL",
         "cost": "544M",

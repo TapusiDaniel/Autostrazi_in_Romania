@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448761 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="17378667" visible="true" version="17" changeset="150614951" timestamp="2024-04-28T11:51:35Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (383555 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17378667" visible="true" version="18" changeset="176018784" timestamp="2025-12-16T18:29:27Z" user="GATAA RANA" uid="23431883">
 <member type="way" ref="1277807892" role=""/>
 <member type="way" ref="1277807890" role=""/>
 <member type="way" ref="1277807891" role=""/>
@@ -148,6 +148,7 @@
 <member type="way" ref="1265678772" role=""/>
 <member type="way" ref="1265678773" role=""/>
 <member type="way" ref="1018718287" role=""/>
+<member type="way" ref="1459111694" role=""/>
 <member type="way" ref="1265690343" role=""/>
 <member type="way" ref="1265690342" role=""/>
 <member type="way" ref="1265901181" role=""/>
@@ -204,6 +205,7 @@
 <member type="way" ref="1265901182" role=""/>
 <member type="way" ref="1265690332" role=""/>
 <member type="way" ref="1265690341" role=""/>
+<member type="way" ref="1459111695" role=""/>
 <member type="way" ref="1265690340" role=""/>
 <tag k="name" v="DEx16 - Lot 3"/>
 <tag k="route" v="road"/>

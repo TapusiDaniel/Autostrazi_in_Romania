@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448781 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="11583697" visible="true" version="10" changeset="150699456" timestamp="2024-04-30T10:12:11Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (383541 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="11583697" visible="true" version="11" changeset="176053925" timestamp="2025-12-17T14:39:15Z" user="Buraddo" uid="2287200">
 <member type="way" ref="904194977" role=""/>
 <member type="way" ref="904194976" role=""/>
 <member type="way" ref="874038825" role=""/>
@@ -27,6 +27,8 @@
 <member type="way" ref="873660399" role=""/>
 <member type="way" ref="873660394" role=""/>
 <member type="way" ref="873660393" role=""/>
+<member type="way" ref="692459679" role=""/>
+<member type="way" ref="692459681" role=""/>
 <member type="way" ref="873660395" role=""/>
 <member type="way" ref="873660397" role=""/>
 <member type="way" ref="873565961" role=""/>
@@ -158,7 +160,7 @@
 <member type="way" ref="874038833" role=""/>
 <member type="way" ref="874038828" role=""/>
 <member type="way" ref="874038829" role=""/>
-<tag k="name" v="A3 3B3 si B4(Nusfalau-Poarta Salajului)"/>
+<tag k="name" v="A3 3B3 și B4(Nusfalau-Poarta Salajului)"/>
 <tag k="route" v="proposed"/>
 <tag k="type" v="route"/>
 </relation>

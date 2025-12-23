@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448780 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="18288305" visible="true" version="2" changeset="159340660" timestamp="2024-11-19T20:13:49Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1885081 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18288305" visible="true" version="3" changeset="175155032" timestamp="2025-11-26T13:33:14Z" user="RobertH-PUM" uid="9320232">
 <member type="way" ref="1331146326" role=""/>
 <member type="way" ref="1331146325" role=""/>
 <member type="way" ref="1331146324" role=""/>
@@ -119,6 +119,6 @@
 <member type="way" ref="1330476984" role=""/>
 <tag k="name" v="A8 Secțiunea 2 Lot 1D (Joseni - Ditrău)"/>
 <tag k="route" v="road"/>
-<tag k="type" v="proposed"/>
+<tag k="type" v="construction"/>
 </relation>
 </osm>

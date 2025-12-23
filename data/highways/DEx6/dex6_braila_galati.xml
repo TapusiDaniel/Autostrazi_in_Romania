@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (2020111 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="10126224" visible="true" version="14" changeset="175029455" timestamp="2025-11-23T14:53:34Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1885063 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="10126224" visible="true" version="16" changeset="176149479" timestamp="2025-12-19T17:04:29Z" user="Ciprian" uid="18072">
 <member type="way" ref="1015665812" role=""/>
 <member type="way" ref="1018512220" role=""/>
 <member type="way" ref="1058344211" role=""/>
@@ -38,11 +38,7 @@
 <member type="way" ref="732477569" role=""/>
 <member type="way" ref="732477568" role=""/>
 <member type="way" ref="1018512224" role=""/>
-<member type="way" ref="732477584" role=""/>
-<member type="way" ref="732477580" role=""/>
 <member type="way" ref="255133188" role=""/>
-<member type="way" ref="732477583" role=""/>
-<member type="way" ref="1420965091" role=""/>
 <tag k="name" v="DEx Brăila-Galați"/>
 <tag k="ref" v="DEx6"/>
 <tag k="route" v="construction"/>

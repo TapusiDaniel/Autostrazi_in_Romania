@@ -2,7 +2,7 @@ A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
         "progress": "25.12%",
-        "completion_date": "2026",
+        "completion_date": "2027",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
         "cost": "492M",
@@ -90,7 +90,7 @@ A8_SECTIONS = {
     "Leghin - Târgu Neamț": {
         "status": "in_construction",
         "progress": "6.30%",
-        "completion_date": "2026",
+        "completion_date": "2027",
         "length": "29.91 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "312M",
@@ -101,7 +101,7 @@ A8_SECTIONS = {
     },
     "Târgu Neamț - Ungheni lot 1 (Moțca - Târgu Frumos)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "27 km",
         "estimated_cost": "937M",
         "construction_duration": "46 de luni",
@@ -114,7 +114,7 @@ A8_SECTIONS = {
     },
     "Târgu Neamț - Ungheni lot 2 (Târgu Frumos - Lețcani)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "28.6 km",
         "estimated_cost": "1.1B",
         "construction_duration": "46 de luni",

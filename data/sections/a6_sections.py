@@ -1,7 +1,7 @@
 A6_SECTIONS = {
     "București - Alexandria": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "ASOCIEREA S.C. D P CONSULT S.A. – S.C. EXPLAN S.R.L. – S.C.A. TEAHA & FUZESI",
         "length": "77.02 km",
         "projected_completion_date": "~ 2029",
@@ -21,7 +21,7 @@ A6_SECTIONS = {
     },
     "Craiova - Târgu Jiu lot 1": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "10.30 km",
         "estimated_cost": "328M",
         "construction_duration": "34 de luni",
@@ -33,7 +33,7 @@ A6_SECTIONS = {
     },
     "Craiova - Târgu Jiu lot 2": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "14.40 km",
         "estimated_cost": "392M",
         "construction_duration": "34 de luni",
@@ -46,7 +46,7 @@ A6_SECTIONS = {
     },
     "Craiova - Târgu Jiu lot 3": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "21.70 km",
         "estimated_cost": "542M",
         "construction_duration": "34 de luni",
@@ -59,7 +59,7 @@ A6_SECTIONS = {
     },
     "Craiova - Târgu Jiu lot 4 (primii 5.10 km fac parte din Autostrada Craiova - Filiași, iar restul de 17.82 km fac parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "22.92 km",
         "estimated_cost": "438M",
         "construction_duration": "34 de luni",
@@ -72,7 +72,7 @@ A6_SECTIONS = {
     },
     "Craiova - Târgu Jiu lot 5 (tot lotul este la profil de drum expres și face parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "21.52 km",
         "estimated_cost": "520M",
         "construction_duration": "34 de luni",
@@ -85,7 +85,7 @@ A6_SECTIONS = {
     },
     "Craiova - Târgu Jiu lot 6 (tot lotul este la profil de drum expres și face parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "19.25 km",
         "estimated_cost": "440M",
         "construction_duration": "34 de luni",
@@ -97,7 +97,7 @@ A6_SECTIONS = {
     },
     "Filiași - Drobeta Turnu Severin": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Asocierea DP CONSULT S.A. – EXPLAN S.R.L. – GEOLOGIC-SITE SRL -SCA TEAHA&FÜZESI",
         "length": "70 km",
         "xml_file": 'A6/a6_filiasi_dts.xml',  
@@ -106,7 +106,7 @@ A6_SECTIONS = {
     },
     "Drobeta Turnu Severin - Domașnea": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "EGIS",
         "length": "65 km",
         "xml_file": 'A6/a6_dts_domasnea.xml',  
@@ -115,7 +115,7 @@ A6_SECTIONS = {
     },
     "Domașnea - Caransebeș": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Asocierea PROIECT-CONSTRUCT REGIUNEA TRANSILVANIA SRL – PERFECT CONSULT EUROPE S.R.L. – EAST WATER DRILLINGS SRL",
         "length": "44 km",
         "geojson_file": 'A6/a6_domasnea_caransebes.geojson',  
@@ -128,7 +128,7 @@ A6_SECTIONS = {
     },
     "Caransebeș - Lugoj": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "designer": "Ingenieria Especializada Obra Civil e Industrial",
         "length": "50 km",
         "geojson_file": 'A6/a6_caransebes_lugoj.geojson',  

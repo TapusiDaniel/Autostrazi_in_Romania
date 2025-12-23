@@ -1,7 +1,7 @@
 A9_SECTIONS = {
     "Remetea Mare - Jebel": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "35.67 km",
         "estimated_cost": "1.13B",
         "construction_duration": "48 de luni",  
@@ -13,7 +13,7 @@ A9_SECTIONS = {
     },
     "Jebel - Moravița": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "33.49 km",
         "estimated_cost": "586M",
         "construction_duration": "48 de luni",
@@ -30,7 +30,7 @@ A9_SECTIONS = {
     },
     "Moravița (granița)": {
         "status": "planned",
-        "feasibility_study_date": "2025",
+        "feasibility_study_date": "2026",
         "length": "3.70 km",
         "current_stage": "Urmează să fie lansată licitația",
         "xml_file": "A9/a9_lot3.xml",

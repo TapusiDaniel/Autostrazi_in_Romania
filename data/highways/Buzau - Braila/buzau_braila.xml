@@ -1,0 +1,53 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113197 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17648104" visible="true" version="4" changeset="173730880" timestamp="2025-10-24T18:29:37Z" user="ted3sco" uid="2112541">
+<member type="way" ref="1231214818" role=""/>
+<member type="way" ref="1444570936" role=""/>
+<member type="way" ref="1231214819" role=""/>
+<member type="way" ref="1444570934" role=""/>
+<member type="way" ref="1444570935" role=""/>
+<member type="way" ref="1231214817" role=""/>
+<member type="way" ref="1444570937" role=""/>
+<member type="way" ref="1444570938" role=""/>
+<member type="way" ref="1231214820" role=""/>
+<member type="way" ref="1444570932" role=""/>
+<member type="way" ref="1444570933" role=""/>
+<member type="way" ref="1444570930" role=""/>
+<member type="way" ref="1444570929" role=""/>
+<member type="way" ref="1444570931" role=""/>
+<member type="way" ref="1444570923" role=""/>
+<member type="way" ref="1444570928" role=""/>
+<member type="way" ref="1444570922" role=""/>
+<member type="way" ref="1444570921" role=""/>
+<member type="way" ref="1444570927" role=""/>
+<member type="way" ref="1444570925" role=""/>
+<member type="way" ref="1444570924" role=""/>
+<member type="way" ref="1444570926" role=""/>
+<member type="way" ref="1444570920" role=""/>
+<member type="way" ref="1444570918" role=""/>
+<member type="way" ref="1444570919" role=""/>
+<member type="way" ref="1231214821" role=""/>
+<member type="way" ref="1414495029" role=""/>
+<member type="way" ref="1415717215" role=""/>
+<member type="way" ref="1415717217" role=""/>
+<member type="way" ref="1415717218" role=""/>
+<member type="way" ref="1415717219" role=""/>
+<member type="way" ref="1415717220" role=""/>
+<member type="way" ref="1415717213" role=""/>
+<member type="way" ref="1414495035" role=""/>
+<member type="way" ref="1414495031" role=""/>
+<member type="way" ref="1414495034" role=""/>
+<member type="way" ref="1414495033" role=""/>
+<member type="way" ref="1415717214" role=""/>
+<member type="way" ref="1415717216" role=""/>
+<member type="way" ref="1415717221" role=""/>
+<member type="way" ref="1415717222" role=""/>
+<member type="way" ref="1415717223" role=""/>
+<member type="way" ref="1415717224" role=""/>
+<member type="way" ref="1415717225" role=""/>
+<member type="way" ref="1415717226" role=""/>
+<member type="way" ref="1414495032" role=""/>
+<tag k="name" v="DEx Buzău-Brăila"/>
+<tag k="route" v="road"/>
+<tag k="type" v="proposed"/>
+</relation>
+</osm>

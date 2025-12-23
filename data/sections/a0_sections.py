@@ -62,7 +62,7 @@ A0_SECTIONS = {
     "A0 Nord Lot 3": {
         "status": "in_construction",
         "progress": "68%",
-        "completion_date": "2025",
+        "completion_date": "2026",
         "length": "8.6 km",
         "constructor": "China Civil Engineering Construction Corporation",
         "cost": "79.5M",
@@ -74,7 +74,7 @@ A0_SECTIONS = {
     "A0 Nord Lot 4": {
         "status": "in_construction",
         "progress": "89.75%",
-        "completion_date": "2025",
+        "completion_date": "2026",
         "length": "4.47 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",
         "cost": "62.5M",
