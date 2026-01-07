@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "25.12%",
+        "progress": "27.19%",
         "completion_date": "2027",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
@@ -89,7 +89,7 @@ A8_SECTIONS = {
     },
     "Leghin - Târgu Neamț": {
         "status": "in_construction",
-        "progress": "6.30%",
+        "progress": "7%",
         "completion_date": "2027",
         "length": "29.91 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",

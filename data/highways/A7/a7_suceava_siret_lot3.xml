@@ -1,0 +1,17 @@
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1885072 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="20050862" visible="true" version="2" changeset="176873831" timestamp="2026-01-05T18:25:30Z" user="ted3sco" uid="2112541">
+<member type="way" ref="1464404635" role=""/>
+<member type="way" ref="1464404639" role=""/>
+<member type="way" ref="1464422065" role=""/>
+<member type="way" ref="1464404642" role=""/>
+<member type="way" ref="1464404637" role=""/>
+<member type="way" ref="1464404640" role=""/>
+<member type="way" ref="1464422064" role=""/>
+<member type="way" ref="1464393366" role=""/>
+<member type="way" ref="1464404636" role=""/>
+<member type="way" ref="1464404638" role=""/>
+<tag k="name" v="Suceava-Siret Lot 3"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
+</relation>
+</osm>

@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1885067 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14434474" visible="true" version="14" changeset="176286938" timestamp="2025-12-23T00:21:49Z" user="Zarrink" uid="20204688">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (383535 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14434474" visible="true" version="16" changeset="176681218" timestamp="2025-12-31T17:20:08Z" user="rarad74" uid="128281">
 <member type="way" ref="1090351013" role=""/>
 <member type="way" ref="1088050954" role=""/>
 <member type="way" ref="1088050955" role=""/>
@@ -55,9 +55,6 @@
 <member type="way" ref="1087801530" role=""/>
 <member type="way" ref="1087773757" role=""/>
 <member type="way" ref="1087773758" role=""/>
-<member type="way" ref="1460631894" role=""/>
-<member type="way" ref="1460631895" role=""/>
-<member type="way" ref="1087758148" role=""/>
 <member type="way" ref="1087758150" role=""/>
 <member type="way" ref="1087758149" role=""/>
 <member type="way" ref="1087758151" role=""/>
@@ -141,6 +138,8 @@
 <member type="way" ref="1087773760" role=""/>
 <member type="way" ref="1087773759" role=""/>
 <member type="way" ref="1015146506" role=""/>
+<member type="way" ref="1463200598" role=""/>
+<member type="way" ref="1463200597" role=""/>
 <member type="way" ref="796653009" role=""/>
 <member type="way" ref="796653004" role=""/>
 <member type="way" ref="1015146505" role=""/>
@@ -150,6 +149,7 @@
 <member type="way" ref="796652998" role=""/>
 <member type="way" ref="796653002" role=""/>
 <member type="way" ref="796653000" role=""/>
+<member type="way" ref="1463200600" role=""/>
 <member type="way" ref="1088045677" role=""/>
 <member type="way" ref="1088045676" role=""/>
 <member type="way" ref="796652999" role=""/>
@@ -157,6 +157,6 @@
 <member type="way" ref="796653001" role=""/>
 <tag k="name" v="A7 - Lotul 1 (Focsani-Domnesti)"/>
 <tag k="route" v="road"/>
-<tag k="type" v="construction"/>
+<tag k="type" v="route"/>
 </relation>
 </osm>

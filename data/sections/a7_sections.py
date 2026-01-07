@@ -83,7 +83,7 @@ A7_SECTIONS = {
         "status": "finished",
         "completion_date": "2025",
         "length": "35.60 km",
-        "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
+        "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "470.8M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot1.xml",
@@ -94,7 +94,7 @@ A7_SECTIONS = {
         "status": "finished",
         "completion_date": "2025",
         "length": "14.40 km",
-        "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
+        "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "629.4M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot2_deschis.xml",
@@ -103,10 +103,10 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 2) - în construcție": {
         "status": "in_construction",
-        "progress": "85%",
+        "progress": "93%",
         "completion_date": "2026",
         "length": "24.38 km",
-        "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
+        "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "629.4M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot2_in_constructie.xml",
@@ -115,10 +115,10 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 3)": {
         "status": "in_construction",
-        "progress": "65%",
+        "progress": "67%",
         "completion_date": "2026",
         "length": "21.52 km",
-        "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
+        "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "423.6M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot3.xml",
@@ -129,7 +129,7 @@ A7_SECTIONS = {
         "status": "finished",
         "completion_date": "2020",
         "length": "16.27 km",
-        "constructor": "Consortiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
+        "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
         "cost": "133.6M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A7/a7_centura_bacau.xml",
@@ -138,7 +138,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "40.70%",
+        "progress": "41.10%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -154,7 +154,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "38.30%",
+        "progress": "38.60%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -166,7 +166,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
-        "progress": "40.10%",
+        "progress": "40.50%",
         "completion_date": "2026",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -200,16 +200,43 @@ A7_SECTIONS = {
         "current_stage": "Semnare contract - Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "xml_file": "A7/a7_pascani_suceava_lot2.xml",
         "start_point": [47.516672, 26.579559],  # Roscani
-        "end_point": [47.687404, 26.311792]  # Aeroport Suceava
+        "end_point": [47.687929, 26.311153]  # Aeroport Suceava
     },
-    "Suceava - Siret (primii 26.4 km vor fi la profil de autostradă, iar restul de 29.3 km la profil de drum expres)": {
+    "Suceava - Siret (lot 1 - Drum Expres)": {
+        "status": "tendered",
+        "tender_end_date": "2026",
+        "length": "28.97 km",
+        "estimated_cost": "453M",
+        "construction_duration": "33 de luni",
+        "financing": "Fonduri SAFE",
+        "seap_code": "CN1088859",
+        "current_stage": "Depunere oferte",
+        "xml_file": "A7/a7_suceava_siret_lot1.xml",
+        "start_point": [47.687929, 26.311153],  # Aeroport Suceava
+        "end_point": [47.726058, 26.125389]  # Darmanesti
+    },
+    "Suceava - Siret (lot 2 - Drum Expres)": {
+        "status": "tendered",
+        "tender_end_date": "2026",
+        "length": "18.60 km",
+        "estimated_cost": "377M",
+        "construction_duration": "36 de luni",
+        "financing": "Fonduri SAFE",
+        "seap_code": "CN1088859",
+        "current_stage": "Depunere oferte",
+        "xml_file": "A7/a7_suceava_siret_lot2.xml",
+        "start_point": [47.726058, 26.125389],  # Darmanesti
+        "end_point": [47.911986, 26.061257]  # Balcauti
+    },
+    "Suceava - Siret (lot 3 - Drum Expres)": {
         "status": "planned",
         "feasibility_study_date": "2026",
         "designer": "Search Corporation SRL – Egis România SA",
-        "length": "55.7 km",
-        "current_stage": "Urmează parcurgerea tuturor etapelor de avizare",
-        "xml_file": "A7/a7_suceava_siret.xml",
-        "start_point": [47.687404, 26.311792],  # Aeroport Suceava
+        "length": "12.582 km",
+        "construction_duration": "30 de luni",
+        "current_stage": "Urmează scoaterea la licitație",
+        "xml_file": "A7/a7_suceava_siret_lot3.xml",
+        "start_point": [47.911986, 26.061257]  # Balcauti
     },
 }
      
