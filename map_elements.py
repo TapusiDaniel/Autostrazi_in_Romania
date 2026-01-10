@@ -1,6 +1,6 @@
 import folium
 from config import CITIES, CITY_BOUNDARIES
-from utils import get_all_way_coordinates
+from utils.geo import get_all_way_coordinates
 import xml.etree.ElementTree as ET
 import math
 import json
@@ -196,7 +196,8 @@ def add_section_delimiter(m, coordinates, way_coords):
         weight=delimiter_weight,
         color='black',
         dash_array=None,  # Solid line
-        opacity=1
+        opacity=1,
+        class_name='highway-delimiter'
     ).add_to(m)
 
 def process_xml_ways(way_ids, ways_data):
@@ -468,7 +469,7 @@ def add_all_highways_to_map(m):
                             tooltip=f"{highway_code} - {section_name}",
                             name=section_name,
                             overlay=True,
-                            class_name=f'highway-section-{highway_code.lower().replace(" ", "-")}'
+                            class_name=f'highway-section highway-section-{highway_code.lower().replace(" ", "-")} section-year-{str(section_data.get("completion_date", "unknown"))[:4]} section-status-{status}'
                         ).add_to(status_groups[status])
                         
                         # Add delimiter and logo if specified
@@ -529,7 +530,7 @@ def add_all_highways_to_map(m):
                                     tooltip=f"{highway_code} - {section_name}",
                                     name=section_name,
                                     overlay=True,
-                                    class_name=f'highway-section-{highway_code.lower().replace(" ", "-")}'
+                                    class_name=f'highway-section highway-section-{highway_code.lower().replace(" ", "-")} section-year-{str(section_data.get("completion_date", "unknown"))[:4]} section-status-{status}'
                                 ).add_to(status_groups[status])
                         
                         # Add delimiter and logo if specified

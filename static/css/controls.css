@@ -4,8 +4,8 @@
     right: 5px;
     width: 20px;
     height: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -13,10 +13,12 @@
     justify-content: center;
     font-size: 16px;
     z-index: 1001;
+    color: var(--text-primary);
+    transition: background 0.3s ease;
 }
 
 .minimize-button:hover {
-    background: #f0f0f0;
+    background: var(--bg-secondary);
 }
 
 .map-controls.minimized .map-button-group {
@@ -37,8 +39,8 @@
     padding: 8px 15px;
     border: none;
     border-radius: 4px;
-    background: #fff;
-    color: #333;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -47,11 +49,11 @@
 }
 
 .map-button:hover {
-    background: #f0f0f0;
+    background: var(--bg-secondary);
 }
 
 .map-button.active {
-    background: #4a90e2;
+    background: var(--accent-color);
     color: white;
 }
 
@@ -63,7 +65,7 @@
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #666;
+    color: var(--text-secondary);
 }
 
 .section-button {
@@ -71,10 +73,10 @@
     align-items: center;
     margin: 5px 0;
     padding: 8px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
-    background: #fff;
-    color: #333;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -82,8 +84,8 @@
 }
 
 .section-button.active {
-    border-color: #4a90e2;
-    background: #f5f9ff;
+    border-color: var(--accent-color);
+    background: var(--bg-secondary);
 }
 
 .section-indicator {
@@ -116,15 +118,67 @@
 .leaflet-control-layers-base {
     display: none !important;
 }
+
 .leaflet-control-layers-overlays label:first-child {
     display: none !important;
 }
+
 .leaflet-control-layers-toggle {
     display: none !important;
 }
+
 .leaflet-control-layers {
     display: none !important;
 }
+
 .leaflet-control {
     display: none !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .map-controls {
+        right: 5px;
+        top: 5px;
+        max-width: 90%;
+        padding: 8px;
+    }
+
+    .map-button,
+    .section-button {
+        width: 130px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .map-button-group-title {
+        font-size: 11px;
+    }
+
+    .section-indicator {
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-controls {
+        right: 3px;
+        top: 3px;
+        padding: 6px;
+    }
+
+    .map-button,
+    .section-button {
+        width: 110px;
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    .minimize-button {
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+    }
 }

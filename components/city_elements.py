@@ -42,7 +42,7 @@ def add_city_labels(m, labels_position="below"):
             coords,
             icon=folium.DivIcon(
                 html=f'<div class="city-label" style="{config["html_style"]}; '
-                    f'font-size: 11px; font-weight: bold; color: black;">{city}</div>',
+                    f'font-size: 11px; font-weight: bold;">{city}</div>',
                 icon_size=(0, 0),
                 icon_anchor=config["icon_anchor"],
             )
@@ -65,5 +65,6 @@ def add_city_markers(m):
                 fillColor=fill_color,
                 fillOpacity=1,
                 weight=1,
-                name="_"
+                name="_",
+                class_name="city-dot"
             ).add_to(m)

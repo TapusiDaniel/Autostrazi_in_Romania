@@ -1,38 +1,189 @@
-body { 
-    margin: 0; 
-    padding: 0; 
-    font-family: Arial, sans-serif;
+/* Critical CSS - Base styles and dark mode support */
+
+/* CSS Variables for theming */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f0f0f0;
+    --bg-overlay: rgba(255, 255, 255, 0.95);
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #dddddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-heavy: rgba(0, 0, 0, 0.4);
+    --accent-color: #4a90e2;
+    --spinner-bg: #f3f3f3;
+    --table-border: #eeeeee;
 }
-#map { 
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    width: 100%; 
+
+[data-theme="dark"] {
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #2d2d2d;
+    --bg-overlay: rgba(30, 30, 30, 0.95);
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --border-color: #444444;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --shadow-heavy: rgba(0, 0, 0, 0.7);
+    --accent-color: #5ba3ff;
+    --spinner-bg: #444444;
+    --table-border: #444444;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
     height: 100vh;
     z-index: 1;
 }
-.leaflet-container { 
-    height: 100vh; 
-    width: 100%; 
-    background: white;
+
+.leaflet-container {
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-primary);
 }
+
+/* Dark mode for Leaflet tiles - invert to dark */
+[data-theme="dark"] .leaflet-tile-pane {
+    filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+}
+
+/* But don't invert satellite tiles */
+[data-theme="dark"] .leaflet-tile-pane .satellite-tiles {
+    filter: none;
+}
+
 .map-controls {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: white;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     padding: 10px;
     border-radius: 4px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 5px var(--shadow-heavy);
     z-index: 1000;
+    transition: background 0.3s ease, color 0.3s ease;
 }
+
 .totals-table {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: white;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px var(--shadow-color);
     z-index: 1000;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Toggle Button - positioned below GitHub button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 55px;
+    left: 10px;
+    z-index: 1001;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px var(--shadow-heavy);
+}
+
+.dark-mode-toggle .icon-sun {
+    display: none;
+}
+
+.dark-mode-toggle .icon-moon {
+    display: block;
+}
+
+[data-theme="dark"] .dark-mode-toggle .icon-sun {
+    display: block;
+}
+
+[data-theme="dark"] .dark-mode-toggle .icon-moon {
+    display: none;
+}
+
+/* Loading Indicator */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-overlay);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--spinner-bg);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Dark mode for update text at bottom */
+[data-theme="dark"] div[style*="bottom: 10px"][style*="left: 10px"] {
+    background: var(--bg-secondary) !important;
+    color: var(--text-secondary) !important;
+}
+
+/* Dark mode for GitHub button */
+[data-theme="dark"] div[style*="top: 10px"][style*="left: 10px"] button {
+    background-color: #333333 !important;
 }

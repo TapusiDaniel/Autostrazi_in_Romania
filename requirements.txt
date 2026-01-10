@@ -1,0 +1,6 @@
+folium>=0.14.0
+requests>=2.28.0
+shapely>=2.0.0
+cssmin>=0.2.0
+jsmin>=3.0.0
+pytest>=7.0.0

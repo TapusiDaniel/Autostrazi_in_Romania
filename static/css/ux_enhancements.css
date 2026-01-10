@@ -1,0 +1,876 @@
+/* UX Enhancement Styles */
+
+/* Timeline Slider */
+.timeline-container {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color, rgba(0, 0, 0, 0.15));
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    transition: all 0.3s ease;
+}
+
+/* Highlighted Highway Section - Legacy Pulse Style */
+path.leaflet-interactive.highlighted-path {
+    animation: pulse 1.5s infinite;
+    stroke-width: 6px !important;
+    stroke-opacity: 1 !important;
+    z-index: 9999 !important;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Timeline Mode - Hide Delimiters and Logos */
+body.timeline-mode .highway-delimiter {
+    display: none !important;
+    opacity: 0 !important;
+    stroke-opacity: 0 !important;
+}
+
+body.timeline-mode .highway-logo-marker {
+    display: none !important;
+}
+
+.timeline-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.timeline-year {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color, #4a90e2);
+    margin-bottom: 10px;
+}
+
+.timeline-slider {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--bg-secondary, #e0e0e0);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.timeline-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent-color, #4a90e2);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.timeline-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 11px;
+    color: var(--text-secondary, #666);
+}
+
+.timeline-stats {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.timeline-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0 2px 10px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.timeline-toggle:hover {
+    box-shadow: 0 4px 15px var(--shadow-heavy, rgba(0, 0, 0, 0.2));
+}
+
+.timeline-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(20px);
+}
+
+.legend-panel {
+    position: fixed;
+    bottom: 45px;
+    left: 10px;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    max-width: 180px;
+}
+
+.legend-panel.collapsed {
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.legend-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.legend-toggle {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.legend-panel.collapsed .legend-toggle {
+    transform: rotate(180deg);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.legend-color {
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.legend-color.finished {
+    background-color: #22c55e;
+}
+
+.legend-color.in-construction {
+    background-color: #f97316;
+}
+
+.legend-color.tendered {
+    background-color: #a16207;
+}
+
+.legend-color.planned {
+    background-color: #9ca3af;
+}
+
+/* Full Screen Button */
+.fullscreen-btn {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    z-index: 1001;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.fullscreen-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px var(--shadow-heavy, rgba(0, 0, 0, 0.3));
+}
+
+/* Progress Stats Card */
+.progress-stats {
+    position: fixed;
+    bottom: 20px;
+    right: 180px;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    min-width: 150px;
+    transition: all 0.3s ease;
+}
+
+.progress-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.progress-bar-container {
+    background: var(--bg-secondary, #f0f0f0);
+    border-radius: 10px;
+    height: 12px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    display: flex;
+}
+
+.progress-segment {
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.progress-segment.finished {
+    background-color: #22c55e;
+}
+
+.progress-segment.in-construction {
+    background-color: #f97316;
+}
+
+.progress-segment.tendered {
+    background-color: #a16207;
+}
+
+.progress-segment.planned {
+    background-color: #9ca3af;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--text-secondary, #666);
+}
+
+/* Search Box */
+.search-container {
+    position: fixed;
+    top: 10px;
+    left: 180px;
+    z-index: 1001;
+    width: 250px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 5px;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    font-size: 14px;
+    box-shadow: 0 2px 5px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: var(--accent-color, #4a90e2);
+    box-shadow: 0 2px 10px var(--shadow-color, rgba(0, 0, 0, 0.15));
+}
+
+.search-input::placeholder {
+    color: var(--text-secondary, #999);
+}
+
+.search-results {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary, white);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 5px;
+    box-shadow: 0 4px 15px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color, #eee);
+    transition: background 0.2s ease;
+}
+
+.search-result-item:hover {
+    background: var(--bg-secondary, #f5f5f5);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-type {
+    font-size: 10px;
+    color: var(--text-secondary, #999);
+    text-transform: uppercase;
+}
+
+/* Highway Sidebar */
+.highway-sidebar {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100vh;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    box-shadow: 2px 0 10px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    z-index: 1002;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+.highway-sidebar.open {
+    left: 0;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 145px;
+    left: 10px;
+    z-index: 1001;
+    background: var(--bg-primary, white);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    transform: scale(1.05);
+}
+
+.highway-sidebar.open+.sidebar-toggle {
+    left: 310px;
+}
+
+.sidebar-header {
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--border-color, #ddd);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar-close {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-secondary, #666);
+}
+
+.highway-group {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color, #eee);
+}
+
+.highway-group-title {
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--text-secondary, #666);
+    text-transform: uppercase;
+}
+
+.highway-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.highway-item:hover {
+    background: var(--bg-secondary, #f5f5f5);
+}
+
+.highway-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.highway-status-dot.finished {
+    background-color: #22c55e;
+}
+
+.highway-status-dot.in-construction {
+    background-color: #f97316;
+}
+
+.highway-status-dot.tendered {
+    background-color: #a16207;
+}
+
+.highway-status-dot.planned {
+    background-color: #9ca3af;
+}
+
+.highway-status-dot.mixed {
+    background: linear-gradient(45deg, #22c55e 25%, #f97316 25% 50%, #a16207 50% 75%, #9ca3af 75%);
+}
+
+/* Share Button */
+.share-btn {
+    position: fixed;
+    top: 145px;
+    left: 10px;
+    z-index: 1001;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--bg-primary, #333);
+    color: var(--text-primary, white);
+    padding: 12px 24px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+[data-theme="dark"] .toast {
+    background: #444;
+    color: white;
+}
+
+/* Print Styles */
+@media print {
+
+    .map-controls,
+    .dark-mode-toggle,
+    .fullscreen-btn,
+    .sidebar-toggle,
+    .share-btn,
+    .search-container,
+    .highway-sidebar,
+    .legend-panel,
+    .progress-stats,
+    .toast,
+    div[style*="View on GitHub"] {
+        display: none !important;
+    }
+
+    .totals-table {
+        position: static !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd;
+    }
+
+    .leaflet-container {
+        height: 100% !important;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .search-container {
+        left: 60px;
+        width: 200px;
+    }
+
+    .progress-stats {
+        right: 10px;
+        bottom: 130px;
+    }
+
+    .legend-panel {
+        bottom: 190px;
+    }
+
+    .highway-sidebar {
+        width: 100%;
+        left: -100%;
+    }
+
+    .highway-sidebar.open+.sidebar-toggle {
+        left: calc(100% - 50px);
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        left: 55px;
+        width: 150px;
+    }
+
+    .search-input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Fullscreen Mode - Hide Non-Essential UI */
+body.fullscreen-mode .totals-table,
+body.fullscreen-mode .dark-mode-toggle,
+body.fullscreen-mode .share-btn,
+body.fullscreen-mode .search-container,
+body.fullscreen-mode .github-btn-container,
+body.fullscreen-mode .update-text-container {
+    display: none !important;
+}
+
+/* Share Modal Styles */
+.share-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.share-modal-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.share-modal {
+    background: var(--bg-primary, #ffffff);
+    color: var(--text-primary, #333333);
+    padding: 24px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--border-color, #ddd);
+}
+
+.share-modal-overlay.show .share-modal {
+    transform: scale(1);
+}
+
+.share-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.share-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.share-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-secondary, #666);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.share-options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.share-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--bg-secondary, #f5f5f5);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--text-primary, #333);
+}
+
+.share-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.share-option-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.share-option-label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Brand Colors on Hover */
+.share-option.facebook:hover {
+    color: #1877F2;
+    background: rgba(24, 119, 242, 0.1);
+    border-color: #1877F2;
+}
+
+.share-option.twitter:hover {
+    color: #000000;
+    background: rgba(0, 0, 0, 0.1);
+    border-color: #000000;
+}
+
+[data-theme="dark"] .share-option.twitter:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+.share-option.whatsapp:hover {
+    color: #25D366;
+    background: rgba(37, 211, 102, 0.1);
+    border-color: #25D366;
+}
+
+.share-option.copy:hover {
+    color: #666;
+    background: rgba(0, 0, 0, 0.05);
+    border-color: #999;
+}
+
+/* Snapshot Button */
+.snapshot-btn {
+    position: fixed;
+    top: 190px;
+    left: 10px;
+    z-index: 1001;
+    background: var(--bg-primary, white);
+    color: var(--text-primary, #333);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 2px 5px var(--shadow-color, rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.snapshot-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Snapshot Mode - Hide Controls during capture */
+body.snapshot-mode .leaflet-control-container .leaflet-top,
+body.snapshot-mode .leaflet-control-container .leaflet-bottom .leaflet-control-attribution,
+body.snapshot-mode .map-controls,
+body.snapshot-mode .dark-mode-toggle,
+body.snapshot-mode .fullscreen-btn,
+body.snapshot-mode .share-btn,
+body.snapshot-mode .snapshot-btn,
+body.snapshot-mode .timeline-toggle,
+body.snapshot-mode .search-container,
+body.snapshot-mode .sidebar-toggle,
+body.snapshot-mode .github-btn-container,
+body.snapshot-mode .update-text-container {
+    display: none !important;
+}
+
+/* Snapshot Mode Cleanup */
+body.snapshot-mode .leaflet-control-container,
+body.snapshot-mode .map-controls,
+body.snapshot-mode .timeline-toggle,
+body.snapshot-mode .totals-table,
+body.snapshot-mode #fullscreen-btn,
+body.snapshot-mode #share-btn,
+body.snapshot-mode #snapshot-btn {
+    display: none !important;
+}
+
+/* Snapshot Confirmation Modal */
+.snapshot-confirm-modal {
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    color: #e0e0e0;
+}
+
+.snapshot-confirm-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.snapshot-confirm-text {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+
+.snapshot-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.snapshot-confirm-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.snapshot-btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.snapshot-btn-primary:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+.snapshot-btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+.snapshot-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Reusing Share Modal Overlay for Snapshot Modal */
+#snapshot-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#snapshot-modal-overlay.show {
+    opacity: 1;
+}
+
+/* ============================================
+   Dark Mode - Map Background (Harta Alba)
+   ============================================ */
+
+/* Dark mode: Leaflet map background */
+[data-theme="dark"] .leaflet-container {
+    background: #1a1a1a !important;
+}

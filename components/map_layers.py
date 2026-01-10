@@ -1,7 +1,7 @@
 import folium
 import json
 from config import ROMANIA_GEOJSON_FILE
-from utils import get_romania_outline
+from utils.geo import get_romania_outline
 
 def add_tile_layers(m):
     """Add tile layers to the map."""

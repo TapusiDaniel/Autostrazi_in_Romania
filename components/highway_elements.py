@@ -1,4 +1,5 @@
 import folium
+from datetime import datetime
 from map_elements import add_all_highways_to_map, calculate_highway_totals
 from highway_data import HIGHWAYS
 
@@ -41,9 +42,17 @@ def add_totals_table(m):
     # Add HTML to the map
     m.get_root().html.add_child(folium.Element(table_html))
     
-    # Add update text
-    update_text = """
-    <div style="
+    # Add update text with dynamic date
+    romanian_months = {
+        1: 'ianuarie', 2: 'februarie', 3: 'martie', 4: 'aprilie',
+        5: 'mai', 6: 'iunie', 7: 'iulie', 8: 'august',
+        9: 'septembrie', 10: 'octombrie', 11: 'noiembrie', 12: 'decembrie'
+    }
+    now = datetime.now()
+    update_date = f"{now.day} {romanian_months[now.month]} {now.year}"
+    
+    update_text = f"""
+    <div class="update-text-container" style="
         position: fixed;
         bottom: 10px;
         left: 10px;
@@ -54,14 +63,14 @@ def add_totals_table(m):
         font-family: Arial, sans-serif;
         color: #666;
         font-size: 10px;">
-        Ultima actualizare: 7 ianuarie 2026
+        Ultima actualizare: {update_date}
     </div>
     """
     m.get_root().html.add_child(folium.Element(update_text))
     
     # Add GitHub button
     github_button = """
-    <div style="position: fixed; top: 10px; left: 10px; z-index: 1000;">
+    <div class="github-btn-container" style="position: fixed; top: 10px; left: 10px; z-index: 1000;">
         <a href="https://github.com/TapusiDaniel/Autostrazi_in_Romania" target="_blank" style="text-decoration: none;">
             <button style="background-color: #24292e; color: white; padding: 10px 15px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer;">
                 <i class="fab fa-github"></i> View on GitHub
