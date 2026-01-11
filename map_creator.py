@@ -12,12 +12,29 @@ def create_highways_map(labels_position="below"):
     # Create base map
     m = create_base_map()
     
+    # Add HTML lang attribute for accessibility and SEO
+    html_lang = """
+    <script>
+        document.documentElement.setAttribute('lang', 'ro');
+    </script>
+    """
+    m.get_root().html.add_child(folium.Element(html_lang))
+    
     # Add meta tags for SEO and responsiveness
     meta_tags = """
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Interactive map of highways in Romania">
-        <title>Autostrăzi în România</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta name="description" content="Hartă interactivă a autostrăzilor și drumurilor expres din România. Vizualizați progresul construcției, secțiunile finalizate, în lucru și planificate. Actualizat regulat cu date oficiale.">
+        <meta name="keywords" content="Romania, highways, motorways, autostrăzi, drumuri expres, infrastructure, harta autostrazilor, retea rutiera">
+        <meta name="author" content="Daniel Tapusi">
+        <meta name="robots" content="index, follow">
+        <title>Autostrăzi în România - Hartă Interactivă</title>
+        
+        <!-- Resource Hints for Performance -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="dns-prefetch" href="https://mt1.google.com">
+        <link rel="dns-prefetch" href="https://tile.openstreetmap.org">
+        <link rel="preconnect" href="https://unpkg.com" crossorigin>
     """
     m.get_root().header.add_child(folium.Element(meta_tags))
     
@@ -40,10 +57,25 @@ def create_highways_map(labels_position="below"):
     # Add highways
     add_highways_to_map(m)
     
+    # Add skip link for keyboard navigation
+    skip_link_html = """
+    <a href="#map" class="skip-link" style="position: absolute; left: -9999px; z-index: 999999; 
+       padding: 1em; background: #000; color: #fff; text-decoration: none;">
+        Sari la hartă
+    </a>
+    <style>
+        .skip-link:focus {
+            left: 0;
+            top: 0;
+        }
+    </style>
+    """
+    m.get_root().html.add_child(folium.Element(skip_link_html))
+    
     # Add map controls HTML
     controls_html = """
-    <div class="map-controls">
-        <button class="minimize-button">−</button>
+    <div class="map-controls" role="navigation" aria-label="Controale hartă">
+        <button class="minimize-button" aria-label="Minimizează panoul" title="Minimizează">−</button>
         <div class="map-button-group">
             <div class="map-button-group-title">Stil hartă</div>
             <button class="map-button active" data-map="white">Hartă Albă</button>
@@ -80,7 +112,7 @@ def create_highways_map(labels_position="below"):
     
     # Add dark mode toggle button
     dark_mode_html = """
-    <button class="dark-mode-toggle" id="dark-mode-toggle" title="Toggle Dark Mode">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Comută modul întunecat" title="Comută modul întunecat">
         <span class="icon-moon">🌙</span>
         <span class="icon-sun">☀️</span>
     </button>
@@ -667,6 +699,37 @@ def create_highways_map(labels_position="below"):
     </script>
     """
     m.get_root().html.add_child(folium.Element(timeline_html))
+    
+    # Add layer control
+    
+    
+    
+    # Add last update date footer
+    from datetime import datetime
+    
+    # Romanian month names
+    romanian_months = {
+        1: 'ianuarie', 2: 'februarie', 3: 'martie', 4: 'aprilie',
+        5: 'mai', 6: 'iunie', 7: 'iulie', 8: 'august',
+        9: 'septembrie', 10: 'octombrie', 11: 'noiembrie', 12: 'decembrie'
+    }
+    
+    now = datetime.now()
+    day = now.day
+    month = romanian_months[now.month]
+    year = now.year
+    last_update = f"{day} {month} {year}"
+    
+    update_footer_html = f"""
+    <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000; 
+                background: var(--bg-overlay, rgba(255,255,255,0.9)); 
+                padding: 5px 10px; border-radius: 5px; font-size: 11px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                color: var(--text-primary, #333);">
+        Ultima actualizare: {last_update}
+    </div>
+    """
+    m.get_root().html.add_child(folium.Element(update_footer_html))
     
     # Add layer control
     folium.LayerControl(position='topright').add_to(m)
