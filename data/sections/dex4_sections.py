@@ -12,6 +12,7 @@ DEx4_SECTIONS = {
     "Tureni - Dej": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2031",
         "designer": "Specialist Consulting SRL - Specialist Smart Group SRL - Perfect Consult Europe SRL",
         "length": "69.50 km",
         "xml_file": "DEx4/dex4_tureni_dej.xml",

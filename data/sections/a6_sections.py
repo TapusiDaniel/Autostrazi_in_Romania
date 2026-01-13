@@ -4,14 +4,14 @@ A6_SECTIONS = {
         "feasibility_study_date": "2026",
         "designer": "ASOCIEREA S.C. D P CONSULT S.A. – S.C. EXPLAN S.R.L. – S.C.A. TEAHA & FUZESI",
         "length": "77.02 km",
-        "projected_completion_date": "~ 2029",
+        "projected_completion_date": "2030",
         "xml_file": 'A6/a6_bucuresti_alexandria.xml', 
         "end_point": [44.02492, 25.26474]  # Alexandria
     },
     "Alexandria - Craiova": {
         "status": "planned",
         "length": "125 km",
-        "projected_completion_date": "~ 2035",
+        "projected_completion_date": "2035",
         "geojson_file": 'A6/a6_alexandria_craiova.geojson',  
         "start_point": [44.023789, 25.245323],  # Alexandria
         "logo": {
@@ -98,6 +98,7 @@ A6_SECTIONS = {
     "Filiași - Drobeta Turnu Severin": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2030",
         "designer": "Asocierea DP CONSULT S.A. – EXPLAN S.R.L. – GEOLOGIC-SITE SRL -SCA TEAHA&FÜZESI",
         "length": "70 km",
         "xml_file": 'A6/a6_filiasi_dts.xml',  
@@ -107,6 +108,7 @@ A6_SECTIONS = {
     "Drobeta Turnu Severin - Domașnea": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2031",
         "designer": "EGIS",
         "length": "65 km",
         "xml_file": 'A6/a6_dts_domasnea.xml',  
@@ -116,6 +118,7 @@ A6_SECTIONS = {
     "Domașnea - Caransebeș": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2031",
         "designer": "Asocierea PROIECT-CONSTRUCT REGIUNEA TRANSILVANIA SRL – PERFECT CONSULT EUROPE S.R.L. – EAST WATER DRILLINGS SRL",
         "length": "44 km",
         "geojson_file": 'A6/a6_domasnea_caransebes.geojson',  
@@ -129,6 +132,7 @@ A6_SECTIONS = {
     "Caransebeș - Lugoj": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2031",
         "designer": "Ingenieria Especializada Obra Civil e Industrial",
         "length": "50 km",
         "geojson_file": 'A6/a6_caransebes_lugoj.geojson',  

@@ -25,7 +25,7 @@ A3_SECTIONS = {
         "feasibility_study_date": "2027",
         "designer": "SC CONSITRANS S.R.L.",
         "length": "106.60 km",
-        "projected_completion_date": "~ 2033",
+        "projected_completion_date": "2034",
         "estimated_cost": "5.7B",
         "xml_file": 'A3/a3_ploiesti_brasov.xml',  
         "start_point": [44.8846567, 26.0324882],  # Ploiesti

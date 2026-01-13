@@ -383,6 +383,37 @@ def add_all_highways_to_map(m):
         "tendered": "brown"
     }
     
+    def get_section_year(section_data):
+        """Calculate completion year for any section status."""
+        status = section_data.get('status')
+        # Check if there's an explicit projected completion date first
+        projected_date = section_data.get('projected_completion_date')
+        if projected_date:
+            # Data is already clean, just take the year
+            return str(projected_date)[:4]
+        
+        if status in ['finished', 'in_construction']:
+            completion_date = section_data.get('completion_date', '')
+            try:
+                return str(completion_date)[:4]
+            except:
+                return 'unknown'
+        
+        elif status == 'tendered':
+            try:
+                tender_year = int(section_data.get('tender_end_date', '2026'))
+                duration_str = section_data.get('construction_duration', '0 de luni')
+                months = int(duration_str.split()[0])
+                years = months / 12
+                return str(int(tender_year + years))
+            except:
+                return '2035'
+        
+        elif status == 'planned':
+            return '2035'
+        
+        return 'unknown'
+    
     def style_function(feature):
         """Define highway styling based on status"""
         status = feature['properties']['status']
@@ -469,7 +500,7 @@ def add_all_highways_to_map(m):
                             tooltip=f"{highway_code} - {section_name}",
                             name=section_name,
                             overlay=True,
-                            class_name=f'highway-section highway-section-{highway_code.lower().replace(" ", "-")} section-year-{str(section_data.get("completion_date", "unknown"))[:4]} section-status-{status}'
+                            class_name=f'highway-section highway-section-{highway_code.lower().replace(" ", "-")} section-year-{get_section_year(section_data)} section-status-{status}'
                         ).add_to(status_groups[status])
                         
                         # Add delimiter and logo if specified
@@ -530,7 +561,7 @@ def add_all_highways_to_map(m):
                                     tooltip=f"{highway_code} - {section_name}",
                                     name=section_name,
                                     overlay=True,
-                                    class_name=f'highway-section highway-section-{highway_code.lower().replace(" ", "-")} section-year-{str(section_data.get("completion_date", "unknown"))[:4]} section-status-{status}'
+                                    class_name=f'highway-section highway-section-{highway_code.lower().replace(" ", "-")} section-year-{get_section_year(section_data)} section-status-{status}'
                                 ).add_to(status_groups[status])
                         
                         # Add delimiter and logo if specified

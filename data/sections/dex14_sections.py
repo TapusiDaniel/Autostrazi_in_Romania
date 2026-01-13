@@ -22,6 +22,7 @@ DEx14_SECTIONS = {
     "Satu Mare - Baia Mare": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2030",
         "designer": "Asocierea SC Drum Pod Invest SRL – SC Search Corporation SRL",
         "length": "72.51 km",
         "xml_file": "DEx14/dex14_satumare_baiamare.xml",
@@ -30,6 +31,7 @@ DEx14_SECTIONS = {
     "Satu Mare - Halmeu": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2030",
         "length": "N/A",
         "designer": "Asocierea SC Drum Pod Invest SRL – SC Search Corporation SRL",
         "xml_file": "DEx14/dex14_satumare_halmeu.xml",
@@ -37,6 +39,7 @@ DEx14_SECTIONS = {
     "Baia Mare - Dej": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2032",
         "designer": "Asocierea Quadrante Viaponte – Metroul – Capital Vision",
         "length": "75 km",
         "xml_file": "DEx14/dex14_baiamare_dej.xml",
@@ -46,6 +49,7 @@ DEx14_SECTIONS = {
     "Dej - Bistrița": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2032",
         "designer": "Asocierea Quadrante Viaponte – Metroul – Capital Vision",
         "length": "70 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot1.xml",
@@ -54,6 +58,7 @@ DEx14_SECTIONS = {
     "Bistrița - Vatra Dornei": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2032",
         "designer": "SC EXPLAN SRL",
         "length": "63 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot2.xml",
@@ -66,6 +71,7 @@ DEx14_SECTIONS = {
     "Vatra Dornei - Suceava": {
         "status": "planned",
         "feasibility_study_date": "2027",
+        "projected_completion_date": "2033",    
         "designer": "ASOCIEREA BEST CONSULTING & DESIGN S.R.L. – INGENIERIA ESPECIALIZADA OBRA CIVIL E INDUSTRIAL S.A.",
         "length": "107 km",
         "xml_file": "DEx14/dex14_baiamare_suceava_lot3.xml",

@@ -12,7 +12,7 @@ A4_SECTIONS = {
     },
     "Alternativa Techirghiol": {
         "status": "tendered",
-        "tender_end_date": "2025",
+        "tender_end_date": "2026",
         "length": "30.59 km",
         "estimated_cost": "872M",
         "construction_duration": "48 de luni",

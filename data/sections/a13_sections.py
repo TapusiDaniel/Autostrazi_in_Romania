@@ -53,16 +53,17 @@ A13_SECTIONS = {
     "Făgăraș - Brașov": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2030",
         "designer": "Asocierea SEARCH CORPORATION SRL – PROTELCO SA – LIKE CONSULTING SRL – MEGAMUHENDISLIK MUSAVIRLIK A.S.",
         "length": "50.2 km",
-        "projected_completion_date": "~ 2029",
         "xml_file": "A13/a13_fagaras_brasov.xml",
         # "start_point": [45.805056, 25.048160],  # Fagaras
         "end_point": [45.737610, 25.479366]  # Brasov
     },
     "Brașov - Bacău": {
         "status": "planned",
-        "feasibility_study_date": "2026",
+        "feasibility_study_date": "2027",
+        "projected_completion_date": "2032",
         "designer": "Consitrans SRL",
         "length": "162.5 km",
         "xml_file": "A13/a13_brasov_bacau.xml",

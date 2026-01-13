@@ -231,6 +231,7 @@ A7_SECTIONS = {
     "Suceava - Siret (lot 3 - Drum Expres)": {
         "status": "planned",
         "feasibility_study_date": "2026",
+        "projected_completion_date": "2029",
         "designer": "Search Corporation SRL – Egis România SA",
         "length": "12.582 km",
         "construction_duration": "30 de luni",

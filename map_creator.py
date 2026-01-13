@@ -535,20 +535,56 @@ def create_highways_map(labels_position="below"):
     
     # Generate timeline data from actual highway sections
     def calculate_km_by_year():
-        """Calculate cumulative km of finished highways by year from actual data."""
+        """Calculate cumulative km of highways by year including future projections."""
         yearly_km = {}
+        
+        def parse_completion_year(section):
+            """Calculate projected completion year based on section status."""
+            status = section.get('status')
+            
+            # Check if there's an explicit projected completion date first
+            projected_date = section.get('projected_completion_date')
+            if projected_date:
+                try:
+                    # Handle "~ 2030" or "2030" formats
+                    clean_date = str(projected_date).replace('~', '').strip()
+                    return int(clean_date[:4])
+                except (ValueError, TypeError):
+                    pass
+            
+            if status == 'finished' or status == 'in_construction':
+                completion_date = section.get('completion_date', '')
+                try:
+                    return int(str(completion_date)[:4])
+                except (ValueError, TypeError):
+                    return None
+                    
+            elif status == 'tendered':
+                try:
+                    tender_year = int(section.get('tender_end_date', '2026'))
+                    duration_str = section.get('construction_duration', '0 de luni')
+                    months = int(duration_str.split()[0])
+                    years = months / 12
+                    return int(tender_year + years)
+                except (ValueError, TypeError, AttributeError):
+                    return 2035
+                    
+            elif status == 'planned':
+                return 2035
+                
+            return None
+        
         for highway in HIGHWAYS.values():
             for section_name, section in highway.get('sections', {}).items():
-                if section.get('status') == 'finished':
-                    # Get completion year
-                    completion_date = section.get('completion_date', '')
+                year = parse_completion_year(section)
+                if year:
+                    length_str = section.get('length', '0 km')
                     try:
-                        year = int(str(completion_date)[:4])  # Extract year
-                        length_str = section.get('length', '0 km')
                         length = float(length_str.replace(' km', '').replace(',', '.'))
                         yearly_km[year] = yearly_km.get(year, 0) + length
                     except (ValueError, TypeError):
                         continue
+        
         return yearly_km
     
     yearly_km = calculate_km_by_year()
@@ -556,14 +592,17 @@ def create_highways_map(labels_position="below"):
     # Calculate cumulative km by year
     cumulative_data = {}
     cumulative = 0
-    for year in range(1970, 2027):
+    for year in range(1970, 2036):
         if year in yearly_km:
             cumulative += yearly_km[year]
         cumulative_data[year] = round(cumulative, 2)
     
-    # Generate JavaScript object from data
+    # Generate JavaScript objects from data
     timeline_data_js = ", ".join([f"{y}: {km}" for y, km in sorted(cumulative_data.items()) if y >= 1970])
+    # Also pass yearly additions for delta display
+    yearly_additions_js = ", ".join([f"{y}: {km}" for y, km in sorted(yearly_km.items()) if y >= 1970])
     current_total = cumulative_data.get(2026, 0)
+    current_state_total = cumulative_data.get(2025, 0)  # What's open NOW (end of 2025)
     
     # Add Timeline Slider
     timeline_html = f"""
@@ -575,24 +614,73 @@ def create_highways_map(labels_position="below"):
     <!-- Timeline Slider -->
     <div class="timeline-container hidden" id="timeline-container">
         <div class="timeline-title">Evoluția construcției autostrăzilor</div>
-        <div class="timeline-year" id="timeline-year">2026</div>
-        <input type="range" class="timeline-slider" id="timeline-slider" 
-               min="1970" max="2026" value="2026" step="1">
+        <div class="timeline-year" id="timeline-year">În prezent</div>
+        <div class="timeline-slider-wrapper">
+            <input type="range" class="timeline-slider" id="timeline-slider" 
+                   min="0" max="100" value="78" step="1">
+        </div>
         <div class="timeline-labels">
             <span>1970</span>
-            <span>1990</span>
+            <span>2000</span>
             <span>2010</span>
-            <span>2026</span>
+            <span>2020</span>
+            <span>2025</span>
+            <span>2030</span>
+            <span>2035</span>
         </div>
         <div class="timeline-stats" id="timeline-stats">
-            Finalizat: <span id="timeline-km">{current_total}</span> km
+            Finalizat: <span id="timeline-km">{current_state_total}</span> km
         </div>
     </div>
     
     <script>
         // Timeline data (calculated from actual highway sections)
         var timelineData = {{{timeline_data_js}}};
+        var yearlyAdditions = {{{yearly_additions_js}}};
         var isTimelineActive = false;
+        
+        // Position-to-year mapping (matches visual label distribution)
+        // Labels: 0%=1970, 20%=2000, 40%=2010, 60%=2020, 75%=2025, 88%=2030, 100%=2035
+        function positionToYear(pos) {{
+            var segments = [
+                {{pos: 0, year: 1970}},
+                {{pos: 20, year: 2000}},
+                {{pos: 40, year: 2010}},
+                {{pos: 60, year: 2020}},
+                {{pos: 75, year: 2025}},
+                {{pos: 88, year: 2031}}, // 2031 mapped becomes 2030
+                {{pos: 100, year: 2036}} // 2036 mapped becomes 2035
+            ];
+            
+            for (var i = 0; i < segments.length - 1; i++) {{
+                if (pos >= segments[i].pos && pos <= segments[i+1].pos) {{
+                    var ratio = (pos - segments[i].pos) / (segments[i+1].pos - segments[i].pos);
+                    return Math.round(segments[i].year + ratio * (segments[i+1].year - segments[i].year));
+                }}
+            }}
+            return 2036;
+        }}
+        
+        // Year-to-position mapping (for initial positioning)
+        function yearToPosition(year) {{
+            var segments = [
+                {{pos: 0, year: 1970}},
+                {{pos: 20, year: 2000}},
+                {{pos: 40, year: 2010}},
+                {{pos: 60, year: 2020}},
+                {{pos: 75, year: 2025}},
+                {{pos: 88, year: 2031}},
+                {{pos: 100, year: 2036}}
+            ];
+            
+            for (var i = 0; i < segments.length - 1; i++) {{
+                if (year >= segments[i].year && year <= segments[i+1].year) {{
+                    var ratio = (year - segments[i].year) / (segments[i+1].year - segments[i].year);
+                    return Math.round(segments[i].pos + ratio * (segments[i+1].pos - segments[i].pos));
+                }}
+            }}
+            return 100;
+        }}
         
         function toggleTimeline() {{
             var container = document.getElementById('timeline-container');
@@ -603,8 +691,19 @@ def create_highways_map(labels_position="below"):
             btn.textContent = isTimelineActive ? '✕ Închide' : '📅 Evoluție în timp';
             
             if (isTimelineActive) {{
-                // Apply current filter
-                filterMapByYear(parseInt(document.getElementById('timeline-slider').value));
+                // Apply current filter with correct mapping
+                var sliderPos = parseInt(document.getElementById('timeline-slider').value);
+                var year = positionToYear(sliderPos);
+                
+                // Remap 2026 (În prezent) to 2025 data
+                var dataYear = year;
+                if (year === 2026) {{
+                    dataYear = 2025;
+                }} else if (year >= 2027) {{
+                    dataYear = year - 1;
+                }}
+                
+                filterMapByYear(dataYear);
                 
                 // Hide delimiters and logos in timeline mode via CSS class
                 document.body.classList.add('timeline-mode');
@@ -637,12 +736,53 @@ def create_highways_map(labels_position="below"):
         var kmDisplay = document.getElementById('timeline-km');
         
         slider.addEventListener('input', function() {{
-            var year = parseInt(this.value);
-            yearDisplay.textContent = year;
-            kmDisplay.textContent = timelineData[year] || 0;
+            var sliderPos = parseInt(this.value);
+            var year = positionToYear(sliderPos);
+            var displayText, dataYear;
+            
+            // Remap values to insert "În prezent" between 2025 and 2026
+            if (year === 2026) {{
+                // Show "În prezent" (current moment)
+                displayText = 'În prezent';
+                dataYear = 2025;  // Use 2025 data (what's open NOW)
+            }} else if (year >= 2027) {{
+                // Shift years: 2027 displays as "2026", 2028 as "2027", etc.
+                var actualYear = year - 1;
+                displayText = actualYear.toString();
+                dataYear = actualYear;
+            }} else {{
+                // 2025 and below: normal mapping
+                displayText = year.toString();
+                dataYear = year;
+            }}
+            
+            var cumulativeKm = timelineData[dataYear] || 0;
+            var yearlyKm = yearlyAdditions[dataYear] || 0;
+            
+            // Update display
+            yearDisplay.innerHTML = displayText;
+            
+            // Show cumulative + yearly addition in different color (remove trailing zeros)
+            // For "În prezent", don't show yearly additions since nothing opened in 2026 yet
+            if (yearlyKm > 0 && year !== 2026) {{
+                kmDisplay.innerHTML = parseFloat(cumulativeKm).toFixed(3).replace(/\.?0+$/, '') + ' <span style="color: #4CAF50; font-weight: bold;">(+' + parseFloat(yearlyKm).toFixed(3).replace(/\.?0+$/, '') + ' km)</span>';
+            }} else {{
+                kmDisplay.textContent = parseFloat(cumulativeKm).toFixed(3).replace(/\.?0+$/, '');
+            }}
             
             if (isTimelineActive) {{
-                filterMapByYear(year);
+                filterMapByYear(dataYear);
+            }}
+        }});
+        
+        // Initialize display on page load
+        // Initialize display on page load
+        window.addEventListener('load', function() {{
+            var initialValue = 2026;  // În prezent
+            var dataYear = 2025;
+            var cumulativeKm = timelineData[dataYear] || 0;
+            if(kmDisplay) {{
+                kmDisplay.textContent = parseFloat(cumulativeKm).toFixed(3).replace(/\.?0+$/, '');
             }}
         }});
         
@@ -653,18 +793,15 @@ def create_highways_map(labels_position="below"):
             sections.forEach(function(el) {{
                 var isVisible = false;
                 
-                // Check if it's a finished section
-                if (el.classList.contains('section-status-finished')) {{
-                    // Find the year class
-                    var classes = Array.from(el.classList);
-                    var yearClass = classes.find(c => c.startsWith('section-year-'));
-                    
-                    if (yearClass) {{
-                        var sectionYear = parseInt(yearClass.replace('section-year-', ''));
-                        // Show if completed by this year
-                        if (!isNaN(sectionYear) && sectionYear <= year) {{
-                            isVisible = true;
-                        }}
+                // Find the year class (works for all statuses now)
+                var classes = Array.from(el.classList);
+                var yearClass = classes.find(c => c.startsWith('section-year-'));
+                
+                if (yearClass) {{
+                    var sectionYear = parseInt(yearClass.replace('section-year-', ''));
+                    // Show if completed by this year
+                    if (!isNaN(sectionYear) && sectionYear <= year) {{
+                        isVisible = true;
                     }}
                 }}
                 
@@ -678,8 +815,6 @@ def create_highways_map(labels_position="below"):
                     el.style.opacity = '0';
                     el.style.strokeOpacity = '0';
                     el.style.pointerEvents = 'none';
-                    // We don't use display:none because it might interfere with Leaflet's internal handling
-                    // or transitions, but opacity 0 is effectively invisible
                 }}
             }});
         }}
