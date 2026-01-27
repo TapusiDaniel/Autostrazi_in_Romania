@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "27.19%",
+        "progress": "28.98%",
         "completion_date": "2027",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
@@ -105,7 +105,7 @@ A8_SECTIONS = {
         "length": "27 km",
         "estimated_cost": "937M",
         "construction_duration": "46 de luni",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "financing": "Fonduri SAFE",
         "seap_code": "CN1077231",
         "current_stage": "Semnare contract - Asocierea Danlin XXL - Groma Hold Ltd - Intertranscom Impex - Evropeiski Patishta",
         "xml_file": "A8/a8_motca_targu_frumos_lot1.xml",
@@ -118,7 +118,7 @@ A8_SECTIONS = {
         "length": "28.6 km",
         "estimated_cost": "1.1B",
         "construction_duration": "46 de luni",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "financing": "Fonduri SAFE",
         "seap_code": "CN1077647",
         "current_stage": "Evaluare oferte",
         "xml_file": "A8/a8_tg_frumos_letcani.xml",
@@ -131,7 +131,7 @@ A8_SECTIONS = {
         "length": "17.7 km",
         "estimated_cost": "1.06B",
         "construction_duration": "46 de luni",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "financing": "Fonduri SAFE",
         "seap_code": "CN1081660",
         "current_stage": "Evaluare oferte",
         "xml_file": "A8/a8_letcani_iasi.xml",
@@ -145,28 +145,15 @@ A8_SECTIONS = {
     "Târgu Neamț - Ungheni lot 4 (Iași Nord - Golăiești)": {
         "status": "tendered",
         "tender_end_date": "2026",
-        "length": "12.7 km",
-        "estimated_cost": "820M",
+        "length": "15.47 km",
+        "estimated_cost": "923M",
         "construction_duration": "46 de luni",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1081661",
-        "current_stage": "Depunere oferte",
-        "xml_file": "A8/a8_iasi_golaiesti.xml",
+        "financing": "Fonduri SAFE",
+        "seap_code": "CN1088815",
+        "current_stage": "Evaluare oferte",
+        "xml_file": "A8/a8_iasi_vama.xml",
         "start_point": [47.259529, 27.566248],  # Iasi Nord
-        "end_point": [47.256906, 27.715057]  # Golaiesti
-    },
-    "Târgu Neamț - Ungheni lot 5 (Golăiești - Pod Ungheni)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
-        "length": "2.77 km",
-        "estimated_cost": "53.4M",
-        "construction_duration": "18 de luni",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1081662",
-        "current_stage": "Depunere oferte",
-        "xml_file": "A8/a8_golaiesti_pod_ungheni.xml",
-        "start_point": [47.256906, 27.715057],  # Golaiesti
-        "end_point": [47.249882, 27.746310]  # Ungheni
+        "end_point": [47.2500496, 27.7461084]  # Pod peste Prut
     },
     "Pod Ungheni": {
         "status": "in_construction",
@@ -177,7 +164,7 @@ A8_SECTIONS = {
         "cost": "30.3M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A8/a8_pod_ungheni.xml",
-        "start_point": [47.249882, 27.746310]  # Ungheni
+        "start_point": [47.2500496, 27.7461084]  # Pod peste Prut
     },
 
 }

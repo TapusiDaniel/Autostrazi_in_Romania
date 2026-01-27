@@ -103,7 +103,7 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 2) - în construcție": {
         "status": "in_construction",
-        "progress": "93%",
+        "progress": "95%",
         "completion_date": "2026",
         "length": "24.38 km",
         "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
@@ -115,7 +115,7 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 3)": {
         "status": "in_construction",
-        "progress": "67%",
+        "progress": "70%",
         "completion_date": "2026",
         "length": "21.52 km",
         "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
@@ -138,7 +138,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "41.10%",
+        "progress": "42%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -154,7 +154,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "38.60%",
+        "progress": "39%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -166,7 +166,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
-        "progress": "40.50%",
+        "progress": "41%",
         "completion_date": "2026",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -205,7 +205,7 @@ A7_SECTIONS = {
     "Suceava - Siret (lot 1 - Drum Expres)": {
         "status": "tendered",
         "tender_end_date": "2026",
-        "length": "28.97 km",
+        "length": "18.60 km",
         "estimated_cost": "453M",
         "construction_duration": "33 de luni",
         "financing": "Fonduri SAFE",
@@ -218,8 +218,8 @@ A7_SECTIONS = {
     "Suceava - Siret (lot 2 - Drum Expres)": {
         "status": "tendered",
         "tender_end_date": "2026",
-        "length": "18.60 km",
-        "estimated_cost": "377M",
+        "length": "24.45 km",
+        "estimated_cost": "370M",
         "construction_duration": "36 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1088859",
@@ -227,17 +227,18 @@ A7_SECTIONS = {
         "xml_file": "A7/a7_suceava_siret_lot2.xml",
         "start_point": [47.726058, 26.125389],  # Darmanesti
         "end_point": [47.911986, 26.061257]  # Balcauti
-    },
+    }, 
     "Suceava - Siret (lot 3 - Drum Expres)": {
-        "status": "planned",
-        "feasibility_study_date": "2026",
-        "projected_completion_date": "2029",
-        "designer": "Search Corporation SRL – Egis România SA",
-        "length": "12.582 km",
-        "construction_duration": "30 de luni",
-        "current_stage": "Urmează scoaterea la licitație",
+        "status": "tendered",
+        "tender_end_date": "2026",
+        "length": "12.65 km",
+        "estimated_cost": "304M",
+        "construction_duration": "42 de luni",
+        "financing": "Fonduri SAFE",
+        "seap_code": "CN1089175",
+        "current_stage": "Depunere oferte",
         "xml_file": "A7/a7_suceava_siret_lot3.xml",
         "start_point": [47.911986, 26.061257]  # Balcauti
-    },
+    }
 }
      
