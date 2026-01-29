@@ -9,14 +9,13 @@ DEx16_SECTIONS = {
         "end_point": [46.197998, 21.229526]  # Arad
     },
     "Arad - Oradea (lot 3)": {
-        "status": "tendered",
-        "tender_end_date": "2026", 
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2029",
         "length": "47.07 km",
-        "estimated_cost": "562M",
-        "construction_duration": "24 de luni",  
+        "constructor": "NUROL İNSAAT VE TİCARET ANONİM SİRKETİ",
+        "cost": "560M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
-        "seap_code": "CN1065639",
-        "current_stage": "Semnare contract - NUROL INSAAT VE TICARET A.S.",
         "xml_file": "DEx16/dex16_arad_oradea_lot3.xml",
         "start_point": [46.197998, 21.229526],  # Arad
         "end_point": [46.519595, 21.500858]  # Chisineu Cris
