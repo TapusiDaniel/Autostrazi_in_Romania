@@ -1,67 +1,55 @@
-import requests
-import xml.etree.ElementTree as ET
 from shapely.geometry import MultiPolygon, Polygon, shape
 from shapely.ops import unary_union
-import time
 import json
+import hashlib
+from pathlib import Path
+
+CACHE_DIR = Path("data/cache")
+
+
+def _cache_key(way_ids):
+    """Generate a stable cache filename from way IDs."""
+    sorted_ids = sorted(way_ids)
+    key = hashlib.md5(','.join(sorted_ids).encode()).hexdigest()
+    return CACHE_DIR / f"{key}.json"
+
+
+def _load_cache(way_ids):
+    """Load cached way coordinates if available."""
+    cache_file = _cache_key(way_ids)
+    if cache_file.exists():
+        with open(cache_file, 'r') as f:
+            data = json.load(f)
+        # Convert string keys back to int
+        return {int(k): v for k, v in data.items()}
+    return None
+
+
+def _save_cache(way_ids, ways):
+    """Save way coordinates to local cache."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_file = _cache_key(way_ids)
+    # Convert int keys to string for JSON
+    with open(cache_file, 'w') as f:
+        json.dump({str(k): v for k, v in ways.items()}, f)
+
 
 def get_all_way_coordinates(way_ids):
     """
-    Fetch coordinates for a list of OpenStreetMap way IDs using the Overpass API.
+    Load way coordinates from local cache.
+    Run 'python resolve_cache.py' to populate the cache from OSM API.
     """
-    ways_str = ','.join(way_ids)
-    overpass_url = "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-    
-    query = f"""
-    [out:json];
-    way(id:{ways_str});
-    (._;>;);
-    out body;
-    """
-    
-    # Retry logic with error handling
-    max_retries = 3
-    retry_delay = 2  # seconds
-    
-    for attempt in range(max_retries):
-        try:
-            response = requests.post(overpass_url, data=query, timeout=20)
-            response.raise_for_status()
-            
-            try:
-                data = response.json()
-            except json.JSONDecodeError:
-                print(f"Invalid JSON response: {response.text[:200]}...")
-                raise
-                
-            # Process the data
-            nodes = {}
-            ways = {}
-            
-            for element in data['elements']:
-                if element['type'] == 'node':
-                    nodes[element['id']] = [element['lat'], element['lon']]
-                elif element['type'] == 'way':
-                    ways[element['id']] = [nodes[node_id] for node_id in element['nodes'] if node_id in nodes]
-            
-            return ways
-            
-        except requests.exceptions.RequestException as e:
-            print(f"Request attempt {attempt + 1} failed: {str(e)}")
-            if attempt < max_retries - 1:
-                time.sleep(retry_delay * (attempt + 1))
-            else:
-                print(f"Failed after {max_retries} attempts")
-                raise
-                
-        except Exception as e:
-            print(f"Error processing data: {str(e)}")
-            if attempt < max_retries - 1:
-                time.sleep(retry_delay * (attempt + 1))
-            else:
-                raise
+    cached = _load_cache(way_ids)
+    if cached is not None:
+        print("(cached)", end=" ")
+        return cached
 
-    return {}  # Return empty dict if everything fails
+    # No cache — tell user to run resolver
+    raise RuntimeError(
+        f"Cache miss for {len(way_ids)} ways! "
+        f"Run 'python resolve_cache.py' to fetch and cache way coordinates."
+    )
+
 
 def get_romania_outline(geojson_data):
     """

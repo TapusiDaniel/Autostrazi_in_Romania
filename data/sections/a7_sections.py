@@ -115,7 +115,7 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 3)": {
         "status": "in_construction",
-        "progress": "70%",
+        "progress": "73%",
         "completion_date": "2026",
         "length": "21.52 km",
         "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
@@ -138,7 +138,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "42%",
+        "progress": "49.10%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -154,7 +154,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "39%",
+        "progress": "46.90%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -166,7 +166,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
-        "progress": "41%",
+        "progress": "48.20%",
         "completion_date": "2026",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -177,27 +177,25 @@ A7_SECTIONS = {
         "end_point": [47.263212, 26.690015]  # Pascani
     },
     "Pașcani - Suceava (lot 1)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2028",
         "length": "33 km",
-        "estimated_cost": "776M",
-        "construction_duration": "30 de luni",
+        "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
+        "cost": "589M",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1071176",
-        "current_stage": "Semnare contract - Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "xml_file": "A7/a7_pascani_suceava_lot1.xml",
         "start_point": [47.263212, 26.690015],  # Pascani
         "end_point": [47.516672, 26.579559]  # Roscani
     },
     "Pașcani - Suceava (lot 2)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2028",
         "length": "28.97 km",
-        "estimated_cost": "720M",
-        "construction_duration": "30 de luni",
+        "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
+        "cost": "551M",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
-        "seap_code": "CN1072190",
-        "current_stage": "Semnare contract - Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "xml_file": "A7/a7_pascani_suceava_lot2.xml",
         "start_point": [47.516672, 26.579559],  # Roscani
         "end_point": [47.687929, 26.311153]  # Aeroport Suceava
@@ -206,11 +204,11 @@ A7_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "18.60 km",
-        "estimated_cost": "453M",
+        "estimated_cost": "409M",
         "construction_duration": "33 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1088859",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot1.xml",
         "start_point": [47.687929, 26.311153],  # Aeroport Suceava
         "end_point": [47.726058, 26.125389]  # Darmanesti
@@ -219,11 +217,11 @@ A7_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "24.45 km",
-        "estimated_cost": "370M",
+        "estimated_cost": "319M",
         "construction_duration": "36 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1088859",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot2.xml",
         "start_point": [47.726058, 26.125389],  # Darmanesti
         "end_point": [47.911986, 26.061257]  # Balcauti
@@ -231,12 +229,12 @@ A7_SECTIONS = {
     "Suceava - Siret (lot 3 - Drum Expres)": {
         "status": "tendered",
         "tender_end_date": "2026",
-        "length": "12.65 km",
-        "estimated_cost": "304M",
+        "length": "12.70 km",
+        "estimated_cost": "236M",
         "construction_duration": "42 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1089175",
-        "current_stage": "Depunere oferte",
+        "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot3.xml",
         "start_point": [47.911986, 26.061257]  # Balcauti
     }

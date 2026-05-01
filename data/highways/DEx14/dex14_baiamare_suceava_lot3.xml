@@ -1,13 +1,35 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (682956 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14316731" visible="true" version="2" changeset="172450602" timestamp="2025-09-25T17:24:53Z" user="ted3sco" uid="2112541">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1312226 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14316731" visible="true" version="5" changeset="178699207" timestamp="2026-02-17T21:31:19Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1075415051" role=""/>
 <member type="way" ref="1433093036" role=""/>
-<member type="way" ref="1433093037" role=""/>
-<member type="way" ref="1433093039" role=""/>
-<member type="way" ref="1433093038" role=""/>
-<member type="way" ref="1433093040" role=""/>
-<member type="way" ref="1433093041" role=""/>
-<member type="way" ref="1433093042" role=""/>
+<member type="way" ref="914216823" role=""/>
+<member type="way" ref="1479878309" role=""/>
+<member type="way" ref="1479878308" role=""/>
+<member type="way" ref="1479878311" role=""/>
+<member type="way" ref="1479878310" role=""/>
+<member type="way" ref="1479878305" role=""/>
+<member type="way" ref="1479878304" role=""/>
+<member type="way" ref="1479878307" role=""/>
+<member type="way" ref="1479878306" role=""/>
+<member type="way" ref="1479878293" role=""/>
+<member type="way" ref="1479878292" role=""/>
+<member type="way" ref="1479878295" role=""/>
+<member type="way" ref="1479878294" role=""/>
+<member type="way" ref="1479878289" role=""/>
+<member type="way" ref="1479878288" role=""/>
+<member type="way" ref="1479878291" role=""/>
+<member type="way" ref="1479878290" role=""/>
+<member type="way" ref="1479878301" role=""/>
+<member type="way" ref="1479878300" role=""/>
+<member type="way" ref="1479878303" role=""/>
+<member type="way" ref="1479878302" role=""/>
+<member type="way" ref="1479901810" role=""/>
+<member type="way" ref="1479878297" role=""/>
+<member type="way" ref="1479878296" role=""/>
+<member type="way" ref="1479901811" role=""/>
+<member type="way" ref="1479878299" role=""/>
+<member type="way" ref="1479878298" role=""/>
+<member type="way" ref="1479878287" role=""/>
 <tag k="name" v="Drum expres Baia Mare - Suceava Lot 3 Vatra Dornei - Suceava"/>
 <tag k="route" v="proposed"/>
 <tag k="type" v="route"/>

@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "28.98%",
+        "progress": "34.18%",
         "completion_date": "2027",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
@@ -89,8 +89,8 @@ A8_SECTIONS = {
     },
     "Leghin - Târgu Neamț": {
         "status": "in_construction",
-        "progress": "7%",
-        "completion_date": "2027",
+        "progress": "8%",
+        "completion_date": "2028",
         "length": "29.91 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "312M",
@@ -116,11 +116,11 @@ A8_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "28.6 km",
-        "estimated_cost": "1.1B",
+        "estimated_cost": "880M",
         "construction_duration": "46 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1077647",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Danlin XXL",
         "xml_file": "A8/a8_tg_frumos_letcani.xml",
         "start_point": [47.231512, 27.010151],  # Targu Frumos
         "end_point": [47.208894, 27.374226]  # Letcani
@@ -129,11 +129,11 @@ A8_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "17.7 km",
-        "estimated_cost": "1.06B",
+        "estimated_cost": "757M",
         "construction_duration": "46 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1081660",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - FCC Construccion",
         "xml_file": "A8/a8_letcani_iasi.xml",
         "start_point": [47.208894, 27.374226],  # Letcani
         "end_point": [47.259529, 27.566248],  # Iasi Nord
@@ -146,11 +146,11 @@ A8_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "15.47 km",
-        "estimated_cost": "923M",
+        "estimated_cost": "687M",
         "construction_duration": "46 de luni",
         "financing": "Fonduri SAFE",
         "seap_code": "CN1088815",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea Italia Itinera SPA (Lider) – ICM S.P.A, Saipem S.P.A.",
         "xml_file": "A8/a8_iasi_vama.xml",
         "start_point": [47.259529, 27.566248],  # Iasi Nord
         "end_point": [47.2500496, 27.7461084]  # Pod peste Prut

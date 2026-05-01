@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1885072 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="20050862" visible="true" version="2" changeset="176873831" timestamp="2026-01-05T18:25:30Z" user="ted3sco" uid="2112541">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1022528 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="20050862" visible="true" version="3" changeset="177864112" timestamp="2026-01-29T20:10:40Z" user="ted3sco" uid="2112541">
 <member type="way" ref="1464404635" role=""/>
 <member type="way" ref="1464404639" role=""/>
 <member type="way" ref="1464422065" role=""/>
@@ -7,9 +7,42 @@
 <member type="way" ref="1464404637" role=""/>
 <member type="way" ref="1464404640" role=""/>
 <member type="way" ref="1464422064" role=""/>
+<member type="way" ref="1472478335" role=""/>
+<member type="way" ref="1472478331" role=""/>
+<member type="way" ref="1472478332" role=""/>
+<member type="way" ref="1472478326" role=""/>
+<member type="way" ref="1472478327" role=""/>
+<member type="way" ref="1472478320" role=""/>
+<member type="way" ref="1472478321" role=""/>
+<member type="way" ref="1472478315" role=""/>
+<member type="way" ref="1472478313" role=""/>
+<member type="way" ref="1472478312" role=""/>
+<member type="way" ref="1472478309" role=""/>
+<member type="way" ref="1472478310" role=""/>
 <member type="way" ref="1464393366" role=""/>
 <member type="way" ref="1464404636" role=""/>
 <member type="way" ref="1464404638" role=""/>
+<member type="way" ref="1472478336" role=""/>
+<member type="way" ref="1472478314" role=""/>
+<member type="way" ref="1472478316" role=""/>
+<member type="way" ref="1472478318" role=""/>
+<member type="way" ref="1472478319" role=""/>
+<member type="way" ref="1472478324" role=""/>
+<member type="way" ref="1472478325" role=""/>
+<member type="way" ref="1472478329" role=""/>
+<member type="way" ref="1472478330" role=""/>
+<member type="way" ref="1472478334" role=""/>
+<member type="way" ref="1472478328" role=""/>
+<member type="way" ref="1472478307" role=""/>
+<member type="way" ref="1472478308" role=""/>
+<member type="way" ref="1472478333" role=""/>
+<member type="way" ref="1472478322" role=""/>
+<member type="way" ref="1472478323" role=""/>
+<member type="way" ref="1472478317" role=""/>
+<member type="way" ref="1472478306" role=""/>
+<member type="way" ref="1472478305" role=""/>
+<member type="way" ref="1472478304" role=""/>
+<member type="way" ref="1472478303" role=""/>
 <tag k="name" v="Suceava-Siret Lot 3"/>
 <tag k="route" v="proposed"/>
 <tag k="type" v="route"/>
