@@ -6,7 +6,7 @@ DEx16_SECTIONS = {
         "constructor": "PORR în parteneriat cu Teerag-Asdag",
         "financing": "Fonduri de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "DEx16/a11.xml",
-        "end_point": [46.197998, 21.229526]  # Arad
+        "end_point": [46.197998, 21.229526],  # Arad
     },
     "Arad - Oradea (lot 3)": {
         "status": "in_construction",
@@ -18,7 +18,7 @@ DEx16_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "DEx16/dex16_arad_oradea_lot3.xml",
         "start_point": [46.197998, 21.229526],  # Arad
-        "end_point": [46.519595, 21.500858]  # Chisineu Cris
+        "end_point": [46.519595, 21.500858],  # Chisineu Cris
     },
     "Arad - Oradea (lot 2)": {
         "status": "in_construction",
@@ -31,10 +31,7 @@ DEx16_SECTIONS = {
         "xml_file": "DEx16/dex16_arad_oradea_lot2.xml",
         "start_point": [46.519595, 21.500858],  # Chisineu Cris
         "end_point": [46.793249, 21.694058],  # Salonta
-        "logo": {
-            "path": "data/photos/DEx16-RO.png",
-            "position": "right"  
-        }
+        "logo": {"path": "data/photos/DEx16-RO.png", "position": "right"},
     },
     "Arad - Oradea (lot 1)": {
         "status": "in_construction",
@@ -46,7 +43,7 @@ DEx16_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "DEx16/dex16_arad_oradea_lot1.xml",
         "start_point": [46.793249, 21.694058],  # Salonta
-        "end_point": [47.072718, 21.873508]  # Oradea
+        "end_point": [47.072718, 21.873508],  # Oradea
     },
     "Oradea - A3": {
         "status": "finished",
@@ -57,5 +54,4 @@ DEx16_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx16/dex16_oradea_a3.xml",
     },
-
 }

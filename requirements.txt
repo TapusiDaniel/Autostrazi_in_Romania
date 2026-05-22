@@ -4,3 +4,5 @@ shapely>=2.0.0
 cssmin>=0.2.0
 jsmin>=3.0.0
 pytest>=7.0.0
+black>=24.0.0
+ruff>=0.6.0

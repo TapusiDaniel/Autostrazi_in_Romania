@@ -66,5 +66,5 @@ DEx_DRUMURI_RADIALE_SECTIONS = {
         "designer": "Asocierea DP Consult SA – Explan SRL – Geologic Site SRL",
         "length": "9.62 km",
         "xml_file": "Drumuri Radiale/dr10.xml",
-    }
+    },
 }

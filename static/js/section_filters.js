@@ -1,7 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     var sectionButtons = document.querySelectorAll('.section-button');
-    var outline = document.querySelector('.leaflet-overlay-pane .romania-outline');
-    
+
+    function isWhiteMapActive() {
+        var checkedBaseLayer = document.querySelector(
+            '.leaflet-control-layers-base input[type="radio"]:checked'
+        );
+        if (checkedBaseLayer && checkedBaseLayer.nextElementSibling) {
+            return checkedBaseLayer.nextElementSibling.textContent.trim() === 'White Map';
+        }
+
+        var activeMapButton = document.querySelector('.map-button.active');
+        return activeMapButton && activeMapButton.getAttribute('data-map') === 'white';
+    }
+
     function selectSection(button) {
         // Toggle active class instead of removing from all
         button.classList.toggle('active');
@@ -10,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var activeSections = Array.from(document.querySelectorAll('.section-button.active'))
             .map(btn => btn.getAttribute('data-section'));
         
-        var activeMapButton = document.querySelector('.map-button.active');
-        var isWhiteMap = activeMapButton && activeMapButton.getAttribute('data-map') === 'white';
+        var isWhiteMap = isWhiteMapActive();
         
         // Handle the "all" section specially
         if (button.getAttribute('data-section') === 'all') {
@@ -46,9 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
         overlayInputs.forEach(function(input) {
             var label = input.nextElementSibling.textContent.trim();
             
-            // Skip processing for elements we want to preserve
-            if (label === '_') {
-                return;  // Skip the outline layer
+            // Skip internal overlays (outline '_', '_logos', '_delimiters_*').
+            // These are managed by their own sync logic, not the status filter.
+            if (label.charAt(0) === '_') {
+                return;
             }
 
             // Handle highway sections
@@ -63,12 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // For white map, ensure all elements remain visible
         if (isWhiteMap) {
-            // Ensure outline is visible
-            if (outline) {
-                outline.style.display = 'block';
-                outline.parentElement.style.zIndex = '1';
-            }
-            
             // Ensure Romania outline and white background are visible
             document.querySelectorAll('.leaflet-overlay-pane .romania-outline, .leaflet-overlay-pane .white-background').forEach(function(element) {
                 element.style.display = 'block';
@@ -89,10 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 label.style.display = 'block';
             });
             
-            // Ensure city dots are visible
-            document.querySelectorAll('.leaflet-circle-marker-pane > *').forEach(function(dot) {
-                dot.style.display = 'block';
-            });
         }
     }
     

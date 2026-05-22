@@ -28,6 +28,13 @@ path.leaflet-interactive.highlighted-path {
     z-index: 9999 !important;
 }
 
+/* High-detail mode hides low-detail paths */
+body.high-detail-mode .low-detail {
+    opacity: 0 !important;
+    stroke-opacity: 0 !important;
+    pointer-events: none !important;
+}
+
 @keyframes pulse {
     0% {
         opacity: 1;
@@ -111,44 +118,6 @@ body.timeline-mode .highway-logo-marker {
     position: absolute;
     transform: translateX(-50%);
 }
-
-/* Position labels - using calc to account for 20px thumb width */
-/* Formula: calc(Percent + (10px - (20px * Percent/100))) */
-.timeline-labels span:nth-child(1) {
-    left: calc(0% + 10px);
-}
-
-/* 1970 */
-.timeline-labels span:nth-child(2) {
-    left: calc(20% + 6px);
-}
-
-/* 2000 */
-.timeline-labels span:nth-child(3) {
-    left: calc(40% + 2px);
-}
-
-/* 2010 */
-.timeline-labels span:nth-child(4) {
-    left: calc(60% - 2px);
-}
-
-/* 2020 */
-.timeline-labels span:nth-child(5) {
-    left: calc(75% - 5px);
-}
-
-/* 2025 */
-.timeline-labels span:nth-child(6) {
-    left: calc(88% - 7.6px);
-}
-
-/* 2030 */
-.timeline-labels span:nth-child(7) {
-    left: calc(100% - 10px);
-}
-
-/* 2035 */
 
 
 
@@ -253,6 +222,43 @@ body.timeline-mode .highway-logo-marker {
 
 .legend-color.planned {
     background-color: #9ca3af;
+}
+
+/* GitHub button */
+.github-btn-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.github-btn-link {
+    text-decoration: none;
+}
+
+.github-btn {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Update footer */
+.update-text-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: var(--bg-overlay, rgba(255, 255, 255, 0.9));
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--text-primary, #333);
+    font-family: Arial, sans-serif;
 }
 
 /* Full Screen Button */

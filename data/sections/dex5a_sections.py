@@ -1,7 +1,7 @@
 DEx5A_SECTIONS = {
     "Bacău - Piatra Neamț": {
         "status": "tendered",
-        "tender_end_date": "2026", 
+        "tender_end_date": "2026",
         "length": "51 km",
         "estimated_cost": "1.01B",
         "construction_duration": "48 de luni",
@@ -10,4 +10,4 @@ DEx5A_SECTIONS = {
         "current_stage": "Semnare contract - Asocierea Danlin XXL (Lider) – Groma Hold (Bulgaria) – Intertranscom Impex S.R.L. – Evropeiski Patisha – Antrepriza de Construcții Drumuri și Autostrăzi",
         "xml_file": "DEx5A/dex5a_bacau_piatraneamt.xml",
     }
-} 
+}

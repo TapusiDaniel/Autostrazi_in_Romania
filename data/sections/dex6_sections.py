@@ -8,10 +8,7 @@ DEx6_SECTIONS = {
         "cost": "846M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "DEx6/dex6_focsani_braila.xml",
-        "logo": {
-            "path": "data/photos/DEx6-RO.png",
-            "position": "bottom"  
-        }
+        "logo": {"path": "data/photos/DEx6-RO.png", "position": "bottom"},
         # "end_point": [45.286348, 27.889633]  # Braila
     },
     "Pod Brăila (Brăila - Jijila - 19.09 km)": {

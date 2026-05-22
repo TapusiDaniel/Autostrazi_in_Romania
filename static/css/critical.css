@@ -38,6 +38,21 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999999;
+    padding: 1em;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+}
+
 #map {
     position: absolute;
     top: 0;
@@ -51,6 +66,15 @@ body {
     height: 100vh;
     width: 100%;
     background: var(--bg-primary);
+}
+
+[data-theme="dark"] .folium-map,
+[data-theme="dark"] .leaflet-container,
+[data-theme="dark"] .leaflet-map-pane,
+[data-theme="dark"] .leaflet-tile-pane,
+[data-theme="dark"] .leaflet-tile-container {
+    background: #1a1a1a !important;
+    background-color: #1a1a1a !important;
 }
 
 /* Dark mode for Leaflet tiles - invert to dark */
@@ -72,19 +96,6 @@ body {
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 1px 5px var(--shadow-heavy);
-    z-index: 1000;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.totals-table {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px var(--shadow-color);
     z-index: 1000;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -177,13 +188,12 @@ body {
     }
 }
 
-/* Dark mode for update text at bottom */
-[data-theme="dark"] div[style*="bottom: 10px"][style*="left: 10px"] {
+/* Dark mode for update text and GitHub button */
+[data-theme="dark"] .update-text-container {
     background: var(--bg-secondary) !important;
     color: var(--text-secondary) !important;
 }
 
-/* Dark mode for GitHub button */
-[data-theme="dark"] div[style*="top: 10px"][style*="left: 10px"] button {
+[data-theme="dark"] .github-btn {
     background-color: #333333 !important;
 }

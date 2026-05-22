@@ -1,8 +1,9 @@
-from shapely.geometry import MultiPolygon, Polygon, shape
-from shapely.ops import unary_union
-import json
 import hashlib
+import json
 from pathlib import Path
+
+from shapely.geometry import MultiPolygon, shape
+from shapely.ops import unary_union
 
 CACHE_DIR = Path("data/cache")
 
@@ -10,7 +11,7 @@ CACHE_DIR = Path("data/cache")
 def _cache_key(way_ids):
     """Generate a stable cache filename from way IDs."""
     sorted_ids = sorted(way_ids)
-    key = hashlib.md5(','.join(sorted_ids).encode()).hexdigest()
+    key = hashlib.md5(",".join(sorted_ids).encode()).hexdigest()
     return CACHE_DIR / f"{key}.json"
 
 
@@ -18,7 +19,7 @@ def _load_cache(way_ids):
     """Load cached way coordinates if available."""
     cache_file = _cache_key(way_ids)
     if cache_file.exists():
-        with open(cache_file, 'r') as f:
+        with open(cache_file, "r") as f:
             data = json.load(f)
         # Convert string keys back to int
         return {int(k): v for k, v in data.items()}
@@ -30,11 +31,11 @@ def _save_cache(way_ids, ways):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_file = _cache_key(way_ids)
     # Convert int keys to string for JSON
-    with open(cache_file, 'w') as f:
+    with open(cache_file, "w") as f:
         json.dump({str(k): v for k, v in ways.items()}, f)
 
 
-def get_all_way_coordinates(way_ids):
+def get_all_way_coordinates(way_ids, xml_path=None, auto_resolve=False):
     """
     Load way coordinates from local cache.
     Run 'python resolve_cache.py' to populate the cache from OSM API.
@@ -43,6 +44,16 @@ def get_all_way_coordinates(way_ids):
     if cached is not None:
         print("(cached)", end=" ")
         return cached
+
+    if auto_resolve and xml_path:
+        from resolve_cache import resolve_xml_file
+
+        xml_path = Path(xml_path)
+        resolve_xml_file(xml_path, force=False)
+        cached = _load_cache(way_ids)
+        if cached is not None:
+            print("(resolved)", end=" ")
+            return cached
 
     # No cache — tell user to run resolver
     raise RuntimeError(
@@ -63,18 +74,18 @@ def get_romania_outline(geojson_data):
     """
     # Convert all county polygons into Shapely objects
     polygons = []
-    for feature in geojson_data['features']:
-        geom = shape(feature['geometry'])
+    for feature in geojson_data["features"]:
+        geom = shape(feature["geometry"])
         if isinstance(geom, MultiPolygon):
             # If the geometry is a MultiPolygon, extract individual polygons
             polygons.extend(list(geom.geoms))
         else:
             # Otherwise, add the polygon directly
             polygons.append(geom)
-    
+
     # Merge all polygons into a single geometry
     union = unary_union(polygons)
-    
+
     # Convert the unified geometry back to GeoJSON format
     if isinstance(union, MultiPolygon):
         # If the result is a MultiPolygon, use the first polygon's exterior coordinates
@@ -82,13 +93,10 @@ def get_romania_outline(geojson_data):
     else:
         # Otherwise, use the exterior coordinates of the single polygon
         exterior_coords = [list(union.exterior.coords)]
-    
+
     # Return the unified outline as a GeoJSON feature
     return {
         "type": "Feature",
         "properties": {},
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": exterior_coords
-        }
+        "geometry": {"type": "Polygon", "coordinates": exterior_coords},
     }

@@ -7,7 +7,7 @@ DEx12_SECTIONS = {
         "cost": "71.6M",
         "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul1.xml",
-        "end_point": [44.344585, 24.049172]  # Robanesti
+        "end_point": [44.344585, 24.049172],  # Robanesti
     },
     "Robănești - Slatina (tronsonul 2)": {
         "status": "finished",
@@ -18,7 +18,7 @@ DEx12_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul2.xml",
         "start_point": [44.344585, 24.049172],  # Robanesti
-        "end_point": [44.471701, 24.424740]  # Slatina
+        "end_point": [44.471701, 24.424740],  # Slatina
     },
     "Piatra Olt - Colonești (tronsonul 3)": {
         "status": "finished",
@@ -30,10 +30,7 @@ DEx12_SECTIONS = {
         "xml_file": "DEx12/dex12_tronsonul3.xml",
         "start_point": [44.471701, 24.424740],  # Slatina
         "end_point": [44.646143, 24.705846],  # Colonesti
-        "logo": {
-            "path": "data/photos/DEx12-RO.png",
-            "position": "bottom"  
-        }
+        "logo": {"path": "data/photos/DEx12-RO.png", "position": "bottom"},
     },
     "Colonești - Albota (tronsonul 4)": {
         "status": "finished",
@@ -44,5 +41,5 @@ DEx12_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "DEx12/dex12_tronsonul4.xml",
         "start_point": [44.646143, 24.705846],  # Colonesti
-    }
+    },
 }

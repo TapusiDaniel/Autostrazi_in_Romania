@@ -86,6 +86,22 @@ An interactive visualization of Romania's highway network, showing current statu
 - **Overpass API**: Real-time OSM data queries
 - **Manual Curation**: Highway status, completion dates, and metadata
 
+## 🧰 Development
+
+### Formatting & Linting
+```bash
+black .
+ruff check .
+```
+
+### Optional: Auto-resolve OSM cache
+Set `AUTO_RESOLVE_CACHE = True` in `config.py` to resolve missing OSM cache entries during a build.
+
+### Build bundled assets
+```bash
+python build.py
+```
+
 ## 📁 Project Structure
 
 ```
@@ -93,7 +109,7 @@ Autostrazi_in_Romania_v2/
 ├── main.py                 # Entry point
 ├── map_creator.py          # Map generation logic
 ├── map_elements.py         # Highway rendering
-├── highway_data.py         # Highway definitions
+├── highway_data.py         # Highway manifest loader
 ├── config.py               # Configuration settings
 ├── components/             # Modular components
 │   ├── base_map.py         # Base map initialization
@@ -103,6 +119,7 @@ Autostrazi_in_Romania_v2/
 ├── data/                   # Data files
 │   ├── city_data.py
 │   ├── highways/           # GeoJSON and XML files
+│   ├── highways_manifest.json # Highway metadata (manifest)
 │   └── sections/           # Highway section definitions
 ├── static/                 # Static assets
 │   ├── css/                # Stylesheets

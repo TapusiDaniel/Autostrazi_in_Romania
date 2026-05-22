@@ -7,7 +7,7 @@ DEx4_SECTIONS = {
         "cost": "110.6M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "DEx4/dex4_a3_tureni.xml",
-        "end_point": [46.636227, 23.690678]  # Tureni
+        "end_point": [46.636227, 23.690678],  # Tureni
     },
     "Tureni - Dej": {
         "status": "planned",
@@ -16,10 +16,7 @@ DEx4_SECTIONS = {
         "designer": "Specialist Consulting SRL - Specialist Smart Group SRL - Perfect Consult Europe SRL",
         "length": "69.50 km",
         "xml_file": "DEx4/dex4_tureni_dej.xml",
-        "logo": {
-            "path": "data/photos/DEx4-RO.png",
-            "position": "right"  
-        }
+        "logo": {"path": "data/photos/DEx4-RO.png", "position": "right"},
         # "end_point": [23.9081403430355, 47.1459310178365]  # Dej
     },
 }

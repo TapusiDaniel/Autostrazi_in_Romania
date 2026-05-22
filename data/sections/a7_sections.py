@@ -7,7 +7,7 @@ A7_SECTIONS = {
         "cost": "293.6M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_dumbrava_mizil.xml",
-        "end_point": [44.94790, 26.44317]  # Mizil
+        "end_point": [44.94790, 26.44317],  # Mizil
     },
     "Ploiești - Buzău (lot 2)": {
         "status": "finished",
@@ -19,10 +19,7 @@ A7_SECTIONS = {
         "xml_file": "A7/a7_mizil_pietroasele.xml",
         "start_point": [44.94790, 26.44317],  # Mizil
         "end_point": [45.082487, 26.744910],  # Pietroasele
-        "logo": {
-            "path": "data/photos/A7-RO.png",
-            "position": "bottom"  
-        }
+        "logo": {"path": "data/photos/A7-RO.png", "position": "bottom"},
     },
     "Ploiești - Buzău (lot 3)": {
         "status": "finished",
@@ -33,7 +30,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_pietroasele_buzau.xml",
         "start_point": [45.082487, 26.744910],  # Pietroasele
-        "end_point": [45.130454, 26.878942]  # Buzau
+        "end_point": [45.130454, 26.878942],  # Buzau
     },
     "Buzău - Focșani (lot 1)": {
         "status": "finished",
@@ -44,7 +41,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_buzau_focsani_lot1.xml",
         "start_point": [45.130454, 26.878942],  # Buzau
-        "end_point": [45.160176, 26.913162]  # Vadu Pasii
+        "end_point": [45.160176, 26.913162],  # Vadu Pasii
     },
     "Buzău - Focșani (lot 2)": {
         "status": "finished",
@@ -55,7 +52,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_buzau_focsani_lot2.xml",
         "start_point": [45.160176, 26.913162],  # Vadu Pasii
-        "end_point": [45.382627, 27.094702]  # Ramnicu Sarat
+        "end_point": [45.382627, 27.094702],  # Ramnicu Sarat
     },
     "Buzău - Focșani (lot 3)": {
         "status": "finished",
@@ -66,7 +63,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_buzau_focsani_lot3.xml",
         "start_point": [45.382627, 27.094702],  # Ramnicu Sarat
-        "end_point": [45.672257, 27.240493]  # Mandresti Munteni
+        "end_point": [45.672257, 27.240493],  # Mandresti Munteni
     },
     "Buzău - Focșani (lot 4)": {
         "status": "finished",
@@ -77,7 +74,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_buzau_focsani_lot4.xml",
         "start_point": [45.672257, 27.240493],  # Mandresti Munteni
-        "end_point": [45.734901, 27.212207]  # Focsani Nord
+        "end_point": [45.734901, 27.212207],  # Focsani Nord
     },
     "Focșani - Bacău (lot 1)": {
         "status": "finished",
@@ -88,7 +85,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot1.xml",
         "start_point": [45.734901, 27.212207],  # Focsani Nord
-        "end_point": [46.029979, 27.183955]  # Domnesti Targ
+        "end_point": [46.029979, 27.183955],  # Domnesti Targ
     },
     "Focșani - Bacău (lot 2) - deschis": {
         "status": "finished",
@@ -99,7 +96,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot2_deschis.xml",
         "start_point": [46.029979, 27.183955],  # Domnesti Targ
-        "end_point": [46.137032, 27.169114]  # Adjud
+        "end_point": [46.137032, 27.169114],  # Adjud
     },
     "Focșani - Bacău (lot 2) - în construcție": {
         "status": "in_construction",
@@ -111,7 +108,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot2_in_constructie.xml",
         "start_point": [46.137032, 27.169114],  # Adjud
-        "end_point": [46.332904, 27.022513]  # Racaciuni
+        "end_point": [46.332904, 27.022513],  # Racaciuni
     },
     "Focșani - Bacău (lot 3)": {
         "status": "in_construction",
@@ -123,7 +120,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_focsani_bacau_lot3.xml",
         "start_point": [46.332904, 27.022513],  # Racaciuni
-        "end_point": [46.498804, 26.953057]  # Bacau
+        "end_point": [46.498804, 26.953057],  # Bacau
     },
     "Centura Bacău": {
         "status": "finished",
@@ -134,11 +131,11 @@ A7_SECTIONS = {
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A7/a7_centura_bacau.xml",
         "start_point": [46.498804, 26.953057],  # Bacau
-        "end_point": [46.635502, 26.933831]  # Bacau Nord
+        "end_point": [46.635502, 26.933831],  # Bacau Nord
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "49.10%",
+        "progress": "51.50%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -147,14 +144,11 @@ A7_SECTIONS = {
         "xml_file": "A7/a7_bacau_pascani_lot1.xml",
         "start_point": [46.635502, 26.933831],  # Bacau Nord
         "end_point": [46.889990, 26.880120],  # Trifesti
-        "logo": {
-            "path": "data/photos/A7-RO.png",
-            "position": "right"  
-        }
+        "logo": {"path": "data/photos/A7-RO.png", "position": "right"},
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "46.90%",
+        "progress": "48%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -162,11 +156,11 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_bacau_pascani_lot2.xml",
         "start_point": [46.889990, 26.880120],  # Trifesti
-        "end_point": [47.048871, 26.850192]  # Gheraiesti
+        "end_point": [47.048871, 26.850192],  # Gheraiesti
     },
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
-        "progress": "48.20%",
+        "progress": "51%",
         "completion_date": "2026",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -174,7 +168,7 @@ A7_SECTIONS = {
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A7/a7_bacau_pascani_lot3.xml",
         "start_point": [47.048871, 26.850192],  # Gheraiesti
-        "end_point": [47.263212, 26.690015]  # Pascani
+        "end_point": [47.263212, 26.690015],  # Pascani
     },
     "Pașcani - Suceava (lot 1)": {
         "status": "in_construction",
@@ -183,10 +177,10 @@ A7_SECTIONS = {
         "length": "33 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "589M",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
         "xml_file": "A7/a7_pascani_suceava_lot1.xml",
         "start_point": [47.263212, 26.690015],  # Pascani
-        "end_point": [47.516672, 26.579559]  # Roscani
+        "end_point": [47.516672, 26.579559],  # Roscani
     },
     "Pașcani - Suceava (lot 2)": {
         "status": "in_construction",
@@ -195,10 +189,10 @@ A7_SECTIONS = {
         "length": "28.97 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "551M",
-        "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
+        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
         "xml_file": "A7/a7_pascani_suceava_lot2.xml",
         "start_point": [47.516672, 26.579559],  # Roscani
-        "end_point": [47.687929, 26.311153]  # Aeroport Suceava
+        "end_point": [47.687929, 26.311153],  # Aeroport Suceava
     },
     "Suceava - Siret (lot 1 - Drum Expres)": {
         "status": "tendered",
@@ -206,12 +200,12 @@ A7_SECTIONS = {
         "length": "18.60 km",
         "estimated_cost": "409M",
         "construction_duration": "33 de luni",
-        "financing": "Fonduri SAFE",
+        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
         "seap_code": "CN1088859",
         "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot1.xml",
         "start_point": [47.687929, 26.311153],  # Aeroport Suceava
-        "end_point": [47.726058, 26.125389]  # Darmanesti
+        "end_point": [47.726058, 26.125389],  # Darmanesti
     },
     "Suceava - Siret (lot 2 - Drum Expres)": {
         "status": "tendered",
@@ -219,24 +213,23 @@ A7_SECTIONS = {
         "length": "24.45 km",
         "estimated_cost": "319M",
         "construction_duration": "36 de luni",
-        "financing": "Fonduri SAFE",
+        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
         "seap_code": "CN1088859",
         "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot2.xml",
         "start_point": [47.726058, 26.125389],  # Darmanesti
-        "end_point": [47.911986, 26.061257]  # Balcauti
-    }, 
+        "end_point": [47.911986, 26.061257],  # Balcauti
+    },
     "Suceava - Siret (lot 3 - Drum Expres)": {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "12.70 km",
         "estimated_cost": "236M",
         "construction_duration": "42 de luni",
-        "financing": "Fonduri SAFE",
+        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
         "seap_code": "CN1089175",
         "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot3.xml",
-        "start_point": [47.911986, 26.061257]  # Balcauti
-    }
+        "start_point": [47.911986, 26.061257],  # Balcauti
+    },
 }
-     

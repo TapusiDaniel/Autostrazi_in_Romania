@@ -7,7 +7,7 @@ A10_SECTIONS = {
         "cost": "108.3M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A10/a10_lot1.xml",
-        "end_point": [46.123812, 23.618792]  # Alba Iulia
+        "end_point": [46.123812, 23.618792],  # Alba Iulia
     },
     "Alba Iulia - Aiud (lot 2)": {
         "status": "finished",
@@ -19,10 +19,7 @@ A10_SECTIONS = {
         "xml_file": "A10/a10_lot2.xml",
         "start_point": [46.123812, 23.618792],  # Alba Iulia
         "end_point": [46.303941, 23.750336],  # Aiud
-        "logo": {
-            "path": "data/photos/A10-RO.png",
-            "position": "right"  
-        }
+        "logo": {"path": "data/photos/A10-RO.png", "position": "right"},
     },
     "Aiud - Decea (lot 3)": {
         "status": "finished",
@@ -33,7 +30,7 @@ A10_SECTIONS = {
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A10/a10_lot3.xml",
         "start_point": [46.303941, 23.750336],  # Aiud
-        "end_point": [46.390269, 23.780607]  # Decea
+        "end_point": [46.390269, 23.780607],  # Decea
     },
     "Decea - Turda (lot 4)": {
         "status": "finished",

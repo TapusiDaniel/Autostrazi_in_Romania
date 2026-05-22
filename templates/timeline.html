@@ -1,0 +1,22 @@
+<!-- Timeline Toggle Button -->
+<button class="timeline-toggle" id="timeline-toggle" onclick="toggleTimeline()">
+    📅 Evoluție în timp
+</button>
+
+<!-- Timeline Slider -->
+<div class="timeline-container hidden" id="timeline-container">
+    <div class="timeline-title">Evoluția construcției autostrăzilor</div>
+    <div class="timeline-year" id="timeline-year">În prezent</div>
+    <div class="timeline-slider-wrapper">
+        <input type="range" class="timeline-slider" id="timeline-slider"
+               min="0" max="100" value="$timeline_slider_default" step="1">
+    </div>
+    <div class="timeline-labels">
+        $timeline_labels
+    </div>
+    <div class="timeline-stats" id="timeline-stats">
+        Finalizat: <span id="timeline-km">$current_state_total</span> km
+    </div>
+</div>
+
+<script id="timeline-data" type="application/json">$timeline_payload_json</script>

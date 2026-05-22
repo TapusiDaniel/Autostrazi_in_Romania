@@ -9,10 +9,7 @@ A0_SECTIONS = {
         "xml_file": "A0/a0_sud_lot1.xml",
         "start_point": [44.4146622, 26.2481229],  # A2
         "end_point": [44.329383, 26.139320],  # CF902
-        "logo": {
-            "path": "data/photos/A0-RO.png",
-            "position": "bottom"  
-        }
+        "logo": {"path": "data/photos/A0-RO.png", "position": "bottom"},
     },
     "A0 Sud Lot 2": {
         "status": "finished",
@@ -34,11 +31,11 @@ A0_SECTIONS = {
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A0/a0_sud_lot3.xml",
         "start_point": [44.360345, 25.957394],  # DN6
-        "end_point": [44.477971, 25.899582]  # A1
+        "end_point": [44.477971, 25.899582],  # A1
     },
     "A0 Nord Lot 1": {
         "status": "in_construction",
-        "progress": "47%",
+        "progress": "51%",
         "completion_date": "2026",
         "length": "17.5 km",
         "constructor": "Impresa - Pizzarotti - Retter Project Management",
@@ -46,7 +43,7 @@ A0_SECTIONS = {
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A0/a0_nord_lot1.xml",
         "start_point": [44.477971, 25.899582],  # A1
-        "end_point": [44.587087, 26.047665]  # DN1
+        "end_point": [44.587087, 26.047665],  # DN1
     },
     "A0 Nord Lot 2": {
         "status": "finished",
@@ -57,11 +54,11 @@ A0_SECTIONS = {
         "financing": "FEDR (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A0/a0_nord_lot2.xml",
         "start_point": [44.587087, 26.047665],  # DN1
-        "end_point": [44.523204, 26.226465]  # DN2
+        "end_point": [44.523204, 26.226465],  # DN2
     },
     "A0 Nord Lot 3": {
         "status": "in_construction",
-        "progress": "82.50%",
+        "progress": "85.60%",
         "completion_date": "2026",
         "length": "8.6 km",
         "constructor": "China Civil Engineering Construction Corporation",
@@ -73,7 +70,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 4": {
         "status": "in_construction",
-        "progress": "96.44%",
+        "progress": "97.65%",
         "completion_date": "2026",
         "length": "4.47 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",

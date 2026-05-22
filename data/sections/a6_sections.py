@@ -5,19 +5,16 @@ A6_SECTIONS = {
         "designer": "ASOCIEREA S.C. D P CONSULT S.A. – S.C. EXPLAN S.R.L. – S.C.A. TEAHA & FUZESI",
         "length": "77.02 km",
         "projected_completion_date": "2030",
-        "xml_file": 'A6/a6_bucuresti_alexandria.xml', 
-        "end_point": [44.02492, 25.26474]  # Alexandria
+        "xml_file": "A6/a6_bucuresti_alexandria.xml",
+        "end_point": [44.02492, 25.26474],  # Alexandria
     },
     "Alexandria - Craiova": {
         "status": "planned",
         "length": "125 km",
         "projected_completion_date": "2035",
-        "geojson_file": 'A6/a6_alexandria_craiova.geojson',  
+        "geojson_file": "A6/a6_alexandria_craiova.geojson",
         "start_point": [44.023789, 25.245323],  # Alexandria
-        "logo": {
-            "path": "data/photos/A6-RO.png",
-            "position": "bottom"  
-        }
+        "logo": {"path": "data/photos/A6-RO.png", "position": "bottom"},
     },
     "Craiova - Târgu Jiu lot 1": {
         "status": "tendered",
@@ -29,7 +26,7 @@ A6_SECTIONS = {
         "seap_code": "CN1072205",
         "current_stage": "Semnare contract - Asocierea OZALTIN INSAAT TICARET VE SANAYI A.S (lider) - STRADE BAUUNTERNEHMUNG SRL - INFRAVIS S.R.L.",
         "xml_file": "A6/a6_craiova_tgjiu_lot1.xml",
-        "end_point": [44.3619447, 23.7786428]  # Craiova Nord
+        "end_point": [44.3619447, 23.7786428],  # Craiova Nord
     },
     "Craiova - Târgu Jiu lot 2": {
         "status": "tendered",
@@ -42,7 +39,7 @@ A6_SECTIONS = {
         "current_stage": "Evaluare oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot2.xml",
         "start_point": [44.3619447, 23.7786428],  # Craiova Nord
-        "end_point": [44.4373536, 23.671621]  # Beharca
+        "end_point": [44.4373536, 23.671621],  # Beharca
     },
     "Craiova - Târgu Jiu lot 3": {
         "status": "tendered",
@@ -55,7 +52,7 @@ A6_SECTIONS = {
         "current_stage": "Evaluare oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot3.xml",
         "start_point": [44.4373536, 23.671621],  # Beharca
-        "end_point": [44.5700524, 23.4850849]  # Filiasi
+        "end_point": [44.5700524, 23.4850849],  # Filiasi
     },
     "Craiova - Târgu Jiu lot 4 (primii 5.10 km fac parte din Autostrada Craiova - Filiași, iar restul de 17.82 km fac parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
@@ -68,7 +65,7 @@ A6_SECTIONS = {
         "current_stage": "Depunere oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot4.xml",
         "start_point": [44.5700524, 23.4850849],  # Filiasi
-        "end_point": [44.7622173, 23.4925192]  # Bibesti
+        "end_point": [44.7622173, 23.4925192],  # Bibesti
     },
     "Craiova - Târgu Jiu lot 5 (tot lotul este la profil de drum expres și face parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
@@ -81,7 +78,7 @@ A6_SECTIONS = {
         "current_stage": "Evaluare oferte",
         "xml_file": "A6/a6_craiova_tgjiu_lot5.xml",
         "start_point": [44.7622173, 23.4925192],  # Bibesti
-        "end_point": [44.9439205, 23.51119]  # Targu Carbunesti
+        "end_point": [44.9439205, 23.51119],  # Targu Carbunesti
     },
     "Craiova - Târgu Jiu lot 6 (tot lotul este la profil de drum expres și face parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
@@ -101,9 +98,9 @@ A6_SECTIONS = {
         "projected_completion_date": "2030",
         "designer": "Asocierea DP CONSULT S.A. – EXPLAN S.R.L. – GEOLOGIC-SITE SRL -SCA TEAHA&FÜZESI",
         "length": "70 km",
-        "xml_file": 'A6/a6_filiasi_dts.xml',  
+        "xml_file": "A6/a6_filiasi_dts.xml",
         # "start_point": [25.2453234574966, 44.023789688607],  # Alexandria
-        "end_point": [44.6660829, 22.6707959]  # Drobeta Turnu Severin
+        "end_point": [44.6660829, 22.6707959],  # Drobeta Turnu Severin
     },
     "Drobeta Turnu Severin - Domașnea": {
         "status": "planned",
@@ -111,9 +108,9 @@ A6_SECTIONS = {
         "projected_completion_date": "2031",
         "designer": "EGIS",
         "length": "65 km",
-        "xml_file": 'A6/a6_dts_domasnea.xml',  
+        "xml_file": "A6/a6_dts_domasnea.xml",
         "start_point": [44.6660829, 22.6707959],  # Drobeta Turnu Severin
-        "end_point": [45.092171, 22.307589]  # Domasnea
+        "end_point": [45.092171, 22.307589],  # Domasnea
     },
     "Domașnea - Caransebeș": {
         "status": "planned",
@@ -121,13 +118,10 @@ A6_SECTIONS = {
         "projected_completion_date": "2031",
         "designer": "Asocierea PROIECT-CONSTRUCT REGIUNEA TRANSILVANIA SRL – PERFECT CONSULT EUROPE S.R.L. – EAST WATER DRILLINGS SRL",
         "length": "44 km",
-        "geojson_file": 'A6/a6_domasnea_caransebes.geojson',  
+        "geojson_file": "A6/a6_domasnea_caransebes.geojson",
         "start_point": [45.092171, 22.307589],  # Domasnea
         "end_point": [45.466512, 22.203712],  # Caransebes
-        "logo": {
-            "path": "data/photos/A6-RO.png",
-            "position": "right"  
-        }
+        "logo": {"path": "data/photos/A6-RO.png", "position": "right"},
     },
     "Caransebeș - Lugoj": {
         "status": "planned",
@@ -135,9 +129,9 @@ A6_SECTIONS = {
         "projected_completion_date": "2031",
         "designer": "Ingenieria Especializada Obra Civil e Industrial",
         "length": "50 km",
-        "geojson_file": 'A6/a6_caransebes_lugoj.geojson',  
+        "geojson_file": "A6/a6_caransebes_lugoj.geojson",
         "start_point": [45.466512, 22.203712],  # Caransebes
-        "end_point": [45.738521, 21.892289]  # Lugoj
+        "end_point": [45.738521, 21.892289],  # Lugoj
     },
     "A1 - Lugoj": {
         "status": "finished",
@@ -147,7 +141,6 @@ A6_SECTIONS = {
         "cost": "24.2M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "xml_file": "A6/a6_lugoj.xml",
-        "start_point": [45.738521, 21.892289]   # Lugoj
+        "start_point": [45.738521, 21.892289],  # Lugoj
     },
-                  
 }

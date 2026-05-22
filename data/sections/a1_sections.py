@@ -4,7 +4,7 @@ A1_SECTIONS = {
         "completion_date": "1972",
         "length": "96 km",
         "xml_file": "A1/a1_buc_pit.xml",
-        "end_point": [44.8193510, 24.9456566]  # Pitesti Sud
+        "end_point": [44.8193510, 24.9456566],  # Pitesti Sud
     },
     "Centura Pitești": {
         "status": "finished",
@@ -26,11 +26,11 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot5.xml",
         "start_point": [44.896588, 24.838835],  # Bascov
-        "end_point": [45.111734, 24.6525843]  # Curtea de Arges
+        "end_point": [45.111734, 24.6525843],  # Curtea de Arges
     },
     "Pitești - Sibiu (lot 4)": {
         "status": "in_construction",
-        "progress": "58%",
+        "progress": "87.95%",
         "completion_date": "2026",
         "length": "9.86 km",
         "constructor": "Porr Construct SRL",
@@ -38,7 +38,7 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot4.xml",
         "start_point": [45.111734, 24.6525843],  # Curtea de Arges
-        "end_point": [45.1649474, 24.5602304]  # Tigveni
+        "end_point": [45.1649474, 24.5602304],  # Tigveni
     },
     "Pitești - Sibiu (lot 3)": {
         "status": "in_construction",
@@ -51,10 +51,7 @@ A1_SECTIONS = {
         "xml_file": "A1/a1_pitesti_sibiu_lot3.xml",
         "start_point": [45.1649474, 24.5602304],  # Tigveni
         "end_point": [45.3882424, 24.3060366],  # Cornetu
-        "logo": {
-            "path": "data/photos/A1-RO.png",
-            "position": "left"  
-        }
+        "logo": {"path": "data/photos/A1-RO.png", "position": "left"},
     },
     "Pitești - Sibiu (lot 2)": {
         "status": "in_construction",
@@ -66,7 +63,7 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot2.xml",
         "start_point": [45.3882424, 24.3060366],  # Cornetu
-        "end_point": [45.6460508, 24.2577428]  # Boita
+        "end_point": [45.6460508, 24.2577428],  # Boita
     },
     "Pitești - Sibiu (lot 1)": {
         "status": "finished",
@@ -77,7 +74,7 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - Programul Transport 2021-2027",
         "xml_file": "A1/a1_pitesti_sibiu_lot1.xml",
         "start_point": [45.6460508, 24.2577428],  # Boita
-        "end_point": [45.748888, 24.201124]  # Sibiu
+        "end_point": [45.748888, 24.201124],  # Sibiu
     },
     "Centura Sibiu": {
         "status": "finished",
@@ -88,7 +85,7 @@ A1_SECTIONS = {
         "financing": "ISPA (75%) și bugetul de stat (25%)",
         "xml_file": "A1/a1_centura_sibiu.xml",
         "start_point": [45.748888, 24.201124],  # Sibiu
-        "end_point": [45.8165199, 24.0711167]  # Sibiu Vest
+        "end_point": [45.8165199, 24.0711167],  # Sibiu Vest
     },
     "Sibiu - Orăștie (lot 4)": {
         "status": "finished",
@@ -99,7 +96,7 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_sibiu_orastie_lot4.xml",
         "start_point": [45.8165199, 24.0711167],  # Sibiu Vest
-        "end_point": [45.8068298, 23.9094946]  # Saliste
+        "end_point": [45.8068298, 23.9094946],  # Saliste
     },
     "Sibiu - Orăștie (lot 3)": {
         "status": "finished",
@@ -110,150 +107,147 @@ A1_SECTIONS = {
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_sibiu_orastie_lot3.xml",
         "start_point": [45.8068298, 23.9094946],  # Saliste
-        "end_point": [45.9206708, 23.7148598]  # Cunta
+        "end_point": [45.9206708, 23.7148598],  # Cunta
     },
     "Sibiu - Orăștie (lot 2)": {
         "status": "finished",
         "completion_date": "2013",
         "length": "19.75 km",
-        "constructor": "Straco Grup și Studio Corona", 
+        "constructor": "Straco Grup și Studio Corona",
         "cost": "75.5M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_sibiu_orastie_lot2.xml",
         "start_point": [45.9206708, 23.7148598],  # Cunta
-        "end_point": [45.9754874, 23.5151216]  # Vintisoara
+        "end_point": [45.9754874, 23.5151216],  # Vintisoara
     },
     "Sibiu - Orăștie (lot 1)": {
         "status": "finished",
         "completion_date": "2013",
         "length": "24.11 km",
-        "constructor": "Strabag", 
+        "constructor": "Strabag",
         "cost": "110.2M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_sibiu_orastie_lot1.xml",
         "start_point": [45.9754874, 23.5151216],  # Vintisoara
-        "end_point": [45.8496695, 23.0463023]  # Orastie
+        "end_point": [45.8496695, 23.0463023],  # Orastie
     },
     "Orăștie - Deva": {
         "status": "finished",
         "completion_date": "2013",
         "length": "32.5 km",
-        "constructor": "Strabag și Straco Grup", 
+        "constructor": "Strabag și Straco Grup",
         "cost": "197.3M",
         "financing": "ISPA (56%) și bugetul de stat (44%)",
         "xml_file": "A1/a1_deva_orastie.xml",
         "start_point": [45.8496695, 23.0463023],  # Orastie
-        "end_point": [45.9104424, 22.8860272]  # Deva
+        "end_point": [45.9104424, 22.8860272],  # Deva
     },
     "Deva - Lugoj (lot 4)": {
         "status": "finished",
         "completion_date": "2019",
         "length": "22.14 km",
-        "constructor": "Spedition UMB și Tehnostrade", 
+        "constructor": "Spedition UMB și Tehnostrade",
         "cost": "83.8M",
         "xml_file": "A1/a1_deva_lugoj_lot4.xml",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "start_point": [45.9104424, 22.8860272],  # Deva
-        "end_point": [45.9455296, 22.6294017]  # Ilia
+        "end_point": [45.9455296, 22.6294017],  # Ilia
     },
     "Deva - Lugoj (lot 3)": {
         "status": "finished",
         "completion_date": "2019",
         "length": "21.14 km",
-        "constructor": "Teloxim Con SRL, Comsa SA, Aldesa Construcciones SA și Arcadis Eurometudes SA", 
+        "constructor": "Teloxim Con SRL, Comsa SA, Aldesa Construcciones SA și Arcadis Eurometudes SA",
         "cost": "132M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_deva_lugoj_lot3.xml",
         "start_point": [45.9455296, 22.6294017],  # Ilia
-        "end_point": [45.883854, 22.4131821]  # Cosevita
+        "end_point": [45.883854, 22.4131821],  # Cosevita
     },
     "Deva - Lugoj (lot 2)": {
         "status": "finished",
         "completion_date": "2017",
         "length": "15.44 km",
-        "constructor": "JV Salini SPA și Secol SPA", 
+        "constructor": "JV Salini SPA și Secol SPA",
         "cost": "128M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_deva_lugoj_lot2.xml",
         "start_point": [45.883854, 22.4131821],  # Cosevita
-        "end_point": [45.8127794, 22.0719134]  # Traian Vuia
+        "end_point": [45.8127794, 22.0719134],  # Traian Vuia
     },
     "Deva - Lugoj (lot 2 - în construcție)": {
         "status": "in_construction",
         "progress": "58%",
         "completion_date": "2026",
         "length": "13.16 km",
-        "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - SA&PE Construct SRL - Euro-Asfalt d.o.o.", 
+        "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - SA&PE Construct SRL - Euro-Asfalt d.o.o.",
         "cost": "364M",
-        "financing": "Planul Național de Redresare și Reziliență - PNRR",  
+        "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A1/a1_deva_lugoj_lot2_constructie.xml",
         "start_point": [45.9455296, 22.6294017],  # Ilia
         "end_point": [45.8605624, 22.2475641],  # Faget
-        "logo": {
-            "path": "data/photos/A1-RO.png",
-            "position": "top"  
-        }
+        "logo": {"path": "data/photos/A1-RO.png", "position": "top"},
     },
     "Deva - Lugoj (lot 1)": {
         "status": "finished",
         "completion_date": "2013",
         "length": "38.14 km",
-        "constructor": "Tirrena Scavi, Societa Italiana per Condotte d'Acqua și Cossi Costruzioni", 
+        "constructor": "Tirrena Scavi, Societa Italiana per Condotte d'Acqua și Cossi Costruzioni",
         "cost": "136.2M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_deva_lugoj_lot1.xml",
         "start_point": [45.8127794, 22.0719134],  # Traian Vuia
-        "end_point": [45.7817253, 21.7304679]  # Sanovita
+        "end_point": [45.7817253, 21.7304679],  # Sanovita
     },
     "Lugoj - Timișoara (lot 2)": {
         "status": "finished",
         "completion_date": "2015",
         "length": "24.63 km",
-        "constructor": "Tirrena Scavi și Societa Italiana per Condotte D'Acqua", 
+        "constructor": "Tirrena Scavi și Societa Italiana per Condotte D'Acqua",
         "cost": "94.7M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_lugoj_timisoara_lot2.xml",
         "start_point": [45.7817253, 21.7304679],  # Sanovita
-        "end_point": [45.8048422, 21.414486]  # Izvin
+        "end_point": [45.8048422, 21.414486],  # Izvin
     },
     "Lugoj - Timișoara (lot 1)": {
         "status": "finished",
         "completion_date": "2012",
         "length": "9.50 km",
-        "constructor": "Spedition UMB, Tehnostade și Carena SpA Impresa di Costruzioni", 
+        "constructor": "Spedition UMB, Tehnostade și Carena SpA Impresa di Costruzioni",
         "cost": "42M",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%) - POIM",
         "xml_file": "A1/a1_lugoj_timisoara_lot1.xml",
         "start_point": [45.8048422, 21.414486],  # Izvin
-        "end_point": [45.8597314, 21.3165118]  # Giarmata
+        "end_point": [45.8597314, 21.3165118],  # Giarmata
     },
     "Timișoara - Arad": {
         "status": "finished",
         "completion_date": "2011",
         "length": "32.25 km",
-        "constructor": "Astaldi și FCC Construccion", 
+        "constructor": "Astaldi și FCC Construccion",
         "cost": "185.9M",
         "financing": "Fonduri de Coeziune (85%) și bugetul de stat + alte surse de finanțare (15%)",
         "xml_file": "A1/a1_timisoara_arad.xml",
         "start_point": [45.8597314, 21.3165118],  # Giarmata
-        "end_point": [46.1837248, 21.2371014]  # Arad
+        "end_point": [46.1837248, 21.2371014],  # Arad
     },
     "Arad - Nădlac (lot 2)": {
         "status": "finished",
         "completion_date": "2015",
         "length": "16.66 km",
-        "constructor": "Astaldi SpA - Max Boegl Romania SRL", 
+        "constructor": "Astaldi SpA - Max Boegl Romania SRL",
         "cost": "194M",
         "xml_file": "A1/a1_arad_nadlac_lot2.xml",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",
         "start_point": [46.1837248, 21.2371014],  # Arad
-        "end_point": [46.1781047, 21.1193954]  # Pecica
+        "end_point": [46.1781047, 21.1193954],  # Pecica
     },
     "Arad - Nădlac (lot 1)": {
         "status": "finished",
         "completion_date": "2014",
         "length": "22.22 km",
-        "constructor": "Astaldi SpA și Max Boegl Romania SRL", 
+        "constructor": "Astaldi SpA și Max Boegl Romania SRL",
         "cost": "49.6M",
         "xml_file": "A1/a1_arad_nadlac_lot1.xml",
         "financing": "Fondul de Coeziune (85%) și bugetul de stat (15%)",

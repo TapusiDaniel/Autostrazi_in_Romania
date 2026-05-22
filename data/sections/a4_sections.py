@@ -20,11 +20,8 @@ A4_SECTIONS = {
         "seap_code": "CN1069784",
         "current_stage": "Evaluare oferte",
         "xml_file": "A4/a4_alternativa_techirghiol.xml",
-        "logo": {
-            "path": "data/photos/A4-RO.png",
-            "position": "left"  
-        }
+        "logo": {"path": "data/photos/A4-RO.png", "position": "left"},
         # "start_point": [44.1083402, 28.6345646],  # Portul Constanta
         # "end_point": [44.1083402, 28.6345646]  # Portul Constanta
-    }
+    },
 }

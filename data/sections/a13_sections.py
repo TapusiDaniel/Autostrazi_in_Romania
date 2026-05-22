@@ -8,7 +8,7 @@ A13_SECTIONS = {
         "cost": "380M",
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "A13/a13_sibiu_fagaras_lot1.xml",
-        "end_point": [45.708618, 24.369626]  # Avrig
+        "end_point": [45.708618, 24.369626],  # Avrig
     },
     "Sibiu - Făgăraș (lot 2)": {
         "status": "in_construction",
@@ -20,7 +20,7 @@ A13_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "A13/a13_sibiu_fagaras_lot2.xml",
         "start_point": [45.708618, 24.369626],  # Avrig
-        "end_point": [45.770874, 24.596315]  # Arpasu de Jos
+        "end_point": [45.770874, 24.596315],  # Arpasu de Jos
     },
     "Sibiu - Făgăraș (lot 3)": {
         "status": "in_construction",
@@ -32,7 +32,7 @@ A13_SECTIONS = {
         "financing": "Fondul European de Dezvoltare Regională (60%) și bugetul de stat (40%) - Programul Transport 2021-2027",
         "xml_file": "A13/a13_sibiu_fagaras_lot3.xml",
         "start_point": [45.770874, 24.596315],  # Arpasu de Jos
-        "end_point": [45.795428, 24.812906]  # Sambata de Sus
+        "end_point": [45.795428, 24.812906],  # Sambata de Sus
     },
     "Sibiu - Făgăraș (lot 4)": {
         "status": "in_construction",
@@ -45,10 +45,7 @@ A13_SECTIONS = {
         "xml_file": "A13/a13_sibiu_fagaras_lot4.xml",
         "start_point": [45.795428, 24.812906],  # Sambata de Sus
         "end_point": [45.801590, 25.002678],  # Fagaras
-        "logo": {
-            "path": "data/photos/A13-RO.png",
-            "position": "top"  
-        }
+        "logo": {"path": "data/photos/A13-RO.png", "position": "top"},
     },
     "Făgăraș - Brașov": {
         "status": "planned",
@@ -58,7 +55,7 @@ A13_SECTIONS = {
         "length": "50.2 km",
         "xml_file": "A13/a13_fagaras_brasov.xml",
         # "start_point": [45.805056, 25.048160],  # Fagaras
-        "end_point": [45.737610, 25.479366]  # Brasov
+        "end_point": [45.737610, 25.479366],  # Brasov
     },
     "Brașov - Bacău": {
         "status": "planned",

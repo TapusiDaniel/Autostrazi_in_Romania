@@ -1,7 +1,8 @@
-import shutil
-from map_creator import create_highways_map
-from build import optimize_resources
 import os
+
+from build import optimize_resources
+from map_creator import create_highways_map
+
 
 def create_htaccess():
     """Create .htaccess for Apache optimization"""
@@ -23,33 +24,31 @@ def create_htaccess():
         ExpiresByType image/svg+xml "access plus 1 year"
     </IfModule>
     """
-    
-    with open('.htaccess', 'w') as f:
+
+    with open(".htaccess", "w") as f:
         f.write(htaccess_content)
+
 
 def ensure_directory_structure():
     """Ensure all necessary directories exist"""
-    directories = [
-        'assets',
-        'assets/css',
-        'assets/js',
-        'assets/vendors'
-    ]
+    directories = ["assets", "assets/css", "assets/js", "assets/vendors"]
     for directory in directories:
         os.makedirs(directory, exist_ok=True)
+
 
 def main():
     print("Creating directory structure...")
     ensure_directory_structure()
-    
+
     print("Optimizing resources...")
     optimize_resources()
     create_htaccess()
-    
+
     print("Creating map...")
     m = create_highways_map("above")
-    m.save('index.html')
+    m.save("index.html")
     print("Map saved as 'index.html'")
+
 
 if __name__ == "__main__":
     main()

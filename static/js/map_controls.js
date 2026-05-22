@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var labels = document.querySelectorAll('.city-label');
-    var outline = document.querySelector('.leaflet-overlay-pane .romania-outline');
     
     function updateMapStyle(activeButton, skipButtonUpdate = false) {
         if (!skipButtonUpdate) {
@@ -25,11 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         var mapStyle = activeButton.getAttribute('data-map');
-        
-        // Handle the white background and outline specifically
-        if (outline) {
-            outline.style.display = mapStyle === 'white' ? 'block' : 'none';
-        }
         
         // Only hide the white background element, not all overlay paths
         document.querySelectorAll('.leaflet-overlay-pane .romania-outline, .leaflet-overlay-pane .white-background').forEach(function(element) {
@@ -59,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('satellite-view');
         }
         
-        // Update labels
+        // Update labels (custom city labels only on the White Map)
         labels.forEach(function(label) {
-            label.style.display = (isWhiteMap || isSatellite) ? 'block' : 'none';
+            label.style.display = isWhiteMap ? 'block' : 'none';
         });
         
         // Update city boundaries
@@ -70,15 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.visibility = isWhiteMap ? 'visible' : 'hidden';
         });
         
-        // Update city dots
-        document.querySelectorAll('.leaflet-circle-marker-pane > *').forEach(function(dot) {
-            dot.style.display = (isWhiteMap || isSatellite) ? 'block' : 'none';
-        });
-
-        // Ensure proper z-index for background elements
-        if (outline) {
-            outline.parentElement.style.zIndex = isWhiteMap ? '1' : '-1';
-        }
     }
     
     // Event listeners for map buttons
