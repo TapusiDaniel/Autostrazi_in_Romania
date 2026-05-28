@@ -97,14 +97,13 @@ A8_SECTIONS = {
         "end_point": [47.197218, 26.612588],  # Targu Neamt
     },
     "Târgu Neamț - Ungheni lot 1 (Moțca - Târgu Frumos)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2030",
         "length": "27 km",
-        "estimated_cost": "937M",
-        "construction_duration": "46 de luni",
+        "constructor": "Asocierea SA&PE CONSTRUCT SRL (Lider)-TEHNOSTRADE S.R.L., SPEDITION UMB, Euro-Asfalt",
+        "cost": "936M",
         "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
-        "seap_code": "CN1077231",
-        "current_stage": "Semnare contract - Asocierea Danlin XXL - Groma Hold Ltd - Intertranscom Impex - Evropeiski Patishta",
         "xml_file": "A8/a8_motca_targu_frumos_lot1.xml",
         "start_point": [47.197218, 26.612607],  # Motca
         "end_point": [47.231512, 27.010151],  # Targu Frumos

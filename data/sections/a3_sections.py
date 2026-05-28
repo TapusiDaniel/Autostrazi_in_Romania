@@ -192,7 +192,7 @@ A3_SECTIONS = {
     },
     "Suplacu de Barcău - Chiribiș (subsecțiunea 3C - lot 1)": {
         "status": "in_construction",
-        "progress": "76.70%",
+        "progress": "80%",
         "completion_date": "2026",
         "length": "26.35 km",
         "constructor": "Constructii Erbasu SA",
