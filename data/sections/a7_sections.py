@@ -195,27 +195,25 @@ A7_SECTIONS = {
         "end_point": [47.687929, 26.311153],  # Aeroport Suceava
     },
     "Suceava - Siret (lot 1 - Drum Expres)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2029",
         "length": "18.60 km",
-        "estimated_cost": "409M",
-        "construction_duration": "33 de luni",
+        "constructor": "Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
+        "estimated_cost": "401M",
         "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
-        "seap_code": "CN1088859",
-        "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot1.xml",
         "start_point": [47.687929, 26.311153],  # Aeroport Suceava
         "end_point": [47.726058, 26.125389],  # Darmanesti
     },
     "Suceava - Siret (lot 2 - Drum Expres)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2029",
         "length": "24.45 km",
-        "estimated_cost": "319M",
-        "construction_duration": "36 de luni",
+        "constructor": "Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
+        "estimated_cost": "313M",
         "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
-        "seap_code": "CN1088859",
-        "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot2.xml",
         "start_point": [47.726058, 26.125389],  # Darmanesti
         "end_point": [47.911986, 26.061257],  # Balcauti

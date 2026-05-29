@@ -122,14 +122,13 @@ A8_SECTIONS = {
         "end_point": [47.208894, 27.374226],  # Letcani
     },
     "Târgu Neamț - Ungheni lot 3 (Lețcani - Iași Nord)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2030",
         "length": "17.7 km",
-        "estimated_cost": "757M",
-        "construction_duration": "46 de luni",
+        "constructor": "FCC Construccion",
+        "estimated_cost": "755M",
         "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
-        "seap_code": "CN1081660",
-        "current_stage": "Semnare contract - FCC Construccion",
         "xml_file": "A8/a8_letcani_iasi.xml",
         "start_point": [47.208894, 27.374226],  # Letcani
         "end_point": [47.259529, 27.566248],  # Iasi Nord
