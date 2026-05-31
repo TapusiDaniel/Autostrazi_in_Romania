@@ -271,6 +271,16 @@
         }
     };
 
+    window.getTimelineFilteredOpacity = function(layer, opacity) {
+        if (!isTimelineActive || currentFilterYear === null) return opacity;
+
+        const sectionYear = getLayerYear(layer);
+        if (isNaN(sectionYear) || sectionYear > currentFilterYear) {
+            return 0;
+        }
+        return opacity;
+    };
+
     function initTimeline() {
         const slider = document.getElementById('timeline-slider');
         const yearDisplay = document.getElementById('timeline-year');

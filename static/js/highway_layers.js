@@ -201,7 +201,10 @@
             if (!layer || !layer.eachLayer) return;
             layer.eachLayer(function(child) {
                 if (child && child.setStyle) {
-                    child.setStyle({opacity: opacity});
+                    const filteredOpacity = window.getTimelineFilteredOpacity
+                        ? window.getTimelineFilteredOpacity(child, opacity)
+                        : opacity;
+                    child.setStyle({opacity: filteredOpacity});
                 }
                 setGroupOpacity(child, opacity);
             });
@@ -341,10 +344,10 @@
                     if (!mapInstance.hasLayer(lowLayer)) return;
                     ensureHighLayer(pair).then(function(highLayer) {
                         if (!highDetailEnabled || !highLayer) return;
+                        setGroupOpacity(highLayer, 0);
                         if (!mapInstance.hasLayer(highLayer)) {
                             mapInstance.addLayer(highLayer);
                         }
-                        setGroupOpacity(highLayer, 0);
                         bringGroupToFront(highLayer);
                         layerPairs.push({lowLayer: lowLayer, highLayer: highLayer});
                         if (layerPairs.length === activeLowLayerCount) {
@@ -391,10 +394,10 @@
 
                 const lowActive = mapInstance.hasLayer(lowLayer);
                 if (highDetailEnabled && lowActive && highLayer) {
+                    setGroupOpacity(highLayer, 1);
                     if (!mapInstance.hasLayer(highLayer)) {
                         mapInstance.addLayer(highLayer);
                     }
-                    setGroupOpacity(highLayer, 1);
                     bringGroupToFront(highLayer);
                     suppressLowDetail(lowLayer, true);
                 } else {
