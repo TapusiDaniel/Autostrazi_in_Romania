@@ -1,5 +1,6 @@
 import gzip
 import os
+import re
 import shutil
 from pathlib import Path
 
@@ -57,6 +58,24 @@ def ensure_vendor_files():
                 print(f"Successfully downloaded {filename}")
             else:
                 print(f"Failed to download {filename}")
+
+    # Strip sourceMappingURL comments from vendor JS. We don't ship the .map
+    # files, so on GitHub Pages the browser's fetch for them returns the 404
+    # HTML page, which logs a console SyntaxError ("Unexpected token '<'") and
+    # trips Lighthouse's "missing source maps"/console-errors audits.
+    for filename in vendor_files:
+        if not filename.endswith(".js"):
+            continue
+        local_path = os.path.join(vendors_dir, filename)
+        if not os.path.exists(local_path):
+            continue
+        with open(local_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        cleaned = re.sub(r"\n?//# sourceMappingURL=\S+\s*$", "", content)
+        if cleaned != content:
+            with open(local_path, "w", encoding="utf-8") as f:
+                f.write(cleaned)
+            print(f"Stripped sourceMappingURL from {filename}")
 
 
 def optimize_resources():
