@@ -14,28 +14,44 @@ def optimize_template(html_content):
     if head_end == -1 or body_end == -1:
         return html_content
 
-    # Remove blocking scripts and CSS from the original template
-    blocking_resources = [
-        "leaflet.awesome-markers.js",
-        "jquery-3.7.1.min.js",
-        "bootstrap.bundle.min.js",
-        "leaflet.js",
-        "leaflet.awesome-markers.css",
-        "bootstrap-glyphicons.css",
-        "fontawesome-free",
-        "bootstrap.min.css",
-        "leaflet.css",
-        "leaflet.awesome.rotate.min.css",
+    # Folium injects a fixed set of CDN tags for Leaflet, jQuery, Bootstrap,
+    # Leaflet.awesome-markers and FontAwesome. This project only uses Leaflet
+    # (all markers are DivIcon/CircleMarker; no jQuery/Bootstrap JS or CSS
+    # classes are used), so drop the unused libraries entirely and serve
+    # Leaflet from a same-origin copy under assets/vendors/ (see build.py).
+    # Tags are matched verbatim against what Folium emits for the pinned
+    # versions; if those versions change in requirements, update these too.
+    unused_tags = [
+        '<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>',
+        '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>',
+        '<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>',
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>',
+        '<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>',
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>',
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>',
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>',
     ]
+    for tag in unused_tags:
+        html_content = html_content.replace(tag, "")
 
-    for resource in blocking_resources:
-        html_content = html_content.replace(
-            f'<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/{resource}"',
-            f"<!-- Deferred: {resource} -->",
-        )
-        html_content = html_content.replace(
-            f'<script src="https://cdn.jsdelivr.net/npm/{resource}"',
-            f"<!-- Deferred: {resource} -->",
-        )
+    # Serve Leaflet from a same-origin copy instead of the CDN (must stay a
+    # blocking script: Folium's inline map-init runs synchronously and needs L).
+    html_content = html_content.replace(
+        '<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>',
+        '<script src="assets/vendors/leaflet.js"></script>',
+    )
+    html_content = html_content.replace(
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>',
+        '<link rel="stylesheet" href="assets/vendors/leaflet.css"/>',
+    )
+
+    # Folium hardcodes the default Leaflet marker image URLs (iconUrl/shadowUrl)
+    # to the CDN. All markers here are DivIcon/CircleMarker so these defaults are
+    # not rendered, but point them at the local copies anyway to keep the page
+    # fully same-origin (see assets/vendors/images/).
+    html_content = html_content.replace(
+        "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/images/",
+        "assets/vendors/images/",
+    )
 
     return html_content

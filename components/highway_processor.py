@@ -252,6 +252,10 @@ def add_section_logo(
 
     folium.Marker(
         logo_coords,
+        # Leaflet makes the icon a focusable role="button" but gives it no
+        # accessible name; title= sets the element's title, which screen
+        # readers (and Lighthouse) use as the name.
+        title=highway_code,
         icon=folium.DivIcon(
             html=icon_html,
             icon_size=(25, 25),

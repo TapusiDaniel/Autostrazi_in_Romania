@@ -41,11 +41,11 @@
 }
 
 .status-row.in-construction td:first-child {
-    color: orange !important;
+    color: #b45309 !important; /* darkened orange for WCAG AA on white (5.0:1) */
 }
 
 .status-row.planned td:first-child {
-    color: grey !important;
+    color: #666666 !important; /* darkened grey for WCAG AA on white (5.7:1) */
 }
 
 .status-row.tendered td:first-child {

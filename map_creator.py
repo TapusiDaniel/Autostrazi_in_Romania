@@ -22,14 +22,13 @@ from components.ui_builder import (
 from config import (
     BUNDLED_CSS_PATH,
     BUNDLED_JS_PATH,
-    FONT_AWESOME_URL,
     STATIC_CSS_FILES,
     STATIC_JS_FILES,
     USE_BUNDLED_ASSETS,
 )
 from highway_data import HIGHWAYS
 from utils.html_optimizer import optimize_template
-from utils.resource_manager import add_css_file, add_external_js, add_preload_css
+from utils.resource_manager import add_css_file, add_external_js
 
 
 def create_highways_map(labels_position="below"):
@@ -48,16 +47,17 @@ def create_highways_map(labels_position="below"):
     # Add meta tags for SEO and responsiveness
     m.get_root().header.add_child(folium.Element(build_meta_tags()))
 
-    # Add Font Awesome for icons (non-blocking)
-    add_preload_css(m, FONT_AWESOME_URL)
-
-    # Add CSS files
+    # Add CSS files. Inline (not async-preload) so the overlay UI — map/section
+    # buttons, sidebar, timeline, totals table, footer, and the rule hiding the
+    # default Leaflet controls — is fully styled at first paint. Loading these
+    # async lets them render in normal document flow first and then snap into
+    # their fixed/absolute positions, which was the source of the high CLS.
     add_css_file(m, "static/css/critical.css")
     if USE_BUNDLED_ASSETS:
-        add_preload_css(m, BUNDLED_CSS_PATH)
+        add_css_file(m, BUNDLED_CSS_PATH)
     else:
         for css_path in STATIC_CSS_FILES:
-            add_preload_css(m, css_path)
+            add_css_file(m, css_path)
 
     # Add tile layers and Romania outline
     add_tile_layers(m)

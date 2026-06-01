@@ -41,19 +41,17 @@ META_KEYWORDS = (
 )
 META_AUTHOR = "Daniel Tapusi"
 META_ROBOTS = "index, follow"
+# OSM tiles are the default layer and the largest early payload, so preconnect
+# to that origin. Google satellite tiles only load when that layer is selected,
+# so a cheaper dns-prefetch is enough.
 PRECONNECT_URLS = [
-    "https://cdnjs.cloudflare.com",
-    "https://unpkg.com",
+    "https://tile.openstreetmap.org",
 ]
 DNS_PREFETCH_URLS = [
     "https://mt1.google.com",
-    "https://tile.openstreetmap.org",
 ]
 
 # Static asset loading
-FONT_AWESOME_URL = (
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-)
 STATIC_CSS_FILES = [
     "static/css/controls.css",
     "static/css/totals_table.css",

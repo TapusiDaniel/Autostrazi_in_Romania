@@ -10,7 +10,7 @@
     --border-color: #dddddd;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --shadow-heavy: rgba(0, 0, 0, 0.4);
-    --accent-color: #4a90e2;
+    --accent-color: #2c6fb5; /* darkened from #4a90e2 for WCAG AA: white text on this passes 4.5:1 (active map button) */
     --spinner-bg: #f3f3f3;
     --table-border: #eeeeee;
 }
