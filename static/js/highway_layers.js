@@ -185,8 +185,6 @@
         const HIGH_DETAIL_ZOOM = data.highDetailZoom || 9;
         let highDetailEnabled = false;
         let highDetailInitialized = false;
-        let transitionId = 0;
-        const DETAIL_FADE_MS = 180;
 
         function getLayer(pair, key) {
             if (!pair || !pair[key]) return null;
@@ -265,49 +263,6 @@
             });
         }
 
-        function animateDetailSwitch(enable, layerPairs, onComplete) {
-            const currentTransition = ++transitionId;
-            const startedAt = performance.now();
-            let finished = false;
-
-            function finish() {
-                if (finished || currentTransition !== transitionId) return;
-                finished = true;
-
-                layerPairs.forEach(function(pair) {
-                    setGroupOpacity(pair.lowLayer, enable ? 0 : 1);
-                    setGroupOpacity(pair.highLayer, enable ? 1 : 0);
-                });
-
-                if (onComplete) {
-                    onComplete();
-                }
-            }
-
-            function frame(now) {
-                if (currentTransition !== transitionId) return;
-
-                const progress = Math.min(1, (now - startedAt) / DETAIL_FADE_MS);
-                const lowOpacity = enable ? 1 - progress : progress;
-                const highOpacity = enable ? progress : 1 - progress;
-
-                layerPairs.forEach(function(pair) {
-                    setGroupOpacity(pair.lowLayer, lowOpacity);
-                    setGroupOpacity(pair.highLayer, highOpacity);
-                });
-
-                if (progress < 1) {
-                    requestAnimationFrame(frame);
-                    return;
-                }
-
-                finish();
-            }
-
-            requestAnimationFrame(frame);
-            setTimeout(finish, DETAIL_FADE_MS + 80);
-        }
-
         function refreshTimelineIfNeeded() {
             if (window.refreshTimelineFilter) {
                 window.refreshTimelineFilter();
@@ -324,62 +279,16 @@
             const shouldEnable = mapInstance.getZoom() >= HIGH_DETAIL_ZOOM;
             if (highDetailInitialized && shouldEnable === highDetailEnabled) return;
             highDetailInitialized = true;
-            if (shouldEnable !== highDetailEnabled) {
-                highDetailEnabled = shouldEnable;
-                document.body.classList.toggle('high-detail-mode', highDetailEnabled);
-            } else {
-                document.body.classList.toggle('high-detail-mode', highDetailEnabled);
-            }
-
-            const layerPairs = [];
-            const activeLowLayerCount = Object.values(statusLayers).filter(function(pair) {
-                const lowLayer = getLayer(pair, 'low');
-                return lowLayer && mapInstance.hasLayer(lowLayer);
-            }).length;
-            Object.values(statusLayers).forEach(pair => {
-                const lowLayer = getLayer(pair, 'low');
-                if (!lowLayer) return;
-
-                if (highDetailEnabled) {
-                    if (!mapInstance.hasLayer(lowLayer)) return;
-                    ensureHighLayer(pair).then(function(highLayer) {
-                        if (!highDetailEnabled || !highLayer) return;
-                        setGroupOpacity(highLayer, 0);
-                        if (!mapInstance.hasLayer(highLayer)) {
-                            mapInstance.addLayer(highLayer);
-                        }
-                        bringGroupToFront(highLayer);
-                        layerPairs.push({lowLayer: lowLayer, highLayer: highLayer});
-                        if (layerPairs.length === activeLowLayerCount) {
-                            animateDetailSwitch(true, layerPairs, function() {
-                                setAllLowDetailSuppressed(true);
-                                bringDelimitersToFront();
-                                refreshTimelineIfNeeded();
-                                refreshHighwayHighlightIfNeeded();
-                            });
-                        }
-                    });
-                } else {
-                    const highLayer = getLayer(pair, 'high');
-                    if (highLayer && mapInstance.hasLayer(highLayer)) {
-                        suppressLowDetail(lowLayer, true);
-                        layerPairs.push({lowLayer: lowLayer, highLayer: highLayer});
-                    }
-                }
-            });
-            if (!highDetailEnabled) {
-                animateDetailSwitch(false, layerPairs, function() {
-                    layerPairs.forEach(function(pair) {
-                        if (mapInstance.hasLayer(pair.highLayer)) {
-                            mapInstance.removeLayer(pair.highLayer);
-                        }
-                    });
-                    setAllLowDetailSuppressed(false);
-                    refreshTimelineIfNeeded();
-                    refreshHighwayHighlightIfNeeded();
-                });
-            }
-            refreshTimelineIfNeeded();
+            highDetailEnabled = shouldEnable;
+            document.body.classList.toggle('high-detail-mode', highDetailEnabled);
+            // The detail level just changed, so any cached highlight index (which
+            // is detail-level-specific) is stale. Clear it so highlightHighway
+            // re-resolves against the layer set for the current mode.
+            if (window.invalidateHighwayLayerIndex) window.invalidateHighwayLayerIndex();
+            // High-detail layers are inline (present from page load), so just
+            // reconcile to the new state: add high + suppress low when enabled,
+            // or remove high + restore low when disabled.
+            reconcileActiveLayers();
         }
 
         // Toggling a status overlay triggers a cascade of overlayadd/overlayremove
@@ -393,6 +302,14 @@
                 if (!lowLayer) return;
 
                 const lowActive = mapInstance.hasLayer(lowLayer);
+                if (highDetailEnabled && lowActive && !highLayer) {
+                    // High-detail wanted but not loaded yet (e.g. status was
+                    // re-enabled). Trigger the lazy load, then reconcile again.
+                    ensureHighLayer(pair).then(function(layer) {
+                        if (layer && highDetailEnabled) scheduleReconcile();
+                    });
+                    return;
+                }
                 if (highDetailEnabled && lowActive && highLayer) {
                     setGroupOpacity(highLayer, 1);
                     if (!mapInstance.hasLayer(highLayer)) {
