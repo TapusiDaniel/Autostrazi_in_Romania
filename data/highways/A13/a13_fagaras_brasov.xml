@@ -1,27 +1,102 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448767 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="11153105" visible="true" version="9" changeset="130883944" timestamp="2023-01-04T21:51:17Z" user="RobertH-PUM" uid="9320232">
-<member type="way" ref="254380244" role=""/>
-<member type="way" ref="905914195" role=""/>
-<member type="way" ref="1120291546" role=""/>
-<member type="way" ref="905946548" role=""/>
-<member type="way" ref="905946549" role=""/>
-<member type="way" ref="905946550" role=""/>
-<member type="way" ref="905946551" role=""/>
-<member type="way" ref="1120291547" role=""/>
-<member type="way" ref="905914196" role=""/>
-<member type="way" ref="255571629" role=""/>
-<member type="way" ref="255555333" role=""/>
-<member type="way" ref="255555334" role=""/>
-<member type="way" ref="255555335" role=""/>
-<member type="way" ref="255555336" role=""/>
-<member type="way" ref="905914198" role=""/>
-<member type="way" ref="905914197" role=""/>
-<member type="way" ref="1098346892" role=""/>
-<member type="way" ref="1098346893" role=""/>
-<member type="way" ref="907770851" role=""/>
-<member type="way" ref="907770850" role=""/>
-<tag k="name" v="A3 - Targu Mures - Brasov"/>
-<tag k="route" v="proposed"/>
-<tag k="type" v="route"/>
-</relation>
+<?xml version="1.0" encoding="utf-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1333 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+  <way id="254380244" visible="true" version="23" changeset="183260308" timestamp="2026-05-27T14:44:56Z" user="k9h10a" uid="21676723">
+    <nd ref="8413074358"/>
+    <nd ref="8413074362"/>
+    <nd ref="9472660776"/>
+    <nd ref="13888453671"/>
+    <nd ref="13888453669"/>
+    <nd ref="13888453667"/>
+    <nd ref="2601792072"/>
+    <nd ref="13888453672"/>
+    <nd ref="2601792075"/>
+    <nd ref="8413074355"/>
+    <nd ref="2601835026"/>
+    <nd ref="2601835027"/>
+    <nd ref="2601835034"/>
+    <nd ref="2601835035"/>
+    <nd ref="2601835033"/>
+    <nd ref="13888453665"/>
+    <nd ref="2601835032"/>
+    <nd ref="2601835031"/>
+    <nd ref="2601835030"/>
+    <nd ref="2601835029"/>
+    <nd ref="13888453675"/>
+    <nd ref="2601835028"/>
+    <nd ref="4412285942"/>
+    <nd ref="2601835036"/>
+    <nd ref="4412287340"/>
+    <nd ref="2601835037"/>
+    <nd ref="2601835038"/>
+    <nd ref="13888453677"/>
+    <nd ref="2601835039"/>
+    <nd ref="13888453679"/>
+    <nd ref="2601835040"/>
+    <nd ref="2601835041"/>
+    <nd ref="2601835043"/>
+    <nd ref="2601835044"/>
+    <nd ref="13888453680"/>
+    <nd ref="2601835045"/>
+    <nd ref="2601835046"/>
+    <nd ref="2601835047"/>
+    <nd ref="2601835048"/>
+    <nd ref="2601835049"/>
+    <nd ref="2601835050"/>
+    <nd ref="13888453683"/>
+    <nd ref="2601835051"/>
+    <nd ref="13888453685"/>
+    <nd ref="13888453687"/>
+    <nd ref="2601835052"/>
+    <nd ref="2601835053"/>
+    <nd ref="2601835054"/>
+    <nd ref="13888453689"/>
+    <nd ref="2601835060"/>
+    <nd ref="2601835059"/>
+    <nd ref="2601835055"/>
+    <nd ref="10056739675"/>
+    <nd ref="8429269264"/>
+    <nd ref="8423123087"/>
+    <nd ref="8423123091"/>
+    <nd ref="12855465994"/>
+    <tag k="highway" v="proposed"/>
+    <tag k="lanes" v="2"/>
+    <tag k="name" v="Autostrada Brașov-Făgăraș"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="proposed" v="motorway"/>
+    <tag k="ref" v="A13"/>
+    <tag k="status" v="AM"/>
+  </way>
+  <relation id="11153105" visible="true" version="13">
+    <member type="way" ref="254380244" role=""/>
+    <member type="node" ref="2612526378" role=""/>
+    <member type="node" ref="2612358225" role=""/>
+    <member type="way" ref="905914195" role=""/>
+    <member type="way" ref="905914196" role=""/>
+    <member type="way" ref="1120291547" role=""/>
+    <member type="way" ref="1120291546" role=""/>
+    <member type="way" ref="1523572295" role=""/>
+    <member type="way" ref="1523572294" role=""/>
+    <member type="way" ref="1488692230" role=""/>
+    <member type="way" ref="1488692231" role=""/>
+    <member type="way" ref="1488692232" role=""/>
+    <member type="way" ref="1488692227" role=""/>
+    <member type="way" ref="1488692229" role=""/>
+    <member type="way" ref="1488692228" role=""/>
+    <member type="way" ref="905946548" role=""/>
+    <member type="way" ref="905946551" role=""/>
+    <member type="way" ref="905946550" role=""/>
+    <member type="way" ref="905946549" role=""/>
+    <member type="way" ref="1488692237" role=""/>
+    <member type="way" ref="1488692236" role=""/>
+    <member type="way" ref="1488692234" role=""/>
+    <member type="way" ref="1488692233" role=""/>
+    <member type="way" ref="1488692235" role=""/>
+    <member type="way" ref="1488692238" role=""/>
+    <tag k="name" v="Autostrada Brașov-Făgăraș"/>
+    <tag k="ref" v="A13"/>
+    <tag k="route" v="road"/>
+    <tag k="type" v="route"/>
+    <tag k="highway" v="proposed"/>
+    <tag k="status" v="AM"/>
+  </relation>
 </osm>

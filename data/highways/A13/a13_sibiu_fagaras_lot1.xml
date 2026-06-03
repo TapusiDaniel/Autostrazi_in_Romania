@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448781 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="14382050" visible="true" version="5" changeset="144402882" timestamp="2023-11-24T10:50:28Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1337 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="14382050" visible="true" version="6" changeset="182158688" timestamp="2026-05-03T12:52:58Z" user="k9h10a" uid="21676723">
 <member type="way" ref="907119377" role=""/>
 <member type="way" ref="907119380" role=""/>
 <member type="way" ref="907119379" role=""/>
@@ -94,7 +94,7 @@
 <member type="way" ref="907119386" role=""/>
 <member type="way" ref="907119385" role=""/>
 <member type="way" ref="907119388" role=""/>
-<tag k="name" v="Tronsonul 1 (Boita-Avrig)"/>
+<tag k="name" v="A13 Tronsonul 1 (Boița-Avrig)"/>
 <tag k="route" v="road"/>
 <tag k="type" v="construction"/>
 </relation>

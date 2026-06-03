@@ -19,6 +19,7 @@
 
     let isTimelineActive = false;
     let currentFilterYear = null;
+    let currentFilterMode = null;
     let cachedHighwayLayers = null;
     let cachedDelimiterLayers = null;
 
@@ -46,7 +47,7 @@
         if (
             layer.options &&
             layer.options.className &&
-            layer.options.className.indexOf('highway-section') !== -1 &&
+            layer.options.className.split(/\s+/).includes('highway-section') &&
             layer.setStyle
         ) {
             matches.push(layer);
@@ -152,6 +153,27 @@
         return 1;
     }
 
+    function isFinishedLayer(layer) {
+        const className = layer && layer.options && layer.options.className;
+        return (
+            className &&
+            className.split(/\s+/).includes('section-status-finished')
+        );
+    }
+
+    function setElementVisible(el, isVisible) {
+        if (isVisible) {
+            el.style.opacity = '1';
+            el.style.strokeOpacity = '1';
+            el.style.pointerEvents = 'auto';
+            el.style.display = 'block';
+        } else {
+            el.style.opacity = '0';
+            el.style.strokeOpacity = '0';
+            el.style.pointerEvents = 'none';
+        }
+    }
+
     function positionToYear(pos) {
         const segments = [
             {pos: 0, year: 1970},
@@ -172,6 +194,25 @@
         return 2036;
     }
 
+    function getTimelineSelection(year) {
+        if (year === 2026) {
+            return {displayText: 'În prezent', dataYear: null, isPresent: true};
+        }
+        if (year >= 2027) {
+            const actualYear = year - 1;
+            return {
+                displayText: actualYear.toString(),
+                dataYear: actualYear,
+                isPresent: false
+            };
+        }
+        return {
+            displayText: year.toString(),
+            dataYear: year,
+            isPresent: false
+        };
+    }
+
     function toggleTimeline() {
         const container = document.getElementById('timeline-container');
         const btn = document.getElementById('timeline-toggle');
@@ -188,15 +229,14 @@
 
             const sliderPos = parseInt(document.getElementById('timeline-slider').value);
             const year = positionToYear(sliderPos);
+            const selection = getTimelineSelection(year);
 
-            let dataYear = year;
-            if (year === 2026) {
-                dataYear = 2025;
-            } else if (year >= 2027) {
-                dataYear = year - 1;
+            if (selection.isPresent) {
+                filterCurrentState();
+            } else {
+                filterMapByYear(selection.dataYear);
             }
 
-            filterMapByYear(dataYear);
             document.body.classList.add('timeline-mode');
 
             setDelimitersVisible(false);
@@ -208,7 +248,25 @@
         }
     }
 
+    function filterCurrentState() {
+        currentFilterMode = 'current';
+        currentFilterYear = null;
+        const layers = getHighwayLayers();
+        if (layers.length > 0) {
+            layers.forEach(function(layer) {
+                layer.setStyle({opacity: isFinishedLayer(layer) ? getDefaultOpacity(layer) : 0});
+            });
+            return;
+        }
+
+        const sections = document.querySelectorAll('path.highway-section');
+        sections.forEach(function(el) {
+            setElementVisible(el, el.classList.contains('section-status-finished'));
+        });
+    }
+
     function filterMapByYear(year) {
+        currentFilterMode = 'year';
         currentFilterYear = year;
         const layers = getHighwayLayers();
         if (layers.length > 0) {
@@ -233,20 +291,13 @@
                 }
             }
 
-            if (isVisible) {
-                el.style.opacity = '1';
-                el.style.strokeOpacity = '1';
-                el.style.pointerEvents = 'auto';
-                el.style.display = 'block';
-            } else {
-                el.style.opacity = '0';
-                el.style.strokeOpacity = '0';
-                el.style.pointerEvents = 'none';
-            }
+            setElementVisible(el, isVisible);
         });
     }
 
     function resetMapFilter() {
+        currentFilterMode = null;
+        currentFilterYear = null;
         const layers = getHighwayLayers();
         if (layers.length > 0) {
             layers.forEach(function(layer) {
@@ -265,14 +316,23 @@
     }
 
     window.refreshTimelineFilter = function() {
-        if (isTimelineActive && currentFilterYear !== null) {
+        if (isTimelineActive && currentFilterMode === 'current') {
+            filterCurrentState();
+            setDelimitersVisible(false);
+        } else if (isTimelineActive && currentFilterYear !== null) {
             filterMapByYear(currentFilterYear);
             setDelimitersVisible(false);
         }
     };
 
     window.getTimelineFilteredOpacity = function(layer, opacity) {
-        if (!isTimelineActive || currentFilterYear === null) return opacity;
+        if (!isTimelineActive) return opacity;
+
+        if (currentFilterMode === 'current') {
+            return isFinishedLayer(layer) ? opacity : 0;
+        }
+
+        if (currentFilterYear === null) return opacity;
 
         const sectionYear = getLayerYear(layer);
         if (isNaN(sectionYear) || sectionYear > currentFilterYear) {
@@ -291,27 +351,18 @@
         slider.addEventListener('input', function() {
             const sliderPos = parseInt(this.value);
             const year = positionToYear(sliderPos);
-            let displayText;
-            let dataYear;
+            const selection = getTimelineSelection(year);
 
-            if (year === 2026) {
-                displayText = 'În prezent';
-                dataYear = 2025;
-            } else if (year >= 2027) {
-                const actualYear = year - 1;
-                displayText = actualYear.toString();
-                dataYear = actualYear;
-            } else {
-                displayText = year.toString();
-                dataYear = year;
-            }
+            const cumulativeKm = selection.isPresent
+                ? currentStateTotal
+                : timelineData[selection.dataYear] || 0;
+            const yearlyKm = selection.isPresent
+                ? 0
+                : yearlyAdditions[selection.dataYear] || 0;
 
-            const cumulativeKm = timelineData[dataYear] || 0;
-            const yearlyKm = yearlyAdditions[dataYear] || 0;
+            yearDisplay.innerHTML = selection.displayText;
 
-            yearDisplay.innerHTML = displayText;
-
-            if (yearlyKm > 0 && year !== 2026) {
+            if (yearlyKm > 0 && !selection.isPresent) {
                 kmDisplay.innerHTML = parseFloat(cumulativeKm).toFixed(3).replace(/\.?0+$/, '') +
                     ' <span style="color: #4CAF50; font-weight: bold;">(+' +
                     parseFloat(yearlyKm).toFixed(3).replace(/\.?0+$/, '') + ' km)</span>';
@@ -320,7 +371,11 @@
             }
 
             if (isTimelineActive) {
-                filterMapByYear(dataYear);
+                if (selection.isPresent) {
+                    filterCurrentState();
+                } else {
+                    filterMapByYear(selection.dataYear);
+                }
             }
         });
 

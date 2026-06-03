@@ -50,6 +50,22 @@ def calculate_km_by_year(highways):
     return yearly_km
 
 
+def calculate_current_state_total(highways):
+    total = 0
+    for highway in highways.values():
+        for section in highway.get("sections", {}).values():
+            if section.get("status") != "finished":
+                continue
+
+            length_str = section.get("length", "0 km")
+            try:
+                total += float(length_str.replace(" km", "").replace(",", "."))
+            except (ValueError, TypeError):
+                continue
+
+    return round(total, 2)
+
+
 def build_timeline_payload(highways):
     yearly_km = calculate_km_by_year(highways)
 
@@ -60,7 +76,7 @@ def build_timeline_payload(highways):
             cumulative += yearly_km[year]
         cumulative_data[year] = round(cumulative, 2)
 
-    current_state_total = cumulative_data.get(TIMELINE_PRESENT_YEAR, 0)
+    current_state_total = calculate_current_state_total(highways)
 
     payload = {
         "timelineData": {
@@ -72,5 +88,6 @@ def build_timeline_payload(highways):
             y: km for y, km in sorted(yearly_km.items()) if y >= TIMELINE_START_YEAR
         },
         "currentStateTotal": current_state_total,
+        "presentYear": TIMELINE_PRESENT_YEAR,
     }
     return payload, current_state_total

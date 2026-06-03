@@ -69,8 +69,7 @@ A0_SECTIONS = {
         "end_point": [44.4520879, 26.2528344],  # DN3
     },
     "A0 Nord Lot 4": {
-        "status": "in_construction",
-        "progress": "97.65%",
+        "status": "finished",
         "completion_date": "2026",
         "length": "4.47 km",
         "constructor": "Asocierea SA&PE Construct SRL - Spedition UMB SRL - Tehnostrade SRL",

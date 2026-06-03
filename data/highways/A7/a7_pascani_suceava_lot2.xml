@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448775 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="17995399" visible="true" version="3" changeset="156058511" timestamp="2024-09-01T14:57:28Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1326 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="17995399" visible="true" version="4" changeset="182081265" timestamp="2026-05-01T15:45:49Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1312622589" role=""/>
 <member type="way" ref="1312104524" role=""/>
 <member type="way" ref="1312104519" role=""/>
@@ -212,7 +212,7 @@
 <member type="way" ref="1305561747" role=""/>
 <member type="way" ref="1305561750" role=""/>
 <tag k="name" v="Pascani-Suceava Lot 2"/>
-<tag k="route" v="proposed"/>
+<tag k="route" v="construction"/>
 <tag k="type" v="route"/>
 </relation>
 </osm>
