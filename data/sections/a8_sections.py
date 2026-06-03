@@ -103,7 +103,7 @@ A8_SECTIONS = {
         "length": "27 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL (Lider)-TEHNOSTRADE S.R.L., SPEDITION UMB, Euro-Asfalt",
         "cost": "936M",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "xml_file": "A8/a8_motca_targu_frumos_lot1.xml",
         "start_point": [47.197218, 26.612607],  # Motca
         "end_point": [47.231512, 27.010151],  # Targu Frumos
@@ -114,7 +114,7 @@ A8_SECTIONS = {
         "length": "28.6 km",
         "estimated_cost": "880M",
         "construction_duration": "46 de luni",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "seap_code": "CN1077647",
         "current_stage": "Semnare contract - Danlin XXL",
         "xml_file": "A8/a8_tg_frumos_letcani.xml",
@@ -128,7 +128,7 @@ A8_SECTIONS = {
         "length": "17.7 km",
         "constructor": "FCC Construccion",
         "estimated_cost": "755M",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "xml_file": "A8/a8_letcani_iasi.xml",
         "start_point": [47.208894, 27.374226],  # Letcani
         "end_point": [47.259529, 27.566248],  # Iasi Nord
@@ -140,7 +140,7 @@ A8_SECTIONS = {
         "length": "15.47 km",
         "estimated_cost": "687M",
         "construction_duration": "46 de luni",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "seap_code": "CN1088815",
         "current_stage": "Semnare contract - Asocierea Italia Itinera SPA (Lider) – ICM S.P.A, Saipem S.P.A.",
         "xml_file": "A8/a8_iasi_vama.xml",

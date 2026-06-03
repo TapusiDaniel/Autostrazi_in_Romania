@@ -177,7 +177,7 @@ A7_SECTIONS = {
         "length": "33 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "589M",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "xml_file": "A7/a7_pascani_suceava_lot1.xml",
         "start_point": [47.263212, 26.690015],  # Pascani
         "end_point": [47.516672, 26.579559],  # Roscani
@@ -189,7 +189,7 @@ A7_SECTIONS = {
         "length": "28.97 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "551M",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "xml_file": "A7/a7_pascani_suceava_lot2.xml",
         "start_point": [47.516672, 26.579559],  # Roscani
         "end_point": [47.687929, 26.311153],  # Aeroport Suceava
@@ -201,7 +201,7 @@ A7_SECTIONS = {
         "length": "18.60 km",
         "constructor": "Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "estimated_cost": "401M",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "xml_file": "A7/a7_suceava_siret_lot1.xml",
         "start_point": [47.687929, 26.311153],  # Aeroport Suceava
         "end_point": [47.726058, 26.125389],  # Darmanesti
@@ -213,7 +213,7 @@ A7_SECTIONS = {
         "length": "24.45 km",
         "constructor": "Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "estimated_cost": "313M",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "xml_file": "A7/a7_suceava_siret_lot2.xml",
         "start_point": [47.726058, 26.125389],  # Darmanesti
         "end_point": [47.911986, 26.061257],  # Balcauti
@@ -224,7 +224,7 @@ A7_SECTIONS = {
         "length": "12.70 km",
         "estimated_cost": "236M",
         "construction_duration": "42 de luni",
-        "financing": "Fonduri SAFE (40%) și bugetul de stat (60%)",
+        "financing": "Fonduri SAFE",
         "seap_code": "CN1089175",
         "current_stage": "Semnare contract - Asocierea Far Foundation SRL (lider) – Automagistral Pivden SRL – Lincor Trans SRL",
         "xml_file": "A7/a7_suceava_siret_lot3.xml",
