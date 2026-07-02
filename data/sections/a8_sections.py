@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "35.94%",
+        "progress": "39.45%",
         "completion_date": "2027",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
@@ -86,7 +86,7 @@ A8_SECTIONS = {
     },
     "Leghin - Târgu Neamț": {
         "status": "in_construction",
-        "progress": "8%",
+        "progress": "12%",
         "completion_date": "2028",
         "length": "29.91 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -135,14 +135,13 @@ A8_SECTIONS = {
         "logo": {"path": "data/photos/A8-RO.png", "position": "top"},
     },
     "Târgu Neamț - Ungheni lot 4 (Iași Nord - Golăiești)": {
-        "status": "tendered",
-        "tender_end_date": "2026",
+        "status": "in_construction",
+        "progress": "0%",
+        "completion_date": "2030",
         "length": "15.47 km",
-        "estimated_cost": "687M",
-        "construction_duration": "46 de luni",
+        "constructor": "Asocierea Itinera SPA (Lider) – ICM S.P.A, Saipem S.P.A.",
+        "estimated_cost": "682M",
         "financing": "Fonduri SAFE",
-        "seap_code": "CN1088815",
-        "current_stage": "Semnare contract - Asocierea Italia Itinera SPA (Lider) – ICM S.P.A, Saipem S.P.A.",
         "xml_file": "A8/a8_iasi_vama.xml",
         "start_point": [47.259529, 27.566248],  # Iasi Nord
         "end_point": [47.2500496, 27.7461084],  # Pod peste Prut
