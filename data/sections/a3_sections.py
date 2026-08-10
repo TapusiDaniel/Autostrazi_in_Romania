@@ -122,7 +122,7 @@ A3_SECTIONS = {
     },
     "Nădășelu - Mihăiești (subsecțiunea 3A - lot 2)": {
         "status": "in_construction",
-        "progress": "96.05%",
+        "progress": "96.80%",
         "completion_date": "2026",
         "length": "16.80 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - Electromontaj SA și OZALTIN INSAAT TICARET VE SANAYI A.S. - ILGAZ INSAAT TICARET A.S. - VISIO CONSTRUCTION WORKS S.R.L pentru viaduct",
@@ -145,23 +145,21 @@ A3_SECTIONS = {
         "end_point": [46.9925073, 23.2415513],  # Zimbor
     },
     "Zimbor - Poarta Sălajului (subsecțiunea 3B - lot 2)": {
-        "status": "in_construction",
-        "progress": "99%",
+        "status": "finished",
         "completion_date": "2026",
         "length": "12.24 km",
-        "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
-        "cost": "136M",
+        "constructor": "Asocierea SC SA&PE Construct SRL – SC Spedition UMB SRL – SC Tehnostrade SRL",
+        "cost": "172M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A3/a3_zimbor_poartasalajului.xml",
         "start_point": [46.9925073, 23.2415513],  # Zimbor
         "end_point": [47.0866324, 23.1797234],  # Poarta Salajului
     },
     "Nod Românași": {
-        "status": "in_construction",
-        "progress": "50%",
+        "status": "finished",
         "completion_date": "2026",
         "length": "0 km",
-        "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL",
+        "constructor": "Asocierea SC SA&PE Construct SRL – SC Spedition UMB SRL – SC Tehnostrade SRL",
         "cost": "14.2M",
         "financing": "Planul Național de Redresare și Reziliență - PNRR",
         "xml_file": "A3/a3_nod_romanasi.xml",
@@ -192,7 +190,7 @@ A3_SECTIONS = {
     },
     "Suplacu de Barcău - Chiribiș (subsecțiunea 3C - lot 1)": {
         "status": "in_construction",
-        "progress": "81.27%",
+        "progress": "83.54%",
         "completion_date": "2026",
         "length": "26.35 km",
         "constructor": "Constructii Erbasu SA",
@@ -204,7 +202,7 @@ A3_SECTIONS = {
     },
     "Chiribiș - Biharia (subsecțiunea 3C - lot 2)": {
         "status": "in_construction",
-        "progress": "43%",
+        "progress": "60%",
         "completion_date": "2026",
         "length": "28.55 km",
         "constructor": "Asocierea Precon Transilvania SRL – Citadina 98 SA",

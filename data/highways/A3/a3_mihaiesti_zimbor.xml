@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113208 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9427945" visible="true" version="5" changeset="172148460" timestamp="2025-09-19T08:26:48Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3863625 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9427945" visible="true" version="8" changeset="186987712" timestamp="2026-08-05T15:57:50Z" user="Buraddo" uid="2287200">
 <member type="way" ref="678909811" role=""/>
 <member type="way" ref="678909812" role=""/>
 <member type="way" ref="678909810" role=""/>
@@ -11,6 +11,7 @@
 <member type="way" ref="678909809" role=""/>
 <member type="way" ref="678909827" role=""/>
 <member type="way" ref="678909826" role=""/>
+<member type="way" ref="1547499873" role=""/>
 <member type="way" ref="678909823" role=""/>
 <member type="way" ref="678909822" role=""/>
 <member type="way" ref="678909821" role=""/>
@@ -45,6 +46,7 @@
 <member type="way" ref="678909820" role=""/>
 <member type="way" ref="678909824" role=""/>
 <member type="way" ref="678909825" role=""/>
+<member type="way" ref="1547499872" role=""/>
 <member type="way" ref="678909828" role=""/>
 <member type="way" ref="678909829" role=""/>
 <member type="way" ref="679046624" role=""/>
@@ -63,6 +65,9 @@
 <member type="way" ref="678909803" role=""/>
 <member type="way" ref="678940825" role=""/>
 <member type="way" ref="678940827" role=""/>
+<member type="way" ref="1539984929" role=""/>
+<member type="way" ref="1539984928" role=""/>
+<member type="way" ref="1461642055" role=""/>
 <tag k="name" v="A3 3B1(Mihaiesti-Zimbor)"/>
 <tag k="route" v="construction"/>
 <tag k="type" v="route"/>

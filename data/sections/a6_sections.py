@@ -84,11 +84,11 @@ A6_SECTIONS = {
         "status": "tendered",
         "tender_end_date": "2026",
         "length": "19.25 km",
-        "estimated_cost": "440M",
+        "estimated_cost": "380M",
         "construction_duration": "34 de luni",
         "financing": "Fondul European de Dezvoltare Regională (40%) și bugetul de stat (60%) Programul Transport 2021-2027",
         "seap_code": "CN1073637",
-        "current_stage": "Evaluare oferte",
+        "current_stage": "Semnare contract - Asocierea Kalyon Insaat Sanayi ve Ticaret Anonim Sirketi (lider) – SC MIS GRUP SRL ",
         "xml_file": "A6/a6_craiova_tgjiu_lot6.xml",
         "start_point": [44.9439205, 23.51119],  # Targu Carbunesti
     },

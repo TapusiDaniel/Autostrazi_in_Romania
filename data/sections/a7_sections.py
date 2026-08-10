@@ -100,7 +100,7 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 2) - în construcție": {
         "status": "in_construction",
-        "progress": "95%",
+        "progress": "99%",
         "completion_date": "2026",
         "length": "24.38 km",
         "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
@@ -112,7 +112,7 @@ A7_SECTIONS = {
     },
     "Focșani - Bacău (lot 3)": {
         "status": "in_construction",
-        "progress": "73%",
+        "progress": "82%",
         "completion_date": "2026",
         "length": "21.52 km",
         "constructor": "Consorțiul Spedition UMB SRL - SA&PE Construct SRL - Tehnostrade SRL",
@@ -135,7 +135,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 1)": {
         "status": "in_construction",
-        "progress": "56.15%",
+        "progress": "62%",
         "completion_date": "2026",
         "length": "30.30 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
@@ -148,7 +148,7 @@ A7_SECTIONS = {
     },
     "Bacău - Pașcani (lot 2)": {
         "status": "in_construction",
-        "progress": "50.40%",
+        "progress": "55.50%",
         "completion_date": "2026",
         "length": "19 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
