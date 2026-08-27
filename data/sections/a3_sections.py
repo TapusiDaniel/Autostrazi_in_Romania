@@ -122,7 +122,7 @@ A3_SECTIONS = {
     },
     "Nădășelu - Mihăiești (subsecțiunea 3A - lot 2)": {
         "status": "in_construction",
-        "progress": "96.80%",
+        "progress": "97.10%",
         "completion_date": "2026",
         "length": "16.80 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - Electromontaj SA și OZALTIN INSAAT TICARET VE SANAYI A.S. - ILGAZ INSAAT TICARET A.S. - VISIO CONSTRUCTION WORKS S.R.L pentru viaduct",
@@ -134,7 +134,7 @@ A3_SECTIONS = {
     },
     "Mihăiești - Zimbor (subsecțiunea 3B - lot 1)": {
         "status": "in_construction",
-        "progress": "96.05%",
+        "progress": "97.10%",
         "completion_date": "2026",
         "length": "13.26 km",
         "constructor": "Asocierea Spedition UMB SRL - Tehnostrade SRL - Electromontaj SA",
@@ -190,7 +190,7 @@ A3_SECTIONS = {
     },
     "Suplacu de Barcău - Chiribiș (subsecțiunea 3C - lot 1)": {
         "status": "in_construction",
-        "progress": "83.54%",
+        "progress": "88.67%",
         "completion_date": "2026",
         "length": "26.35 km",
         "constructor": "Constructii Erbasu SA",

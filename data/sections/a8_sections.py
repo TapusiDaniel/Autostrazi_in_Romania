@@ -1,7 +1,7 @@
 A8_SECTIONS = {
     "Târgu Mureș - Miercurea Nirajului": {
         "status": "in_construction",
-        "progress": "59.30%",
+        "progress": "63.79%",
         "completion_date": "2027",
         "length": "24.40 km",
         "constructor": "NUROL INSAAT VE TICARET A.S.",
@@ -39,7 +39,7 @@ A8_SECTIONS = {
     "Joseni - Ditrău (lot 1D)": {
         "status": "in_construction",
         "progress": "0%",
-        "completion_date": "2029",
+        "completion_date": "2028",
         "length": "14.40 km",
         "constructor": "Asocierea Danlin XXL (Lider) - Groma Hold LTD - Intertranscom Impex S.R.L.",
         "cost": "161.1M",
@@ -148,7 +148,7 @@ A8_SECTIONS = {
     },
     "Pod Ungheni": {
         "status": "in_construction",
-        "progress": "50%",
+        "progress": "55%",
         "completion_date": "2026",
         "length": "1.1 km",
         "constructor": "Ness Proiect Europe SRL",

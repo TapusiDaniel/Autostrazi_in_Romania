@@ -35,7 +35,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 1": {
         "status": "in_construction",
-        "progress": "63%",
+        "progress": "72.28%",
         "completion_date": "2026",
         "length": "17.5 km",
         "constructor": "Impresa - Pizzarotti - Retter Project Management",
@@ -58,7 +58,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 3": {
         "status": "in_construction",
-        "progress": "89.60%",
+        "progress": "93%",
         "completion_date": "2026",
         "length": "8.6 km",
         "constructor": "China Civil Engineering Construction Corporation",
