@@ -1,54 +1,25 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1302 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9664282" visible="true" version="17" changeset="190672329" timestamp="2026-10-17T22:23:52Z" user="Zarrink" uid="20204688">
-<member type="way" ref="697842437" role=""/>
-<member type="way" ref="697842436" role=""/>
-<member type="way" ref="697842435" role=""/>
-<member type="way" ref="1341107425" role=""/>
-<member type="way" ref="697842434" role=""/>
-<member type="way" ref="1567664935" role=""/>
-<member type="way" ref="1567664938" role=""/>
-<member type="way" ref="1567664937" role=""/>
-<member type="way" ref="697840865" role=""/>
-<member type="way" ref="697840864" role=""/>
-<member type="way" ref="697840863" role=""/>
-<member type="way" ref="285752137" role=""/>
-<member type="way" ref="285752140" role=""/>
-<member type="way" ref="285752132" role=""/>
-<member type="way" ref="285752124" role=""/>
-<member type="way" ref="1339217469" role=""/>
-<member type="way" ref="285752126" role=""/>
-<member type="way" ref="285752123" role=""/>
-<member type="way" ref="285752138" role=""/>
-<member type="way" ref="1339217470" role=""/>
-<member type="way" ref="1164871803" role=""/>
-<member type="way" ref="1164871802" role=""/>
-<member type="way" ref="254738263" role=""/>
-<member type="way" ref="1517261131" role=""/>
-<member type="way" ref="1517261130" role=""/>
-<member type="way" ref="697840872" role=""/>
-<member type="way" ref="697840871" role=""/>
-<member type="way" ref="285752135" role=""/>
-<member type="way" ref="285752139" role=""/>
-<member type="way" ref="285752129" role=""/>
-<member type="way" ref="1339845946" role=""/>
-<member type="way" ref="285752127" role=""/>
-<member type="way" ref="697840870" role=""/>
-<member type="way" ref="697840869" role=""/>
-<member type="way" ref="1517261128" role=""/>
-<member type="way" ref="1517261129" role=""/>
-<member type="way" ref="285740036" role=""/>
-<member type="way" ref="1164871801" role=""/>
-<member type="way" ref="1164871800" role=""/>
-<member type="way" ref="1569218882" role=""/>
-<member type="way" ref="1339845940" role=""/>
-<member type="way" ref="285752125" role=""/>
-<member type="way" ref="285752128" role=""/>
-<member type="way" ref="1339217472" role=""/>
-<member type="way" ref="285752136" role=""/>
-<member type="way" ref="1339217471" role=""/>
-<member type="way" ref="1339845942" role=""/>
-<tag k="name" v="A0 Nord Lot 3"/>
-<tag k="route" v="construction"/>
-<tag k="type" v="route"/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1314 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9664281" visible="true" version="11" changeset="182908634" timestamp="2026-05-20T05:42:23Z" user="rarad74" uid="128281">
+<member type="way" ref="697846691" role=""/>
+<member type="way" ref="697846690" role=""/>
+<member type="way" ref="697846689" role=""/>
+<member type="way" ref="881235905" role=""/>
+<member type="way" ref="881235902" role=""/>
+<member type="way" ref="695644553" role=""/>
+<member type="way" ref="697846686" role=""/>
+<member type="way" ref="697846685" role=""/>
+<member type="way" ref="697846688" role=""/>
+<member type="way" ref="1164409702" role=""/>
+<member type="way" ref="698077959" role=""/>
+<member type="way" ref="881235903" role=""/>
+<member type="way" ref="881235904" role=""/>
+<member type="way" ref="1461870813" role=""/>
+<member type="way" ref="1517310341" role=""/>
+<member type="way" ref="1517310339" role=""/>
+<member type="way" ref="1517310340" role=""/>
+<member type="way" ref="1461870814" role=""/>
+<tag k="name" v="A0 Nord Lot 4"/>
+<tag k="route" v="road"/>
+<tag k="type" v="construction"/>
 </relation>
 </osm>
