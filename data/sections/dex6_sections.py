@@ -23,7 +23,7 @@ DEx6_SECTIONS = {
     "Brăila - Galați": {
         "status": "in_construction",
         "progress": "97%",
-        "completion_date": "2026",
+        "completion_date": "2027",
         "length": "10.77 km",
         "constructor": "Asocierea SA & PE Construct SRL - Spedition UMB - Tenostrade SRL",
         "cost": "74.2M",

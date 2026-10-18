@@ -19,6 +19,7 @@ A6_SECTIONS = {
     "Craiova - Târgu Jiu lot 1": {
         "status": "tendered",
         "tender_end_date": "2026",
+        "projected_completion_date": "2030",
         "length": "10.30 km",
         "estimated_cost": "328M",
         "construction_duration": "34 de luni",
@@ -31,6 +32,7 @@ A6_SECTIONS = {
     "Craiova - Târgu Jiu lot 2": {
         "status": "tendered",
         "tender_end_date": "2026",
+        "projected_completion_date": "2030",
         "length": "14.40 km",
         "estimated_cost": "392M",
         "construction_duration": "34 de luni",
@@ -44,6 +46,7 @@ A6_SECTIONS = {
     "Craiova - Târgu Jiu lot 3": {
         "status": "tendered",
         "tender_end_date": "2026",
+        "projected_completion_date": "2030",
         "length": "21.70 km",
         "estimated_cost": "542M",
         "construction_duration": "34 de luni",
@@ -57,6 +60,7 @@ A6_SECTIONS = {
     "Craiova - Târgu Jiu lot 4 (primii 5.10 km fac parte din Autostrada Craiova - Filiași, iar restul de 17.82 km fac parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
         "tender_end_date": "2026",
+        "projected_completion_date": "2030",
         "length": "22.92 km",
         "estimated_cost": "438M",
         "construction_duration": "34 de luni",
@@ -70,6 +74,7 @@ A6_SECTIONS = {
     "Craiova - Târgu Jiu lot 5 (tot lotul este la profil de drum expres și face parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
         "tender_end_date": "2026",
+        "projected_completion_date": "2030",
         "length": "21.52 km",
         "estimated_cost": "520M",
         "construction_duration": "34 de luni",
@@ -83,6 +88,7 @@ A6_SECTIONS = {
     "Craiova - Târgu Jiu lot 6 (tot lotul este la profil de drum expres și face parte din Drumul Expres Filiași - Târgu Jiu)": {
         "status": "tendered",
         "tender_end_date": "2026",
+        "projected_completion_date": "2030",
         "length": "19.25 km",
         "estimated_cost": "380M",
         "construction_duration": "34 de luni",

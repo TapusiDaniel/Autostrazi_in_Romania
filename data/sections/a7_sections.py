@@ -148,7 +148,7 @@ A7_SECTIONS = {
     "Bacău - Pașcani (lot 3)": {
         "status": "in_construction",
         "progress": "55.70%",
-        "completion_date": "2026",
+        "completion_date": "2027",
         "length": "28.09 km",
         "constructor": "Asocierea SA&PE CONSTRUCT SRL – SPEDITION UMB SRL – TEHNOSTRADE SRL",
         "cost": "352M",
