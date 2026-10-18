@@ -1,7 +1,7 @@
 A13_SECTIONS = {
     "Sibiu - Făgăraș (lot 1)": {
         "status": "in_construction",
-        "progress": "27%",
+        "progress": "30%",
         "completion_date": "2028",
         "length": "14.25 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
@@ -12,7 +12,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 2)": {
         "status": "in_construction",
-        "progress": "42.17%",
+        "progress": "50.15%",
         "completion_date": "2028",
         "length": "19.92 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
@@ -24,7 +24,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 3)": {
         "status": "in_construction",
-        "progress": "44.84%",
+        "progress": "51.09%",
         "completion_date": "2028",
         "length": "17.61 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
@@ -36,7 +36,7 @@ A13_SECTIONS = {
     },
     "Sibiu - Făgăraș (lot 4)": {
         "status": "in_construction",
-        "progress": "28.60%",
+        "progress": "36.26%",
         "completion_date": "2028",
         "length": "16.26 km",
         "constructor": "MAKYOL INSAAT SANAYI TURIZM VE TICARET",
@@ -52,7 +52,7 @@ A13_SECTIONS = {
         "feasibility_study_date": "2026",
         "projected_completion_date": "2030",
         "designer": "Asocierea SEARCH CORPORATION SRL – PROTELCO SA – LIKE CONSULTING SRL – MEGAMUHENDISLIK MUSAVIRLIK A.S.",
-        "length": "50.2 km",
+        "length": "49.75 km",
         "xml_file": "A13/a13_fagaras_brasov.xml",
         # "start_point": [45.805056, 25.048160],  # Fagaras
         "end_point": [45.737610, 25.479366],  # Brasov

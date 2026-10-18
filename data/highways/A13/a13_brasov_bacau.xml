@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1295 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="12300710" visible="true" version="16" changeset="180965180" timestamp="2026-04-06T19:02:46Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (244684 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="12300710" visible="true" version="17" changeset="187907054" timestamp="2026-08-23T20:12:57Z" user="bpauld" uid="21599072">
 <member type="way" ref="1027509377" role=""/>
 <member type="way" ref="1027509376" role=""/>
 <member type="way" ref="1027509375" role=""/>
@@ -104,8 +104,9 @@
 <member type="way" ref="1486065664" role=""/>
 <member type="way" ref="1497152167" role=""/>
 <member type="way" ref="1497152166" role=""/>
+<tag k="highway" v="proposed"/>
 <tag k="name" v="A13 Brașov-Bacău"/>
-<tag k="route" v="proposed"/>
+<tag k="proposed" v="motorway"/>
 <tag k="type" v="route"/>
 </relation>
 </osm>

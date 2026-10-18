@@ -3,7 +3,7 @@ A6_SECTIONS = {
         "status": "planned",
         "feasibility_study_date": "2026",
         "designer": "ASOCIEREA S.C. D P CONSULT S.A. – S.C. EXPLAN S.R.L. – S.C.A. TEAHA & FUZESI",
-        "length": "77.02 km",
+        "length": "74.22 km",
         "projected_completion_date": "2030",
         "xml_file": "A6/a6_bucuresti_alexandria.xml",
         "end_point": [44.02492, 25.26474],  # Alexandria

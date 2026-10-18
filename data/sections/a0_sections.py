@@ -35,7 +35,7 @@ A0_SECTIONS = {
     },
     "A0 Nord Lot 1": {
         "status": "in_construction",
-        "progress": "72.28%",
+        "progress": "78.80%",
         "completion_date": "2026",
         "length": "17.5 km",
         "constructor": "Impresa - Pizzarotti - Retter Project Management",
@@ -57,12 +57,11 @@ A0_SECTIONS = {
         "end_point": [44.523204, 26.226465],  # DN2
     },
     "A0 Nord Lot 3": {
-        "status": "in_construction",
-        "progress": "93%",
+        "status": "finished",
         "completion_date": "2026",
         "length": "8.6 km",
         "constructor": "China Civil Engineering Construction Corporation",
-        "cost": "79.5M",
+        "cost": "74.6M",
         "financing": "FEDR (40%) și bugetul de stat (60%) - Programul Transport 2021-2027",
         "xml_file": "A0/a0_nord_lot3.xml",
         "start_point": [44.523204, 26.226465],  # DN2

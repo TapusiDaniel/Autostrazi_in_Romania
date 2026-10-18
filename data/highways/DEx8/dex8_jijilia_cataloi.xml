@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1022523 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="20201433" visible="true" version="7" changeset="181375832" timestamp="2026-04-15T16:24:09Z" user="00-sq" uid="19198459">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (244697 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="20201433" visible="true" version="9" changeset="189152505" timestamp="2026-09-17T10:17:11Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1423059668" role=""/>
 <member type="way" ref="1423059665" role=""/>
 <member type="way" ref="1447526681" role=""/>
@@ -36,8 +36,6 @@
 <member type="way" ref="1344770625" role=""/>
 <member type="way" ref="1344770624" role=""/>
 <member type="way" ref="1389112858" role=""/>
-<member type="way" ref="1344770592" role=""/>
-<member type="way" ref="1344770591" role=""/>
 <member type="way" ref="1389112857" role=""/>
 <member type="way" ref="1344770623" role=""/>
 <member type="way" ref="1344770626" role=""/>
@@ -202,8 +200,12 @@
 <member type="way" ref="1499652485" role=""/>
 <member type="way" ref="1499652488" role=""/>
 <member type="way" ref="1499652489" role=""/>
+<member type="way" ref="1499652487" role=""/>
+<member type="way" ref="1499652486" role=""/>
+<member type="way" ref="1499652491" role=""/>
+<member type="way" ref="1499652490" role=""/>
 <tag k="name" v="DEx Brăila (Jijila) - Tulcea (Cataloi)"/>
-<tag k="route" v="road"/>
-<tag k="type" v="proposed"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
 </relation>
 </osm>

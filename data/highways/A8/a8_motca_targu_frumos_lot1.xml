@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (1844853 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="18623125" visible="true" version="10" changeset="162293964" timestamp="2025-02-08T20:43:33Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (244692 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18623125" visible="true" version="14" changeset="187794190" timestamp="2026-08-21T12:39:03Z" user="flierfy" uid="445671">
 <member type="way" ref="1355248866" role=""/>
 <member type="way" ref="1355248865" role=""/>
 <member type="way" ref="1355248862" role=""/>
@@ -189,8 +189,34 @@
 <member type="way" ref="1358200643" role=""/>
 <member type="way" ref="1358200642" role=""/>
 <member type="way" ref="1358200641" role=""/>
-<tag k="name" v="A8 (Târgu Neamț - Iași - Ungheni): Tronson 1 Moțca - Târgu Frumos"/>
+<member type="way" ref="1064159210" role=""/>
+<member type="way" ref="1064159211" role=""/>
+<member type="way" ref="1064159209" role=""/>
+<member type="way" ref="1064159212" role=""/>
+<member type="way" ref="1064159206" role=""/>
+<member type="way" ref="1064159207" role=""/>
+<member type="way" ref="1064159205" role=""/>
+<member type="way" ref="1064159208" role=""/>
+<member type="way" ref="1064159202" role=""/>
+<member type="way" ref="1064159203" role=""/>
+<member type="way" ref="1064159201" role=""/>
+<member type="way" ref="1064159204" role=""/>
+<member type="way" ref="1064159198" role=""/>
+<member type="way" ref="1064159199" role=""/>
+<member type="way" ref="1064159197" role=""/>
+<member type="way" ref="1064159200" role=""/>
+<member type="way" ref="1064159194" role=""/>
+<member type="way" ref="1064159195" role=""/>
+<member type="way" ref="1064159193" role=""/>
+<member type="way" ref="1064159196" role=""/>
+<member type="way" ref="1064159190" role=""/>
+<member type="way" ref="1064159191" role=""/>
+<member type="way" ref="1064159189" role=""/>
+<member type="way" ref="1064159192" role=""/>
+<member type="way" ref="1064159213" role=""/>
+<member type="way" ref="1064159215" role=""/>
+<tag k="name" v="A8 Tronson 1 (Moțca - Tg. Frumos)"/>
 <tag k="route" v="road"/>
-<tag k="type" v="proposed"/>
+<tag k="type" v="construction"/>
 </relation>
 </osm>

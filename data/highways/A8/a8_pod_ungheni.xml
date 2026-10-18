@@ -1,15 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3589655 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="16162422" visible="true" version="8" changeset="176918812" timestamp="2026-01-06T20:38:06Z" user="danutzu" uid="378538">
-<member type="way" ref="1129336682" role=""/>
-<member type="way" ref="1464912473" role=""/>
-<member type="way" ref="1464912481" role=""/>
-<member type="way" ref="1464912482" role=""/>
-<member type="way" ref="1464912477" role=""/>
-<member type="way" ref="1464912476" role=""/>
-<member type="way" ref="1464912483" role=""/>
-<member type="way" ref="1464912480" role=""/>
-<member type="way" ref="1464912472" role=""/>
-<member type="way" ref="1129336681" role=""/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (244684 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="16162422" visible="true" version="11" changeset="184308353" timestamp="2026-06-19T10:12:17Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1194966060" role=""/>
 <member type="way" ref="1194966061" role=""/>
 <member type="way" ref="1194966059" role=""/>
@@ -19,7 +9,7 @@
 <member type="way" ref="1340102399" role=""/>
 <member type="way" ref="1340102398" role=""/>
 <member type="way" ref="1375413161" role=""/>
-<tag k="name" v="Pod Ungheni"/>
+<tag k="name" v="Pod peste Prut la Ungheni"/>
 <tag k="route" v="road"/>
 <tag k="type" v="construction"/>
 </relation>

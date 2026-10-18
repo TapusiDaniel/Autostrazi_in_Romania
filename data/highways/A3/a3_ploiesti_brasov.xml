@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1323 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="11153104" visible="true" version="15" changeset="181361388" timestamp="2026-04-15T11:14:02Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1304 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="11153104" visible="true" version="16" changeset="190657199" timestamp="2026-10-17T15:37:31Z" user="streckengaenger21" uid="12622800">
 <member type="way" ref="1169024709" role=""/>
 <member type="way" ref="1169024706" role=""/>
 <member type="way" ref="1169024710" role=""/>
@@ -197,6 +197,7 @@
 <member type="way" ref="1169024715" role=""/>
 <member type="way" ref="1169024716" role=""/>
 <member type="way" ref="1169024712" role=""/>
+<member type="way" ref="1569162954" role=""/>
 <member type="way" ref="1169024717" role=""/>
 <member type="way" ref="1169016791" role=""/>
 <tag k="name" v="A3 - Brasov - Comarnic"/>

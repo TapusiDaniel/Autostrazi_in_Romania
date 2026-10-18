@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3448770 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9599173" visible="true" version="2" changeset="131734357" timestamp="2023-01-26T14:08:03Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1299 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9599173" visible="true" version="7" changeset="190109279" timestamp="2026-10-06T19:08:48Z" user="Buraddo" uid="2287200">
 <member type="way" ref="508480304" role=""/>
 <member type="way" ref="563939703" role=""/>
 <member type="way" ref="654819202" role=""/>
@@ -40,9 +40,11 @@
 <member type="way" ref="568043308" role=""/>
 <member type="way" ref="568043310" role=""/>
 <member type="way" ref="568043288" role=""/>
+<member type="way" ref="1565586698" role=""/>
 <member type="way" ref="568043287" role=""/>
 <member type="way" ref="568043289" role=""/>
 <member type="way" ref="568043291" role=""/>
+<member type="way" ref="1565587631" role=""/>
 <member type="way" ref="568043290" role=""/>
 <member type="way" ref="568043292" role=""/>
 <member type="way" ref="568043295" role=""/>
@@ -71,6 +73,11 @@
 <member type="way" ref="568043327" role=""/>
 <member type="way" ref="568043325" role=""/>
 <member type="way" ref="568043326" role=""/>
+<member type="way" ref="1565588124" role=""/>
+<member type="way" ref="1565588123" role=""/>
+<member type="way" ref="1565588558" role=""/>
+<member type="way" ref="1565588557" role=""/>
+<member type="way" ref="1565611785" role=""/>
 <tag k="name" v="A3 3C2(Biharia-Chiribis)"/>
 <tag k="route" v="construction"/>
 <tag k="type" v="route"/>
