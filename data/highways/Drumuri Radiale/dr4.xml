@@ -1,10 +1,46 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (901264 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="16510052" visible="true" version="2" changeset="175600504" timestamp="2025-12-06T20:40:45Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (374869 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="16510052" visible="true" version="5" changeset="191597932" timestamp="2026-11-07T11:10:29Z" user="k9h10a" uid="21676723">
+<member type="way" ref="1576318577" role=""/>
 <member type="way" ref="1216307990" role=""/>
 <member type="way" ref="1216307987" role=""/>
 <member type="way" ref="1456555663" role=""/>
-<tag k="name" v="Drum radial 4"/>
-<tag k="route" v="road"/>
-<tag k="type" v="proposed"/>
+<member type="way" ref="1569516120" role=""/>
+<member type="way" ref="1569516119" role=""/>
+<member type="way" ref="1569516118" role=""/>
+<member type="way" ref="1569516117" role=""/>
+<member type="way" ref="1569516116" role=""/>
+<member type="way" ref="1569516115" role=""/>
+<member type="way" ref="1569516114" role=""/>
+<member type="way" ref="1569516109" role=""/>
+<member type="way" ref="1569516110" role=""/>
+<member type="way" ref="1576318578" role=""/>
+<member type="way" ref="1569516111" role=""/>
+<member type="way" ref="1569516112" role=""/>
+<member type="way" ref="1569516113" role=""/>
+<member type="way" ref="1569516108" role=""/>
+<member type="way" ref="1569516103" role=""/>
+<member type="way" ref="1569516102" role=""/>
+<member type="way" ref="1569516104" role=""/>
+<member type="way" ref="1569516100" role=""/>
+<member type="way" ref="1569516101" role=""/>
+<member type="way" ref="1569516099" role=""/>
+<member type="way" ref="1569516098" role=""/>
+<member type="way" ref="1569516097" role=""/>
+<member type="way" ref="1569516096" role=""/>
+<member type="way" ref="1569516095" role=""/>
+<member type="way" ref="1569516092" role=""/>
+<member type="way" ref="1569516094" role=""/>
+<member type="way" ref="1569516093" role=""/>
+<member type="way" ref="1569516105" role=""/>
+<member type="way" ref="1569516107" role=""/>
+<member type="way" ref="1569516106" role=""/>
+<member type="way" ref="1569692122" role=""/>
+<member type="way" ref="1569692121" role=""/>
+<member type="way" ref="1569692120" role=""/>
+<member type="way" ref="1569692119" role=""/>
+<member type="way" ref="1576318579" role=""/>
+<tag k="name" v="Drum Radial 4 Nord Expres"/>
+<tag k="route" v="proposed"/>
+<tag k="type" v="route"/>
 </relation>
 </osm>

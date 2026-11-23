@@ -29,8 +29,7 @@ A1_SECTIONS = {
         "end_point": [45.111734, 24.6525843],  # Curtea de Arges
     },
     "Pitești - Sibiu (lot 4)": {
-        "status": "in_construction",
-        "progress": "95%",
+        "status": "finished",
         "completion_date": "2026",
         "length": "9.86 km",
         "constructor": "Porr Construct SRL",
@@ -42,7 +41,7 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 3)": {
         "status": "in_construction",
-        "progress": "17.81%",
+        "progress": "18.89%",
         "completion_date": "2029",
         "length": "37.4 km",
         "constructor": "Asocierea Astaldi/WeBuild - Tancrad",
@@ -55,7 +54,7 @@ A1_SECTIONS = {
     },
     "Pitești - Sibiu (lot 2)": {
         "status": "in_construction",
-        "progress": "12.14%",
+        "progress": "16.25%",
         "completion_date": "2031",
         "length": "31.33 km",
         "constructor": "Asocierea Mapa Insaat Ve Ticaret AS - Cengiz Insaat Sanayi Ve Ticaret",

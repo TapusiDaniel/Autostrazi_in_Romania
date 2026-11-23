@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (383538 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="18288299" visible="true" version="5" changeset="175154990" timestamp="2025-11-26T13:32:16Z" user="RobertH-PUM" uid="9320232">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (299623 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="18288299" visible="true" version="7" changeset="189285020" timestamp="2026-09-20T08:24:57Z" user="k9h10a" uid="21676723">
 <member type="way" ref="1330015802" role=""/>
 <member type="way" ref="1330015814" role=""/>
 <member type="way" ref="1329425981" role=""/>
@@ -66,9 +66,10 @@
 <member type="way" ref="1330192663" role=""/>
 <member type="way" ref="1330192662" role=""/>
 <member type="way" ref="1330192681" role=""/>
+<member type="way" ref="1330192679" role=""/>
 <member type="way" ref="1330192680" role=""/>
-<member type="way" ref="1330192683" role=""/>
 <member type="way" ref="1330192682" role=""/>
+<member type="way" ref="1330192683" role=""/>
 <member type="way" ref="1330192685" role=""/>
 <member type="way" ref="1330192684" role=""/>
 <member type="way" ref="1330192687" role=""/>
@@ -85,7 +86,6 @@
 <member type="way" ref="1330192677" role=""/>
 <member type="way" ref="1279705131" role=""/>
 <member type="way" ref="1330192676" role=""/>
-<member type="way" ref="1330192679" role=""/>
 <member type="way" ref="1330192678" role=""/>
 <member type="way" ref="1330192697" role=""/>
 <member type="way" ref="1330015798" role=""/>
@@ -136,13 +136,13 @@
 <member type="way" ref="1329497040" role=""/>
 <member type="way" ref="1329497041" role=""/>
 <member type="way" ref="1329497038" role=""/>
-<member type="way" ref="1330368954" role=""/>
 <member type="way" ref="1329497039" role=""/>
 <member type="way" ref="1329497036" role=""/>
-<member type="way" ref="1330368953" role=""/>
 <member type="way" ref="1332704412" role=""/>
 <member type="way" ref="1329497037" role=""/>
 <member type="way" ref="1330368952" role=""/>
+<member type="way" ref="1330368954" role=""/>
+<member type="way" ref="1330368953" role=""/>
 <member type="way" ref="1329497034" role=""/>
 <member type="way" ref="1329497035" role=""/>
 <member type="way" ref="1329497033" role=""/>
@@ -153,13 +153,13 @@
 <member type="way" ref="1329497026" role=""/>
 <member type="way" ref="1329497027" role=""/>
 <member type="way" ref="1330368950" role=""/>
+<member type="way" ref="1330368948" role=""/>
 <member type="way" ref="1329497024" role=""/>
 <member type="way" ref="1330368949" role=""/>
 <member type="way" ref="1329497025" role=""/>
-<member type="way" ref="1330368948" role=""/>
 <member type="way" ref="1335767666" role=""/>
 <tag k="name" v="A8 Secțiunea 2 Lot 1C (Sărățeni - Joseni)"/>
-<tag k="route" v="road"/>
-<tag k="type" v="construction"/>
+<tag k="route" v="construction"/>
+<tag k="type" v="route"/>
 </relation>
 </osm>

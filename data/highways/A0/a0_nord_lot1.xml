@@ -1,5 +1,5 @@
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3863246 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
-<relation id="9664235" visible="true" version="10" changeset="185836285" timestamp="2026-07-16T10:15:48Z" user="k9h10a" uid="21676723">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (315446 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<relation id="9664235" visible="true" version="13" changeset="191914871" timestamp="2026-11-13T21:34:03Z" user="ted3sco" uid="2112541">
 <member type="way" ref="687932971" role=""/>
 <member type="way" ref="687932972" role=""/>
 <member type="way" ref="698789615" role=""/>
@@ -40,7 +40,10 @@
 <member type="way" ref="687932964" role=""/>
 <member type="way" ref="687932963" role=""/>
 <member type="way" ref="285736510" role=""/>
+<member type="way" ref="1578900538" role=""/>
+<member type="way" ref="1578900537" role=""/>
 <member type="way" ref="697150730" role=""/>
+<member type="way" ref="1578895436" role=""/>
 <member type="way" ref="285736505" role=""/>
 <member type="way" ref="285736514" role=""/>
 <member type="way" ref="285736507" role=""/>
@@ -61,6 +64,10 @@
 <member type="way" ref="1443752270" role=""/>
 <member type="way" ref="1443752271" role=""/>
 <member type="way" ref="1443752269" role=""/>
+<member type="way" ref="1571032766" role=""/>
+<member type="way" ref="1571032768" role=""/>
+<member type="way" ref="1571032767" role=""/>
+<member type="way" ref="1571032765" role=""/>
 <tag k="name" v="A0 Nord Lot 1"/>
 <tag k="route" v="construction"/>
 <tag k="type" v="route"/>
